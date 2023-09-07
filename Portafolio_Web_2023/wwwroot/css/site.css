@@ -5,7 +5,6 @@
 }
 
 html {
-    
     /*Propiedad para mostrar una animación al momento de ir desde un enlace hacia una seccion*/
     scroll-behavior: smooth;
     /* height: 3500px; */
@@ -28,10 +27,14 @@ a {
 }
 
 .hero {
+    /*margin-top:500px;*/
+    /*padding-top:5rem;*/
     display: flex;
+    margin-left: 40px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 100px;
     /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
         que ocupe el 100% (v*h viewpor hight alto del dispositivo)
         SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);
@@ -39,20 +42,20 @@ a {
     height: calc(100vh - 80px);
 }
 
-    /*Titulo*/
-    .hero h1 {
-        margin-top: 2rem;
-        /*margin-left: 2rem;*/
-        font-size: 80px;
-    }
-    /*Subtitulo*/
-    .hero p {
-        /*margin-left: 0;*/
-        font-size: 30px;
+/*Titulo*/
+/*.hero h1 {
+        margin-top: 2rem;*/
+/*margin-left: 2rem;*/
+/*font-size: 80px;
+    }*/
+/*Subtitulo*/
+/*.hero p {*/
+/*margin-left: 0;*/
+/*font-size: 30px;
         text-transform: uppercase;
         color: #113CFC;
         text-shadow: 0 0 6px;
-    }
+    }*/
 
 
 /*Menú de navegación
@@ -172,69 +175,6 @@ a {
         margin-bottom: 20px;
     }
 
-/*#region Media Querys */
-/*Ayudan a mostrar las animaciones según el tamaño de la pantalla si es menor o mayor*/
-/*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
-@media screen and (max-width: 500px) {
-    .nav_menu a {
-        font-size: 12px;
-        /*padding: 5px;*/
-    }
-
-    .seccion {
-        padding-top: 0%;
-    }
-
-        .seccion h1 {
-            font-size: 32px;
-            /*margin-bottom: 20px;*/
-        }
-
-        .seccion p {
-            line-height: 28px;
-            font-size: 15px;
-        }
-
-
-    /*Efecto sombreado(hover) al pasar el cursor en el nav*/
-    .nav_menu a:hover {
-        background: #6782fa;
-        /*font-size: 20px;*/
-    }
-
-
-    /*Color azul para linkedin*/
-    /*.img-linkedin svg:hover {
-        height: 100%;
-        width: 75px;
-        height: 75px;
-        fill: #22A7F2;
-    }*/
-
-    /*Color rojo para gmail*/
-    /*.img-correo svg:hover {
-        height: 100%;
-        width: 75px;
-        height: 75px;
-        fill: #ea0101;
-    }*/
-
-    /*Color verde para whatsapp*/
-    /*.img-whatsapp svg:hover {
-        height: 100%;
-        width: 75px;
-        height: 75px;
-        fill: #0DC143;
-    }*/
-
-    /*Color morado para github*/
-    /*.img-github svg:hover {
-        height: 100%;
-        width: 75px;
-        height: 75px;
-        fill: #5C2D91;
-    }*/
-}
 
 /*@media screen and (max-width: 300px) {
     .nav_menu a {
@@ -363,3 +303,76 @@ a {
 /* altura*/
 /*height: 70px;
     }*/
+
+
+/*CÓDIGO CSS DE MI ANIMACIÓN ESCRITURA*/
+.hero .titulo {
+    font-size: 90px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.hero .name {
+    font-weight: bold;
+    color: #113CFC;
+    /*text-shadow: 0 0 6px;   */ 
+    font-style: normal;
+}
+
+.hero .msj {
+    font-weight: bold;
+    color: #274bea;
+    font-style: normal;
+    animation: parpadear 3s infinite backwards;
+    transition: .5s ease-in-out all;
+}
+
+@keyframes parpadear {
+    to {
+        color: #0b36f7;
+        text-shadow: 0 0 12px;
+    }
+}
+
+
+/*#region Media Querys */
+/*Ayudan a mostrar las animaciones según el tamaño de la pantalla si es menor o mayor*/
+/*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
+@media screen and (max-width: 500px) {
+    .nav_menu a {
+        font-size: 12px;
+        /*padding: 5px;*/
+    }
+
+    .seccion {
+        padding-top: 0%;
+    }
+
+        .seccion h1 {
+            font-size: 32px;
+            /*margin-bottom: 20px;*/
+        }
+
+        .seccion p {
+            line-height: 28px;
+            font-size: 15px;
+        }
+
+
+    /*Efecto sombreado(hover) al pasar el cursor en el nav*/
+    .nav_menu a:hover {
+        background: #6782fa;
+        /*font-size: 20px;*/
+    }
+
+    .hero {
+        margin-left: 15px;
+        padding-bottom: 0px;
+    }
+
+    .hero .titulo{
+        font-size: 35px;
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+}

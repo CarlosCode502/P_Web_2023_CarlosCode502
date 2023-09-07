@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 @*     <link rel="stylesheet" href="~/Portafolio_Web_2023.styles.css" asp-append-version="true" />  *@
@@ -35,10 +36,43 @@
             </div>
         </nav> *@
 
-        <div class="hero" id="Inicio">
+        @* <div class="hero" id="Inicio">
             <h1>MENÚ SLIDER</h1>
             <p>HTML • CSS • Javascript</p>
+        </div> *@
+        @* <div class="contenedor-texto"> *@
+            <!-- Forma 1: (20.00)
+            Esta forma es muy útil y funcional, pero tiene el defecto de que al momento de indexarlo en los buscadores
+            el texto aparecerá en blanco o no aparecera y este es un error -->
+            <!-- <h2 class="titulo">Mi nombre es:<br/><span class="typed-name"></span></h2> -->
+            <!-- <p>Desarrollador de software, encantado de poder ayudarte a hacer realidad tu proyecto.</p> -->
+            <!-- <p><b>Tengo habilidades en:</b><br/><span class="typed"></span></p> -->
+            <!-- Forma 2: (22.00) -->
+            <!-- Esta forma ayudará a evitar el error y ahora los buscadores podrán indexar el contenido  -->
+            <!-- <h1>Mi nombre es:</h1> -->
+        <div class="hero" id="Inicio">
+        
+       
+            <h2 class="titulo">
+                <span class="typed-name"></span>
+            </h2>
+
+            <div class="titulo" id="cadenas-texto">
+
+                <p>Mi nombre es:<br /><i class="name">Carlos Enrique</i></p>
+                <p>Mi nombre es:<br /><i class="name">Herrera López.</i></p>
+                <p>Soy:<br /><i class="name">Desarrollador de Software.</i></p>
+                <p><i class="msj">¿LISTO PARA HACER REALIDAD TU PROYECTO?</i></p>
+                <!-- <p><i class="name">Herrera López.</i></p> -->
+                <!-- <p>Mi nombre es: <br><i class="mascota">CadHerrera</i></p> -->
+                <!-- <p><b>Tengo habilidades en:</b><br/><span class="typed"></span></p> -->
+            </div>
         </div>
+
+        @* </div> *@
+
+
+
     </header>
         
         <nav class="nav_menu" id="nav_menu_id">
@@ -112,6 +146,8 @@
             <a href="/politicas" class="texto-gris"> - Política de privacidad </a>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
     @* <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@
