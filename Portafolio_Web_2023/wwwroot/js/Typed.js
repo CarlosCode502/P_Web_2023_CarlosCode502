@@ -19,9 +19,9 @@ const typed_name = new Typed('.typed-name', {
     // strings: [6000],
     // (min 14.31)
     stringsElement: '#cadenas-texto',// ID del elemento que contiene cadenas de texto a mostrar.
-    typeSpeed: 65, // Velocidad en mlisegundos para poner una letra,
-    startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
-    backSpeed: 65, // Velocidad en milisegundos para borrar una letra,
+    typeSpeed: 80, // Velocidad en mlisegundos para poner una letra,
+    startDelay: 400, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+    backSpeed: 80, // Velocidad en milisegundos para borrar una letra,
     smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto. en true no se elimina la nueva p de la f2
     shuffle: false, // Alterar el orden en el que escribe las palabras.
     backDelay: 2000, // Tiempo de espera despues de que termina de escribir una palabra.
