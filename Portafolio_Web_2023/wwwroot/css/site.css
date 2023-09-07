@@ -309,7 +309,7 @@ a {
 .hero .titulo {
     font-size: 90px;
     font-weight: normal;
-    margin-bottom: 40px;
+    /*margin-bottom: 40px;*/
 }
 
 .hero .name {
