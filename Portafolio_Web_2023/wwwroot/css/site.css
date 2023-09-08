@@ -1,3 +1,7 @@
+element {
+    background-image: url(img/person-paisaje.jpg);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -13,7 +17,9 @@ html {
 }
 
 body {
-    background: #f2f2f2;
+    /*Color de fondo de toda la página*/
+    /*background: #f2f2f2;*/
+
     font-family: 'Roboto', sans-serif;
     /*Espacio entre el contenido y el footer*/
     /*SE CAMBIO ESTA PROPIEDAD ESTABA A 100 POR ESO QUEDABA UN ESPACIO EN BLANCO 
@@ -22,24 +28,61 @@ body {
     margin-bottom: 20px;
 }
 
+
+/*.imagen-index {
+    background-image: url('~/img/person-paisaje.jpg');
+}*/
+/*header {*/
+/*background-image: image('~/img/person-paisaje.jpg');*/
+/*background-image: url('~/img/person-paisaje.jpg');*/
+/*color: #FFFFFF;*/
+/*}*/
 a {
     text-decoration: none;
 }
+
+
+/*body {
+
+    background-image: url(img/person-paisaje.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: #f2f2f2;
+}*/
+
+/*.imagen img{
+    background-attachment: fixed;*/
+/*background-size: 100% 100%;*/
+/*}*/
+
 
 .hero {
     /*margin-top:500px;*/
     /*padding-top:5rem;*/
     display: flex;
-    margin-left: 35px;
-    margin-right: 50%;
+    /*margin-left: 30px;*/
+    /*margin-right: 50%;*/
     flex-direction: column;
+    /*Alinear el texto a la izquierda*/
     align-items: flex-start;
+    /*align-items: center;*/
     justify-content: center;
     padding-bottom: 100px;
+    /*content: image('~/img/person-paisaje.jpg');*/
     /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
         que ocupe el 100% (v*h viewpor hight alto del dispositivo)
         SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);
     */
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    /*alpha(opacity=70);*/
+    /*filter: opacity(500px); */   
+    /*-moz-opacity: .70;*/
+    opacity: 0.9;
+    /*color: #f2f2f2;*/
     height: calc(100vh - 80px);
 }
 
@@ -308,32 +351,39 @@ a {
 
 /*CÓDIGO CSS DE MI ANIMACIÓN ESCRITURA*/
 .hero .titulo {
+    color:white;
     font-size: 90px;
     font-weight: normal;
+    margin-right: 50%;
+    opacity: 100;
     /*margin-bottom: 40px;*/
 }
 
 .hero .name {
+    color: black;
     font-weight: bold;
-    color: #113CFC;
-    /*text-shadow: 0 0 6px;   */ 
+    /*color: #113CFC;*/
+    /*text-shadow: 0 0 6px;   */
     font-style: normal;
 }
 
 .hero .msj {
+    color: black;
     font-weight: bold;
-    color: #274bea;
+    /*color: #274bea;*/
     font-style: normal;
-    animation: parpadear 3s infinite backwards;
-    transition: .5s ease-in-out all;
+/*    animation: parpadear 3s infinite backwards;
+    transition: .5s ease-in-out all;*/
 }
 
+/*SE QUITO EL EFECTO DE ANIMACIÓN AL ÚLTIMO TEXTO*/
+/*
 @keyframes parpadear {
     to {
         color: #0b36f7;
         text-shadow: 0 0 12px;
     }
-}
+}*/
 
 
 /*#region Media Querys */
@@ -367,13 +417,14 @@ a {
     }
 
     .hero {
-        margin-left: 15px;
+        
         padding-bottom: 0px;
     }
 
-    .hero .titulo{
-        font-size: 35px;
-        font-weight: normal;
-        margin-bottom: 20px;
-    }
+        .hero .titulo {
+            margin-left: 25px;
+            font-size: 35px;
+            font-weight: normal;
+            /*margin-bottom: 20px;*/
+        }
 }

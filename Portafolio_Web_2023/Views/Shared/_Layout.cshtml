@@ -55,11 +55,15 @@
         <!-- Forma 2: (22.00) -->
         <!-- Esta forma ayudará a evitar el error y ahora los buscadores podrán indexar el contenido  -->
         <!-- <h1>Mi nombre es:</h1> -->
-       @*  @{
-            string presionar = "typed-name";
+        @*  @{
+        string presionar = "typed-name";
         } *@
 
-        <div class="hero" id="Inicio">
+        @* <div class="imagen" style="background-image: url(img/person-paisaje.jpg);"></div> *@
+
+
+        <div class="hero" id="Inicio" style="background-image: url(img/person-paisaje.jpg);">
+            
             <h2 class="titulo">
                 <span class="typed-name"></span>
             </h2>
@@ -77,11 +81,10 @@
         </div>
 
 
-        @* <div class="blockquote">
-            <span class="cuadro"></span>
-        </div> *@
 
-        @* </div> *@
+        @* <div class="imagen-index">
+        <img src="~/img/person-paisaje.jpg" alt="imagen de paisaje" style="background" />
+        </div> *@
 
     </header>
 
@@ -158,7 +161,7 @@
             <a href="/politicas" class="texto-gris"> - Política de privacidad </a>
         </div>
     </footer>
-    
+
 
     @* <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@
