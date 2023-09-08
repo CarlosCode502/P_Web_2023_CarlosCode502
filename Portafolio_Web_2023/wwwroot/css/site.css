@@ -1,6 +1,6 @@
-element {
+ï»¿/*element {
     background-image: url(img/person-paisaje.jpg);
-}
+}*/
 
 * {
     padding: 0;
@@ -9,7 +9,7 @@ element {
 }
 
 html {
-    /*Propiedad para mostrar una animación al momento de ir desde un enlace hacia una seccion*/
+    /*Propiedad para mostrar una animaciÃ³n al momento de ir desde un enlace hacia una seccion*/
     scroll-behavior: smooth;
     /* height: 3500px; */
     /*position: absolute;*/
@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    /*Color de fondo de toda la página*/
+    /*Color de fondo de toda la pÃ¡gina*/
     /*background: #f2f2f2;*/
 
     font-family: 'Roboto', sans-serif;
@@ -74,18 +74,24 @@ a {
         que ocupe el 100% (v*h viewpor hight alto del dispositivo)
         SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);
     */
-
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: 100% 100%;*/
     /*alpha(opacity=70);*/
-    /*filter: opacity(500px); */   
+    /*filter: opacity(500px); */
     /*-moz-opacity: .70;*/
-    opacity: 0.9;
+    /*opacity: 0.9;*/
     /*color: #f2f2f2;*/
     height: calc(100vh - 80px);
 }
 
+.imagen {
+    background-image: url(../img/person-paisaje.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    opacity: 0.90;
+}
 /*Titulo*/
 /*.hero h1 {
         margin-top: 2rem;*/
@@ -100,10 +106,8 @@ a {
         color: #113CFC;
         text-shadow: 0 0 6px;
     }*/
-
-
-/*Menú de navegación
-    VERIFICAR EN CASO DE NECESITAR OTRO MENÚ
+/*MenÃº de navegaciÃ³n
+    VERIFICAR EN CASO DE NECESITAR OTRO MENÃš
 */
 .nav_menu {
     /*color de fondo*/
@@ -114,22 +118,22 @@ a {
     box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
     /*Para que los elementos se pongan uno al lado de otro con(flexbox)*/
     display: flex;
-    /*CONFIGURAR EL MENÚ PEGAJOSO (PARA QUE SE MANTENGA)*/
+    /*CONFIGURAR EL MENÃš PEGAJOSO (PARA QUE SE MANTENGA)*/
     /*Con la propiedad sticky*/
     position: sticky;
     /*indicamos en donde se quedara pegado*/
     top: 0; /*Coordenada 0*/
-    /*Para ocultar el indicador en caso de que quede fuera y no se tenga seleccionado (dependiendo el disp será el error)*/
+    /*Para ocultar el indicador en caso de que quede fuera y no se tenga seleccionado (dependiendo el disp serÃ¡ el error)*/
     overflow: hidden;
 }
     /*Para que todos los enlaces "a" se muestren espaciados */
     .nav_menu a {
         /*CON FLEXBOX*/
-        /*Para que todos tengan el mismo tamaño*/
+        /*Para que todos tengan el mismo tamaÃ±o*/
         flex: 1;
         /*alto*/
         height: 100%;
-        /*Para que el texto se ponga en mayúscula*/
+        /*Para que el texto se ponga en mayÃºscula*/
         text-transform: uppercase;
         /*Para indicarle que se va a usar flexbox*/
         display: flex;
@@ -137,11 +141,11 @@ a {
         align-items: center;
         /*alinear el texto de forma vertical en los contenedores*/
         justify-content: center;
-        /*Todo el contenido centrado al ocupar más de 2 lineas*/
+        /*Todo el contenido centrado al ocupar mÃ¡s de 2 lineas*/
         text-align: center;
         /*Colr*/
         color: #000;
-        /*Transición de tiempo para todas las propiedades*/
+        /*TransiciÃ³n de tiempo para todas las propiedades*/
         transition: .2s ease-in-out all;
         /*Texto con negritas fuerte*/
         font-weight: 500;
@@ -155,7 +159,7 @@ a {
 
 
     .nav_menu .indicador {
-        /*ancho se cambio el valor ya que se debe calcular el tamaño del boton por
+        /*ancho se cambio el valor ya que se debe calcular el tamaÃ±o del boton por
             medio de JS aqui en css a traves de los media querys.
         */
         width: 0px;
@@ -168,33 +172,52 @@ a {
         /*Posicionar el la parte de abajo del nav*/
         bottom: 0;
         /*Va a tener trnsisciones de tiempo para todas las propiedades*/
-        /*Va a tener una animación*/
+        /*Va a tener una animaciÃ³n*/
         transition: .3s ease-out all;
         /*para demostrar mientras va aumentando va ir cambiando*/
         /*el indicador va a ir de izquierda a derecha va a aparecer por eso es negativo*/
         /*transform: translate(-500px);*/
-        /*Para ocultar el indicador en caso de que quede fuera y no se tenga seleccionado (dependiendo el disp será el error)*/
+        /*Para ocultar el indicador en caso de que quede fuera y no se tenga seleccionado (dependiendo el disp serÃ¡ el error)*/
         overflow: hidden;
     }
 
+
+.secciones{
+    /*SI LO CONVIERTO EN NEGATIVO CRECE LA BARRA DE ABAJAO*/
+    margin: 10px;
+}
+
+
 .seccion {
+    /*MinÃ­mo Zoom*/
     min-height: 100vh;
+    /*MÃ¡ximo Zoom*/
     max-width: 1200px;
+    /*TamaÃ±o que ocupa la seccion de la pag principal*/
     width: 85%;
+    /*MargÃ©nes automÃ¡ticos*/
     margin: auto;
-    padding-top: 80px;
+    /*margin: auto 30% auto 0%;*/
+    /*Espacio todas partes de la seccion*/
+    padding: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /*CONFIGURACIÃ“N PARA LAS IMG DE FONDO * SECCION*/
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
     .seccion .card {
         background: #fff;
         height: 90%;
-        padding: 40px;
+        padding: 60px;
         border-radius: 8px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
     }
 
     .seccion h1 {
@@ -209,17 +232,42 @@ a {
         font-size: 20px;
     }
 
+    /*YA NO EDITE O COMENTE*/
     /*ES IMPORTANTE MANEJAR LAS IMAGENES EN TIPO DE FORMA (px) ya que en (%) tiende a dejar espacios*/
     .seccion img {
-        /*width: 1000px;
-        height: 500px;*/
-        /*vertical-align: central;*/
         width: 100%;
         vertical-align: top;
         margin-bottom: 20px;
+        /*NO SE USA ðŸ‘‡*/
+        /*width: 1000px;
+        height: 500px;*/
+        /*vertical-align: central;*/
     }
 
+/*id="Perfil">
+id="Habilidades">
+id="Proyectos_recientes">
+*/
 
+#Perfil {
+    align-content: center;
+    background-size: 100% 100%;
+    background-image: url("https://images.pexels.com/photos/2775196/pexels-photo-2775196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+#Habilidades {
+    align-content: center;
+    background-size: 100% 100%;
+    background-image: url("https://images.pexels.com/photos/1532771/pexels-photo-1532771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+#Proyectos_recientes {
+    align-content: center;
+    background-size: 100% 100%;
+    background-image: url("https://images.pexels.com/photos/2775196/pexels-photo-2775196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+/*NO SE USA ðŸ‘‡*/
 /*@media screen and (max-width: 300px) {
     .nav_menu a {
         font-size: 8px;
@@ -229,16 +277,19 @@ a {
         font-size: 10px;
     }
 }*/
-
 /*#endregion */
 
 
 .img-linkedin, .img-correo, .img-whatsapp, .img-github {
-    margin: 10px 10px 10px 10px;
+    /*Espacios entre cada icono */
+    margin: 20px;
+    /*PARA CENTRAR LOS ICONOS (no precisamente)*/
     display: inline-block;
-    text-align: center;
+    /*text-align: center;*/
+    /*Alto y acho de iconos*/
     width: 64px;
     height: 64px;
+    /*NO SE USA ðŸ‘‡*/
     /*//#*/
     /*display: flex;*/
     /*padding: 0px 0px 0px 0px;*/
@@ -257,21 +308,22 @@ a {
     display: flex;
     /*alinear el texto de forma vertical en los contenedores*/
     justify-content: center;
-    /*Transición de tiempo para todas las propiedades*/
+    /*TransiciÃ³n de tiempo para todas las propiedades*/
     transition: .1s ease-in-out;
+    /*NO SE USA ðŸ‘‡*/
     /*padding: 0;*/
     /*   margin-bottom: 5rem;*/
     /*//#*/
     /*CON FLEXBOX*/
-    /*Para que todos tengan el mismo tamaño*/
+    /*Para que todos tengan el mismo tamaÃ±o*/
     /*flex: 1;*/
     /*alto*/
     /*height: 100%;*/
-    /*Para que el texto se ponga en mayúscula*/
+    /*Para que el texto se ponga en mayÃºscula*/
     /*text-transform: uppercase;*/
     /*alinear el texto de forma vertical*/
     /*align-items: center;*/
-    /*Todo el contenido centrado al ocupar más de 2 lineas*/
+    /*Todo el contenido centrado al ocupar mÃ¡s de 2 lineas*/
     /*text-align: center;*/
     /*Colr*/
     /*color: #000;*/
@@ -316,9 +368,13 @@ a {
 
 
 .footer {
-    padding-top: 3rem;
+    /*Espacio entre el "Contactame" y el Ãºltimo secction*/
+    padding-top: 5rem;
+    /*Espacion entre el texto y las img de contacto*/
     line-height: 30px;
+    /*Contenido centrado*/
     text-align: center;
+    /*NO SE USA ðŸ‘‡*/
     /*position: fixed;*/
     /*bottom: 0;*/
     /*width: 100%*/
@@ -331,7 +387,7 @@ a {
 
     .footer .text-copy {
         /*Separa la linea de los iconos de contacto*/
-        margin-block-start: 50px;
+        margin-block-start: 30px;
         /*Efecto remarcado al texto*/
         text-shadow: 0 1px;
     }
@@ -339,9 +395,11 @@ a {
     .footer .texto-gris {
         /*Color gris al texto*/
         color: grey;
+        /*NO SE USA ðŸ‘‡*/
         /*margin-block-end: 50px;*/
     }
 
+/*NO SE USA ðŸ‘‡*/
 /*LO QUITE YA DESPUES DE LO DE LA LINEA*/
 /*.footer .img-div {*/
 /* altura*/
@@ -349,34 +407,37 @@ a {
     }*/
 
 
-/*CÓDIGO CSS DE MI ANIMACIÓN ESCRITURA*/
+/*CÃ“DIGO CSS DE MI ANIMACIÃ“N ESCRITURA*/
 .hero .titulo {
-    color:white;
+    color: white;
     font-size: 90px;
-    font-weight: normal;
+    font-weight: bolder;
     margin-right: 50%;
     opacity: 100;
-    /*margin-bottom: 40px;*/
+    margin-left: 20px;
 }
 
 .hero .name {
     color: black;
     font-weight: bold;
+    font-style: normal;
+    /*NO SE USA ðŸ‘‡*/
     /*color: #113CFC;*/
     /*text-shadow: 0 0 6px;   */
-    font-style: normal;
 }
 
 .hero .msj {
     color: black;
     font-weight: bold;
-    /*color: #274bea;*/
     font-style: normal;
-/*    animation: parpadear 3s infinite backwards;
-    transition: .5s ease-in-out all;*/
+    /*NO SE USA ðŸ‘‡*/
+    /*animation: parpadear 3s infinite backwards;*/
+    /*transition: .5s ease-in-out all;*/
+    /*color: #274bea;*/
 }
 
-/*SE QUITO EL EFECTO DE ANIMACIÓN AL ÚLTIMO TEXTO*/
+/*NO SE USA ðŸ‘‡*/
+/*SE QUITO EL EFECTO DE ANIMACIÃ“N AL ÃšLTIMO TEXTO*/
 /*
 @keyframes parpadear {
     to {
@@ -387,11 +448,12 @@ a {
 
 
 /*#region Media Querys */
-/*Ayudan a mostrar las animaciones según el tamaño de la pantalla si es menor o mayor*/
+/*Ayudan a mostrar las animaciones segÃºn el tamaÃ±o de la pantalla si es menor o mayor*/
 /*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
 @media screen and (max-width: 500px) {
     .nav_menu a {
         font-size: 12px;
+        /*NO SE USA ðŸ‘‡*/
         /*padding: 5px;*/
     }
 
@@ -401,6 +463,7 @@ a {
 
         .seccion h1 {
             font-size: 32px;
+            /*NO SE USA ðŸ‘‡*/
             /*margin-bottom: 20px;*/
         }
 
@@ -413,18 +476,21 @@ a {
     /*Efecto sombreado(hover) al pasar el cursor en el nav*/
     .nav_menu a:hover {
         background: #6782fa;
+        /*NO SE USA ðŸ‘‡*/
         /*font-size: 20px;*/
     }
 
-    .hero {
+    /*NO SE USA ðŸ‘‡*/
+    /*    .hero {
         
         padding-bottom: 0px;
-    }
+    }*/
 
-        .hero .titulo {
-            margin-left: 25px;
-            font-size: 35px;
-            font-weight: normal;
-            /*margin-bottom: 20px;*/
-        }
+    .hero .titulo {
+        margin-left: 25px;
+        font-size: 40px;
+        font-weight: normal;
+        /*NO SE USA ðŸ‘‡*/
+        /*margin-bottom: 20px;*/
+    }
 }
