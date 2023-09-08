@@ -1,0 +1,115 @@
+﻿/*.secciones {*/
+/*SI LO CONVIERTO EN NEGATIVO CRECE LA BARRA DE ABAJAO*/
+/*margin: 10px;
+}*/
+
+.seccion {
+    /*Minímo Zoom*/
+    min-height: 100vh;
+    /*Máximo Zoom*/
+    max-width: 1200px;
+    /*Tamaño que ocupa la seccion de la pag principal*/
+    /*width: 90%;*/
+    /*Margénes automáticos*/
+    margin: auto;
+    /*margin: auto 30% auto 0%;*/
+    /*Espacio todas partes de la seccion*/
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*CONFIGURACIÓN PARA LA IMG DE FONDO * SECCION*/
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+    .seccion .card {
+        background: #fff;
+        height: 90%;
+        /*Es como el margen en las tarjetas*/
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        /*margin:40px;*/
+    }
+
+    .seccion h1 {
+        font-size: 48px;
+        /*margin-bottom: 20px;*/
+        /*margin: 30px;*/
+    }
+
+    .seccion p {
+        line-height: 38px;
+        /*margin: 20px;*/
+        color: #494949;
+        font-size: 20px;
+    }
+
+    /*YA NO EDITE O COMENTE*/
+    /*ES IMPORTANTE MANEJAR LAS IMAGENES EN TIPO DE FORMA (px) ya que en (%) tiende a dejar espacios*/
+    .seccion img {
+        width: 100%;
+        vertical-align: central;
+        /*position: center;*/
+        /*margin: 20px;*/
+        /*NO SE USA 👇*/
+        /*width: 1000px;
+        height: 500px;*/
+        /*vertical-align: central;*/
+    }
+
+/*Estilo al id de la sección perfil*/
+#Perfil {
+   /* padding: 30px;*/
+    align-content: center;
+    background-size: 100% 100%;
+    background-image: url("https://images.pexels.com/photos/2775196/pexels-photo-2775196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+/*Estilo al id de la sección Habilidades*/
+#Habilidades {
+    /*padding: 30px;*/
+    align-content: center;
+    background-size: 100% 100%;
+    background-image: url("https://images.pexels.com/photos/1532771/pexels-photo-1532771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+/*Estilo al id de la sección Proyectos_recientes*/
+#Proyectos_recientes {
+    /*padding: 30px;*/
+    align-content: center;
+    background-size: 100% 100%;
+    background-image: url("https://images.pexels.com/photos/2775196/pexels-photo-2775196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+
+/*#region Media Querys */
+/*Ayudan a mostrar las animaciones según el tamaño de la pantalla si es menor o mayor*/
+/*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
+@media screen and (max-width: 500px) {
+      .seccion {
+        padding: 30px;
+    }
+
+        .seccion .card {
+/*            height: 90%;*/
+            /*Es como el margen en las tarjetas*/
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .seccion h1 {
+            font-size: 32px;
+            /*NO SE USA 👇*/
+            /*margin-bottom: 20px;*/
+        }
+
+        .seccion p {
+            line-height: 28px;
+            font-size: 15px;
+        }
+}

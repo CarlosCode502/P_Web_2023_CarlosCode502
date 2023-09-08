@@ -17,18 +17,17 @@ html {
 }
 
 body {
-    /*Color de fondo de toda la página*/
-    /*background: #f2f2f2;*/
-
     font-family: 'Roboto', sans-serif;
     /*Espacio entre el contenido y el footer*/
     /*SE CAMBIO ESTA PROPIEDAD ESTABA A 100 POR ESO QUEDABA UN ESPACIO EN BLANCO 
-    ABAJO DE MI FOOTER
-*/
+    ABAJO DE MI FOOTER*/
     margin-bottom: 20px;
+    /*NO SE USA*/
+    /*Color de fondo de toda la página*/
+    /*background: #f2f2f2;*/
 }
 
-
+/*NO SE USA*/
 /*.imagen-index {
     background-image: url('~/img/person-paisaje.jpg');
 }*/
@@ -37,13 +36,15 @@ body {
 /*background-image: url('~/img/person-paisaje.jpg');*/
 /*color: #FFFFFF;*/
 /*}*/
+
+
+/*Todos los enlaces "a" no van a tener una linea abajo o algún otro tipo*/
 a {
     text-decoration: none;
 }
 
-
+/*NO SE USA*/
 /*body {
-
     background-image: url(img/person-paisaje.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -57,23 +58,38 @@ a {
 /*}*/
 
 
+
+
+.imagen {
+    background-image: url(../img/person-paisaje.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-color: rgba(00,00,255,0.5);
+    /*NO SE USA*/
+    /*width: 100px;
+    height: 100px;*/
+    /* background: #FF7A59;*/
+    /*opacity: 0.90;*/
+}
+
 .hero {
-    /*margin-top:500px;*/
-    /*padding-top:5rem;*/
     display: flex;
-    /*margin-left: 30px;*/
-    /*margin-right: 50%;*/
     flex-direction: column;
     /*Alinear el texto a la izquierda*/
     align-items: flex-start;
     /*align-items: center;*/
     justify-content: center;
     padding-bottom: 100px;
-    /*content: image('~/img/person-paisaje.jpg');*/
     /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
         que ocupe el 100% (v*h viewpor hight alto del dispositivo)
-        SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);
-    */
+        SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);*/
+    height: calc(100vh - 80px);
+    /*NO SE USA*/
+    /*margin-top:500px;*/
+    /*padding-top:5rem;*/
+    /*margin-left: 30px;*/
+    /*margin-right: 50%;*/
     /*background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;*/
@@ -82,20 +98,10 @@ a {
     /*-moz-opacity: .70;*/
     /*opacity: 0.9;*/
     /*color: #f2f2f2;*/
-    height: calc(100vh - 80px);
+    /*content: image('~/img/person-paisaje.jpg');*/
 }
 
-.imagen {
-    background-image: url(../img/person-paisaje.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    /*width: 100px;
-    height: 100px;*/
-    /* background: #FF7A59;*/
-    /*opacity: 0.90;*/
-    background-color: rgba(00,00,255,0.5);
-}
+/*NO SE USA*/
 /*Titulo*/
 /*.hero h1 {
         margin-top: 2rem;*/
@@ -105,14 +111,14 @@ a {
 /*Subtitulo*/
 /*.hero p {*/
 /*margin-left: 0;*/
-/*font-size: 30px;
-        text-transform: uppercase;
-        color: #113CFC;
-        text-shadow: 0 0 6px;
-    }*/
+/*font-size: 30px;*/
+/*text-transform: uppercase;*/
+/*color: #113CFC;*/
+/*text-shadow: 0 0 6px;*/
+
+
 /*Menú de navegación
-    VERIFICAR EN CASO DE NECESITAR OTRO MENÚ
-*/
+    VERIFICAR EN CASO DE NECESITAR OTRO MENÚ*/
 .nav_menu {
     /*color de fondo*/
     background: #fff;
@@ -186,89 +192,7 @@ a {
     }
 
 
-.secciones {
-    /*SI LO CONVIERTO EN NEGATIVO CRECE LA BARRA DE ABAJAO*/
-    margin: 10px;
-}
 
-
-.seccion {
-    /*Minímo Zoom*/
-    min-height: 100vh;
-    /*Máximo Zoom*/
-    max-width: 1200px;
-    /*Tamaño que ocupa la seccion de la pag principal*/
-    width: 85%;
-    /*Margénes automáticos*/
-    margin: auto;
-    /*margin: auto 30% auto 0%;*/
-    /*Espacio todas partes de la seccion*/
-    padding: 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /*CONFIGURACIÓN PARA LAS IMG DE FONDO * SECCION*/
-    /*background-position: center;*/
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-    .seccion .card {
-        background: #fff;
-        height: 90%;
-        padding: 60px;
-        border-radius: 8px;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    }
-
-    .seccion h1 {
-        font-size: 48px;
-        margin-bottom: 20px;
-    }
-
-    .seccion p {
-        line-height: 38px;
-        margin-bottom: 20px;
-        color: #494949;
-        font-size: 20px;
-    }
-
-    /*YA NO EDITE O COMENTE*/
-    /*ES IMPORTANTE MANEJAR LAS IMAGENES EN TIPO DE FORMA (px) ya que en (%) tiende a dejar espacios*/
-    .seccion img {
-        width: 100%;
-        vertical-align: top;
-        margin-bottom: 20px;
-        /*NO SE USA 👇*/
-        /*width: 1000px;
-        height: 500px;*/
-        /*vertical-align: central;*/
-    }
-
-/*id="Perfil">
-id="Habilidades">
-id="Proyectos_recientes">
-*/
-
-#Perfil {
-    align-content: center;
-    background-size: 100% 100%;
-    background-image: url("https://images.pexels.com/photos/2775196/pexels-photo-2775196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-}
-
-#Habilidades {
-    align-content: center;
-    background-size: 100% 100%;
-    background-image: url("https://images.pexels.com/photos/1532771/pexels-photo-1532771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-}
-
-#Proyectos_recientes {
-    align-content: center;
-    background-size: 100% 100%;
-    background-image: url("https://images.pexels.com/photos/2775196/pexels-photo-2775196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-}
 
 /*NO SE USA 👇*/
 /*@media screen and (max-width: 300px) {
@@ -462,34 +386,12 @@ id="Proyectos_recientes">
         /*padding: 5px;*/
     }
 
-    .seccion {
-        padding-top: 0%;
-    }
-
-        .seccion h1 {
-            font-size: 32px;
+        /*Efecto sombreado(hover) al pasar el cursor en el nav*/
+        .nav_menu a:hover {
+            background: #6782fa;
             /*NO SE USA 👇*/
-            /*margin-bottom: 20px;*/
+            /*font-size: 20px;*/
         }
-
-        .seccion p {
-            line-height: 28px;
-            font-size: 15px;
-        }
-
-
-    /*Efecto sombreado(hover) al pasar el cursor en el nav*/
-    .nav_menu a:hover {
-        background: #6782fa;
-        /*NO SE USA 👇*/
-        /*font-size: 20px;*/
-    }
-
-    /*NO SE USA 👇*/
-    /*    .hero {
-        
-        padding-bottom: 0px;
-    }*/
 
     .hero .titulo {
         margin-left: 25px;
@@ -498,4 +400,70 @@ id="Proyectos_recientes">
         /*NO SE USA 👇*/
         /*margin-bottom: 20px;*/
     }
+
+    /*NO SE USA 👇*/
+    /*    .hero {
+        
+        padding-bottom: 0px;
+    }*/
+
+    /*.seccion {
+        padding-top: 0%;
+    }
+
+        .seccion h1 {
+            font-size: 32px;*/
+    /*NO SE USA 👇*/
+    /*margin-bottom: 20px;*/
+    /*}
+
+        .seccion p {
+            line-height: 28px;
+            font-size: 15px;
+        }*/
+
+
+    .img-linkedin, .img-correo, .img-whatsapp, .img-github {
+        /*Espacios entre cada icono */
+        margin: 20px;
+        /*Alto y acho de iconos*/
+        width: 42px;
+        height: 42px;
+    }
+
+
+
+        /*Color azul para linkedin*/
+        .img-linkedin svg:hover {
+            /*height: 100%;*/
+            width: 64px;
+            height: 64px;
+            fill: #22A7F2;
+        }
+
+        /*Color rojo para gmail*/
+        .img-correo svg:hover {
+            /*height: 100%;*/
+            width: 64px;
+            height: 64px;
+            fill: #ea0101;
+        }
+
+        /*Color verde para whatsapp*/
+        .img-whatsapp svg:hover {
+            /*height: 100%;*/
+            width: 64px;
+            height: 64px;
+            fill: #0DC143;
+        }
+
+        /*Color morado para github*/
+        .img-github svg:hover {
+            /*height: 100%;*/
+            width: 64px;
+            height: 64px;
+            fill: #5C2D91;
+        }
+
+    /*#endregion */
 }
