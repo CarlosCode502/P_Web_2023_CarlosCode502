@@ -90,7 +90,11 @@ a {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    opacity: 0.90;
+    /*width: 100px;
+    height: 100px;*/
+    /* background: #FF7A59;*/
+    /*opacity: 0.90;*/
+    background-color: rgba(00,00,255,0.5);
 }
 /*Titulo*/
 /*.hero h1 {
@@ -182,7 +186,7 @@ a {
     }
 
 
-.secciones{
+.secciones {
     /*SI LO CONVIERTO EN NEGATIVO CRECE LA BARRA DE ABAJAO*/
     margin: 10px;
 }
@@ -217,7 +221,6 @@ a {
         padding: 60px;
         border-radius: 8px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
     }
 
     .seccion h1 {
@@ -406,28 +409,30 @@ id="Proyectos_recientes">
 /*height: 70px;
     }*/
 
-
+.typed-name {
+    color: black;
+}
 /*CÓDIGO CSS DE MI ANIMACIÓN ESCRITURA*/
-.hero .titulo {
-    color: white;
+.imagen .titulo {
     font-size: 90px;
     font-weight: bolder;
     margin-right: 50%;
-    opacity: 100;
+    opacity: 1;
     margin-left: 20px;
 }
 
-.hero .name {
-    color: black;
+.imagen .name {
+    color: white;
     font-weight: bold;
     font-style: normal;
+    /*opacity: 100;*/
     /*NO SE USA 👇*/
     /*color: #113CFC;*/
     /*text-shadow: 0 0 6px;   */
 }
 
-.hero .msj {
-    color: black;
+.imagen .msj {
+    color: white;
     font-weight: bold;
     font-style: normal;
     /*NO SE USA 👇*/
