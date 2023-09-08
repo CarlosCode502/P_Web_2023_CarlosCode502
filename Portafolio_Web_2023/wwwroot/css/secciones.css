@@ -75,7 +75,9 @@
     /*padding: 30px;*/
     align-content: center;
     background-size: 100% 100%;
-    background-image: url("https://images.pexels.com/photos/1532771/pexels-photo-1532771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    /*background-image: url("https://images.pexels.com/photos/1532771/pexels-photo-1532771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");*/
+    /*Imagen de <a href="https://pixabay.com/es/users/boskampi-3788146/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1873854">Boskampi</a> en <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1873854">Pixabay</a>*/
+    background-image: url(../img/habilidad.png);
 }
 
 /*Estilo al id de la sección Proyectos_recientes*/
