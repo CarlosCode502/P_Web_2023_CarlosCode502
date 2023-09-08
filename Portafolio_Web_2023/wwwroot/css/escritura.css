@@ -1,0 +1,42 @@
+﻿
+.typed-name {
+    color: black;
+}
+/*CÓDIGO CSS DE MI ANIMACIÓN ESCRITURA*/
+.imagen .titulo {
+    font-size: 90px;
+    font-weight: bolder;
+    margin-right: 50%;
+    opacity: 1;
+    margin-left: 20px;
+}
+
+.imagen .name {
+    color: white;
+    font-weight: bold;
+    font-style: normal;
+    /*opacity: 100;*/
+    /*NO SE USA 👇*/
+    /*color: #113CFC;*/
+    /*text-shadow: 0 0 6px;   */
+}
+
+.imagen .msj {
+    color: white;
+    font-weight: bold;
+    font-style: normal;
+    /*NO SE USA 👇*/
+    /*animation: parpadear 3s infinite backwards;*/
+    /*transition: .5s ease-in-out all;*/
+    /*color: #274bea;*/
+}
+
+/*NO SE USA 👇*/
+/*SE QUITO EL EFECTO DE ANIMACIÓN AL ÚLTIMO TEXTO*/
+/*
+@keyframes parpadear {
+    to {
+        color: #0b36f7;
+        text-shadow: 0 0 12px;
+    }
+}*/

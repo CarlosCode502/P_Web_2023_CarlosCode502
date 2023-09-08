@@ -88,7 +88,7 @@
 
 
 /*#region Media Querys */
-/*Ayudan a mostrar las animaciones según el tamaño de la pantalla si es menor o mayor*/
+/*Valores que tomarán los elementos de las secciones cuando la pantalla se encuentre en un rango de width= 500px*/
 /*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
 @media screen and (max-width: 500px) {
       .seccion {
