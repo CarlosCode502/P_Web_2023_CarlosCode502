@@ -7,7 +7,7 @@
 	/// Para luego a través del modelo acceder a los datos en la vista
 	/// </summary>
 	public class PortafolioIndexViewModel
-	{
+    {
 		/// <summary>
 		/// Esta propiedad va a recibir lo relacionado al modelo ProyectoViewModel
 		/// </summary>

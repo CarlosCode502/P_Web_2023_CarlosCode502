@@ -12,13 +12,16 @@
 <!--//V#54 Listado de Proyectos--> *@
 @if (Model is not null)
 {
-    <div class="text-center" style="padding-top: 6rem;">
-        <h1>Mis trabajos recientes</h1>
-        <p>Aquí se muestrán algunos de mís trabajos más recientes.</p>
-    </div>
+    <div class="card">
 
-    @* //V#62 Creando una Nueva Vista - Mostrando todos los proyectos. *@
-    <partial name="PartialViews\_TodosMisProyectos_PV" model="Model" />
+        <div class="text-center" style="padding-top: 6rem;">
+            <h1>Mis trabajos recientes</h1>
+            <p>Aquí se muestrán algunos de mís trabajos más recientes.</p>
+        </div>
+
+        @* //V#62 Creando una Nueva Vista - Mostrando todos los proyectos. *@
+        <partial name="PartialViews\_TodosMisProyectos_PV" model="Model" />
+    </div>
 }
 
 @* //V#62 Creando una Nueva Vista - Mostrando todos los proyectos. *@
