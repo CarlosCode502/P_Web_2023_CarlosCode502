@@ -1,0 +1,16 @@
+﻿@*
+    //V#62 Creando una Nueva Vista - Mostrando todos los proyectos.
+*@
+@{
+    // Como como esta vista es independiente y no contendra un layout
+    // se cambia su Layout = null;
+    Layout = null;
+    ViewData["Title"] = "Mis proyectos";
+}
+
+<div class="contenido-proyectos">
+    <h1>Mis proyectos</h1>
+    <p>Aquí encontrarás todos los proyectos en los que he trabajado.</p>
+</div>
+
+<partial name="PartialViews/_TodosMisProyectos_PV.cshtml" />

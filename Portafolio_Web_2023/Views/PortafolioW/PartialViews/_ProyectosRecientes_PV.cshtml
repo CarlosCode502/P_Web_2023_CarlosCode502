@@ -1,0 +1,26 @@
+﻿<!--//V#55 Pasando datos a una vista parcial-->
+@model IEnumerable<ProyectoViewModel>?
+@*
+    Al momento de tener declarado el modelo en la vista y luego declarar la vista parcial es suficiente
+    para poder acceder a los datos, sin embargo esto no es del todo correcto ya que se sufre el riesgo de
+    equivocacion al momento de acceder a las propiedades del modelo, debido a que este pasa de ser
+    fuertemente tipado(muestra error si se ecribe mal) a ser no tipado o de un tipo de dato accesible pero
+    se corre el riesgo de un fallo(de tipo "Dynamic").
+
+    AQUI ES DONDE SE USA EL modelo "IEnumerable<ProyectoViewModel>?" ya que este ya contiene un modelo al que es posible
+    acceder solo con "Model"
+<!--//V#54 Listado de Proyectos--> *@
+@if (Model is not null)
+{
+    <div class="text-center" style="padding-top: 6rem;">
+        <h1>Mis trabajos recientes</h1>
+        <p>Aquí se muestrán algunos de mís trabajos más recientes.</p>
+    </div>
+
+    @* //V#62 Creando una Nueva Vista - Mostrando todos los proyectos. *@
+    <partial name="PartialViews\_TodosMisProyectos_PV" model="Model" />
+}
+
+@* //V#62 Creando una Nueva Vista - Mostrando todos los proyectos. *@
+@* AQUI ESTABA MI ESTRUCTURA MOSTRAR PROYECTOS(_TodosMisProyectos) *@
+
