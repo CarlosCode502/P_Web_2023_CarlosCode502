@@ -37,10 +37,10 @@ namespace Portafolio_Web_2023.Services
 
 			new ProyectoViewModel
 				{
-					Titulo = "Calculadora Científica",
+					Titulo = "Calculadora Científica-básica",
 					Descripcion = "Aplicación de Windows Forms en lenguaje C# que simula la función de una calculadora cientifíca-básica.",
 					Link = "https://github.com/CarlosCode502/CalculadoraCientifica.git",
-					ImagenURL = "/img/2.jpg"
+					ImagenURL = "/img/5.jpg"
                 },
 
 				new ProyectoViewModel
