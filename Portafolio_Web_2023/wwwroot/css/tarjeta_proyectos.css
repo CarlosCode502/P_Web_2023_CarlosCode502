@@ -15,6 +15,59 @@ body {
     background: #ffffff;
 }
 
+
+/*NUEVO*/
+/*.card-text:last-child {
+    margin-bottom: 0;
+}*/
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+
+
+/*RECIENTE*/
+/*Flotar cuatro columnas una al lado de la otra*/
+/*.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}*/
+
+/* Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas */
+/*.row {
+    margin: 0 -5px;
+}*/
+
+    /* Limpiar flotadores después de las columnas. */
+    /*.row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }*/
+
+/*  Diseñe las cartas del contenedor */
+/*.card-proyectos-hijo {*/
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/ /* this adds the "card" effect */
+    /*padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;*/
+/*}*/
+
+/* Columnas responsivas: diseño de una columna (vertical) en pantallas pequeñas */
+/*@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}*/
+
+
+
+/*ANTERIOR*/
 /* Float four columns side by side */
 /*.column {
     float: left;

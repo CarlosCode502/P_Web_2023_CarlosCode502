@@ -2,12 +2,13 @@
     //V#62 Creando una Nueva Vista - Mostrando todos los proyectos.
 *@
 @{
+    ViewData["Title"] = " Mis proyectos - ";
     Layout = "~/Views/Shared/_Layout_Proyectos.cshtml";
     // Html.act
     // // Como como esta vista es independiente y no contendra un layout
     // // se cambia su Layout = null;
     // Layout = null;
-    ViewData["Title"] = "Mis proyectos";       
+    
 }
 
 <a class="btn-link" asp-area="" asp-controller="PortafolioW" asp-action="Index">⬅ Regresar al Inicio</a>
@@ -16,10 +17,10 @@
 <div class="contenido-proyectos">
     <h1>Mis proyectos</h1>
     <p>Aquí encontrarás todos los proyectos en los que he trabajado.</p>
-
-    @* <div class="contenido-tarjetas"> *@
-    <partial name="PartialViews/_TodosMisProyectos_PV.cshtml" />
-    @* </div> *@
 </div>
+
+@* <div class="contenido-tarjetas"> *@
+<partial name="PartialViews/_TodosMisProyectos_PV.cshtml" />
+@* </div> *@
 
 

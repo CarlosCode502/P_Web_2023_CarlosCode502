@@ -24,6 +24,8 @@ namespace Portafolio_Web_2023.Services
 		//Public para que tengamos acceso desde la clase PortafolioController
 		public List<ProyectoViewModel> ObtenerListadoProyectos()
 		{
+			//IMPORTANTE PONER LA MISMA CANTIDAD DE DESCRIPCIÓN(LINEAS)
+
 			return new List<ProyectoViewModel>() {
 				new ProyectoViewModel
 			{
@@ -36,7 +38,7 @@ namespace Portafolio_Web_2023.Services
 			new ProyectoViewModel
 				{
 					Titulo = "Calculadora Científica",
-					Descripcion = "Aplicación de WF en lenguaje C# que simula una calculadora básica - cientifíca.",
+					Descripcion = "Aplicación de Windows Forms en lenguaje C# que simula la función de una calculadora cientifíca-básica.",
 					Link = "https://github.com/CarlosCode502/CalculadoraCientifica.git",
 					ImagenURL = "/img/2.jpg"
                 },
