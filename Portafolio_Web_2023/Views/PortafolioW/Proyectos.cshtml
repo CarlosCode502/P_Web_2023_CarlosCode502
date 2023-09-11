@@ -10,11 +10,16 @@
     ViewData["Title"] = "Mis proyectos";       
 }
 
+<a class="btn-link" asp-area="" asp-controller="PortafolioW" asp-action="Index">⬅ Regresar al Inicio</a>
+
 @* Aún no existe este estilo css *@
 <div class="contenido-proyectos">
     <h1>Mis proyectos</h1>
     <p>Aquí encontrarás todos los proyectos en los que he trabajado.</p>
+
+    @* <div class="contenido-tarjetas"> *@
     <partial name="PartialViews/_TodosMisProyectos_PV.cshtml" />
+    @* </div> *@
 </div>
 
 

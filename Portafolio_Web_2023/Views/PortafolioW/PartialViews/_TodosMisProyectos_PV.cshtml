@@ -9,27 +9,28 @@
 @* Si el modelo no es nulo has esto *@
 @if (Model is not null)
 {
+
     //Todo esto se diseña a través de boostrap en el ejemplo
     //VERIFICAR
-    <div class="container">
-            @* Dentro de este foreach ira una pequeña estructura html para que cada iteración se muestre en un diseño *@
-            @foreach (var proyecto in Model)
-            {
-                @* <div class="col"> *@
-                    <div class="card-proyecto-hijo">
-                        <img src="@proyecto.ImagenURL" class="card-img-top" alt="imagen proyecto" width="100" height="200" />
-                        <div class="card-body">
-                            <h5 class="card-title">@proyecto.Titulo</h5>
-                            <p class="card-text">@proyecto.Descripcion</p>
-                        </div>
-                        <div class="card-footer">
-                            <a class="btn btn-primary" href="@proyecto.Link" target="_blank" rel="noopener noreferrer">Visitar</a>
-                            @* <a class="btn btn-primary" href="@proyecto.Link" target="_blank" rel="noopener noreferrer">Visitar</a> *@
-                            @*<button class="btn btn-primary" type="submit" tar></button> *@
-                            @* <a class="btn btn-primary" target="_blank" asp-area="" asp-controller="PortafolioW" asp-action="Proyectos">Ver Proyectos</a> *@
-                        </div>
+    <div class="row">
+        @* Dentro de este foreach ira una pequeña estructura html para que cada iteración se muestre en un diseño *@
+        @foreach (var proyecto in Model)
+        {
+            <div class="column">
+                <div class="card-proyectos-hijo">
+                    @* <div class="card-contenido"> *@
+                    <img src="@proyecto.ImagenURL" class="card-img-top" alt="imagen proyecto" width="100" height="200" />
+                    <h5 class="card-title"><b>@proyecto.Titulo</b></h5>
+                    <p class="card-text">@proyecto.Descripcion</p>
+                    @* </div> *@
+                    <div class="card-footer">
+                        <a class="btn btn-primary" href="@proyecto.Link" target="_blank" rel="noopener noreferrer">Visitar</a>
+                        @* <a class="btn btn-primary" href="@proyecto.Link" target="_blank" rel="noopener noreferrer">Visitar</a> *@
+                        @*<button class="btn btn-primary" type="submit" tar></button> *@
+                        @* <a class="btn btn-primary" target="_blank" asp-area="" asp-controller="PortafolioW" asp-action="Proyectos">Ver Proyectos</a> *@
                     </div>
-@*                 </div> *@
-            }
+                </div>
+            </div>
+        }
     </div>
 }

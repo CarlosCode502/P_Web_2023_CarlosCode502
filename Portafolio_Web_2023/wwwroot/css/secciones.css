@@ -22,7 +22,7 @@
     /*CONFIGURACIÓN PARA LA IMG DE FONDO * SECCION*/
     /*background-position: center;*/
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;    
     background-attachment: fixed;
 }
 
@@ -62,7 +62,7 @@
         /*vertical-align: central;*/
     }
 
-.card .card-proyecto-hijo {
+.card .card-proyectos-hijo {
     /*Espacio entre el texto y la card de proyectos recientes*/
     margin-top: 2rem;
     background-color: #e6e2e2;

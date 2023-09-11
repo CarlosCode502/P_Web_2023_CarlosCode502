@@ -30,7 +30,7 @@ namespace Portafolio_Web_2023.Services
 				Titulo = "Sistema de registro de productos",
 				Descripcion = "Aplicación de WF en lenguaje C# utilizando POO arquitectura en N Capas y principios de Clean Architecture.",
 				Link = "https://github.com/CarlosCode502/Registro_NCapas_CRUD_POO_SQL.git",
-					ImagenURL = "/img/1s.jpg"
+					ImagenURL = "/img/1.jpg"
 			},
 
 			new ProyectoViewModel
@@ -38,24 +38,24 @@ namespace Portafolio_Web_2023.Services
 					Titulo = "Calculadora Científica",
 					Descripcion = "Aplicación de WF en lenguaje C# que simula una calculadora básica - cientifíca.",
 					Link = "https://github.com/CarlosCode502/CalculadoraCientifica.git",
-					ImagenURL = "/imagenes/calcu.jpg"
-				},
+					ImagenURL = "/img/2.jpg"
+                },
 
 				new ProyectoViewModel
 				{
 					Titulo = "Interés Simple y Compuesto",
 					Descripcion = "Programa echo en WindowsForms con C#, simula una herramienta para calcular el interés simple y compuesto.",
 					Link = "https://github.com/CarlosCode502/InteresSimple_Y_Compuesto.git",
-					ImagenURL = "/imagenes/contable.jpg"
-				},
+					ImagenURL = "/img/3.jpg"
+                },
 
 				new ProyectoViewModel
 				{
 					Titulo = "App de menú para restaurante",
 					Descripcion = "Aplicación de Consola en lenguaje C#, en donde se puede ver el funcionamiento de una orden en un restaurante/comedor",
 					Link = "https://github.com/CarlosCode502/App_Menu_Restaurante.git",
-					ImagenURL = "/imagenes/consola.jpg"
-				}
+					ImagenURL = "/img/4.jpg"
+                }
 
 			};
 		}
