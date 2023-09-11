@@ -30,7 +30,7 @@ namespace Portafolio_Web_2023.Services
 				Titulo = "Sistema de registro de productos",
 				Descripcion = "Aplicación de WF en lenguaje C# utilizando POO arquitectura en N Capas y principios de Clean Architecture.",
 				Link = "https://github.com/CarlosCode502/Registro_NCapas_CRUD_POO_SQL.git",
-					ImagenURL = "/img/1.jpg"
+					ImagenURL = "/img/1s.jpg"
 			},
 
 			new ProyectoViewModel

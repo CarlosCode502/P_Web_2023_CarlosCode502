@@ -150,10 +150,14 @@
         /*padding: 5px;*/
     }
 
-        /*Efecto sombreado(hover) al pasar el cursor en el nav*/
-        .nav_menu a:hover {
-            background: #6782fa;
-            /*NO SE USA 👇*/
-            /*font-size: 20px;*/
-        }
+    /*Efecto sombreado(hover) al pasar el cursor en el nav*/
+    .nav_menu a:hover {
+        background: #6782fa;
+        /*NO SE USA 👇*/
+        /*font-size: 20px;*/
+    }
+
+    #big-a {
+        font-size: 11px;
+    }
 }
