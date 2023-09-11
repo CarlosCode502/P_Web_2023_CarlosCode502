@@ -21,10 +21,9 @@ body {
     /*Espacio entre el contenido y el footer*/
     /*SE CAMBIO ESTA PROPIEDAD ESTABA A 100 POR ESO QUEDABA UN ESPACIO EN BLANCO 
     ABAJO DE MI FOOTER*/
-    margin-bottom: 20px;
-    /*NO SE USA*/
+    margin-bottom: 20px;    
     /*Color de fondo de toda la página*/
-    /*background: #f2f2f2;*/
+    background: #e0d8d8;
 }
 
 /*NO SE USA*/
