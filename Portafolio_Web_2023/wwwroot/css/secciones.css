@@ -26,7 +26,7 @@
     background-attachment: fixed;
 }
 
-/*Tarjeta dentro de la seccion*/
+    /*Tarjeta dentro de la seccion*/
     .seccion .card {
         background: #fff;
         height: 90%;
@@ -37,18 +37,18 @@
         /*margin:40px;*/
     }
 /*Encabezado de las secciones*/
-    /*.seccion h1 {
+/*.seccion h1 {
         font-size: 48px;*/
-        /*font-size: 48px;*/
-        /*margin-bottom: 20px;*/
-        /*margin: 30px;*/
-    /*}*/
+/*font-size: 48px;*/
+/*margin-bottom: 20px;*/
+/*margin: 30px;*/
+/*}*/
 
 /*Parráfos de las secciones*/
-    /*.seccion .parrafo-perfil, .parrafo-habilidades, .parrafo-recientes {
+/*.seccion .parrafo-perfil, .parrafo-habilidades, .parrafo-recientes {
         line-height: 38px;*/
-        /*margin: 20px;*/
-        /*color: #494949;
+/*margin: 20px;*/
+/*color: #494949;
         font-size: 20px;
     }*/
 
@@ -59,18 +59,18 @@
     }*/
 
 
-    /*YA NO EDITE O COMENTE*/
-    /*ES IMPORTANTE MANEJAR LAS IMAGENES EN TIPO DE FORMA (px) ya que en (%) tiende a dejar espacios*/
-    /*.seccion img {
+/*YA NO EDITE O COMENTE*/
+/*ES IMPORTANTE MANEJAR LAS IMAGENES EN TIPO DE FORMA (px) ya que en (%) tiende a dejar espacios*/
+/*.seccion img {
         width: 100%;
         vertical-align: central;*/
-        /*position: center;*/
-        /*margin: 20px;*/
-        /*NO SE USA 👇*/
-        /*width: 1000px;
+/*position: center;*/
+/*margin: 20px;*/
+/*NO SE USA 👇*/
+/*width: 1000px;
         height: 500px;*/
-        /*vertical-align: central;*/
-    /*}*/
+/*vertical-align: central;*/
+/*}*/
 
 /*.card .card-proyectos-hijo {*/
 /*Espacio entre el texto y la card de proyectos recientes*/
@@ -154,6 +154,7 @@
 /*Estilo al id de la sección Proyectos_recientes*/
 #Proyectos_recientes {
     /*padding: 30px;*/
+    padding-top: 80px;
     align-content: center;
     background-size: 100% 100%;
     background-image: url("https://images.pexels.com/photos/2775196/pexels-photo-2775196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
@@ -175,14 +176,19 @@
             border-radius: 8px;
         }
 
-        .seccion h1 {
-            font-size: 32px;
+        /*.seccion h1 {
+            font-size: 32px;*/
             /*NO SE USA 👇*/
             /*margin-bottom: 20px;*/
-        }
+        /*}
 
         .seccion p {
             line-height: 28px;
             font-size: 15px;
-        }
+        }*/
+
+   /* .overflow-scroll {
+        max-height: 600px;
+        overflow-y: scroll;
+    }*/
 }

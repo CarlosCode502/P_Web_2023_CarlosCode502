@@ -12,11 +12,12 @@
 <!--//V#54 Listado de Proyectos--> *@
 @if (Model is not null)
 {
+    @* <div class="overflow-scroll"> *@
     <div class="card h-100">
         <h1>Mis trabajos recientes</h1>
         <p class="parrafo-recientes">Aquí se muestrán algunos de mís trabajos más recientes.</p>
 
-        <div class="container">
+        <div class="overflow-scroll">
             @* //V#62 Creando una Nueva Vista - Mostrando todos los proyectos. *@
             <partial name="PartialViews\_TodosMisProyectos_PV" model="Model" />
         </div>
@@ -26,6 +27,7 @@
             <a class="boton btn-ver-recientes" asp-area="" asp-controller="PortafolioW" asp-action="Proyectos">Ver Proyectos</a>
         </div>
     </div>
+    @*   </div> *@
 
 
 
