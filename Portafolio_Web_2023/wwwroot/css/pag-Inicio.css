@@ -2,7 +2,7 @@
     background-image: url(../img/person-paisaje.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-/*100% el tamaño de la imagen en height y with*/
+    /*100% el tamaño de la imagen en height y with*/
     background-size: 100% 100%;
     /*background-color: rgba(00,00,255,0.5);*/
     /*NO SE USA*/
@@ -92,6 +92,8 @@
         justify-content: center;
         /*Todo el contenido centrado al ocupar más de 2 lineas*/
         text-align: center;
+        /*Decoracion del texto(linea de enlace)*/
+        text-decoration: none;
         /*Colr*/
         color: #000;
         /*Transición de tiempo para todas las propiedades*/
@@ -150,15 +152,14 @@
         /*padding: 5px;*/
     }
 
-    /*Efecto sombreado(hover) al pasar el cursor en el nav*/
-    .nav_menu a:hover {
-        background: #6782fa;
-        /*NO SE USA 👇*/
-        /*font-size: 20px;*/
-    }
+        /*Efecto sombreado(hover) al pasar el cursor en el nav*/
+        .nav_menu a:hover {
+            background: #6782fa;
+            /*NO SE USA 👇*/
+            /*font-size: 20px;*/
+        }
 
     #big-a {
         font-size: 11px;
     }
 }
-

@@ -38,10 +38,10 @@ body {
 
 
 /*Todos los enlaces "a" no van a tener una linea abajo o algún otro tipo*/
-a {
+/*a {
     text-decoration: none;
 }
-
+*/
 /*NO SE USA*/
 /*body {
     background-image: url(img/person-paisaje.jpg);

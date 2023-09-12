@@ -36,7 +36,7 @@ namespace Portafolio_Web_2023.Controllers
 
 			//V#54 Listado de Proyectos
 			//Mostraremos los 3 proyectos más recientes.
-			var proyectos = repositorioProyecto.ObtenerListadoProyectos().Take(2).ToList();
+			var proyectos = repositorioProyecto.ObtenerListadoProyectos().Take(3).ToList();
 
 			//Obtenemos los 3 proyectos más recientes y los mandamos al IEnumerable (como ya recibe un modelo con los mismos datos)
 			//Mismo IEnumerable que debe pasarse a la vista para poder mostrar los datos.
