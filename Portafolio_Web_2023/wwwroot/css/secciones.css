@@ -2,7 +2,7 @@
 /*SI LO CONVIERTO EN NEGATIVO CRECE LA BARRA DE ABAJAO*/
 /*margin: 10px;
 }*/
-
+/*Secciones*/
 .seccion {
     /*Minímo Zoom*/
     min-height: 100vh;
@@ -22,10 +22,11 @@
     /*CONFIGURACIÓN PARA LA IMG DE FONDO * SECCION*/
     /*background-position: center;*/
     background-repeat: no-repeat;
-    background-size: cover;    
+    background-size: cover;
     background-attachment: fixed;
 }
 
+/*Tarjeta dentro de la seccion*/
     .seccion .card {
         background: #fff;
         height: 90%;
@@ -35,42 +36,51 @@
         /*box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 24px;*/
         /*margin:40px;*/
     }
-
-    .seccion h1 {
-        font-size: 48px;
+/*Encabezado de las secciones*/
+    /*.seccion h1 {
+        font-size: 48px;*/
+        /*font-size: 48px;*/
         /*margin-bottom: 20px;*/
         /*margin: 30px;*/
-    }
+    /*}*/
 
-    .seccion p {
+/*Parráfos de las secciones*/
+    .seccion .parrafo-perfil, .parrafo-habilidades, .parrafo-recientes {
         line-height: 38px;
         /*margin: 20px;*/
         color: #494949;
         font-size: 20px;
     }
 
+/*    .seccion card-footer {
+        padding: .5rem 1rem;
+        background-color: rgba(0,0,0,.03);
+        border-top: 1px solid rgba(0,0,0,.125);
+    }*/
+
+
     /*YA NO EDITE O COMENTE*/
     /*ES IMPORTANTE MANEJAR LAS IMAGENES EN TIPO DE FORMA (px) ya que en (%) tiende a dejar espacios*/
-    .seccion img {
+    /*.seccion img {
         width: 100%;
-        vertical-align: central;
+        vertical-align: central;*/
         /*position: center;*/
         /*margin: 20px;*/
         /*NO SE USA 👇*/
         /*width: 1000px;
         height: 500px;*/
         /*vertical-align: central;*/
-    }
+    /*}*/
 
-.card .card-proyectos-hijo {
-    /*Espacio entre el texto y la card de proyectos recientes*/
-    margin-top: 2rem;
+/*.card .card-proyectos-hijo {*/
+/*Espacio entre el texto y la card de proyectos recientes*/
+/*margin-top: 2rem;
     background-color: #e6e2e2;
     height: 90%;
     padding-top: 40px;
     border-radius: 8px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 24px;
-}
+}*/
 
 /*.btn-primary {
     color: #fff;

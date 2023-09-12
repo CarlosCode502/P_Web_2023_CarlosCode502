@@ -13,16 +13,21 @@
 @if (Model is not null)
 {
     <div class="card">
-            <h1>Mis trabajos recientes</h1>
-            <p>Aquí se muestrán algunos de mís trabajos más recientes.</p>
+        <h1>Mis trabajos recientes</h1>
+        <p class="parrafo-recientes">Aquí se muestrán algunos de mís trabajos más recientes.</p>
 
-        @* //V#62 Creando una Nueva Vista - Mostrando todos los proyectos. *@
-        <partial name="PartialViews\_TodosMisProyectos_PV" model="Model" />
+        <div class="container">
+            @* //V#62 Creando una Nueva Vista - Mostrando todos los proyectos. *@
+            <partial name="PartialViews\_TodosMisProyectos_PV" model="Model" />
+        </div>
 
-        <div class="card-footer">
+        <div class="card-footers">
             <a class="btn btn-primary" asp-area="" asp-controller="PortafolioW" asp-action="Proyectos">Ver Proyectos</a>
         </div>
     </div>
+
+
+
 }
 
 @* //V#62 Creando una Nueva Vista - Mostrando todos los proyectos. *@
