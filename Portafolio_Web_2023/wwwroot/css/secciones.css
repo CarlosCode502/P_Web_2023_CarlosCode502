@@ -45,12 +45,12 @@
     /*}*/
 
 /*Parráfos de las secciones*/
-    .seccion .parrafo-perfil, .parrafo-habilidades, .parrafo-recientes {
-        line-height: 38px;
+    /*.seccion .parrafo-perfil, .parrafo-habilidades, .parrafo-recientes {
+        line-height: 38px;*/
         /*margin: 20px;*/
-        color: #494949;
+        /*color: #494949;
         font-size: 20px;
-    }
+    }*/
 
 /*    .seccion card-footer {
         padding: .5rem 1rem;
