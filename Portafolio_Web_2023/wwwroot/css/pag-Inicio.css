@@ -1,7 +1,7 @@
 ﻿.imagen {
     background-image: url(../img/person-paisaje.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: local;
     /*100% el tamaño de la imagen en height y with*/
     background-size: 100% 100%;
     /*background-color: rgba(00,00,255,0.5);*/
@@ -162,4 +162,5 @@
     #big-a {
         font-size: 11px;
     }
+
 }
