@@ -102,7 +102,7 @@
     <nav class="nav_menu" id="nav_menu_id">
 
         @* <a class="navbar-brand" asp-area="" asp-controller="PortafolioW" asp-action="Index">Inicio</a> *@
-        <a href="#Inicio">Inicio</a>
+        <a id="click-inicio" href="#Inicio">Inicio</a>
         <a href="#Perfil">Perfil</a>
         <a id="big-a" href="#Habilidades">Habilidades</a>
         <a id="big-a" href="#Proyectos_recientes">Proyectos recientes</a>
@@ -175,8 +175,9 @@
     
 
     
-    <script src="~/js/Typed.js" asp-append-version="true"></script>
-    @* <script src="~/js/OnClick.js" asp-append-version="true"></script> *@
+     <script src="~/js/Typed.js" asp-append-version="true"></script>
+    @*<script src="~/js/OnClick.js" asp-append-version="true"></script> *@
+    @* <script src="~/js/LoadScripts.js" asp-append-version="true"></script> *@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
