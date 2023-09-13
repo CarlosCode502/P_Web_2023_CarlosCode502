@@ -85,7 +85,7 @@
                     <p>Mi nombre es:<br /><i class="name">Carlos Enrique</i></p>
                     <p>Mi nombre es:<br /><i class="name">Herrera López.</i></p>
                     <p>Soy:<br /><i class="name">Desarrollador de Software.</i></p>
-                    <p><i class="msj">¿LISTO PARA HACER REALIDAD TU PROYECTO?</i></p>
+                    <p><i class="msj">¿LISTO PARA HACER REALIDAD TU PROYECTO?</i>^5000</p>@*^5000 Representa una pausa al finalizar de escibir los strings*@
                     <!-- <p><i class="name">Herrera López.</i></p> -->
                     <!-- <p>Mi nombre es: <br><i class="mascota">CadHerrera</i></p> -->
                     <!-- <p><b>Tengo habilidades en:</b><br/><span class="typed"></span></p> -->
@@ -173,8 +173,10 @@
         </div>
     </footer>
     
+
+    
     <script src="~/js/Typed.js" asp-append-version="true"></script>
-    <script src="~/js/OnClick.js" asp-append-version="true"></script>
+    @* <script src="~/js/OnClick.js" asp-append-version="true"></script> *@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
