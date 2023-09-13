@@ -106,9 +106,9 @@ let onResize = () => {
     /*threshold_V = 0.*/
 }
 
-
 //accedemos a la ventana para escuachar cuando hay algun cambio en tamaño
 window.addEventListener('resize', onResize);
+
 
 
 

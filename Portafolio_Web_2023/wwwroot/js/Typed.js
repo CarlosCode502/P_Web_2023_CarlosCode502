@@ -1,4 +1,5 @@
-﻿/*AQUI ABAJO ESTA TODO EL CODIGO DE MI ANIMACIÓN ESCRITURA*/
+﻿
+/*AQUI ABAJO ESTA TODO EL CODIGO DE MI ANIMACIÓN ESCRITURA*/
 // Esta es una propiedad de JS (min 10:35)
 
 const typed_name = new Typed('.typed-name', {
