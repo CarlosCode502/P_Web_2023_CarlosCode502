@@ -67,23 +67,27 @@
     height: 100% !important
 }
 
+/*Cuerpo o contenido de la tarjeta*/
 .card-body {
     flex: 1 1 auto;
     /*padding: 1rem 1rem;*/
     font-size: 1rem;
 }
 
+/*Imagen de la tarjeta*/
 .card-img-top {
     width: 100%;
     border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
 }
 
+/*Título de la tarjeta*/
 .card-title {
     font-size: 1rem;
     padding: 15px;
 }
 
+/*Texto de la tarjeta*/
 .card-text {
     font-size: 1rem;
     padding: 15px;

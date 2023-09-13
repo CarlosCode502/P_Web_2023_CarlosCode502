@@ -20,20 +20,43 @@ body {
     height: 48px;
 }*/
 
-.nav_menu {
+/*Barra de navegación proyectos*/
+/*.nav_menu {
     padding: 10px 0 10px 0;
     background-color: #c0ddf6;
+    display: flex;
+    position: sticky;
+    top: 0;*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*Color para la imagen y texto del nav*/
+.navbar-brand {
+    fill: white;
+    color: white;
+    /*padding-left: 60px;*/
+    /*text-decoration: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;*/
+    /*Se usaba para centrar el texto del nav solo con css*/
+    /*display: inline-block;
+    vertical-align: top;*/
 }
 
-.texto {
-    display: inline-block;
-    vertical-align: top;
+    .navbar-brand:hover {
+        fill: black;
+        color: black;        
+    }
+
+.contenido-proyectos{
+    padding-top: 40px;
 }
 /*header .a{
     margin-left: 20px;
 }
 */
-
 /*NUEVO*/
 /*.title {
     

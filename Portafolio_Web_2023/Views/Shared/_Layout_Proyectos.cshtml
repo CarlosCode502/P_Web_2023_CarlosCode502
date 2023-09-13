@@ -15,14 +15,15 @@
 </head>
 <body>
     <header>
-        <nav class="nav_menu">
-            <a class="btn-link" asp-area="" asp-controller="PortafolioW" asp-action="Index" rel="noopener noreferrer">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5ZM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5Z" />
-                </svg>
-                <h1 class="texto"> Regresar al Inicio</h1>
-            </a>
-
+        <nav class="navbar fixed-top" style="background-color: #0B5ED7; height: 80px;">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="PortafolioW" asp-action="Index" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="bi bi-arrow-left d-inline-block align-text-top" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                    </svg>
+                    Regresar al Inicio
+                </a>
+            </div>
         </nav>
 
         @* <div class="titulo">
@@ -39,7 +40,7 @@
 
 
 
-    <div class="container">
+    <div class="container pt-5">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
