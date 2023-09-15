@@ -5,19 +5,21 @@
 }
 
 <div class="secciones">
-	<div class="seccion" id="Perfil">		
-		<partial name="PartialViews\_Perfil_PV.cshtml" />
-	</div>
+    <div class="seccion" id="Proyectos_recientes">
+        @* Me tiraba error ya que no habia mandado el modelo de esta vista(@model PortafolioIndexViewModel)
+        a la parcial (@model IEnumerable<ProyectoViewModel>?) *@
+        <partial name="PartialViews\_ProyectosRecientes_PV.cshtml" model="Model.Proyectos" />
+    </div>
 
-	<div class="seccion" id="Habilidades">
-		<partial name="PartialViews\_Habilidades_PV.cshtml" />
-	</div>
 
-	<div class="seccion" id="Proyectos_recientes">
-		@* Me tiraba error ya que no habia mandado el modelo de esta vista(@model PortafolioIndexViewModel)
-		a la parcial (@model IEnumerable<ProyectoViewModel>?) *@
-		<partial name="PartialViews\_ProyectosRecientes_PV.cshtml" model="Model.Proyectos" />
-	</div>
+    <div class="seccion" id="Habilidades">
+        <partial name="PartialViews\_Habilidades_PV.cshtml" />
+    </div>
+
+    <div class="seccion" id="Perfil">
+        <partial name="PartialViews\_Perfil_PV.cshtml" />
+    </div>
+
 </div>
 
 

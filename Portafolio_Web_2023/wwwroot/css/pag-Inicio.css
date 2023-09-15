@@ -118,7 +118,7 @@
         /*altura*/
         height: 7px;
         /*color*/
-        background: #0EA5E9;
+        background: #0d6efd;
         /*Posicionamiento*/
         position: absolute;
         /*Posicionar el la parte de abajo del nav*/
@@ -130,7 +130,7 @@
         /*el indicador va a ir de izquierda a derecha va a aparecer por eso es negativo*/
         /*transform: translate(-500px);*/
         /*Para ocultar el indicador en caso de que quede fuera y no se tenga seleccionado (dependiendo el disp será el error)*/
-        overflow: hidden;
+       /* overflow: hidden;*/
     }
 
 

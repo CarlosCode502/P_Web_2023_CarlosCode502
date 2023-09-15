@@ -33,6 +33,7 @@
         /*Es como el margen en las tarjetas*/
         padding: 40px;
         border-radius: 8px;
+       /* border: 3px solid #0d6efd;*/
         /*box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 24px;*/
         /*margin:40px;*/
     }
@@ -139,7 +140,8 @@
     align-content: center;
     background-size: 100% 100%;
     /*Imagen de <a href="https://pixabay.com/es/users/pexels-2286921/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1839406">Pexels</a> en <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1839406">Pixabay</a>;*/
-    background-image: url("https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg");
+    /*background-image: url("https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg");*/
+    background-color: #4e4949;
 }
 
 /*Estilo al id de la sección Habilidades*/
@@ -149,7 +151,8 @@
     background-size: 100% 100%;
     /*background-image: url("https://images.pexels.com/photos/1532771/pexels-photo-1532771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");*/
     /*Imagen de <a href="https://pixabay.com/es/users/boskampi-3788146/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1873854">Boskampi</a> en <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1873854">Pixabay</a>*/
-    background-image: url("https://cdn.pixabay.com/photo/2015/02/24/02/05/website-647013_960_720.jpg");
+    /*background-image: url("https://cdn.pixabay.com/photo/2015/02/24/02/05/website-647013_960_720.jpg");*/
+    background-color: #2b2828;
 }
 
 /*Estilo al id de la sección Proyectos_recientes*/
@@ -158,7 +161,8 @@
     padding-top: 80px;
     align-content: center;
     background-size: 100% 100%;
-    background-image: url("https://cdn.pixabay.com/photo/2016/11/30/20/44/computer-1873831_960_720.png");
+    background-color: #0d0c0c;
+    /*background-image: url("https://cdn.pixabay.com/photo/2016/11/30/20/44/computer-1873831_960_720.png");*/
     /*background-image: url("https://wallpapers.com/images/high/programming-hd-2eo94s73hxhwjcta.webp");*/
 }
 
