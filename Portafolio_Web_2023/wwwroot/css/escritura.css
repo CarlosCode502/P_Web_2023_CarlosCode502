@@ -4,43 +4,40 @@
 }*/
 
 .typed-name {
-    color: black;
+    color: white;
 }
 /*CÓDIGO CSS DE MI ANIMACIÓN ESCRITURA*/
-.imagen .titulo {
+.titulo {
     font-size: 90px;
     font-weight: bolder;
     margin-right: 50%;
-    opacity: 1;
+    /*opacity: 1;*/
     margin-left: 20px;
+    color: white;
 }
 
-.imagen .name {
-    color: white;
+.name {
+    color: #0EA5E9;
     font-weight: bold;
     font-style: normal;
     /*opacity: 100;*/
-    /*NO SE USA 👇*/
     /*color: #113CFC;*/
     /*text-shadow: 0 0 6px;   */
 }
 
-.imagen .msj {
-    color: white;
+.msj {
+    color: #0EA5E9;
     font-weight: bold;
     font-style: normal;
-    /*NO SE USA 👇*/
-    /*animation: parpadear 3s infinite backwards;*/
-    /*transition: .5s ease-in-out all;*/
-    /*color: #274bea;*/
+    /*   animation: parpadear 5s infinite backwards;
+    transition: .2s ease-in-out all;*/
 }
 
-/*NO SE USA 👇*/
 /*SE QUITO EL EFECTO DE ANIMACIÓN AL ÚLTIMO TEXTO*/
-/*
-@keyframes parpadear {
+
+/*@keyframes parpadear {
     to {
         color: #0b36f7;
-        text-shadow: 0 0 12px;
+        text-shadow: 0 16px 24px;
     }
 }*/

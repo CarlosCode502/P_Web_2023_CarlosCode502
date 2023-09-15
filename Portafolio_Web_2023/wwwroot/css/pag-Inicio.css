@@ -1,7 +1,8 @@
 ﻿.imagen {
     background-image: url(../img/person-paisaje.jpg);
     background-repeat: no-repeat;
-    background-attachment: local;
+/*hace que la imagen se vea un poco más compacta (mejor en pantallas pequeñas)*/
+    background-attachment: scroll;
     /*100% el tamaño de la imagen en height y with*/
     background-size: 100% 100%;
     /*background-color: rgba(00,00,255,0.5);*/
@@ -104,7 +105,7 @@
 
         /*Efecto sombreado(hover) al pasar el cursor en el nav*/
         .nav_menu a:hover {
-            background: #6782fa;
+            background: #0EA5E9;
             /*font-size: 20px;*/
         }
 
@@ -117,7 +118,7 @@
         /*altura*/
         height: 7px;
         /*color*/
-        background: #113cfc;
+        background: #0EA5E9;
         /*Posicionamiento*/
         position: absolute;
         /*Posicionar el la parte de abajo del nav*/
@@ -154,7 +155,7 @@
 
         /*Efecto sombreado(hover) al pasar el cursor en el nav*/
         .nav_menu a:hover {
-            background: #6782fa;
+            background: #0EA5E9;
             /*NO SE USA 👇*/
             /*font-size: 20px;*/
         }

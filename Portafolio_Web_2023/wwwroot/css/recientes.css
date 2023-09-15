@@ -155,13 +155,21 @@
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+    .btn-ver-recientes:hover {
+        /*    padding: 15px;
+    font-size: 20px;*/
+        /* font-size: 20px;*/
+       /* color: black;*/
+        background-color: #0bbff1;
+    }
+
 @media (min-width: 768px) {
     .row-cols-md-3 > * {
         flex: 0 0 auto;
         width: 33.3333333333%;
     }
 
-/*    .overflow-scroll {
+    /*    .overflow-scroll {
         max-height: 768px;
         overflow-y: scroll;
     }*/
@@ -174,7 +182,7 @@
         flex: 0 0 auto;
         width: 33.3333333333%;
     }
-    
+
     .col {
         width: 100%;
         display: block;
