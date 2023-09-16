@@ -6,23 +6,23 @@ function child_hover1(child) {
     if (!parent.classList.contains("hover_class_style1"))
         parent.classList.add("hover_class_style1");
 
-    //if (!parent.classList.contains("hover_class_style1")) {
-    //    parent.classList.add("hover_class_style1");
-    //    /*parent = '';*/
-    //    console.log('El valor de parent1 cont es: ' + parent);
-    //}
-    //else {
-    //    if (!parent.classList.contains("hover_class_style2")) {
-    //        parent.classList.add("hover_class_style2");
-    //        console.log('El valor de parent2 cont es: ' + parent);
-    //    }
-    //}
-    //else if (!parent.classList.contains("hover_class_style2")) {
-    //    parent.classList.add("hover_class_style2");
-    //}
-    //else if (!parent.classList.contains("hover_class_style3")) {
-    //    parent.classList.add("hover_class_style3");
-    //}
+    //    //if (!parent.classList.contains("hover_class_style1")) {
+    //    //    parent.classList.add("hover_class_style1");
+    //    //    /*parent = '';*/
+    //    //    console.log('El valor de parent1 cont es: ' + parent);
+    //    //}
+    //    //else {
+    //    //    if (!parent.classList.contains("hover_class_style2")) {
+    //    //        parent.classList.add("hover_class_style2");
+    //    //        console.log('El valor de parent2 cont es: ' + parent);
+    //    //    }
+    //    //}
+    //    //else if (!parent.classList.contains("hover_class_style2")) {
+    //    //    parent.classList.add("hover_class_style2");
+    //    //}
+    //    //else if (!parent.classList.contains("hover_class_style3")) {
+    //    //    parent.classList.add("hover_class_style3");
+    //    //}
 
 }
 
@@ -33,30 +33,30 @@ function child_exit1(child) {
     parent.classList.remove("hover_class_style1");
 
 
-    //if (parent.classList.contains("hover_class_style1")) {
-    //    parent.classList.remove("hover_class_style1");
-    //    console.log('El valor de parent1 remove es: ' + parent);
-    //}
-    //else {
-    //    if (parent.classList.contains("hover_class_style2")) {
-    //        parent.classList.remove("hover_class_style2");
-    //        console.log('El valor de parent2 remove es: ' + parent);
-    //    }
-    //}
-    //else if (parent.classList.contains("hover_class_style2")) {
-    //    parent.classList.remove("hover_class_style2");
-    //}
-    //else if (parent.classList.contains("hover_class_style3")) {
-    //    parent.classList.remove("hover_class_style3");
-    //}
+    //    //if (parent.classList.contains("hover_class_style1")) {
+    //    //    parent.classList.remove("hover_class_style1");
+    //    //    console.log('El valor de parent1 remove es: ' + parent);
+    //    //}
+    //    //else {
+    //    //    if (parent.classList.contains("hover_class_style2")) {
+    //    //        parent.classList.remove("hover_class_style2");
+    //    //        console.log('El valor de parent2 remove es: ' + parent);
+    //    //    }
+    //    //}
+    //    //else if (parent.classList.contains("hover_class_style2")) {
+    //    //    parent.classList.remove("hover_class_style2");
+    //    //}
+    //    //else if (parent.classList.contains("hover_class_style3")) {
+    //    //    parent.classList.remove("hover_class_style3");
+    //    //}
 
 }
 
-//let childrens = document.querySelectorAll(".github");
-//childrens.forEach(el => {
-//    el.onmouseenter = () => child_hover(el);
-//    el.onmouseout = () => child_exit(el);
-//});
+////let childrens = document.querySelectorAll(".github");
+////childrens.forEach(el => {
+////    el.onmouseenter = () => child_hover(el);
+////    el.onmouseout = () => child_exit(el);
+////});
 
 
 function child_hover2(child) {
@@ -82,11 +82,60 @@ function child_exit3(child) {
     parent.classList.remove("hover_class_style3");
 }
 
-///*NUEVA VERSION (Se queria implementar el observador y observa todos al mismo tiempo)*/
+///*Aqui*/
+///*3 en uno*/
+//function child_hover(child) {
+//    let parent = child.parentElement;
+
+//    if (!parent.classList.contains("hover_class_style1")) {
+//        parent.classList.add("hover_class_style1");
+//    }
+//    else {
+//        if (!parent.classList.contains("hover_class_style2")) {
+//            parent.classList.add("hover_class_style2");
+//        }
+//        else {
+//            if (!parent.classList.contains("hover_class_style3")) {
+//                parent.classList.add("hover_class_style3");
+//            }
+//        }
+//    }
+//}
+
+//function child_exit(child) {
+//    let parent = child.parentElement;
+
+//    if (!parent.classList.contains("hover_class_style1")) {
+//        parent.classList.remove("hover_class_style1");
+//        parent = null;
+//    }
+//    else {
+//        if (!parent.classList.contains("hover_class_style2")) {
+//            parent.classList.remove("hover_class_style2");
+//            parent = null;
+//        }
+//        else {
+//            if (!parent.classList.contains("hover_class_style3")) {
+//                parent.classList.remove("hover_class_style3");
+//                parent = null;
+//            }
+//        }
+//    }
+//}
+
+//let childrens = document.querySelectorAll(".contacto>a");
+//childrens.forEach(el => {
+//    el.onmouseenter = () => child_hover(el);
+//    el.onmouseout = () => child_exit(el);
+//});
+
+
+
+///*NUEVA VERSION (Se queria implementar el observador pero observa todos al mismo tiempo)*/
 //let padre = document.getElementById('contacto-padre');
 //let hijos = document.querySelectorAll('.gmail, .github, .phone');
 
-////obtenemos el indice del seleccionado 
+////obtenemos el indice del seleccionado
 //let indexSeleccionado = [...hijos].indexOf;
 
 ////Personal calcular el threshold y rootmargin
@@ -105,7 +154,7 @@ function child_exit3(child) {
 //        //Pero necesitamos que por cada entrada se ejecute una condición que verifica si se esta mostrando en pantalla
 //        if (entrada.isIntersecting) {
 
-//            //Se obtiene el elemento que esta en pantalla y se compara en el arreglo si existe se extrae el indice 
+//            //Se obtiene el elemento que esta en pantalla y se compara en el arreglo si existe se extrae el indice
 //            //y en base al indice se manda a la úbicación el indicador
 //            //Primero se debe transformar las secciones en un arreglo(min 40:32)
 //            indexSeleccionado = [...hijos].indexOf(entrada.target);//Operador esspred lo convierte en arreglo para ob el indice
@@ -151,7 +200,7 @@ function child_exit3(child) {
 ////secciones.forEach(seccion => {
 ////    observer.observe(seccion)
 ////});
-////Foreach que ejecuta una función por cada seccion que tengamos 
+////Foreach que ejecuta una función por cada seccion que tengamos
 //hijos.forEach(seccion => observer.observe(seccion));
 
 

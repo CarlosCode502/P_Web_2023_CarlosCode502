@@ -1,6 +1,16 @@
 ﻿/*Toda la página*/
+body {
+    background-color: #2B2A33;
+    margin: 20px 180px;
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+}
+
 .cv-estructura {
-    margin: 20px 160px;
+    /*margin: 20px 180px;*/
 }
 
 /*Nombre*/
@@ -28,15 +38,15 @@
     /*margin-left: 10%;*/
 }
 
-    /*Mantener centrados los elementos de contacto*/
-    .phone, .gmail, .github {
-        font-weight: 300;
-        margin: auto;
-        color: #2681e4;
-        /*display: flex;
+/*Mantener centrados los elementos de contacto*/
+.phone, .gmail, .github {
+    font-weight: 300;
+    margin: auto;
+    color: #2681e4;
+    /*display: flex;
     align-content: end;
     align-items: end; */
-    }
+}
 
 /*.parent_class {
     background: gray;
@@ -74,7 +84,7 @@
 /*}*/
 
 /*.child_class {*/
-    /* Propiedades */
+/* Propiedades */
 /*}*/
 
 
@@ -134,6 +144,34 @@
 .seccion-tecnologias {
     margin-top: 1rem;
 }
+/*Para dividir las tecnologias en columnas*/
+.texto-columnas {
+    margin: 0 auto 0 20%;
+    column-count: 2;
+    column-gap: 20px;
+    list-style: none;
+    /*Hace un diseño como de borde en la columna*/
+    column-rule: 4px none gray;
+    /*Para integrar a navegadores Chrome y Safari*/
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    /*-webkit-column-rule: 4px double black;*/
+    /*Para integrar a Firefox*/
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    /*-moz-column-rule: 4px double black;*/
+    /*Para integrar a Opera*/
+    -o-column-count: 2;
+    -o-column-gap: 20px;
+    /*-o-column-rule: 4px double black;*/
+    /*Para integrar a Interner Explorer (Edge)*/
+    -ms-column-count: 2;
+    -ms-column-gap: 20px;
+    /*-ms-column-rule: 4px double black;*/
+    /*vertical-align: central;*/
+    /*Hace un diseño como de borde en la columna*/
+    /*column-rule: 4px dotted gray;*/
+}
 
 /*Formato para todos los encabezados del h1 a h6*/
 h1, h2, h3, h4, h5, h6 {
@@ -179,6 +217,9 @@ ul {
         margin: 10px;
     }
 
+    .texto-columnas {
+        margin-left: 25px;
+    }
     /*.gmail {
         color: red;
         text-decoration: none;
