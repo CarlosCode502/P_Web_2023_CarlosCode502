@@ -2,7 +2,115 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
-    ViewData["Title"] = "Mi CV -";
-    Layout = "~/Views/Shared/_Layout_Proyectos.cshtml";
+    ViewData["Title"] = " Mi CV - ";
+    Layout = "~/Views/Shared/_Layout_cv.cshtml";
 }
 
+<div class="cv-estructura">
+
+    <div class="titulo">
+        <h1>Carlos Herrera</h1>
+    </div>
+    <div class="subtitulo">
+        <h3>Desarrollador .Net JR</h3>
+    </div>
+    <div class="contacto">
+        @* Icono de correo *@
+        <p class="gmail">carlosalg.2023@gmail.com</p>
+        @* Icono de teléfono *@
+        <p class="phone">+502 0000 - 0000</p>
+    </div>
+
+    <div class="descripcion-perfil">
+        <p>El Lorem Ipsum fue concebido como un texto de relleno, formateado de una cierta manera para permitir la presentación de elementos gráficos en documentos, sin necesidad de una copia formal. El uso de Lorem Ipsum permite a los diseñadores reunir los diseños y la forma del contenido antes de que el contenido se haya creado, dando al diseño y al proceso de producción más libertad.</p>
+    </div>
+
+    <div class="seccion-expreriencia">
+        @* Este span va a servir luego para el diseño de las secciones *@
+        <span class="bloque-izquierdo-1"></span>
+
+        <h5>Experiencia:</h5>
+        <hr />
+
+        @* AQUI VOY A PONER MI EXPERIENCIA QUE VOY A TRAER DE UN FOR *@
+
+        <div class="exp-d-1">
+            <div class="titulo-exp">
+                <p>Desarrollador en la casa blanca</p>
+                <p class="fechas">2018 - 2021</p>
+            </div>
+            <ul>
+                <li>Diseñe un sitio para evitar vulnerabilidades al sistema de la nasa.</li>
+                <li>El sitio fue diseñado en una tecnología de nivel cecreto.</li>
+                <li>Con ayuda de un marciano implementamos tecnología pérdida</li>
+                <li>Dos veces condecorado por obama</li>
+            </ul>
+        </div>
+        <div class="exp-d-2">
+            <div class="titulo-exp">
+                <p>Desarrollador en gtaV</p>
+                <p class="fechas">2021 - 2022</p>
+            </div>
+            <ul>
+                <li>Diseñe un sitio para evitar vulnerabilidades al sistema de la nasa.</li>
+                <li>El sitio fue diseñado en una tecnología de nivel cecreto.</li>
+                <li>Con ayuda de un marciano implementamos tecnología pérdida</li>
+                <li>Dos veces condecorado por obama</li>
+            </ul>
+        </div>
+        <div class="exp-d-3">
+            <div class="titulo-exp">
+                <p>Desarrollador en el oceano pacífico</p>
+                <p class="fechas">2022 - 2023</p>
+            </div>
+            <ul>
+                <li>Diseñe un sitio para evitar vulnerabilidades al sistema de la nasa.</li>
+                <li>El sitio fue diseñado en una tecnología de nivel cecreto.</li>
+                <li>Con ayuda de un marciano implementamos tecnología pérdida</li>
+                <li>Dos veces condecorado por obama</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="seccion-educacion">
+        @* Este span va a servir luego para el diseño de las secciones *@
+        <span class="bloque-izquierdo-1"></span>
+        <h5>Educación:</h5>
+        <hr />
+
+        @* AQUI PONGO MI EDUCACIÓN *@
+        <div class="edu-d-1">
+            <p>Universidad de Occidente "Udeo"</p>
+            <ul>
+                <li>Ingeniería en Sistemas</li>
+            </ul>
+        </div>
+
+        <div class="edu-d-2">
+            <p>Colegio privado mixto "Americano"</p>
+            <ul>
+                <li>Bachiller en computación</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="seccion-tecnologias">
+        @* Este span va a servir luego para el diseño de las secciones *@
+        <span class="bloque-izquierdo-1"></span>
+        <h5>Tecnologías</h5>
+        <hr />
+        <ul>
+            <li>Html5</li>
+            <li>Css3</li>
+            <li>JavaScript</li>
+            <li>Boostrap 5</li>
+            <li>C#</li>
+            <li>.Net</li>
+            <li>Java</li>
+            <li>PHP</li>
+            <li>API</li>
+        </ul>
+    </div>
+
+
+</div>

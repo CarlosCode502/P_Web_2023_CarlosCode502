@@ -63,6 +63,11 @@ namespace Portafolio_Web_2023.Controllers
 			return View(proyectos);
 		}
 
+		public IActionResult Cv()
+		{
+			return View("cv");	
+		}
+
 
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
