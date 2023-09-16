@@ -198,6 +198,68 @@ ul {
     margin-top: 0px;
 }
 
+
+/*Modal*/
+.modal {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    animation: modal 2s 3s forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.contenido-modal {
+    margin: auto;
+    width: 40%;
+    height: 40%;
+    background: white;
+    border-radius: 10px;
+}
+
+/*Botón cerrar(id)*/
+#cerrar {
+    display: none;
+}
+
+#btn-cerrar {
+    padding-left: 20px;
+}
+
+/*Botón cerrar se va a aplicar con el label VERIFICAR*/
+#cerrar + label {
+    position: fixed;
+    color: #fff;
+    font-size: 25px;
+    z-index: 60;
+    background: darkred;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 100%;
+    right: 320px;
+    top: 210px;
+    cursor: pointer;
+    animation: modal 2s 3s forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#cerrar:checked + label, #cerrar:checked ~ .modal {
+    display: none;
+}
+
+@keyframes modal {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
 /*En pantallas menores de 650px*/
 @media screen and (max-width: 650px) {
     /*Cambiar los márgenes*/
