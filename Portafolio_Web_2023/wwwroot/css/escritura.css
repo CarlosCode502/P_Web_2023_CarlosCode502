@@ -3,21 +3,31 @@
     text-decoration: none;
 }*/
 
+/** {
+    font-family: 'Francois One', sans-serif;
+    font-family: 'Josefin Slab', serif;*/
+    /*font-family: 'Satisfy', cursive;*/
+/*}*/
+
 .typed-name {
-    color: white;
+    /*Color del cursor*/
+    color: #0EA5E9;
+    /*font-family: 'Francois One', sans-serif;*/
 }
 /*CÓDIGO CSS DE MI ANIMACIÓN ESCRITURA*/
 .titulo {
-    font-size: 90px;
+    /*font-size: 90px;*/
     font-weight: bolder;
     margin-right: 50%;
     /*opacity: 1;*/
     margin-left: 20px;
-    color: white;
+    /*color del titulo*/
+    color: #0EA5E9;
 }
 
+/*Textos*/
 .name {
-    color: #0EA5E9;
+    color: white;
     font-weight: bold;
     font-style: normal;
     /*opacity: 100;*/
@@ -25,8 +35,9 @@
     /*text-shadow: 0 0 6px;   */
 }
 
+/*Mensajes*/
 .msj {
-    color: #0EA5E9;
+    color: white;
     font-weight: bold;
     font-style: normal;
     /*   animation: parpadear 5s infinite backwards;
