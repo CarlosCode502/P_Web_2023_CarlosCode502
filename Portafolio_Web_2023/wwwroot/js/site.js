@@ -15,6 +15,7 @@ let tamanioIndicador = menu.querySelector('a').offsetWidth;
 //indicador > estilos > ancho = tm del indicador
 indicador.style.width = tamanioIndicador + 'px';
 
+
 //Para obtener el index de la sección actual o activa
 let indexSeccionAcctiva;
 
@@ -51,10 +52,13 @@ const observer = new IntersectionObserver((entradas, observer) => {
             /*console.log(entrada.target)*///Imprime todas las entradas según se este recorriendo
 
             //indicador > estilos > ancho = tm del indicador
+            /*indicador.style.width = tamanioIndicador + 10;*/
             indicador.style.width = tamanioIndicador + 'px';
+/*            console.log('El valor de width es: completa ' + indicador.style.width);*/
 
             //accedemos al estilo del indicador luego a su transform para transformarlo en traslare en eje de x
             /*indicador.style.transform = 'translateX(500px)';*///CAMBIAMOS PARA ADMITIR VALORES DE JS
+            //Posición del indicador
             indicador.style.transform = `translateX(${tamanioIndicador * indexSeccionAcctiva}px)`;//Alt+96 para añadir(Backsticks)
             /*console.log('la sección activa su indice es: ' + indexSeccionAcctiva);*/
         }
@@ -97,7 +101,9 @@ let onResize = () => {
     //console.log('el tamaño del indicador es:' + tamanioIndicador);
 
     //cambiamos el tamaño del indicador
+    /*indicador.style.width = tamanioIndicador + 10;*/
     indicador.style.width = `${tamanioIndicador}px`;
+    /*console.log('El valor de width es resize: ' + indicador.style.width);*/
     /*    console.log('El valor del nuevo resize es' + indicador.style.width)*/
     //console.log(indicador.style.width = `${tamanioIndicador}px`);
     //Se vuelve a posicionar el indicador

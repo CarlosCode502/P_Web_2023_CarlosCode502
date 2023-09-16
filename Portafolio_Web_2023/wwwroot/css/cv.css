@@ -1,102 +1,131 @@
-﻿.cv-estructura{
-    margin: 40px 80px;    
+﻿/*Toda la página*/
+.cv-estructura {
+    margin: 20px 160px;
 }
 
-.titulo{
-    font-weight:900;
+/*Nombre*/
+.titulo {
+    font-weight: 900;
     color: dodgerblue;
     font-size: 30px;
     margin-bottom: 5px;
 }
 
+/*Ocupación*/
 .subtitulo {
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-.contacto{
+/*Sección o cuadro de contacto*/
+.contacto {
     display: flex;
     align-content: center;
     align-items: center;
-    /*position: center;*/
-    /*margin-left: 10%;*/
     border: 4px solid dodgerblue;
     padding: 10px;
+    /*position: center;*/
+    /*margin-left: 10%;*/
 }
 
-.contacto .phone, .contacto .gmail{
-    /*display: flex;
+    /*Mantener centrados los elementos de contacto*/
+    .contacto .phone, .contacto .gmail, .contacto .github {
+        font-weight: 300;
+        margin: auto;
+        color: #2681e4
+        /*display: flex;
     align-content: end;
     align-items: end; */
-    font-weight: 300;
-    margin: auto; 
-    color: #2681e4
-}
+    }
 
 
 
+/*Descripción o perfil*/
 .descripcion-perfil {
     font-weight: 100;
-    margin: 20px 0 20px 0;
+    margin: 1.5rem 0 1.5rem 0;
 }
 
+/*Bloque de diseño*/
+.bloque-izquierdo-1 {
+    background-color: red;
+    width: 40px;
+    height: 40px;
+}
+
+
+/*Sección experiencia*/
 .seccion-expreriencia {
-    margin-top: 40px;
+    margin-top: 1rem;
 }
 
-.seccion-educacion {
-    margin-top: 40px;
-}
-
-.seccion-tecnologias {
-    margin-top: 40px;
-}
-
+/*Mantener en la misma linea titulo y fechas*/
 .titulo-exp {
     display: flex;
 }
 
-.fechas{
+/*Para mostrar la fecha a la izquierda y centrada de titulo exp*/
+.fechas {
+    /*16px cambia según el tamaño del texto */
     margin: 16px 0 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6{
+/*Sección educación*/
+.seccion-educacion {
+    margin-top: 1rem;
+}
+
+    /*Educación 1*/
+    .seccion-educacion .edu-d-1 {
+        margin-bottom: 2rem;
+    }
+
+/*Sección tecnologías*/
+.seccion-tecnologias {
+    margin-top: 1rem;
+}
+
+/*Formato para todos los encabezados del h1 a h6*/
+h1, h2, h3, h4, h5, h6 {
     margin: 0px;
 }
 
+/*Formato diferente para todos los h5*/
 h5 {
     font-weight: bold;
     color: dodgerblue;
     font-size: 20px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
-p{
+/*Formato para todos los parráfos*/
+p {
     font-weight: bolder;
     color: black;
-
 }
 
+/*Formato para todos los Unorder List y los elementos dentro*/
 ul {
     font-weight: 100;
     margin-top: 0px;
 }
 
-
+/*En pantallas menores de 650px*/
 @media screen and (max-width: 650px) {
+    /*Cambiar los márgenes*/
     .cv-estructura {
         margin: 10px 20px;
     }
 
+    /*Cambiar el borde y cambiar la propiedad de flex a block*/
     .contacto {
         border: 4px solid dodgerblue;
-        /*padding: 10px;*/
-
         display: block;
+        /*padding: 10px;*/
     }
 
-    .contacto .phone, .contacto .gmail {
-        margin: 0;
-    }
-
+        /*Quitar los márgenes*/
+        .contacto .phone, .contacto .gmail {
+            margin: 0;
+        }
 }
