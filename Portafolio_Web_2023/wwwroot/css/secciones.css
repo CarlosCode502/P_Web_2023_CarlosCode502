@@ -14,7 +14,7 @@
     margin: auto;
     /*margin: auto 30% auto 0%;*/
     /*Espacio todas partes de la seccion*/
-    padding: 0 70px;
+    padding: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,6 +48,7 @@
     /*    width: 100%;*/
     width: auto;
     /*padding-bottom: 20px;*/
+    padding: 0 60px 0;
 }
 
 .img-p {
@@ -59,6 +60,7 @@
     /*Centrar*/
     display: block;
     /*border-style: groove;*/
+    /*margin-bottom:20px;*/
 }
 
 .contenido-perfil-card {
@@ -67,12 +69,14 @@
     vertical-align: top;   */
     /*float: left;*/
     /*display: flex;*/
+    /*margin-top: 50px;*/
+    padding: 0px 60px 0 60px;
 }
 
 
 /*Botón footer de todas las secciones*/
 .card-footer-primary {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,9 +186,14 @@
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 */
+
+.seccion .card>#Perfil{
+    padding: 0;
+} 
+
 /*Estilo al id de la sección perfil*/
 #Perfil {
-    padding-top: 80px;
+    padding-top: 100px;
     align-content: center;
     background-size: 100% 100%;
     /*background-image: url("https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg");*/

@@ -20,7 +20,7 @@
     align-items: flex-start;
     /*align-items: center;*/
     justify-content: center;
-    /*padding-bottom: 100px;*/
+    padding-bottom: 50px;
     /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
         que ocupe el 100% (v*h viewpor hight alto del dispositivo)
         SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);*/

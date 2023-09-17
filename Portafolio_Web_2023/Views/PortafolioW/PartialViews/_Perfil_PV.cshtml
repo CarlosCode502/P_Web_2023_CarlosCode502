@@ -3,11 +3,13 @@
 @* <!--//V#50 Agregando nuestra Descripción--> *@
 @* El h-100 lo obtiene desde recientes. *@
 <div class="card h-100">
+    <div class="contenido-card-perfil"></div>
 
-    <div class="contenido-perfil-card">
-        <div class="img-perfil">
+    <div class="img-perfil">
         <img class="img-p" src="~/img/undraw_profile.svg" alt="">
-        </div>
+    </div>
+    <div class="contenido-perfil-card">
+
 
         <h1>Perfil:</h1>
         <div class="overflow-scroll_p">
@@ -26,11 +28,11 @@
                 <li><p>Mantuve la documentación técnica actualizada y proporcioné soporte y mantenimiento continuos para las aplicaciones desarrolladas.</p><br /></li>
             </ul>
         </div>
-        @* Cambiado a proposito el nombre de la clase card-footers *@
-        <div class="card-footer-primary">
-            @* C:\Users\admin\source\repos\Portafolio_Web_2023\Portafolio_Web_2023\Portafolio_Web_2023\Views\PortafolioW\cv.cshtml *@
-            <a class="boton btn-ver-recientes" asp-area="" asp-controller="PortafolioW" asp-action="cv">Ver CV</a>
-        </div>
+    </div>
+    @* Cambiado a proposito el nombre de la clase card-footers *@
+    <div class="card-footer-primary">
+        @* C:\Users\admin\source\repos\Portafolio_Web_2023\Portafolio_Web_2023\Portafolio_Web_2023\Views\PortafolioW\cv.cshtml *@
+        <a class="boton btn-ver-recientes" asp-area="" asp-controller="PortafolioW" asp-action="cv">Ver CV</a>
     </div>
 
 </div>
