@@ -31,7 +31,7 @@
         background: #FFFFFF;
         height: 90%;
         /*Es como el margen en las tarjetas*/
-        padding: 40px;
+        /* padding: 40px;*/
         border-radius: 8px;
         /* border: 3px solid #0d6efd;*/
         /*box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 24px;*/
@@ -48,7 +48,7 @@
     /*    width: 100%;*/
     width: auto;
     /*padding-bottom: 20px;*/
-    padding: 0 60px 0;
+    /*padding: 0 60px 0;*/
 }
 
 .img-p {
@@ -63,15 +63,15 @@
     /*margin-bottom:20px;*/
 }
 
-.contenido-perfil-card {
-    /*margin-left: 50%;*/
-    /*display: inline-block;
+/*.contenido-perfil-card {*/
+/*margin-left: 50%;*/
+/*display: inline-block;
     vertical-align: top;   */
-    /*float: left;*/
-    /*display: flex;*/
-    /*margin-top: 50px;*/
-    padding: 0px 60px 0 60px;
-}
+/*float: left;*/
+/*display: flex;*/
+/*margin-top: 50px;*/
+/*padding: 0px 60px 0 60px;
+}*/
 
 
 /*Botón footer de todas las secciones*/
@@ -80,6 +80,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .btn-ver-recientes {
@@ -187,10 +188,13 @@
 }
 */
 
-.seccion .card>#Perfil{
+/*.seccion .card>#Perfil{
     padding: 0;
-} 
+} */
 
+.contenido-card-perfil {
+    padding: 40px 60px;
+}
 /*Estilo al id de la sección perfil*/
 #Perfil {
     padding-top: 100px;
@@ -201,9 +205,12 @@
     /*background-color: #4e4949;*/
 }
 
+.contenido-card-habilidades {
+    padding: 40px 60px;
+}
 /*Estilo al id de la sección Habilidades*/
 #Habilidades {
-    padding-top: 80px;
+    padding-top: 100px;
     align-content: center;
     background-size: 100% 100%;
     /*background-image: url("https://cdn.pixabay.com/photo/2015/02/24/02/05/website-647013_960_720.jpg");*/
@@ -211,10 +218,12 @@
     /*background-color: #2b2828;*/
 }
 
+.contenido-card-recientes {
+    padding: 40px 60px;
+}
 /*Estilo al id de la sección Proyectos_recientes*/
 #Proyectos_recientes {
-    /*padding: 30px;*/
-    padding-top: 80px;
+    padding-top: 100px;
     align-content: center;
     background-size: 100% 100%;
     /*background-color: #0d0c0c;*/
@@ -227,7 +236,7 @@
 /*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
 @media screen and (max-width: 500px) {
     .seccion {
-        padding: 30px;
+        padding: 20px;
     }
 
         .seccion .card {
@@ -242,14 +251,33 @@
         max-height: 100%;
         height: auto;
         width: 250px;
-        /*margin: auto;*/
+        padding-bottom: 20px;
         display: block;
     }
 
-    .contenido-perfil-card {
-        /*padding: 10px;*/
+    .overflow-scroll_p {
+        /*position: relative;*/
+        padding: 0px 8px 0px 8px;
+        margin: 0px 8px 0px 0;
+        max-height: 300px;
+        overflow-y: scroll;
+        /*max-height: 700px;
+        overflow-y: scroll;*/
     }
 
+    .contenido-card-perfil {
+        padding: 20px;
+        padding-bottom: 0;
+    }
+
+    .contenido-card-habilidades {
+        padding: 20px;
+        padding-bottom: 0;
+    }
+
+    .contenido-card-recientes {
+        padding: 0 20px;
+    }
     /*.seccion h1 {
             font-size: 32px;*/
     /*NO SE USA 👇*/

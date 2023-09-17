@@ -14,17 +14,20 @@
 {
     @* <div class="overflow-scroll"> *@
     <div class="card h-100">
-        <h1>Mis trabajos recientes</h1>
-        <p class="parrafo-recientes">Aquí se muestrán algunos de mís trabajos más recientes.</p>
 
-        <div class="overflow-scroll_p">
-            @* //V#62 Creando una Nueva Vista - Mostrando todos los proyectos. *@
-            <partial name="PartialViews\_TodosMisProyectos_PV" model="Model" />
-        </div>
+        <div class="contenido-card-recientes">
+            <h1>Mis trabajos recientes</h1>
+            <p>Aquí se muestrán algunos de mís trabajos más recientes.</p>
 
-        @* Cambiado a proposito el nombre de la clase card-footers *@
-        <div class="card-footer-primary">
-            <a class="boton btn-ver-recientes" asp-area="" asp-controller="PortafolioW" asp-action="Proyectos">Ver todos los proyectos</a>
+            <div class="overflow-scroll_r">
+                @* //V#62 Creando una Nueva Vista - Mostrando todos los proyectos. *@
+                <partial name="PartialViews\_TodosMisProyectos_PV" model="Model" />
+            </div>
+
+            @* Cambiado a proposito el nombre de la clase card-footers *@
+            <div class="card-footer-primary">
+                <a class="boton btn-ver-recientes" asp-area="" asp-controller="PortafolioW" asp-action="Proyectos">Ver todos los proyectos</a>
+            </div>
         </div>
     </div>
     @*   </div> *@
@@ -32,7 +35,3 @@
 
 
 }
-
-@* //V#62 Creando una Nueva Vista - Mostrando todos los proyectos. *@
-@* AQUI ESTABA MI ESTRUCTURA MOSTRAR PROYECTOS(_TodosMisProyectos) *@
-

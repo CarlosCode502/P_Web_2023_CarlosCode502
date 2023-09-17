@@ -174,11 +174,11 @@
     }
 
     /*Se aplica a todo el contenido que contenga la clase scroll*/
-    .overflow-scroll_p {
+    .overflow-scroll_r {
         /*position: relative;*/
         padding: 0px 8px 0px 8px;
         margin: 0px 8px 0px 0;
-        max-height: 300px;
+        max-height: 420px;
         overflow-y: scroll;
         /*max-height: 700px;
         overflow-y: scroll;*/
