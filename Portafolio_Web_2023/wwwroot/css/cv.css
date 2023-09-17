@@ -1,16 +1,19 @@
 ﻿/*Toda la página*/
 body {
-    background-color: #2B2A33;
-    margin: 20px 180px;
+    /*background-color: #2B2A33;*/
+    margin: 0;
 }
 
 .container {
-    background-color: white;
+    background-color: #2B2A33;
     padding: 40px;
+    padding-top: 10px;
 }
 
 .cv-estructura {
-    /*margin: 20px 180px;*/
+    margin: 20px 180px;
+    background-color: white;
+    padding: 40px;
 }
 
 /*Nombre*/
@@ -258,13 +261,25 @@ ul {
         visibility: visible;
         opacity: 1;
     }*/
-}
 
 /*En pantallas menores de 650px*/
-@media screen and (max-width: 650px) {
+/*@media screen and (max-width: 650px) {
+    
+}*/
+
+/* cuando sea como maximo 450, es decir menor */
+@media screen and (max-width: 910px) {
+
+    /*Cambiar padding del contenedor*/
+    .container {
+        background-color: white;
+        padding: 0px;
+    }
+
     /*Cambiar los márgenes*/
     .cv-estructura {
         margin: 10px 20px;
+        padding: 20px 20px;
     }
 
     /*Cambiar el borde y cambiar la propiedad de flex a block*/
@@ -276,22 +291,61 @@ ul {
 
     /*Quitar los márgenes*/
     .gmail, .github, .phone {
-        margin: 10px;
+        margin: 15px;
     }
 
     .texto-columnas {
-        margin-left: 25px;
-    }
-    /*.gmail {
-        color: red;
-        text-decoration: none;
+        margin-left: 35.35px;
     }
 
-    .github {
-        color: purple;
+    /*Color para correo*/
+    .hover_class_style1 {
+        border: 4px solid #ea0101;
+        /*  background: blue;*/
     }
-    
-    .phone {
-        color: green;
-    }*/
+
+    /*Color para github*/
+    .hover_class_style2 {
+        border: 4px solid #a06ed9;
+        /*background: blue;*/
+    }
+
+    /*Color para teléfono*/
+    .hover_class_style3 {
+        border: 4px solid #0DC143;
+        /*background: blue;*/
+    }
 }
+
+
+/* cuando sea como minimo 451, es decir mayor */
+/*@media screen and (min-width:451px) {*/
+
+    /*Cambiar padding del contenedor*/
+    /*.container {
+        background-color: white;
+        padding: 0px;
+    }*/
+
+    /*Cambiar los márgenes*/
+    /*.cv-estructura {
+        margin: 10px 20px;
+        padding: 20px 20px;
+    }*/
+
+    /*Cambiar el borde y cambiar la propiedad de flex a block*/
+    /*.contacto {
+        border: 4px solid dodgerblue;
+        display: block;*/
+        /*padding: 10px;*/
+    /*}*/
+
+    /*Quitar los márgenes*/
+    /*.gmail, .github, .phone {
+        margin: 60px;
+    }
+
+    .texto-columnas {
+        margin-left: 25%;
+    }
+}*/
