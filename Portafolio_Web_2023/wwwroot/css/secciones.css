@@ -14,7 +14,7 @@
     margin: auto;
     /*margin: auto 30% auto 0%;*/
     /*Espacio todas partes de la seccion*/
-    padding: 70px;
+    padding: 0 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,30 +38,27 @@
         /*margin:40px;*/
     }
 
-    /*.img-perfil {
-    height: 200px;
-    width: 355px;
-}
-*/
-
-    /*YA NO EDITE O COMENTE*/
-    /*ES IMPORTANTE MANEJAR LAS IMAGENES EN TIPO DE FORMA (px) ya que en (%) tiende a dejar espacios*/
-    .seccion img {
-        width: 100%;
-        vertical-align: central;
-        position: center;
-        margin: 20px;
-        /*NO SE USA 👇
-width: 1000px;
-        height: 500px;
-vertical-align: central;*/
-    }
-
+/*ES IMPORTANTE MANEJAR LAS IMAGENES EN TIPO DE FORMA (px) ya que en (%) tiende a dejar espacios*/
+/*Al momento de trabajar con img se debe asignar un id para evitar errores de concurrencia*/
 .img-perfil {
+    /*    width: 100%;*/
+    /*position: center;
+    margin: 20px;*/
+    /*position: fixed;*/
+    /*    width: 100%;*/
     width: auto;
-    max-height: 100%;
-    height: auto;
-    width: 355px;
+    /*padding-bottom: 20px;*/
+}
+
+.img-p {
+    /*width: auto;*/
+    /*max-height: 100%;*/
+    /*height: auto;*/
+    width: 400px;
+    margin: auto;
+    /*Centrar*/
+    display: block;
+    /*border-style: groove;*/
 }
 
 .contenido-perfil-card {
@@ -187,7 +184,7 @@ vertical-align: central;*/
 */
 /*Estilo al id de la sección perfil*/
 #Perfil {
-    /* padding: 30px;*/
+    padding-top: 80px;
     align-content: center;
     background-size: 100% 100%;
     /*background-image: url("https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg");*/
@@ -197,7 +194,7 @@ vertical-align: central;*/
 
 /*Estilo al id de la sección Habilidades*/
 #Habilidades {
-    /*padding: 30px;*/
+    padding-top: 80px;
     align-content: center;
     background-size: 100% 100%;
     /*background-image: url("https://cdn.pixabay.com/photo/2015/02/24/02/05/website-647013_960_720.jpg");*/
@@ -230,6 +227,19 @@ vertical-align: central;*/
             padding: 20px;
             border-radius: 8px;
         }
+
+    .img-p {
+        width: auto;
+        max-height: 100%;
+        height: auto;
+        width: 250px;
+        /*margin: auto;*/
+        display: block;
+    }
+
+    .contenido-perfil-card {
+        /*padding: 10px;*/
+    }
 
     /*.seccion h1 {
             font-size: 32px;*/

@@ -160,7 +160,7 @@
         padding-right: 0px;
         padding-left: 0px;
     }
-    
+
     .row-cols-md-3 > * {
         flex: 0 0 auto;
         width: 33.3333333333%;
@@ -173,11 +173,12 @@
         padding: 0px;
     }
 
+    /*Se aplica a todo el contenido que contenga la clase scroll*/
     .overflow-scroll_p {
         /*position: relative;*/
         padding: 0px 8px 0px 8px;
         margin: 0px 8px 0px 0;
-        max-height: 480px;
+        max-height: 300px;
         overflow-y: scroll;
         /*max-height: 700px;
         overflow-y: scroll;*/

@@ -36,6 +36,19 @@ header {
     /*font-family: 'Josefin Slab', serif;*/
     /*font-family: 'Montserrat', sans-serif;*/
     /*font-family: 'Satisfy', cursive;*/
+
+    background-image: url(../img/person-paisaje.jpg);
+    background-repeat: no-repeat;
+    /*hace que la imagen se vea un poco más compacta (mejor en pantallas pequeñas)*/
+    background-attachment: fixed;
+    /*100% el tamaño de la imagen en height y with*/
+    background-size: 100% 100%;
+    /*background-color: rgba(00,00,255,0.5);*/
+    /*NO SE USA*/
+    /*width: 100px;
+    height: 100px;*/
+    /* background: #FF7A59;*/
+    /*opacity: 0.90;*/
 }
 
 /*NO SE USA*/

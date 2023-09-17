@@ -17,7 +17,7 @@
 /*CÓDIGO CSS DE MI ANIMACIÓN ESCRITURA*/
 .titulo {
     /*font-size: 90px;*/
-    font-weight: bolder;
+    /*font-weight: bolder;*/
     margin-right: 50%;
     /*opacity: 1;*/
     margin-left: 20px;
@@ -28,7 +28,7 @@
 /*Textos*/
 .name {
     color: white;
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-style: normal;
     /*opacity: 100;*/
     /*color: #113CFC;*/
@@ -38,7 +38,7 @@
 /*Mensajes*/
 .msj {
     color: white;
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-style: normal;
     /*   animation: parpadear 5s infinite backwards;
     transition: .2s ease-in-out all;*/
