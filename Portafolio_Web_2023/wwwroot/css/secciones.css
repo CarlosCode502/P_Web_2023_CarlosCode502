@@ -33,10 +33,45 @@
         /*Es como el margen en las tarjetas*/
         padding: 40px;
         border-radius: 8px;
-       /* border: 3px solid #0d6efd;*/
+        /* border: 3px solid #0d6efd;*/
         /*box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 24px;*/
         /*margin:40px;*/
     }
+
+    /*.img-perfil {
+    height: 200px;
+    width: 355px;
+}
+*/
+
+    /*YA NO EDITE O COMENTE*/
+    /*ES IMPORTANTE MANEJAR LAS IMAGENES EN TIPO DE FORMA (px) ya que en (%) tiende a dejar espacios*/
+    .seccion img {
+        width: 100%;
+        vertical-align: central;
+        position: center;
+        margin: 20px;
+        /*NO SE USA 👇
+width: 1000px;
+        height: 500px;
+vertical-align: central;*/
+    }
+
+.img-perfil {
+    width: auto;
+    max-height: 100%;
+    height: auto;
+    width: 355px;
+}
+
+.contenido-perfil-card {
+    /*margin-left: 50%;*/
+    /*display: inline-block;
+    vertical-align: top;   */
+    /*float: left;*/
+    /*display: flex;*/
+}
+
 
 /*Botón footer de todas las secciones*/
 .card-footer-primary {
@@ -49,7 +84,7 @@
 .btn-ver-recientes {
     color: #fff;
     background-color: #0d6efd;
-   /* border-color: #0d6efd;*/
+    /* border-color: #0d6efd;*/
     text-decoration: none;
     padding: 10px;
     border-radius: .25rem;
@@ -87,18 +122,7 @@
     }*/
 
 
-/*YA NO EDITE O COMENTE*/
-/*ES IMPORTANTE MANEJAR LAS IMAGENES EN TIPO DE FORMA (px) ya que en (%) tiende a dejar espacios*/
-/*.seccion img {
-        width: 100%;
-        vertical-align: central;*/
-/*position: center;*/
-/*margin: 20px;*/
-/*NO SE USA 👇*/
-/*width: 1000px;
-        height: 500px;*/
-/*vertical-align: central;*/
-/*}*/
+
 
 /*.card .card-proyectos-hijo {*/
 /*Espacio entre el texto y la card de proyectos recientes*/
@@ -188,7 +212,7 @@
     align-content: center;
     background-size: 100% 100%;
     /*background-color: #0d0c0c;*/
-    background-image: url("https://cdn.pixabay.com/photo/2016/11/30/20/44/computer-1873831_960_720.png");    
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/30/20/44/computer-1873831_960_720.png");
 }
 
 
@@ -207,18 +231,18 @@
             border-radius: 8px;
         }
 
-        /*.seccion h1 {
+    /*.seccion h1 {
             font-size: 32px;*/
-            /*NO SE USA 👇*/
-            /*margin-bottom: 20px;*/
-        /*}
+    /*NO SE USA 👇*/
+    /*margin-bottom: 20px;*/
+    /*}
 
         .seccion p {
             line-height: 28px;
             font-size: 15px;
         }*/
 
-   /* .overflow-scroll {
+    /* .overflow-scroll {
         max-height: 600px;
         overflow-y: scroll;
     }*/

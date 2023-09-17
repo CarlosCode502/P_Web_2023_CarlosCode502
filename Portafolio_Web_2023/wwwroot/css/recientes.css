@@ -155,6 +155,12 @@
 
 /* Columnas responsivas: diseño de una columna (vertical) en pantallas pequeñas */
 @media screen and (max-width: 769px) {
+    /*Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas*/
+    .row {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    
     .row-cols-md-3 > * {
         flex: 0 0 auto;
         width: 33.3333333333%;
@@ -167,7 +173,7 @@
         padding: 0px;
     }
 
-    .overflow-scroll {
+    .overflow-scroll_p {
         /*position: relative;*/
         padding: 0px 8px 0px 8px;
         margin: 0px 8px 0px 0;
