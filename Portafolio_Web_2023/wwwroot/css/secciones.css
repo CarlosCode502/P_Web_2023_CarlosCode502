@@ -206,6 +206,8 @@
 }
 
 .contenido-card-habilidades {
+    width: 1060px;
+    height: 818px;
     padding: 40px 60px;
 }
 /*Estilo al id de la sección Habilidades*/
