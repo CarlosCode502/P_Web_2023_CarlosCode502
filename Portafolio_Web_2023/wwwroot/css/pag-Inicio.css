@@ -1,7 +1,7 @@
 ﻿.imagen {
     background-image: url(../img/person-paisaje.jpg);
     background-repeat: no-repeat;
-/*hace que la imagen se vea un poco más compacta (mejor en pantallas pequeñas)*/
+    /*hace que la imagen se vea un poco más compacta (mejor en pantallas pequeñas)*/
     background-attachment: fixed;
     /*100% el tamaño de la imagen en height y with*/
     background-size: 100% 100%;
@@ -75,7 +75,14 @@
     top: 0; /*Coordenada 0*/
     /*Para ocultar el indicador en caso de que quede fuera y no se tenga seleccionado (dependiendo el disp será el error)*/
     overflow: hidden;
+    
 }
+
+    /*Efecto sombreado(hover) al pasar el cursor en el nav*/
+    .nav_menu:hover {
+        opacity: 1;
+    }
+
     /*Para que todos los enlaces "a" se muestren espaciados */
     .nav_menu a {
         /*CON FLEXBOX*/
@@ -105,7 +112,7 @@
 
         /*Efecto sombreado(hover) al pasar el cursor en el nav*/
         .nav_menu a:hover {
-            background: #72a9fb;
+            background: #72a9fb;           
             /*font-size: 20px;*/
         }
 
@@ -130,7 +137,7 @@
         /*el indicador va a ir de izquierda a derecha va a aparecer por eso es negativo*/
         /*transform: translate(-500px);*/
         /*Para ocultar el indicador en caso de que quede fuera y no se tenga seleccionado (dependiendo el disp será el error)*/
-       /* overflow: hidden;*/
+        /* overflow: hidden;*/
     }
 
 
@@ -167,5 +174,4 @@
     #big-a {
         font-size: 11px;
     }
-
 }
