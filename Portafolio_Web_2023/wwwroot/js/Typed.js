@@ -31,7 +31,7 @@ const typed_name = new Typed('.typed-name', {
     loop: true, // Repetir el array de strings
     loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
     showCursor: true, // Mostrar cursor palpitanto
-    cursorChar: '|', // Caracter para el cursor
+    cursorChar: '&#124', // Caracter para el cursor
     /*bindInputFocusEvents: true,*/
     contentType: 'html', // 'html' o 'null' para texto sin formato
 

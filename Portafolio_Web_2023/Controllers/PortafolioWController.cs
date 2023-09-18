@@ -50,8 +50,8 @@ namespace Portafolio_Web_2023.Controllers
 			return View(modelo);
         }
 
-		//V#56 Principio de responsabilidad Única
-		//AQUI ESTABA MI METODO OBTENER LISTADO
+		/*v#56 principio de responsabilidad única
+		aqui estaba mi metodo obtener listado*/
 
 		//V#62 Creando una Nueva Vista - Mostrando todos los proyectos.
 		//Controlador para la nueva vista(pag) en donde se mostrarán todos mis proyectos.
