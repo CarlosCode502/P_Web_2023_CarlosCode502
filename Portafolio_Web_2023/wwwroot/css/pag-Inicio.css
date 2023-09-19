@@ -11,6 +11,7 @@
     height: 100px;*/
     /* background: #FF7A59;*/
     /*opacity: 0.90;*/
+    
 }
 
 .contenido-imagen {
@@ -39,6 +40,8 @@
     /*opacity: 0.9;*/
     /*color: #f2f2f2;*/
     /*content: image('~/img/person-paisaje.jpg');*/
+    max-width: 100%;
+/*    height: auto;*/
 }
 
 /*NO SE USA*/
