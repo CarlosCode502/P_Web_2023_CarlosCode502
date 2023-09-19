@@ -75,7 +75,6 @@
     top: 0; /*Coordenada 0*/
     /*Para ocultar el indicador en caso de que quede fuera y no se tenga seleccionado (dependiendo el disp será el error)*/
     overflow: hidden;
-    
 }
 
     /*Efecto sombreado(hover) al pasar el cursor en el nav*/
@@ -112,7 +111,7 @@
 
         /*Efecto sombreado(hover) al pasar el cursor en el nav*/
         .nav_menu a:hover {
-            background: #72a9fb;           
+            background: #72a9fb;
             /*font-size: 20px;*/
         }
 
@@ -169,6 +168,22 @@
             background: #0EA5E9;
             /*NO SE USA 👇*/
             /*font-size: 20px;*/
+        }
+
+    .btn-inicio-float {
+        /*position: fixed;*/
+/*Para posicionarlo sobre el texto del footer*/
+        bottom: 350px;
+/*Para ponerlo en pantalla*/
+        right: 380px;
+/*        width: 64px;
+        height: 64px;
+        fill: #0d6efd;*/
+       /* opacity: 0.5*/
+    }
+
+        .btn-inicio-float:hover {
+            opacity: 1;
         }
 
     #big-a {

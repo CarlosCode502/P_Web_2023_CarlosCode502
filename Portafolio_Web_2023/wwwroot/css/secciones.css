@@ -206,8 +206,10 @@
 }
 
 .contenido-card-habilidades {
-    width: 1060px;
-    height: 818px;
+/*    width: 1060px;
+    height: 818px;*/
+   /* width: auto;
+    height: auto;*/
     padding: 40px 60px;
 }
 /*Estilo al id de la sección Habilidades*/
@@ -236,7 +238,7 @@
 /*#region Media Querys */
 /*Valores que tomarán los elementos de las secciones cuando la pantalla se encuentre en un rango de width= 500px*/
 /*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 720px) {
     .seccion {
         padding: 20px;
     }
@@ -275,6 +277,12 @@
     .contenido-card-habilidades {
         padding: 20px;
         padding-bottom: 0;
+        /*Ancho izquierda-derecha*/
+        /*width: 290px;*/
+        width: auto;
+        /*Alto arriba-abajo*/
+        /*height: 570px;*/
+        height: auto;
     }
 
     .contenido-card-recientes {
