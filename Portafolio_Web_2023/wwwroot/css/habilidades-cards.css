@@ -43,8 +43,10 @@
 /* Diseñe las cartas de contador */
 .card-habilidad-hijo {
     /* Agrega sombras para crear el efecto de "tarjeta". */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+/*Se quitaron porque crean una linea al dar color por hover*/
+  /*  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;*/
+/*Ortros*/
     /*padding-top: 15px;*/
     /*text-align: center;*/
     /*background-color: #f1f1f1;*/
@@ -55,14 +57,17 @@
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    /*border: 1px solid rgba(0,0,0,.125);*/
+    border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
 }
 
     /*Al pasar el mouse, agrega una sombra más profunda.*/
-.card-habilidad-hijo:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
+    .card-habilidad-hijo:hover {
+        /*#0d6efd*/
+        /*background-image: linear-gradient(to right, red, white);*/
+        background-image: linear-gradient(to right, rgba(255,0,0,1), rgb(247, 9, 9, 0.00));
+        border: 1px solid white;
+    }
 
 .h-100 {
     height: 100% !important
@@ -74,6 +79,13 @@
     /*padding: 1rem 1rem;*/
     font-size: 1rem;
     border-radius: 100px;
+    /*  width: 64%;
+    height: 64%;*/
+    /*margin-top: 20px;*/
+    display: block;
+    margin: 40px auto 40px auto;
+
+    width: 50%;
 }
 
 /*Imagen de la tarjeta*/
