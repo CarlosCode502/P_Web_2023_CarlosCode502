@@ -195,6 +195,14 @@
 .contenido-card-perfil {
     padding: 40px 60px;
 }
+
+
+.contenido-perfil-card {
+    word-wrap: normal;
+    text-justify: auto;
+
+}
+
 /*Estilo al id de la sección perfil*/
 #Perfil {
     padding-top: 100px;
@@ -238,25 +246,32 @@
 /*#region Media Querys */
 /*Valores que tomarán los elementos de las secciones cuando la pantalla se encuentre en un rango de width= 500px*/
 /*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1050px) {
     .seccion {
+/*se cambio de 20*/
         padding: 20px;
     }
 
         .seccion .card {
             /*            height: 90%;*/
             /*Es como el margen en las tarjetas*/
+            /*se cambio de 20*/
             padding: 20px;
             border-radius: 8px;
         }
 
     .img-p {
-        width: auto;
-        max-height: 100%;
-        height: auto;
-        width: 250px;
-        padding-bottom: 20px;
+        /*width: auto;*/
+        /*max-height: 100%;*/
+        /*  height: auto;*/
+        width: 300px;
+        padding: 20px 20px 40px 0;
         display: block;
+        /*Nuevo*/
+        float: left;
+       /* width: 150px;*/
+        height: 150px;
+        shape-outside: url("~/img/undraw_profile.svg");
     }
 
     .overflow-scroll_p {

@@ -53,14 +53,12 @@
     /*position: relative;*/
     display: flex;
     flex-direction: column;
-    /*min-width: 0;*/
+    min-width: 0;
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
-    width: 200px;
-    height: 200px;
     /*background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);*/
     /*background-image: linear-gradient(140deg, #f5532a 0%, white 100%, #e85252 75%);*/
 }
@@ -90,16 +88,16 @@
     /*margin-top: 20px;*/
     display: block;
     margin: 40px auto 40px auto;
-
-    width: 100%;
+    width: 150px;
+    height: 150px;
 }
 
 /*Imagen de la tarjeta*/
 .card-img-logo {
-    width: 100%;
-    border-top-left-radius: calc(.25rem - 1px);
-    border-top-right-radius: calc(.25rem - 1px);
-
+    
+    width: 150px;
+    /*border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);*/
 }
 
 /*Título de la tarjeta*/
@@ -159,8 +157,9 @@
 
 
 
-
-@media (min-width: 769px) {
+/*Para pantallas grandes*/
+@media (min-width: 910px) {
+/*Para colocar las filas a la izquirda en 2 lineas*/
     .fila-cols-md-3 > * {
         flex: 0 0 auto;
         width: 33.3333333333%;
@@ -175,7 +174,7 @@
         /*position: relative;*/
         padding: 0px 8px 0px 8px;
         margin: 0px 8px 0px 0;
-        max-height: 700px;
+        max-height: 600px;
         overflow-y: scroll;
         /*max-height: 700px;
         overflow-y: scroll;*/
@@ -184,7 +183,7 @@
 
 
 /* Columnas responsivas: diseño de una columna (vertical) en pantallas pequeñas */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 909px) {
     /*Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas*/
     .fila {
         padding-right: 0px;
@@ -208,7 +207,7 @@
         /*position: relative;*/
         padding: 0px 8px 0px 8px;
         margin: 0px 8px 0px 0;
-        max-height: 500px;
+        max-height: 550px;
         overflow-y: scroll;
         /*max-height: 700px;
         overflow-y: scroll;*/

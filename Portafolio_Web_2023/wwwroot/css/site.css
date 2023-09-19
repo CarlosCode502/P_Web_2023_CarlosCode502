@@ -55,6 +55,19 @@ header {
     opacity: 1;
 }
 
+
+/*Para pantallas grandes*/
+@media (min-width: 910px) {
+
+}
+
+
+/* Columnas responsivas: diseño de una columna (vertical) en pantallas pequeñas */
+@media screen and (max-width: 909px) {
+
+}
+
+
 /*NO SE USA*/
 /*.imagen-index {
     background-image: url('~/img/person-paisaje.jpg');
