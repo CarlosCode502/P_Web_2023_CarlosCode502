@@ -58,20 +58,33 @@
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
+    /*border: 1px solid black;*/
     border-radius: .25rem;
     /*background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);*/
-    /*background-image: linear-gradient(140deg, #f5532a 0%, white 100%, #e85252 75%);*/
 }
 
     /*Al pasar el mouse, agrega una sombra más profunda.*/
-    .card-habilidad-hijo:hover {
-        /*#0d6efd*/
-        /*background-image: linear-gradient(to left, white, red);*/
-        /*background-image: linear-gradient(to bottom right, white, red);*/
-        /*background-image: linear-gradient(to boto right, rgba(255,0,0,0), rgba(255,0,0,1));*/
-        
-        border: 1px solid white;
-    }
+.html:hover {
+    /*#0d6efd*/
+    /*background-image: linear-gradient(to left, white, red);*/
+    /*background-image: linear-gradient(to bottom right, white, red);*/
+    /*background-image: linear-gradient(to boto right, rgba(255,0,0,0), rgba(255,0,0,1));*/
+    /*Rojo para html*/
+    /*background-image: linear-gradient(140deg, #f5532a 0%, white 100%, #e85252 75%);*/
+    /*background-image: linear-gradient(140deg, rgba(255,0,0,1) 0%, white 100%, rgba(0,0,0,0) 75%);*/
+    /*border: 1px solid white;*/
+    /*Color semi perfecto en diagonal de botom a right*/
+    background-image: linear-gradient(140deg, rgba(255,0,0,1) 0%, white 50%, rgba( 255, 87, 51 ) 90%);
+}
+
+.css:hover {
+    background-image: linear-gradient(40deg, rgba(40, 116, 166) 0%, white 50%, rgba( 93, 173, 226 ) 90%);
+}
+
+/*otros hover*/
+/*.js, .bootstrap, .api, .net, .csharp, .java, .cmas, php */
+
+
 
 .h-100 {
     height: 100% !important
@@ -104,13 +117,13 @@
     border-top-right-radius: calc(.25rem - 1px);*/
 }
 
-.card-img-logo:hover {
-    transform: scale(1.5);
-    -moz-transform: scale(1.5); /* Firefox */
-    -webkit-transform: scale(1.5); /* Chrome - Safari */
-    -o-transform: scale(1.5); /* Opera */
-    -ms-transform: scale(1.5); /* IE9 */
-}
+    .card-img-logo:hover {
+        transform: scale(1.5);
+        -moz-transform: scale(1.5); /* Firefox */
+        -webkit-transform: scale(1.5); /* Chrome - Safari */
+        -o-transform: scale(1.5); /* Opera */
+        -ms-transform: scale(1.5); /* IE9 */
+    }
 
 /*Título de la tarjeta*/
 /*.card-title {
@@ -139,13 +152,13 @@
 
 /*.btn {
     display: inline-block;*/
-    /*font-weight: 400;
+/*font-weight: 400;
     line-height: 1.5;
     color: #212529;
     text-align: center;*/
-    /*text-decoration: none;*/
-    /*vertical-align: middle;*/
-    /*cursor: pointer;
+/*text-decoration: none;*/
+/*vertical-align: middle;*/
+/*cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
@@ -171,7 +184,7 @@
 
 /*Para pantallas grandes*/
 @media (min-width: 910px) {
-/*Para colocar las filas a la izquirda en 2 lineas*/
+    /*Para colocar las filas a la izquirda en 2 lineas*/
     .fila-cols-md-3 > * {
         flex: 0 0 auto;
         width: 33.3333333333%;
