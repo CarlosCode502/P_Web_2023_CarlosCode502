@@ -1,5 +1,18 @@
 ﻿/*AQUI SE ENCUENTRA TODA LA CONFIGURACIÓN DE LA SECCION PROYECTOS RECIENTES*/
 
+/*Variables en css pueden ser globales o locales*/
+/*Variables globales*/
+/*:root {*/
+    /*Colores html*/
+    /*--naranja_b: #e59866;*/ /*Bajo*/
+    /*--naranja_m: #dc7633;*/ /*Medio*/
+    /*--naranja_a: #d35400;*/ /*Alto*/
+    /*Colores css*/
+    /*--azul_b: #85c1e9;*/ /*Bajo*/
+    /*--azul_m: #5dade2;*/ /*Medio*/
+    /*--azul_a: #3498db;*/ /*Alto*/
+/*}*/
+
 /*Importante para hacer el scroll más dinámico*/
 *,
 *::before,
@@ -74,15 +87,138 @@
     /*background-image: linear-gradient(140deg, rgba(255,0,0,1) 0%, white 100%, rgba(0,0,0,0) 75%);*/
     /*border: 1px solid white;*/
     /*Color semi perfecto en diagonal de botom a right*/
-    background-image: linear-gradient(140deg, rgba(255,0,0,1) 0%, white 50%, rgba( 255, 87, 51 ) 90%);
+    /*background-image: linear-gradient(140deg, rgba(255,0,0,1) 0%, white 50%, rgba( 255, 87, 51 ) 90%);*/
+    /*Variables locales*/
+    /*Accedemos a la animación*/
+    animation: color-me-in 4s infinite;
+    /*Colores html*/
+    --color_b: #e59866; /*Bajo*/
+    --color_m: #dc7633; /*Medio*/
+    --color_a: #d35400; /*Alto*/
 }
 
 .css:hover {
-    background-image: linear-gradient(40deg, rgba(40, 116, 166) 0%, white 50%, rgba( 93, 173, 226 ) 90%);
+    /*Accedemos a la animación*/
+    animation: color-me-in 4s infinite;
+    /*Variables locales*/
+    /*Colores css*/
+    --color_b: #85c1e9; /*Bajo*/
+    --color_m: #5dade2; /*Medio*/
+    --color_a: #3498db; /*Alto*/
 }
 
-/*otros hover*/
-/*.js, .bootstrap, .api, .net, .csharp, .java, .cmas, php */
+.js:hover {
+    /*Accedemos a la animación*/
+    animation: color-me-in 4s infinite;
+    /*Variables locales*/
+    /*Colores js*/
+    --color_b: #f9e79f; /*Bajo*/
+    --color_m: #f7dc6f; /*Medio*/
+    --color_a: #f4d03f; /*Alto*/
+}
+
+.bootstrap:hover {
+    /*Accedemos a la animación*/
+    animation: color-me-in 4s infinite;
+    /*Variables locales*/
+    /*Colores bootstrap*/
+    --color_b: #bb8fce; /*Bajo*/
+    --color_m: #a569bd; /*Medio*/
+    --color_a: #8e44ad; /*Alto*/
+}
+
+.api:hover {
+    /*Accedemos a la animación*/
+    animation: color-me-in 4s infinite;
+    /*Variables locales*/
+    /*Colores api*/
+    --color_b: #73c6b6; /*Bajo*/
+    --color_m: #45b39d; /*Medio*/
+    --color_a: #16a085; /*Alto*/
+}
+
+.net:hover {
+    /*Accedemos a la animación*/
+    animation: color-me-in 4s infinite;
+    /*Variables locales*/
+    /*Colores net*/
+    --color_b: #5499c7; /*Bajo*/
+    --color_m: #2980b9; /*Medio*/
+    --color_a: #2471a3; /*Alto*/
+}
+
+.csharp:hover {
+    /*Accedemos a la animación*/
+    animation: color-me-in 4s infinite;
+    /*Variables locales*/
+    /*Colores csharp*/
+    --color_b: #bb8fce; /*Bajo*/
+    --color_m: #a569bd; /*Medio*/
+    --color_a: #8e44ad; /*Alto*/
+}
+
+.java:hover {
+    /*Accedemos a la animación*/
+    animation: color-me-in 4s infinite;
+    /*Variables locales*/
+    /*Colores java*/
+    --color_b: #f1948a; /*Bajo*/
+    --color_m: #ec7063; /*Medio*/
+    --color_a: #e74c3c; /*Alto*/
+}
+
+.cmas:hover {
+    /*Accedemos a la animación*/
+    animation: color-me-in 4s infinite;
+    /*Variables locales*/
+    /*Colores cmas*/
+    --color_b: #85c1e9; /*Bajo*/
+    --color_m: #5dade2; /*Medio*/
+    --color_a: #3498db; /*Alto*/
+}
+
+.php:hover {
+    /*Accedemos a la animación*/
+    animation: color-me-in 4s infinite;
+    /*Variables locales*/
+    /*Colores php*/
+    --color_b: #85929e; /*Bajo*/
+    --color_m: #5d6d7e; /*Medio*/
+    --color_a: #34495e; /*Alto*/
+}
+
+/*Animación para todas las tarjetas solo se iran 
+    reemplazando las variables según el hover*/
+
+@keyframes color-me-in {
+    0% {
+        /*background-image: linear-gradient(60deg, rgba(255,0,0,1) 0%, white 50%, rgba( 255, 87, 51 ) 90%);*/
+
+        background: var(--color_b);
+    }
+
+    25% {
+        background: var(--color_m);
+        /*background-image: linear-gradient(120deg, rgba(255,0,0,1) 0%, white 50%, rgba( 255, 87, 51 ) 90%);*/
+    }
+
+    50% {
+        background: var(--color_a);
+        /*background-image: linear-gradient(180deg, rgba(255,0,0,1) 0%, white 50%, rgba( 255, 87, 51 ) 90%);*/
+    }
+
+    75% {
+        background: var(--color_m);
+        /*background-image: linear-gradient(240deg, rgba(255,0,0,1) 0%, white 50%, rgba( 255, 87, 51 ) 90%);*/
+    }
+
+    100% {
+        background: var(--color_b);
+        /*background-image: linear-gradient(300deg, rgba(255,0,0,1) 0%, white 50%, rgba( 255, 87, 51 ) 90%);*/
+    }
+}
+
+
 
 
 
