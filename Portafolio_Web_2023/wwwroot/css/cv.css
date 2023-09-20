@@ -51,29 +51,46 @@ body {
     align-items: end; */
 }
 
-/*.parent_class {
+    /*.parent_class {
     background: gray;
     width: 100px;
     height: 100px;
+}
+*/
+/*
+    .phone:hover {
+        --color: #0DC143;
+    }
+
+    .gmail:hover {
+        --color: #ea0101;
+    }
+
+    .github:hover {
+        --color: #a06ed9;
+    }
+
+.contacto{
+    border: 6px solid var(--color);
 }
 */
 
 /*Color para correo*/
 .hover_class_style1 {
     border: 6px solid #ea0101;
-    /*  background: blue;*/
+  /*background: blue;*/
 }
 
 /*Color para github*/
 .hover_class_style2 {
     border: 6px solid #a06ed9;
-    /*background: blue;*/
+/*background: blue;*/
 }
 
 /*Color para teléfono*/
 .hover_class_style3 {
     border: 6px solid #0DC143;
-    /*background: blue;*/
+/*background: blue;*/
 }
 
 /*.hover_class_style2 {
@@ -321,27 +338,27 @@ ul {
 /* cuando sea como minimo 451, es decir mayor */
 /*@media screen and (min-width:451px) {*/
 
-    /*Cambiar padding del contenedor*/
-    /*.container {
+/*Cambiar padding del contenedor*/
+/*.container {
         background-color: white;
         padding: 0px;
     }*/
 
-    /*Cambiar los márgenes*/
-    /*.cv-estructura {
+/*Cambiar los márgenes*/
+/*.cv-estructura {
         margin: 10px 20px;
         padding: 20px 20px;
     }*/
 
-    /*Cambiar el borde y cambiar la propiedad de flex a block*/
-    /*.contacto {
+/*Cambiar el borde y cambiar la propiedad de flex a block*/
+/*.contacto {
         border: 4px solid dodgerblue;
         display: block;*/
-        /*padding: 10px;*/
-    /*}*/
+/*padding: 10px;*/
+/*}*/
 
-    /*Quitar los márgenes*/
-    /*.gmail, .github, .phone {
+/*Quitar los márgenes*/
+/*.gmail, .github, .phone {
         margin: 60px;
     }
 

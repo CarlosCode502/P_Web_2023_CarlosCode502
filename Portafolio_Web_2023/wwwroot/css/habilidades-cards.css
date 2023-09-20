@@ -2,16 +2,9 @@
 
 /*Variables en css pueden ser globales o locales*/
 /*Variables globales*/
-/*:root {*/
-    /*Colores html*/
-    /*--naranja_b: #e59866;*/ /*Bajo*/
-    /*--naranja_m: #dc7633;*/ /*Medio*/
-    /*--naranja_a: #d35400;*/ /*Alto*/
-    /*Colores css*/
-    /*--azul_b: #85c1e9;*/ /*Bajo*/
-    /*--azul_m: #5dade2;*/ /*Medio*/
-    /*--azul_a: #3498db;*/ /*Alto*/
-/*}*/
+:root {
+    --blanco_u: white; 
+}
 
 /*Importante para hacer el scroll más dinámico*/
 *,
@@ -91,6 +84,7 @@
     /*Variables locales*/
     /*Accedemos a la animación*/
     animation: color-me-in 4s infinite;
+    /*transition: 1.5s ease;*/
     /*Colores html*/
     --color_b: #e59866; /*Bajo*/
     --color_m: #dc7633; /*Medio*/
@@ -189,37 +183,39 @@
 
 /*Animación para todas las tarjetas solo se iran 
     reemplazando las variables según el hover*/
-
+/*Reglas tipo fotográmas  color-me-in(nombre de la regla)*/
 @keyframes color-me-in {
     0% {
         /*background-image: linear-gradient(60deg, rgba(255,0,0,1) 0%, white 50%, rgba( 255, 87, 51 ) 90%);*/
-
         background: var(--color_b);
+        /*background-image: radial-gradient(white 20%, var(--color_b) 0%);*/
     }
 
     25% {
         background: var(--color_m);
         /*background-image: linear-gradient(120deg, rgba(255,0,0,1) 0%, white 50%, rgba( 255, 87, 51 ) 90%);*/
+        /*background-image: radial-gradient(white 20%, var(--color_m) 25%);*/
     }
 
     50% {
         background: var(--color_a);
         /*background-image: linear-gradient(180deg, rgba(255,0,0,1) 0%, white 50%, rgba( 255, 87, 51 ) 90%);*/
+        /*background-image: radial-gradient(white 20%, var(--color_a) 50%);*/
     }
+
 
     75% {
         background: var(--color_m);
         /*background-image: linear-gradient(240deg, rgba(255,0,0,1) 0%, white 50%, rgba( 255, 87, 51 ) 90%);*/
+        /*background-image: radial-gradient(white 20%, var(--color_m) 75%);*/
     }
 
     100% {
         background: var(--color_b);
         /*background-image: linear-gradient(300deg, rgba(255,0,0,1) 0%, white 50%, rgba( 255, 87, 51 ) 90%);*/
+        /*background-image: radial-gradient(white 20%, var(--color_b) 100%);*/
     }
 }
-
-
-
 
 
 .h-100 {
