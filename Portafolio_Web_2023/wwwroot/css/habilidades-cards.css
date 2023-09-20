@@ -92,12 +92,24 @@
     height: 150px;
 }
 
+
 /*Imagen de la tarjeta*/
 .card-img-logo {
-    
     width: 150px;
+    transition: 1.5s ease;
+    -moz-transition: 1.5s ease; /* Firefox */
+    -webkit-transition: 1.5s ease; /* Chrome - Safari */
+    -o-transition: 1.5s ease; /* Opera */
     /*border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);*/
+}
+
+.card-img-logo:hover {
+    transform: scale(1.5);
+    -moz-transform: scale(1.5); /* Firefox */
+    -webkit-transform: scale(1.5); /* Chrome - Safari */
+    -o-transform: scale(1.5); /* Opera */
+    -ms-transform: scale(1.5); /* IE9 */
 }
 
 /*Título de la tarjeta*/
