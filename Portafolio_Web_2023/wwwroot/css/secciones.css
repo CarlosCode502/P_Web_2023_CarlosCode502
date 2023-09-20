@@ -40,6 +40,7 @@
 
 /*ES IMPORTANTE MANEJAR LAS IMAGENES EN TIPO DE FORMA (px) ya que en (%) tiende a dejar espacios*/
 /*Al momento de trabajar con img se debe asignar un id para evitar errores de concurrencia*/
+/*Contenedor*/
 .img-perfil {
     /*    width: 100%;*/
     /*position: center;
@@ -264,29 +265,34 @@
         /*width: auto;*/
         /*max-height: 100%;*/
         /*  height: auto;*/
-        width: 300px;
-        padding: 20px 20px 40px 0;
+        width: 200px;
+        padding: 20px;
         display: block;
         /*Nuevo*/
-        float: left;
+        /*float: left;*/
        /* width: 150px;*/
-        height: 150px;
+        /*height: 150px;*/
         shape-outside: url("~/img/undraw_profile.svg");
     }
+
 
     .overflow-scroll_p {
         /*position: relative;*/
         padding: 0px 8px 0px 8px;
         margin: 0px 8px 0px 0;
-        max-height: 300px;
-        overflow-y: scroll;
+        max-height: 350px;
+        overflow-y: auto;
         /*max-height: 700px;
         overflow-y: scroll;*/
     }
 
     .contenido-card-perfil {
-        padding: 20px;
-        padding-bottom: 0;
+        padding: 0px;
+        /*padding-bottom: 0;*/
+    }
+
+    .contenido-perfil-card{
+        padding: 0;
     }
 
     .contenido-card-habilidades {
