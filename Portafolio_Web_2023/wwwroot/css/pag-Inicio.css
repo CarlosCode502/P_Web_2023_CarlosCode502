@@ -81,9 +81,9 @@
 }
 
     /*Efecto sombreado(hover) al pasar el cursor en el nav*/
-    .nav_menu:hover {
+/*    .nav_menu:hover {
         opacity: 1;
-    }
+    }*/
 
     /*Para que todos los enlaces "a" se muestren espaciados */
     .nav_menu a {
@@ -107,7 +107,7 @@
         /*Colr*/
         color: #000;
         /*Transición de tiempo para todas las propiedades*/
-        transition: .2s ease-in-out all;
+        transition: .2s ease all;
         /*Texto con negritas fuerte*/
         font-weight: 500;
     }

@@ -255,7 +255,7 @@
     /*  width: 64%;
     height: 64%;*/
     /*margin-top: 20px;*/
-    display: block;
+    /*display: block;*/
     margin: 40px auto 40px auto;
     width: 150px;
     height: 150px;
@@ -277,9 +277,9 @@
 
 /*#region Efecto zoom */
 /*Imagen de la tarjeta*/
-.card-img-logo {
+.card-img-h .card-img-logo {
     width: 150px;
-    transition: 1.5s ease;
+    transition: 1.5s ease; /*con ease los elementos no se sobreponen del nav*/
     -moz-transition: 1.5s ease; /* Firefox */
     -webkit-transition: 1.5s ease; /* Chrome - Safari */
     -o-transition: 1.5s ease; /* Opera */
@@ -287,7 +287,7 @@
     border-top-right-radius: calc(.25rem - 1px);*/
 }
 
-    .card-img-logo:hover {
+    .card-img-h .card-img-logo:hover {
         transform: scale(1.5);
         -moz-transform: scale(1.5); /* Firefox */
         -webkit-transform: scale(1.5); /* Chrome - Safari */
