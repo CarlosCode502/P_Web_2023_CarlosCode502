@@ -33,7 +33,11 @@
         /*Es como el margen en las tarjetas*/
         /* padding: 40px;*/
         border-radius: 8px;
-        /* border: 3px solid #0d6efd;*/
+        /* border-top: 1px solid rgb(0, 0, 0, 1);
+        border-left: 1px solid rgb(128, 128, 128);
+        border-right: 1px solid rgb(128, 128, 128);
+        border-bottom: 1px solid rgb(128, 128, 128);*/
+        border: 1px solid rgba(0,0,0,.125);
         /*box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 24px;*/
         /*margin:40px;*/
     }
@@ -210,8 +214,10 @@
     align-content: center;
     background-size: 100% 100%;
     /*background-image: url("https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg");*/
-    background-image: url("../img/5.jpg");
+    /*background-image: url("../img/5.jpg");*/
     /*background-color: #4e4949;*/
+    background-image: linear-gradient(180deg, rgb(0, 0, 0, 1), rgb(255, 255, 255, 1));
+    /*background-color: #424949 ;*/
 }
 
 .contenido-card-habilidades {
@@ -227,8 +233,10 @@
     align-content: center;
     background-size: 100% 100%;
     /*background-image: url("https://cdn.pixabay.com/photo/2015/02/24/02/05/website-647013_960_720.jpg");*/
-    background-image: url("../img/2.jpg");
+    /*background-image: url("../img/2.jpg");*/
     /*background-color: #2b2828;*/
+    background-image: linear-gradient(180deg, rgb(0, 0, 0, 1), rgb(255, 255, 255, 0));
+    /*background-color: #424949;*/
 }
 
 .contenido-card-recientes {
@@ -240,7 +248,9 @@
     align-content: center;
     background-size: 100% 100%;
     /*background-color: #0d0c0c;*/
-    background-image: url("https://cdn.pixabay.com/photo/2016/11/30/20/44/computer-1873831_960_720.png");
+    /*background-image: url("https://cdn.pixabay.com/photo/2016/11/30/20/44/computer-1873831_960_720.png");*/
+    background-image: linear-gradient(180deg, rgb(0, 0, 0, 1), rgb(255, 255, 255, 1));
+    /*background-color: #424949;*/
 }
 
 

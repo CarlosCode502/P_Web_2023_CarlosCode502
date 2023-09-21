@@ -69,6 +69,11 @@
     /*background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);*/
 }
 
+    .card-habilidad-hijo:hover {
+        /*Efecto 3d en las tarjetas*/
+        box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+    }
+
 /*Al pasar el mouse, agrega una sombra más profunda.*/
 .html:hover {
     /*#0d6efd*/
@@ -83,8 +88,7 @@
     /*background-image: linear-gradient(140deg, rgba(255,0,0,1) 0%, white 50%, rgba( 255, 87, 51 ) 90%);*/
     /*Variables locales*/
     /*Accedemos a la animación*/
-    animation: color-me-in 4s infinite;
-    /*transition: 1.5s ease;*/
+    animation: color-me-in 2s infinite;
     /*Colores html*/
     --color_b: #e59866; /*Bajo*/
     --color_m: #dc7633; /*Medio*/
@@ -93,7 +97,7 @@
 
 .css:hover {
     /*Accedemos a la animación*/
-    animation: color-me-in 4s infinite;
+    animation: color-me-in 2s infinite;
     /*Variables locales*/
     /*Colores css*/
     --color_b: #85c1e9; /*Bajo*/
@@ -103,7 +107,7 @@
 
 .js:hover {
     /*Accedemos a la animación*/
-    animation: color-me-in 4s infinite;
+    animation: color-me-in 2s infinite;
     /*Variables locales*/
     /*Colores js*/
     --color_b: #f9e79f; /*Bajo*/
@@ -111,15 +115,9 @@
     --color_a: #f4d03f; /*Alto*/
 }
 
-/*Color de icono*/
-/*.bootstrap {*/
-/*background-color: #5C2D91;*/
-/*fill: #5C2D91;*/
-/*}*/
-
 .bootstrap:hover {
     /*Accedemos a la animación*/
-    animation: color-me-in 4s infinite;
+    animation: color-me-in 2s infinite;
     /*Variables locales*/
     /*Colores bootstrap*/
     --color_b: #bb8fce; /*Bajo*/
@@ -129,7 +127,7 @@
 
 .api:hover {
     /*Accedemos a la animación*/
-    animation: color-me-in 4s infinite;
+    animation: color-me-in 2s infinite;
     /*Variables locales*/
     /*Colores api*/
     --color_b: #73c6b6; /*Bajo*/
@@ -145,7 +143,7 @@
 
 .net:hover {
     /*Accedemos a la animación*/
-    animation: color-me-in 4s infinite;
+    animation: color-me-in 2s infinite;
     /*Variables locales*/
     /*Colores net*/
     --color_b: #7538EA; /*Bajo*/
@@ -162,7 +160,7 @@
 
 .csharp:hover {
     /*Accedemos a la animación*/
-    animation: color-me-in 4s infinite;
+    animation: color-me-in 2s infinite;
     /*Variables locales*/
     /*Colores csharp*/
     --color_b: #bb8fce; /*Bajo*/
@@ -172,7 +170,7 @@
 
 .java:hover {
     /*Accedemos a la animación*/
-    animation: color-me-in 4s infinite;
+    animation: color-me-in 2s infinite;
     /*Variables locales*/
     /*Colores java*/
     --color_b: #f1948a; /*Bajo*/
@@ -182,7 +180,7 @@
 
 .cmas:hover {
     /*Accedemos a la animación*/
-    animation: color-me-in 4s infinite;
+    animation: color-me-in 2s infinite;
     /*Variables locales*/
     /*Colores cmas*/
     --color_b: #85c1e9; /*Bajo*/
@@ -192,7 +190,7 @@
 
 .php:hover {
     /*Accedemos a la animación*/
-    animation: color-me-in 4s infinite;
+    animation: color-me-in 2s infinite;
     /*Variables locales*/
     /*Colores php*/
     --color_b: #85929e; /*Bajo*/
@@ -277,7 +275,7 @@
 
 /*#region Efecto zoom */
 /*Imagen de la tarjeta*/
-.card-img-h .card-img-logo {
+.card-img-logo {
     width: 150px;
     transition: 1.5s ease; /*con ease los elementos no se sobreponen del nav*/
     -moz-transition: 1.5s ease; /* Firefox */
@@ -287,7 +285,7 @@
     border-top-right-radius: calc(.25rem - 1px);*/
 }
 
-    .card-img-h .card-img-logo:hover {
+    .card-img-logo:hover {
         transform: scale(1.5);
         -moz-transform: scale(1.5); /* Firefox */
         -webkit-transform: scale(1.5); /* Chrome - Safari */
