@@ -11,7 +11,6 @@
     height: 100px;*/
     /* background: #FF7A59;*/
     /*opacity: 0.90;*/
-    
 }
 
 .contenido-imagen {
@@ -41,7 +40,7 @@
     /*color: #f2f2f2;*/
     /*content: image('~/img/person-paisaje.jpg');*/
     max-width: 100%;
-/*    height: auto;*/
+    /*    height: auto;*/
 }
 
 /*NO SE USA*/
@@ -78,10 +77,13 @@
     top: 0; /*Coordenada 0*/
     /*Para ocultar el indicador en caso de que quede fuera y no se tenga seleccionado (dependiendo el disp será el error)*/
     overflow: hidden;
+    /*Indica el orden de un elemento posicionado y sus descendientes.*/
+/*Cuando varios elementos se superponen los de mayor valor cubren a los de menor valor*/
+    z-index: 999;
 }
 
     /*Efecto sombreado(hover) al pasar el cursor en el nav*/
-/*    .nav_menu:hover {
+    /*    .nav_menu:hover {
         opacity: 1;
     }*/
 
