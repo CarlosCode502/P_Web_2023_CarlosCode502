@@ -68,7 +68,10 @@ namespace Portafolio_Web_2023.Controllers
 			return View("cv");	
 		}
 
-		public IActionResult Contacto()
+		[HttpGet]
+        //V#63 Creando un simple formulario
+        //Solicitud HTTP Get solo mostrar datos
+        public IActionResult Contacto()
 		{
 			return View();
 		}
