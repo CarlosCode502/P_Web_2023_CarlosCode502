@@ -15,6 +15,10 @@ builder.Services.AddControllersWithViews();
 //En caso de que en el futuro se implemente otro repositorio desde una bd o similar solo de deba cambiar la ruta a la que apunta la interfaz
 builder.Services.AddTransient<IRepositorioProyecto, RepositorioProyecto>();
 
+//V#66 ENVIANDO EMAILS DESDE LA APP
+//Configuramos el servicio en la clase para inyecciones de dependencias
+//Como este servicio no necesita compartir datos usamos AddTransient(cambia el Guid)
+builder.Services.AddTransient<IServicioEmailSendGrid, ServicioEmailSendGrid>();
 
 var app = builder.Build();
 

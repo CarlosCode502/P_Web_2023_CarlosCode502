@@ -50,7 +50,7 @@ namespace Portafolio_Web_2023.Services
 
 
             //Asignamos el apikey al cliente(Muestra error si no se importa correctamente la apikey)
-            var cliente = new SendGridClient();//Importar
+            var cliente = new SendGridClient(apiKey);//Importar
             //Pasamos el correo y nombre del remitente
             var from = new EmailAddress(email, name);//Importar libreria
             //Titulo o encabezado que se mostrará en la bandeja de entrada junto al Nombre
@@ -66,7 +66,6 @@ namespace Portafolio_Web_2023.Services
             var contenidoHTML = $@"<strong>De:</strong> {contactoViewModel.Name} 
                                 <br/><br/> <strong>Email:</strong> {contactoViewModel.Email} 
                                 <br/><br/> <strong>Mensaje:</strong> {contactoViewModel.Message}";
-
             //Email único
             var singleEmail = MailHelper.CreateSingleEmail(from, to, subject, mensajeTextoPlano, contenidoHTML);
             //Para poder enviar el email

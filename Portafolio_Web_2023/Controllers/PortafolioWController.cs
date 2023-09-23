@@ -17,15 +17,18 @@ namespace Portafolio_Web_2023.Controllers
 		#region Campos generados automáticamente
 		private readonly ILogger<PortafolioWController> logger;
 		private readonly IRepositorioProyecto repositorioProyecto;
-		#endregion
+        private readonly IServicioEmailSendGrid servicioEmailSendGrid;
+        #endregion
 
-		//V#60 Entendiendo ILoger msjs de logs(Cuando se pasa ILogger a HomeController detectara los logs en la consola)
-		//Ctrl+. y en Create and assign fiel 'logger' para crearlo como CAMPO y agregar automaticamente los valores
-		public PortafolioWController(ILogger<PortafolioWController> logger, IRepositorioProyecto repositorioProyecto) {
+        //V#60 Entendiendo ILoger msjs de logs(Cuando se pasa ILogger a HomeController detectara los logs en la consola)
+        //Ctrl+. y en Create and assign fiel 'logger' para crearlo como CAMPO y agregar automaticamente los valores
+        //V#? Inyección de dependencias(Inyectando el servicio de SendGrid)
+        public PortafolioWController(ILogger<PortafolioWController> logger, IRepositorioProyecto repositorioProyecto, IServicioEmailSendGrid servicioEmailSendGrid) {
 			//Generados automáticamente
 			this.logger = logger;
 			this.repositorioProyecto = repositorioProyecto;
-		}
+            this.servicioEmailSendGrid = servicioEmailSendGrid;
+        }
 
         public IActionResult Index()
         {
@@ -76,15 +79,38 @@ namespace Portafolio_Web_2023.Controllers
 			return View();
 		}
 
+        //V#64 HTTP Post - Posteando el formulario
+        //Accion que se va a ejecutar ante una solicitud HttpPost
+        [HttpPost]
+        //Especificamos que vamos a recibir los datos de un modelo
+        //public IActionResult Contacto(ContactoViewModel contactoViewModel)
+        //{
+        //Lo cambiamos a un método Asyncrono
+        public async Task<IActionResult> Contacto(ContactoViewModel contactoViewModel)
+		{
+			//return View();
 
-		[HttpPost]
-		public IActionResult Contacto(ContactoViewModel contactoViewModel)
+			//V#65 Patrón Post-Redirección-Get
+			//Al mento de llenar los datos y hacer submit por error o fallo se pueden volver a reenviar los datos 
+			//lo que no es correcto, para evitar eso es necesario redirigir al usuario al momento de completar una
+			//accion como la de llenar un formulario
+
+			//Se va a redirigir al usuario a un nuevo formulario de agradecimiento(vista)
+			//V#66 ENVIANDO EMAILS DESDE LA APP()
+
+			await servicioEmailSendGrid.Enviar(contactoViewModel);
+			return RedirectToAction("Gracias");
+        }
+
+		[HttpGet]
+		public IActionResult Gracias()
 		{
 			return View();
 		}
 
 
-		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
