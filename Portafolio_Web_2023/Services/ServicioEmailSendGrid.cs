@@ -1,6 +1,5 @@
 ﻿//v#66 ENVIANDO EMAILS DESDE LA APP 02
 //PRIMERO SE DEBE INSTALAR EL NUGET DE SENDGRID
-
 using Portafolio_Web_2023.Models;
 using SendGrid;
 using SendGrid.Helpers.Mail;
@@ -33,7 +32,7 @@ namespace Portafolio_Web_2023.Services
             //"appsettings.Development.json"(area de desarrollo) a traves de IConfiguration 
 
             //Se obtiene y asigna el apiKey desde el V#61 Proveedores de configuración. 
-            var apiKey = configuration.GetValue<string>("SENDGRID_API_KEY");
+            var apiKey = configuration.GetValue<string>("SENDGRID_API_KEY2");
 
             //Se obtiene y asigna el correo remitente
             var email = configuration.GetValue<string>("SENDGRID_FROM");
@@ -48,28 +47,28 @@ namespace Portafolio_Web_2023.Services
             var nameTo = configuration.GetValue<string>("SENDGRID_NAME_TO");
 
 
-
             //Asignamos el apikey al cliente(Muestra error si no se importa correctamente la apikey)
+            //El problema aquí era que tenia 2 referencias al paquete en el proyecto (Portafolio_Web_2023) doble clicl para abrir el arch
             var cliente = new SendGridClient(apiKey);//Importar
             //Pasamos el correo y nombre del remitente
             var from = new EmailAddress(email, name);//Importar libreria
             //Titulo o encabezado que se mostrará en la bandeja de entrada junto al Nombre
             //Castamos o concatenamos un texto
-            var subject = $"¡{contactoViewModel.Name}, desea contactarte!";
+            var subject = $"¡{contactoViewModel.Nombre}, desea contactarte!";
             //A quien va dirijido el email(destinatario) nombre y email
             //Se recomienda usar solo correos que sean @gmail para no tener problemas por la api gratuita
             var to = new EmailAddress(emailTo, nameTo);
             //Asignamos el msj o contenido a una variable
-            var mensajeTextoPlano = contactoViewModel.Message;
+            var mensajeTextoPlano = contactoViewModel.Mensaje;
             //A través de un string interbolation(@$) es posible agregar código HTML
             //Ya sea para personalizar el msj o poder mostrar una vista HTML
-            var contenidoHTML = $@"<strong>De:</strong> {contactoViewModel.Name} 
+            var contenidoHTML = $@"<strong>De:</strong> {contactoViewModel.Nombre} 
                                 <br/><br/> <strong>Email:</strong> {contactoViewModel.Email} 
-                                <br/><br/> <strong>Mensaje:</strong> {contactoViewModel.Message}";
+                                <br/><br/> <strong>Mensaje:</strong> {contactoViewModel.Mensaje}";
             //Email único
             var singleEmail = MailHelper.CreateSingleEmail(from, to, subject, mensajeTextoPlano, contenidoHTML);
             //Para poder enviar el email
-            var respuesta = await cliente.SendEmail(singleEmail);
+            var respuesta = await cliente.SendEmailAsync(singleEmail);
         }
     }
 }

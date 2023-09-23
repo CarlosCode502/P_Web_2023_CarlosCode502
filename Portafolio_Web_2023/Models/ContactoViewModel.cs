@@ -10,7 +10,7 @@
         /// <summary>
         /// Contendrá el nombre
         /// </summary>
-        public string? Name { get; set; }    
+        public string? Nombre { get; set; }    
         /// <summary>
         /// Contendrá el correo
         /// </summary>
@@ -18,6 +18,6 @@
         /// <summary>
         /// El mensaje o descripción
         /// </summary>
-        public string? Message { get; set; }
+        public string? Mensaje { get; set; }
     }
 }
