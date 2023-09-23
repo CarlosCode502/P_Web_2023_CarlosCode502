@@ -66,9 +66,9 @@ namespace Portafolio_Web_2023.Services
                                 <br/><br/> <strong>Email:</strong> {contactoViewModel.Email} 
                                 <br/><br/> <strong>Mensaje:</strong> {contactoViewModel.Mensaje}";
             //Email único
-            var singleEmail = MailHelper.CreateSingleEmail(from, to, subject, mensajeTextoPlano, contenidoHTML);
+            var msj = MailHelper.CreateSingleEmail(from, to, subject, mensajeTextoPlano, contenidoHTML);
             //Para poder enviar el email
-            var respuesta = await cliente.SendEmailAsync(singleEmail);
+            var respuesta = await cliente.SendEmailAsync(msj);
         }
     }
 }
