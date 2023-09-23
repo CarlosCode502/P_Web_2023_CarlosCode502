@@ -32,7 +32,7 @@ namespace Portafolio_Web_2023.Services
             //"appsettings.Development.json"(area de desarrollo) a traves de IConfiguration 
 
             //Se obtiene y asigna el apiKey desde el V#61 Proveedores de configuración. 
-            var apiKey = configuration.GetValue<string>("SENDGRID_API_KEY2");
+            var apiKey = configuration.GetValue<string>("SENDGRID_API_KEY");
 
             //Se obtiene y asigna el correo remitente
             var email = configuration.GetValue<string>("SENDGRID_FROM");

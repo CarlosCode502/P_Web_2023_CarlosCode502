@@ -18,7 +18,7 @@ namespace Portafolio_Web_2023.Models
         public string? Nombre { get; set; }
 
         [Required]
-        [EmailAddress]
+        [DataType(DataType.EmailAddress)]
         public string? Email { get; set; }
 
         //V#45 Passwords y TextArea, Scaffolfing DataType(Permite especificar el tipo de dato del textbox)
