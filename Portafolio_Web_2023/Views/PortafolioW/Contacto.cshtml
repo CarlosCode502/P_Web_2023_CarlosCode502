@@ -4,16 +4,17 @@
 @{
     ViewData["Title"] = "Contacto - ";
     // Layout = null;
+        
     Layout = "~/Views/Shared/_Layout_Contacto.cshtml";
 }
 
-<div class="modal">
     <h1>Formulario de Contacto</h1>
     <form asp-area="" asp-controller="PortafolioW" asp-action="Contacto">
         <div class="mb-3">
             <label for="nombre" class="form-label">Nombre</label>
             @* Básicamente se crea un label y un txtbox para ingreso de nombre (el for=nombre apunta el id al momento de hacer clic en este) *@
             <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escriba aquí su nombre." />
+            
         </div>
         <div class="mb-3">
             <label for="email" class="form-label">Email</label>
@@ -25,4 +26,3 @@
         </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
-</div>

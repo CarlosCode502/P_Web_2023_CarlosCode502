@@ -86,6 +86,7 @@ namespace Portafolio_Web_2023.Controllers
         //public IActionResult Contacto(ContactoViewModel contactoViewModel)
         //{
         //Lo cambiamos a un método Asyncrono
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Contacto(ContactoViewModel contactoViewModel)
 		{
 			//return View();
