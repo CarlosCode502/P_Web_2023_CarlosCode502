@@ -3,6 +3,7 @@
 
 using Portafolio_Web_2023.Models;
 using SendGrid;
+using SendGrid.Helpers.Mail;
 
 namespace Portafolio_Web_2023.Services
 {
@@ -48,12 +49,28 @@ namespace Portafolio_Web_2023.Services
 
 
 
-            //Asignamos el apikey al cliente
-
+            //Asignamos el apikey al cliente(Muestra error si no se importa correctamente la apikey)
+            var cliente = new SendGridClient();//Importar
             //Pasamos el correo y nombre del remitente
+            var from = new EmailAddress(email, name);//Importar libreria
+            //Titulo o encabezado que se mostrará en la bandeja de entrada junto al Nombre
+            //Castamos o concatenamos un texto
+            var subject = $"¡{contactoViewModel.Name}, desea contactarte!";
+            //A quien va dirijido el email(destinatario) nombre y email
+            //Se recomienda usar solo correos que sean @gmail para no tener problemas por la api gratuita
+            var to = new EmailAddress(emailTo, nameTo);
+            //Asignamos el msj o contenido a una variable
+            var mensajeTextoPlano = contactoViewModel.Message;
+            //A través de un string interbolation(@$) es posible agregar código HTML
+            //Ya sea para personalizar el msj o poder mostrar una vista HTML
+            var contenidoHTML = $@"<strong>De:</strong> {contactoViewModel.Name} 
+                                <br/><br/> <strong>Email:</strong> {contactoViewModel.Email} 
+                                <br/><br/> <strong>Mensaje:</strong> {contactoViewModel.Message}";
 
-
-
+            //Email único
+            var singleEmail = MailHelper.CreateSingleEmail(from, to, subject, mensajeTextoPlano, contenidoHTML);
+            //Para poder enviar el email
+            var respuesta = await cliente.SendEmail(singleEmail);
         }
     }
 }

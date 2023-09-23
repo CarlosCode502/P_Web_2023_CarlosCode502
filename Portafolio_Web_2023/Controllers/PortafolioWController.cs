@@ -77,6 +77,13 @@ namespace Portafolio_Web_2023.Controllers
 		}
 
 
+		[HttpPost]
+		public IActionResult Contacto(ContactoViewModel contactoViewModel)
+		{
+			return View();
+		}
+
+
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
