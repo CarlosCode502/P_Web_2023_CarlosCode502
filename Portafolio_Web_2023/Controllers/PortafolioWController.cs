@@ -89,6 +89,12 @@ namespace Portafolio_Web_2023.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Contacto(ContactoViewModel contactoViewModel)
 		{
+			if (ModelState.IsValid)
+			{
+                await servicioEmailSendGrid.Enviar(contactoViewModel);
+                return RedirectToAction("Gracias");
+            }
+
 			//return View();
 
 			//V#65 Patrón Post-Redirección-Get
@@ -99,8 +105,9 @@ namespace Portafolio_Web_2023.Controllers
 			//Se va a redirigir al usuario a un nuevo formulario de agradecimiento(vista)
 			//V#66 ENVIANDO EMAILS DESDE LA APP()
 
-			await servicioEmailSendGrid.Enviar(contactoViewModel);
-			return RedirectToAction("Gracias");
+			//await servicioEmailSendGrid.Enviar(contactoViewModel);
+			//return RedirectToAction("Gracias");
+			return View(contactoViewModel);
         }
 
 		[HttpGet]
