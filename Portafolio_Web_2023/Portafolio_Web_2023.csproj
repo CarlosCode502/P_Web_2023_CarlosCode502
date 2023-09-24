@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable> <!--"enamble" admite valores nulos poner ? cunado sea necesario-->
+    <Nullable>disable</Nullable> <!--"enamble" admite valores nulos poner ? cunado sea necesario-->
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 

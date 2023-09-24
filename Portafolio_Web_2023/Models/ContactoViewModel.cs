@@ -14,20 +14,20 @@ namespace Portafolio_Web_2023.Models
         //Sirve para especificar que un String deba tener un longitud exacta o un rango de longitud
         //Y para especificar un rango Min(x) y Max(y) [StringLength(6, MinimumLength = 5)] 
         //Se personaliza el msj de error [ ErrMsj="El campo {0} debe tener
-        [Required]
-        [StringLength(30, MinimumLength = 3, ErrorMessage = "El campo {0} debe tener una longitud miníma de {2} y máxima de {1}")]
-        public string? Nombre { get; set; }
+        [Required(ErrorMessage = "El campo {0} es obligatorio. ")]
+        [StringLength(150, MinimumLength = 3, ErrorMessage = "El campo {0} debe tener una longitud miníma de {2} y máxima de {1}")]
+        public string Nombre { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "El campo {0} es obligatorio. ")]
         [DataType(DataType.EmailAddress)]
         [DisplayName("Correo")]
-        public string? Email { get; set; }
+        public string Email { get; set; }
 
         //V#45 Passwords y TextArea, Scaffolfing DataType(Permite especificar el tipo de dato del textbox)
         //Es muy útil cuando se desea personalizar el tipo de dato que se desea guardar en este 
         //En este caso el campo de esta propiedad pasa de ser un txt normal a un txt multilinea
-        [Required]
+        [Required(ErrorMessage = "El campo {0} es obligatorio. ")]
         [DataType(DataType.MultilineText)]
-        public string? Mensaje { get; set; }
+        public string Mensaje { get; set; }
     }
 }

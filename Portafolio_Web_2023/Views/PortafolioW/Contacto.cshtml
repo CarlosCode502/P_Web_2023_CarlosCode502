@@ -8,29 +8,29 @@
 }
 
 <div class="text-center">
-    <img src="~/img/undraw_group_chat.svg" alt="No image" class="img-fluid img-center mb-sm-3 mb-md-4 mb-lg-5 " width="350px" />
+    <img src="~/img/undraw_group_chat.svg" alt="No image" class="img-fluid img-center mb-sm-3 mb-md-4 mb-lg-5" width="380" />
 
-    <div class="">
+    <div class="mb-sm-2 mb-md-3 mb-lg-4">
     <h1>Enviame un correo</h1>
     </div>
 
     <div class="row justify-content-center mt-sm-1 mt-md-2 mt-lg-3">
         <div class=" col-sm-6 col-md-9 col-lg-12">
-            <form asp-action="Contacto">
+            <form asp-action="Contacto" class="fw-bolder">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-group mb-sm-2 mb-md-3 mb-lg-4">
-                    <label asp-for="Nombre" class="control-label mb-sm-1 mb-md-2 mb-lg-3"></label>
-                    <input asp-for="Nombre" class="form-control" placeholder="Escriba aquí su nombre." />
+                    <label asp-for="Nombre" class="control-label mb-sm-1 mb-md-2 mb-lg-3 fw-bold"></label>
+                    <input asp-for="Nombre" class="form-control fw-light" placeholder="Escriba aquí su nombre." />
                     <span asp-validation-for="Nombre" class="text-danger"></span>
                 </div>
                 <div class="form-group mb-sm-2 mb-md-3 mb-lg-4">
-                    <label asp-for="Email" class="control-label mb-sm-1 mb-md-2 mb-lg-3"></label>
-                    <input asp-for="Email" class="form-control" placeholder="email@ejemplo.com" />
+                    <label asp-for="Email" class="control-label mb-sm-1 mb-md-2 mb-lg-3 fw-bold"></label>
+                    <input asp-for="Email" class="form-control fw-lighter" placeholder="email@ejemplo.com" />
                     <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
                 <div class="form-group mb-sm-2 mb-md-3 mb-lg-4">
-                    <label asp-for="Mensaje" class="control-label mb-sm-1 mb-md-2 mb-lg-3"></label>
-                    <textarea asp-for="Mensaje" class="form-control"></textarea>
+                    <label asp-for="Mensaje" class="control-label mb-sm-1 mb-md-2 mb-lg-3 fw-bold"></label>
+                    <textarea asp-for="Mensaje" class="form-control fw-normal"></textarea>
                     <span asp-validation-for="Mensaje" class="text-danger"></span>
                 </div>
                 <div class="form-group">
