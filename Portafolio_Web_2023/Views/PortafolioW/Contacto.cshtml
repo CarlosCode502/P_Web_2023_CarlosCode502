@@ -7,31 +7,30 @@
     Layout = "~/Views/Shared/_Layout_Contacto.cshtml";
 }
 
-<div class="text-center">
-    <img src="~/img/undraw_group_chat.svg" alt="No image" class="img-fluid img-center mb-sm-3 mb-md-4 mb-lg-5" width="380" />
+<div class="text-center over">
+    <img src="~/img/undraw_group_chat.svg" alt="No image" class="img-fluid img-center mb-sm-3 mb-md-2 mb-lg-4" width="300" />
 
-    <div class="mb-sm-2 mb-md-3 mb-lg-4">
-    <h1>Enviame un correo</h1>
-    </div>
+    <h1 class="text-uppercase mb-sm-2 mb-md-3 mb-lg-4">Enviame un correo</h1>
 
     <div class="row justify-content-center mt-sm-1 mt-md-2 mt-lg-3">
         <div class=" col-sm-6 col-md-9 col-lg-12">
             <form asp-action="Contacto" class="fw-bolder">
+                @* <asp-route-returnurl="@ViewData["Index"]"></asp-route-returnurl> *@
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-group mb-sm-2 mb-md-3 mb-lg-4">
                     <label asp-for="Nombre" class="control-label mb-sm-1 mb-md-2 mb-lg-3 fw-bold"></label>
-                    <input asp-for="Nombre" class="form-control fw-light" placeholder="Escriba aquí su nombre." />
-                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                    <input asp-for="Nombre" class="form-control text-secondary" />
+                    <span asp-validation-for="Nombre" class="text-danger fw-light"></span>
                 </div>
                 <div class="form-group mb-sm-2 mb-md-3 mb-lg-4">
                     <label asp-for="Email" class="control-label mb-sm-1 mb-md-2 mb-lg-3 fw-bold"></label>
-                    <input asp-for="Email" class="form-control fw-lighter" placeholder="email@ejemplo.com" />
-                    <span asp-validation-for="Email" class="text-danger"></span>
+                    <input asp-for="Email" class="form-control text-secondary" />
+                    <span asp-validation-for="Email" class="text-danger fw-light"></span>
                 </div>
                 <div class="form-group mb-sm-2 mb-md-3 mb-lg-4">
                     <label asp-for="Mensaje" class="control-label mb-sm-1 mb-md-2 mb-lg-3 fw-bold"></label>
-                    <textarea asp-for="Mensaje" class="form-control fw-normal"></textarea>
-                    <span asp-validation-for="Mensaje" class="text-danger"></span>
+                    <textarea asp-for="Mensaje" class="form-control text-secondary"></textarea>
+                    <span asp-validation-for="Mensaje" class="text-danger fw-light"></span>
                 </div>
                 <div class="form-group">
                     <input type="submit" value="Enviar" class="btn btn-primary" />
@@ -40,6 +39,15 @@
         </div>
     </div>
 </div>
+
+@section Scripts{
+    <script type="text/javascript" src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+}
+
+@* <script Scripts>
+    Scripts 
+</script> *@
 
 @* <div class="pt-5">
     <h1>Formulario de Contacto</h1>
