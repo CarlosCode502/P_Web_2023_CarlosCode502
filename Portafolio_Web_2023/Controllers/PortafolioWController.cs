@@ -89,25 +89,32 @@ namespace Portafolio_Web_2023.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Contacto(ContactoViewModel contactoViewModel)
 		{
-			if (ModelState.IsValid)
+			//Instrucción Try-Catch
+			//Control o manejo de exepciones
+			try
 			{
-                await servicioEmailSendGrid.Enviar(contactoViewModel);
-                return RedirectToAction("Gracias");
-            }
+				//return View();
 
-			//return View();
+				//V#65 Patrón Post-Redirección-Get
+				//Al mento de llenar los datos y hacer submit por error o fallo se pueden volver a reenviar los datos 
+				//lo que no es correcto, para evitar eso es necesario redirigir al usuario al momento de completar una
+				//accion como la de llenar un formulario
 
-			//V#65 Patrón Post-Redirección-Get
-			//Al mento de llenar los datos y hacer submit por error o fallo se pueden volver a reenviar los datos 
-			//lo que no es correcto, para evitar eso es necesario redirigir al usuario al momento de completar una
-			//accion como la de llenar un formulario
+				//Se va a redirigir al usuario a un nuevo formulario de agradecimiento(vista)
+				//V#66 ENVIANDO EMAILS DESDE LA APP()
+				if (ModelState.IsValid)
+				{
+					await servicioEmailSendGrid.Enviar(contactoViewModel);
+					return RedirectToAction(nameof(Gracias));
+				}
 
-			//Se va a redirigir al usuario a un nuevo formulario de agradecimiento(vista)
-			//V#66 ENVIANDO EMAILS DESDE LA APP()
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine($"Error de envio, los detalles son los siguientes:\n{ex.Message}");
+			}
 
-			//await servicioEmailSendGrid.Enviar(contactoViewModel);
-			//return RedirectToAction("Gracias");
-			return View(contactoViewModel);
+            return View(contactoViewModel);
         }
 
 		[HttpGet]

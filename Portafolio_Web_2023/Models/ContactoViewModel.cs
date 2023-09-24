@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace Portafolio_Web_2023.Models
 {
@@ -19,6 +20,7 @@ namespace Portafolio_Web_2023.Models
 
         [Required]
         [DataType(DataType.EmailAddress)]
+        [DisplayName("Correo")]
         public string? Email { get; set; }
 
         //V#45 Passwords y TextArea, Scaffolfing DataType(Permite especificar el tipo de dato del textbox)
