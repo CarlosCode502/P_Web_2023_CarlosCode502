@@ -11,7 +11,7 @@
     <img src="~/img/undraw_group_chat.svg" alt="No image" class="img-fluid img-center mb-sm-3 mb-md-2 mb-lg-4" width="300" />
 
     <h1 class="text-uppercase mb-sm-2 mb-md-3 mb-lg-4">Enviame un correo</h1>
-
+@*     @Html.ValidationSummary *@
     <div class="row justify-content-center mt-sm-1 mt-md-2 mt-lg-3">
         <div class=" col-sm-6 col-md-9 col-lg-12">
             <form asp-action="Contacto" class="fw-bolder">
@@ -40,10 +40,18 @@
     </div>
 </div>
 
-@section Scripts{
+@* Lo que debía escribir *@
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+@* Lo que escribí *@
+@* @section Scripts{
     <script type="text/javascript" src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
     <script type="text/javascript" src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
-}
+} *@
 
 @* <script Scripts>
     Scripts 
