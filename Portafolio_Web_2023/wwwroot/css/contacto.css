@@ -1,2 +1,18 @@
-﻿body {
+﻿.texto-parpadear {
+    text-align: center;
+    /*font-size: 6.5em;*/
+    /*color: #fff;*/
+    color: #0d6efd;
+    /*Espacio entre letras*/
+    /*letter-spacing: -7px;*/
+    /*font-weight: 700;*/
+    text-transform: uppercase;
+    animation: parpadear 2s ease-out infinite;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+@keyframes parpadear {
+    from {
+        text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 50px #fff, 0px 0px 50px #fff, 0px 0px 50px #0d6efd, 0px 0px 150px #0d6efd, 0px 10px 100px #0d6efd, 0px 10px 100px #0d6efd, 0px 10px 100px #0d6efd, 0px 10px 100px #0d6efd, 0px -10px 100px #0d6efd, 0px -10px 100px #0d6efd;
+    }
 }
