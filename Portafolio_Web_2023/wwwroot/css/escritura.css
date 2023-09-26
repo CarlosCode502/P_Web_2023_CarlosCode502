@@ -11,7 +11,7 @@
 
 .typed-name {
     /*Color del cursor*/
-    color: #0EA5E9;
+    color: var(--colorGlobal);
     /*font-family: 'Francois One', sans-serif;*/
 }
 /*CÓDIGO CSS DE MI ANIMACIÓN ESCRITURA*/
@@ -22,7 +22,7 @@
     /*opacity: 1;*/
     margin-left: 20px;
     /*color del titulo*/
-    color: #0EA5E9;
+    color: var(--colorGlobal);
 }
 
 /*Textos*/

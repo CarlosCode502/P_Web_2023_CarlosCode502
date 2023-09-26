@@ -22,9 +22,9 @@
         /*Separa la linea de los iconos de contacto*/
         margin-block-start: 30px;
         /*Color de texto*/
-        color: #0EA5E9;
+        color: var(--colorGlobal);
         /*Efecto remarcado al texto*/
-        text-shadow: 0 1px #0EA5E9, 0 1px #0EA5E9;
+        text-shadow: 0 1px var(--colorGlobal), 0 1px var(--colorGlobal);
     }
 
     .footer .texto-gris {
