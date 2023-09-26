@@ -1,4 +1,9 @@
 ﻿/*Toda la página*/
+
+:root {
+    --colorGlobalCV: #0EA5E9;
+}
+
 body {
     /*background-color: #2B2A33;*/
     margin: 0;
@@ -19,7 +24,7 @@ body {
 /*Nombre*/
 .titulo {
     font-weight: 900;
-    color: dodgerblue;
+    color: var(--colorGlobalCV);
     font-size: 30px;
     margin-bottom: 5px;
 }
@@ -35,7 +40,7 @@ body {
     display: flex;
     align-content: center;
     align-items: center;
-    border: 6px solid dodgerblue;
+    border: 6px solid var(--colorGlobalCV);
     padding: 10px;
     /*position: center;*/
     /*margin-left: 10%;*/
@@ -45,7 +50,7 @@ body {
 .phone, .gmail, .github {
     font-weight: 300;
     margin: auto;
-    color: #2681e4;
+    color: var(--colorGlobalCV);
     /*display: flex;
     align-content: end;
     align-items: end; */
@@ -201,7 +206,7 @@ h1, h2, h3, h4, h5, h6 {
 /*Formato diferente para todos los h5*/
 h5 {
     font-weight: bold;
-    color: dodgerblue;
+    color: var(--colorGlobalCV);
     font-size: 20px;
     margin-bottom: 20px;
 }
@@ -301,7 +306,7 @@ ul {
 
     /*Cambiar el borde y cambiar la propiedad de flex a block*/
     .contacto {
-        border: 4px solid dodgerblue;
+        border: 4px solid var(--colorGlobalCV);
         display: block;
         /*padding: 10px;*/
     }

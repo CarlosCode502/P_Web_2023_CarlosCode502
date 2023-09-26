@@ -1,5 +1,9 @@
 ﻿/*AQUI SE ENCUENTRA TODA LA CONFIGURACIÓN DE LA SECCION PROYECTOS RECIENTES*/
 
+:root {
+    --colorGlobalR: #0EA5E9;
+}
+
 /*Importante para hacer el scroll más dinámico*/
 *,
 *::before,
@@ -133,7 +137,7 @@
 
 .btn-primary {
     color: #fff;
-    background-color: #0d6efd;
+    background-color: var(--colorGlobalR);
     border-color: inherit;
 }
 

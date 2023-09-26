@@ -1,4 +1,8 @@
-﻿/*.secciones {*/
+﻿:root {
+    --colorGlobalS: #0EA5E9;
+}
+
+/*.secciones {*/
 /*SI LO CONVIERTO EN NEGATIVO CRECE LA BARRA DE ABAJAO*/
 /*margin: 10px;
 }*/
@@ -90,7 +94,7 @@
 
 .btn-ver-recientes {
     color: #fff;
-    background-color: #0d6efd;
+    background-color: var(--colorGlobalS);
     /* border-color: #0d6efd;*/
     text-decoration: none;
     padding: 10px;
