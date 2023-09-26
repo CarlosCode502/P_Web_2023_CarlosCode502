@@ -2,7 +2,10 @@
     background-image: url(img/person-paisaje.jpg);
 }*/
 
-
+/*Color celeste(#0EA5E9) global*/
+:root {
+    --colorGlobal: #0EA5E9;
+}
 
 * {
     padding: 0;

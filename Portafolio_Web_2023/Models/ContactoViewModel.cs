@@ -15,11 +15,11 @@ namespace Portafolio_Web_2023.Models
         //Y para especificar un rango Min(x) y Max(y) [StringLength(6, MinimumLength = 5)] 
         //Se personaliza el msj de error [ ErrMsj="El campo {0} debe tener
         [Required(ErrorMessage = "* El campo {0} es obligatorio.")]
-        [StringLength(150, MinimumLength = 3, ErrorMessage = "El campo {0} debe tener una longitud miníma de {2} y máxima de {1}")]
+        [StringLength(150, MinimumLength = 3, ErrorMessage = "El campo {0} debe tener una longitud miníma de {2} y máxima de {1} caracteres.")]
         public string Nombre { get; set; }
 
         [Required(ErrorMessage = "* El campo {0} es obligatorio.")]
-        [DataType(DataType.EmailAddress)]
+        [DataType(DataType.EmailAddress, ErrorMessage = "Ingrese una dirección de correo válida.")]
         [DisplayName("Correo")]
         public string Email { get; set; }
 

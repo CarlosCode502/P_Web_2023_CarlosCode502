@@ -21,8 +21,10 @@
     .footer .text-copy {
         /*Separa la linea de los iconos de contacto*/
         margin-block-start: 30px;
+        /*Color de texto*/
+        color: #0EA5E9;
         /*Efecto remarcado al texto*/
-        text-shadow: 0 1px;
+        text-shadow: 0 1px #0EA5E9, 0 1px #0EA5E9;
     }
 
     .footer .texto-gris {
