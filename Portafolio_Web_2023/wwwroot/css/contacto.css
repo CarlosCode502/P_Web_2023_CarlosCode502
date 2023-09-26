@@ -1,4 +1,8 @@
-﻿.texto-parpadear {
+﻿:root {
+    --colorGlobal: #0d6efd;
+}
+
+.texto-parpadear {
     text-align: center;
     /*font-size: 6.5em;*/
     /*color: #fff;*/

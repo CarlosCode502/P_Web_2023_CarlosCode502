@@ -8,7 +8,8 @@
 }
 
 <div class="text-center">
-    <img src="~/img/undraw_group_chat.svg" alt="No image" class="img-fluid img-center mb-sm-3 mb-md-2 mb-lg-4" width="300" />
+    @* style="width:300px;height:128px; *@
+    <img src="~/img/undraw_group_chat.svg" alt="No image" class="img-fluid img-center mb-sm-3 mb-md-2 mb-lg-4" style="width:300px;"  />
 
     <h1 class="text-uppercase mb-sm-2 mb-md-3 mb-lg-4">Enviame un correo</h1>
     @*     @Html.ValidationSummary *@
@@ -19,18 +20,18 @@
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-group mb-sm-2 mb-md-3 mb-lg-4">
                     <label asp-for="Nombre" class="control-label mb-sm-1 mb-md-2 mb-lg-3 fw-bold"></label>
-                    <input asp-for="Nombre" class="form-control text-secondary" />
-                    <span asp-validation-for="Nombre" class="text-danger fw-light"></span>
+                    <input asp-for="Nombre" class="form-control text-secondary  mb-2 mb-sm-2 mb-md-2 mb-lg-2" />
+                    <span asp-validation-for="Nombre" class="text-danger fw-light  mb-2 mb-sm-2 mb-md-2 mb-lg-2"></span>
                 </div>
                 <div class="form-group mb-sm-2 mb-md-3 mb-lg-4">
                     <label asp-for="Email" class="control-label mb-sm-1 mb-md-2 mb-lg-3 fw-bold"></label>
-                    <input asp-for="Email" class="form-control text-secondary" />
-                    <span asp-validation-for="Email" class="text-danger fw-light"></span>
+                    <input asp-for="Email" class="form-control text-secondary  mb-2 mb-sm-2 mb-md-2 mb-lg-2" />
+                    <span asp-validation-for="Email" class="text-danger fw-light  mb-2 mb-sm-2 mb-md-2 mb-lg-2"></span>
                 </div>
                 <div class="form-group mb-sm-2 mb-md-3 mb-lg-4">
                     <label asp-for="Mensaje" class="control-label mb-sm-1 mb-md-2 mb-lg-3 fw-bold"></label>
-                    <textarea asp-for="Mensaje" class="form-control text-secondary"></textarea>
-                    <span asp-validation-for="Mensaje" class="text-danger fw-light"></span>
+                    <textarea asp-for="Mensaje" class="form-control text-secondary  mb-2 mb-sm-2 mb-md-2 mb-lg-2"></textarea>
+                    <span asp-validation-for="Mensaje" class="text-danger fw-light  mb-2 mb-sm-2 mb-md-2 mb-lg-2"></span>
                 </div>
                 <div class="form-group">
                     <input type="submit" value="Enviar" class="btn btn-primary" />
@@ -41,10 +42,10 @@
 </div>
 
 
-<div>
+@* <div>
     <a asp-action="Gracias" asp-controller="PortafolioW">IR a gracias</a>
 </div>
-
+ *@
 @* Lo que debía escribir *@
 @section Scripts {
     @{
