@@ -8,12 +8,14 @@
     font-family: 'Josefin Slab', serif;*/
     /*font-family: 'Satisfy', cursive;*/
 /*}*/
-
-.typed-name {
-    /*Color del cursor*/
-    color: var(--colorGlobal);
-    /*font-family: 'Francois One', sans-serif;*/
-}
+/**/
+/*.bloque{
+    width: auto;
+    height: auto;
+    background-color: white;
+    position: relative;
+}*/
+/**/
 /*CÓDIGO CSS DE MI ANIMACIÓN ESCRITURA*/
 .titulo {
     /*font-size: 90px;*/
@@ -23,6 +25,15 @@
     margin-left: 20px;
     /*color del titulo*/
     color: var(--colorGlobal);
+
+/*    width: 600px;
+    height: 600px;*/
+}
+
+.typed-name {
+    /*Color del cursor*/
+    color: var(--colorGlobal);
+    /*font-family: 'Francois One', sans-serif;*/
 }
 
 /*Textos*/
