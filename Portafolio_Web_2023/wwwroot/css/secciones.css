@@ -1,5 +1,6 @@
 ﻿:root {
     --colorGlobalS: #0d6efd;
+
 }
 
 /*.secciones {*/
@@ -40,7 +41,7 @@
         /* border-top: 1px solid rgb(0, 0, 0, 1);
         border-left: 1px solid rgb(128, 128, 128);
         border-right: 1px solid rgb(128, 128, 128);
-        border-bottom: 1px solid rgb(128, 128, 128);*/
+        border-bottomB: 1px solid rgb(128, 128, 128);*/
         border: 1px solid rgba(0,0,0,.125);
         /*box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 24px;*/
         /*margin:40px;*/
@@ -83,32 +84,8 @@
 }*/
 
 
-/*Botón footer de todas las secciones*/
-.card-footer-primary {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
 
-.btn-ver-recientes {
-    color: #fff;
-    background-color: var(--colorGlobalS);
-    /* border-color: #0d6efd;*/
-    text-decoration: none;
-    padding: 10px;
-    border-radius: .25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
 
-    .btn-ver-recientes:hover {
-        /*    padding: 15px;
-    font-size: 20px;*/
-        /* font-size: 20px;*/
-        /* color: black;*/
-        background-color: #33a3f7;
-    }
 
 /*Encabezado de las secciones*/
 /*.seccion h1 {
@@ -208,8 +185,8 @@
 
 .contenido-perfil-card {
     word-wrap: normal;
-    text-justify: auto;
-
+    /*text-justify: auto;*/
+    text-align: left;
 }
 
 /*Estilo al id de la sección perfil*/
@@ -263,14 +240,12 @@
 /*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
 @media screen and (max-width: 1050px) {
     .seccion {
-/*se cambio de 20*/
         padding: 20px;
     }
 
         .seccion .card {
             /*            height: 90%;*/
             /*Es como el margen en las tarjetas*/
-            /*se cambio de 20*/
             padding: 20px;
             border-radius: 8px;
         }
@@ -323,19 +298,4 @@
     .contenido-card-recientes {
         padding: 0 20px;
     }
-    /*.seccion h1 {
-            font-size: 32px;*/
-    /*NO SE USA 👇*/
-    /*margin-bottom: 20px;*/
-    /*}
-
-        .seccion p {
-            line-height: 28px;
-            font-size: 15px;
-        }*/
-
-    /* .overflow-scroll {
-        max-height: 600px;
-        overflow-y: scroll;
-    }*/
 }

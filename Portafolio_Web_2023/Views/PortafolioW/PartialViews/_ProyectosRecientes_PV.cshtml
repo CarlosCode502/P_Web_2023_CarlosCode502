@@ -26,7 +26,17 @@
 
             @* Cambiado a proposito el nombre de la clase card-footers *@
             <div class="card-footer-primary">
-                <a class="boton btn-ver-recientes" asp-area="" asp-controller="PortafolioW" asp-action="Proyectos">Ver todos los proyectos</a>
+                <ul class="menu">
+                    <li>
+                        <a class="btn-ver-recientes" asp-area="" asp-controller="PortafolioW" asp-action="Proyectos">
+                            Ver todos los proyectos
+                            <span class="border border-top"></span>
+                            <span class="border border-right"></span>
+                            <span class="border border-bottom"></span>
+                            <span class="border border-left"></span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
