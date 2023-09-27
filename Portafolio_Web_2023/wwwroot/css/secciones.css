@@ -61,6 +61,7 @@
     /*padding: 0 60px 0;*/
 }
 
+/*Imagen*/
 .img-p {
     /*width: auto;*/
     /*max-height: 100%;*/
@@ -71,8 +72,14 @@
     display: block;
     /*border-style: groove;*/
     /*margin-bottom:20px;*/
+
+    /*border: 1px solid black;*/
 }
 
+/*.img-p:hover{
+    border: 2px solid black;
+}
+*/
 /*.contenido-perfil-card {*/
 /*margin-left: 50%;*/
 /*display: inline-block;
