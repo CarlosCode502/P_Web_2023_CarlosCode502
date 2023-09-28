@@ -3,6 +3,7 @@
     --transition-delay: 0.2s;
 }
 
+/*Footers de la ssecciones*/
 /*Botón footer de las secciones ver proyectos y ver cv*/
 .card-footer-primary {
     margin-top: 10px;
@@ -13,12 +14,34 @@
 }
 
 
-.menu a {
+/*Diseño de los botones ver todos los proyectos y cv los (a)*/
+.btn-secciones {
+    position: relative;
+    display: block;
+    /*Color de texto*/
+    color: #fff;
+    /*Color de fondo y toma el valor de nuestra variable global*/
+    background-color: var(--colorGlobal);
+    
+    /*    pad padding-right: 78px;
+    padding-left: 78px;*/
+    border-radius: 6px;
+}
+
+/*Padding personalizado para btn perfil*/
+.btn-pdd-perfil {
+    padding: 20px 78px 20px 78px;
+}
+
+/*Padding personalizado para btn recientes*/
+.btn-pdd-recientes {
+    padding: 20px;
+}
+/*.menu a {
     position: relative;
     display: block;
     padding: 20px;
-}
-
+}*/
 a {
     /*color: black;*/
     text-decoration: none;
@@ -36,6 +59,7 @@ ul {
     /*color: red;*/
     border: 2px solid black;
     /*border-radius: .75rem;*/
+    border-radius: 6px;
 }
 
 .menu .border-top,
@@ -104,13 +128,4 @@ ul {
 
 .menu a:hover .border-left {
     transition-delay: var(--transition-delay * 2);
-}
-
-/*Diseño de los botones ver todos los proyectos y cv*/
-.btn-ver-recientes {
-/*Color de texto*/
-    color: #fff;
-/*Color de fondo y toma el valor de nuestra variable global*/
-    background-color: var(--colorGlobal);
-
 }
