@@ -19,7 +19,9 @@ namespace Portafolio_Web_2023.Models
         public string Nombre { get; set; }
 
         [Required(ErrorMessage = "* El campo {0} es obligatorio.")]
-        [DataType(DataType.EmailAddress, ErrorMessage = "Ingrese una dirección de correo válida.")]
+        //Esta DA no muestra el mensaje de error personalizado solo el por default
+        //[DataType(DataType.EmailAddress, ErrorMessage = "Ingrese una dirección de correo válida.")]
+        [EmailAddress(ErrorMessage = "Ingrese una dirección de correo válida.")]
         [DisplayName("Correo")]
         public string Email { get; set; }
 
