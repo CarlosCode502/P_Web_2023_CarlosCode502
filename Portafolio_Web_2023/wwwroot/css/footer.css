@@ -6,16 +6,8 @@
     line-height: 30px;
     /*Contenido centrado*/
     text-align: center;
-    /*NO SE USA 👇*/
-    /*position: fixed;*/
-    /*bottom: 0;*/
-    /*width: 100%*/
-    /*//#*/
-    /*bottom: 0;*/
-    /*width: 100%;*/
-    /*white-space: nowrap;*/
-    /*position: absolute;*/
-    /*background-color: #a6acaf;*/
+    /*Color de fondo*/
+    /*background-color: #191919;*/
 }
 
     .footer .text-copy {
@@ -25,6 +17,8 @@
         color: var(--colorGlobal);
         /*Efecto remarcado al texto*/
         text-shadow: 0 1px var(--colorGlobal), 0 1px var(--colorGlobal);
+        /*Espacio entre del footer*/
+        margin-bottom: 20px;
     }
 
     .footer .texto-gris {

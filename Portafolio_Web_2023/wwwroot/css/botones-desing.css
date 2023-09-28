@@ -3,7 +3,7 @@
     --transition-delay: 0.2s;
 }
 
-/*Botón footer de todas las secciones*/
+/*Botón footer de las secciones ver proyectos y ver cv*/
 .card-footer-primary {
     margin-top: 10px;
     display: flex;
@@ -106,15 +106,11 @@ ul {
     transition-delay: var(--transition-delay * 2);
 }
 
-
-
-/*FORMATO ANTIGUO DE LOS BOTONES*/
+/*Diseño de los botones ver todos los proyectos y cv*/
 .btn-ver-recientes {
+/*Color de texto*/
     color: #fff;
+/*Color de fondo y toma el valor de nuestra variable global*/
     background-color: var(--colorGlobal);
 
 }
-
-    .btn-ver-recientes:hover {
-        /*background-color: #33a3f7;*/
-    }
