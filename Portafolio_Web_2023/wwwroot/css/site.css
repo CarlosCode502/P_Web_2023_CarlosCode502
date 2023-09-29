@@ -51,23 +51,25 @@ header {
     width: 64px;
     height: 64px;
     fill: var(--colorGlobal);
-    opacity: 0.5
+    opacity: 0.5;
 }
 
-.btn-inicio-float:hover{
-    opacity: 1;
-}
+    .btn-inicio-float:hover {
+        opacity: 1;
+    }
 
 
 /*Para pantallas grandes*/
-@media (min-width: 910px) {
-
+@media (min-width: 721px) {
 }
 
 
 /* En pantallas pequeñas */
-@media screen and (max-width: 909px) {
-
+@media screen and (max-width: 720px) {
+    /*Ocultar el botón regresar al inicio*/
+    .btn-inicio-float {
+        visibility: hidden;
+    }
 }
 
 
