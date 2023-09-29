@@ -25,6 +25,10 @@ namespace Portafolio_Web_2023.Models
         [DisplayName("Correo")]
         public string Email { get; set; }
 
+        [Compare("Email", ErrorMessage = "El correo no coincide.")]
+        [DisplayName("Confirmar correo")]
+        public string ConfirmarEmail { get; set; }
+
         //V#45 Passwords y TextArea, Scaffolfing DataType(Permite especificar el tipo de dato del textbox)
         //Es muy útil cuando se desea personalizar el tipo de dato que se desea guardar en este 
         //En este caso el campo de esta propiedad pasa de ser un txt normal a un txt multilinea
