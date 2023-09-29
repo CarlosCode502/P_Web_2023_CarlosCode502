@@ -9,7 +9,7 @@
 
 <div class="text-center">
     @* style="width:300px;height:128px; *@
-    <img src="~/img/undraw_group_chat.svg" alt="No image" class="img-fluid img-center mb-sm-3 mb-md-2 mb-lg-4" style="width:300px;" />
+    <img class="img-fluid img-center mb-sm-3 mb-md-2 mb-lg-4" src="~/img/undraw_group_chat.svg" alt="undraw_group_chat.svg" title="chat grupal" style="width:300px;" />
 
     <h1 class="text-uppercase mb-sm-2 mb-md-3 mb-lg-4">Enviame un correo</h1>
     @*     @Html.ValidationSummary *@
@@ -19,24 +19,38 @@
                 @* <asp-route-returnurl="@ViewData["Index"]"></asp-route-returnurl> *@
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-group mb-sm-2 mb-md-3 mb-lg-4">
-                    <label asp-for="Nombre" class="control-label mb-sm-1 mb-md-2 mb-lg-3 fw-bold"></label>
-                    <input asp-for="Nombre" class="form-control text-secondary  mb-2 mb-sm-2 mb-md-2 mb-lg-2" placeholder="Ingrese su nombre." />
-                    <span asp-validation-for="Nombre" class="text-danger fw-light  mb-2 mb-sm-2 mb-md-2 mb-lg-2"></span>
+                    <label asp-for="Nombre" class="control-label fw-bold mb-sm-1 mb-md-2 mb-lg-3"></label>
+                    <input asp-for="Nombre" class="form-control fw-normal mb-2 mb-sm-2 mb-md-2 mb-lg-2" placeholder="Ingrese su nombre." />
+                    <span asp-validation-for="Nombre" class="text-danger fw-light mb-2 mb-sm-2 mb-md-2 mb-lg-2"></span>
                 </div>
                 <div class="form-group mb-sm-2 mb-md-3 mb-lg-4">
-                    <label asp-for="Email" class="control-label mb-sm-1 mb-md-2 mb-lg-3 fw-bold"></label>
-                    <input asp-for="Email" class="form-control text-secondary  mb-2 mb-sm-2 mb-md-2 mb-lg-2" placeholder="correo@gmail.com" />
-                    <span asp-validation-for="Email" class="text-danger fw-light  mb-2 mb-sm-2 mb-md-2 mb-lg-2"></span>
+                    <label asp-for="Email" class="control-label fw-bold mb-sm-1 mb-md-2 mb-lg-3"></label>
+                    <input asp-for="Email" class="form-control fw-normal mb-2 mb-sm-2 mb-md-2 mb-lg-2" placeholder="correo@gmail.com" />
+                    <span asp-validation-for="Email" class="text-danger fw-light mb-2 mb-sm-2 mb-md-2 mb-lg-2"></span>
+                </div>
+   @*              <div class="form-check text-start fw-light">
+                    <input class="form-check-input " type="checkbox" value="" id="validar" />
+                    <label class="form-check-label" for="validar">comparar correo.</label>
+                </div> *@
+@* 
+                @{
+                    var cb = ".form-check";
+                    // bool seleccionado = Html.CheckBox(s );
+                    if (cb == true)
+                    {
+
+                    }
+                } *@
+
+                <div class="campo-validar form-group mb-sm-2 mb-md-3 mb-lg-4 visually-hidden">
+                    <label asp-for="ConfirmarEmail" class="control-label fw-bold mb-sm-1 mb-md-2 mb-lg-3"></label>
+                    <input asp-for="ConfirmarEmail" class="form-control fw-normal mb-2 mb-sm-2 mb-md-2 mb-lg-2" placeholder="correo@gmail.com" />
+                    <span asp-validation-for="ConfirmarEmail" class="text-danger fw-light mb-2 mb-sm-2 mb-md-2 mb-lg-2"></span>
                 </div>
                 <div class="form-group mb-sm-2 mb-md-3 mb-lg-4">
-                    <label asp-for="ConfirmarEmail" class="control-label mb-sm-1 mb-md-2 mb-lg-3 fw-bold"></label>
-                    <input asp-for="ConfirmarEmail" class="form-control text-secondary  mb-2 mb-sm-2 mb-md-2 mb-lg-2" placeholder="correo@gmail.com" />
-                    <span asp-validation-for="ConfirmarEmail" class="text-danger fw-light  mb-2 mb-sm-2 mb-md-2 mb-lg-2"></span>
-                </div>
-                <div class="form-group mb-sm-2 mb-md-3 mb-lg-4">
-                    <label asp-for="Mensaje" class="control-label mb-sm-1 mb-md-2 mb-lg-3 fw-bold"></label>
+                    <label asp-for="Mensaje" class="control-label fw-bold mb-sm-1 mb-md-2 mb-lg-3"></label>
                     <textarea asp-for="Mensaje" class="form-control fw-normal mb-2 mb-sm-2 mb-md-2 mb-lg-2" placeholder="Escriba su mensaje."></textarea>
-                    <span asp-validation-for="Mensaje" class="text-danger fw-light  mb-2 mb-sm-2 mb-md-2 mb-lg-2"></span>
+                    <span asp-validation-for="Mensaje" class="text-danger fw-light mb-2 mb-sm-2 mb-md-2 mb-lg-2"></span>
                 </div>
                 <div class="form-group">
                     <input type="submit" value="Enviar" class="btn btn-primary" />
