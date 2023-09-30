@@ -109,7 +109,7 @@
         /*Decoracion del texto(linea de enlace)*/
         text-decoration: none;
         /*Colr*/
-        color: #000;
+        color: var(--colorGlobal);
         /*Transición de tiempo para todas las propiedades*/
         /*transition: .2s ease all;*/
         /*Texto con negritas fuerte*/
@@ -186,11 +186,15 @@
 
     .menu-p-inicio a:hover span:first-child {
         transform: translateY(100%);
+        /*background: black;*/
+        /*color: black;*/
     }
 
     .menu-p-inicio a:hover span:last-child,
     .menu-p-inicio[data-animation] a:hover span:last-child {
         transform: none;
+        /*background: black;*/
+        /*color: black;*/
     }
 
     /* ANIMATIONS
