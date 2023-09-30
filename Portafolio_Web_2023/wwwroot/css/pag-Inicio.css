@@ -1,8 +1,4 @@
 ﻿:root {
-    --body-bg-color: #1a1c1d;
-    --text-color: #aaaebc;
-    --hr-color: #26292a;
-    --red: #e74c3c;
 }
 
 .imagen {
@@ -67,6 +63,64 @@
 /*text-shadow: 0 0 6px;*/
 
 
+/*Menú de navegación
+    VERIFICAR EN CASO DE NECESITAR OTRO MENÚ*/
+.nav_menu {
+    /*color de fondo*/
+    background: #fff;
+    /*sombra*/
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+    /*Para que los elementos se pongan uno al lado de otro con(flexbox)*/
+    /*display: flex;*/
+    /*CONFIGURAR EL MENÚ PEGAJOSO (PARA QUE SE MANTENGA)*/
+    /*Con la propiedad sticky*/
+    position: sticky;
+    /*indicamos en donde se quedara pegado*/
+    top: 0; /*Coordenada 0*/
+    /*Para ocultar el indicador en caso de que quede fuera y no se tenga seleccionado (dependiendo el disp será el error)*/
+    overflow: hidden;
+    /*Indica el orden de un elemento posicionado y sus descendientes.*/
+    /*Cuando varios elementos se superponen los de mayor valor cubren a los de menor valor*/
+    z-index: 999;
+}
+
+    /*Efecto sombreado(hover) al pasar el cursor en el nav*/
+    /*    .nav_menu:hover {
+        opacity: 1;
+    }*/
+
+    /*Para que todos los enlaces "a" se muestren espaciados */
+    .nav_menu a {
+        /*CON FLEXBOX*/
+        /*Para que todos tengan el mismo tamaño*/
+        /*flex: 1;*/
+        /*alto*/
+        /*height: 100%;*/
+        /*Para que el texto se ponga en mayúscula*/
+        text-transform: uppercase;
+        /*Para indicarle que se va a usar flexbox*/
+        /*display: flex;*/
+        /*alinear el texto de forma vertical*/
+        /*align-items: center;*/
+        /*alinear el texto de forma vertical en los contenedores*/
+        /*justify-content: center;*/
+        /*Todo el contenido centrado al ocupar más de 2 lineas*/
+        /*text-align: center;*/
+        /*Decoracion del texto(linea de enlace)*/
+        text-decoration: none;
+        /*Colr*/
+        color: #000;
+        /*Transición de tiempo para todas las propiedades*/
+        /*transition: .2s ease all;*/
+        /*Texto con negritas fuerte*/
+        font-weight: 600;
+    }
+
+    /*Efecto sombreado(hover) al pasar el cursor en el nav*/
+    /*.nav_menu a:hover {
+            background: #72a9fb;*/
+    /*font-size: 20px;*/
+    /*}*/
 
 
     .nav_menu .indicador {
@@ -84,7 +138,7 @@
         bottom: 0;
         /*Va a tener trnsisciones de tiempo para todas las propiedades*/
         /*Va a tener una animación*/
-        transition: .3s ease-out all;
+        transition: .2s ease-out all;
         /*para demostrar mientras va aumentando va ir cambiando*/
         /*el indicador va a ir de izquierda a derecha va a aparecer por eso es negativo*/
         /*transform: translate(-500px);*/
@@ -96,10 +150,17 @@
 .menu-p-inicio {
     display: flex;
     justify-content: center;
+    text-align: center;
+    /*altura*/
+    height: 80px;
+    /*margin-top: 20px;*/
 }
 
     .menu-p-inicio li {
-        margin-right: 70px;
+        /*margin-right: 70px;*/
+        /*Para que todos tengan el mismo tamaño o espacio*/
+        flex: 1;
+        /*transition: transform 0.2s ease-in-out;*/
     }
 
     .menu-p-inicio a {
@@ -114,23 +175,13 @@
 
             .menu-p-inicio a span:first-child {
                 display: inline-block;
-                padding: 10px;
+                padding: 20px;
             }
 
-            .menu-p-inicio a span:last-child {
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                transform: translateY(-100%);
-            }
+
 
     .menu-p-inicio i {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .menu-p-inicio a:hover span:first-child {
@@ -152,7 +203,7 @@
         transform: translateY(-100%);
     }
 
-    .menu-p-inicio[data-animation="to-right"] a span:last-child {
+/*    .menu-p-inicio[data-animation="to-right"] a span:last-child {
         transform: translateX(-100%);
     }
 
@@ -166,24 +217,50 @@
 
     .menu-p-inicio[data-animation="to-left"] a:hover span:first-child {
         transform: translateX(-100%);
-    }
+    }*/
 
 
 /*#region Media Querys */
+
+@media screen and (min-height: 601px) {
+    .menu-p-inicio a span:last-child {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-100%);
+    }
+}
+
 /*Ayudan a mostrar las animaciones según el tamaño de la pantalla si es menor o mayor*/
 /*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .imagen {
         /*hace que la imagen se vea un poco más compacta (mejor en pantallas pequeñas)*/
-        background-attachment: scroll;
+        background-attachment: unset;
+        /*100% el tamaño de la imagen en height y with*/
+        background-size: 100% 100%;
     }
 
     .contenido-imagen .titulo {
-        margin-left: 25px;
-        font-size: 40px;
+        margin-left: 20px;
+        font-size: 50px;
         font-weight: normal;
         /*NO SE USA 👇*/
         /*margin-bottom: 20px;*/
+    }
+
+    #big-a {
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    .msj {
+        font-size: 50px;
     }
 
     .nav_menu a {
@@ -192,19 +269,87 @@
         /*padding: 5px;*/
     }
 
-        /*Efecto sombreado(hover) al pasar el cursor en el nav*/
-        .nav_menu a:hover {
-            background: var(--colorGlobal);
-            /*NO SE USA 👇*/
-            /*font-size: 20px;*/
+    .nav_menu .indicador {
+        /*ancho se cambio el valor ya que se debe calcular el tamaño del boton por
+            medio de JS aqui en css a traves de los media querys.
+        */
+        width: 0px;
+        /*altura*/
+        height: 7px;
+        /*color*/
+        background: var(--colorGlobal);
+        /*Posicionamiento*/
+        position: absolute;
+        /*Posicionar el la parte de abajo del nav*/
+        bottom: 0;
+        /*Va a tener trnsisciones de tiempo para todas las propiedades*/
+        /*Va a tener una animación*/
+        transition: .2s ease-out all;
+        /*para demostrar mientras va aumentando va ir cambiando*/
+        /*el indicador va a ir de izquierda a derecha va a aparecer por eso es negativo*/
+        /*transform: translate(-500px);*/
+        /*Para ocultar el indicador en caso de que quede fuera y no se tenga seleccionado (dependiendo el disp será el error)*/
+        /* overflow: hidden;*/
+    }
+
+    /*Efecto sombreado(hover) al pasar el cursor en el nav*/
+    /*.nav_menu a:hover {
+            background: var(--colorGlobal);*/
+    /*NO SE USA 👇*/
+    /*font-size: 20px;*/
+    /*}*/
+
+    .menu-p-inicio i {
+        font-size: 30px;
+    }
+
+
+
+    /*    .tooltip-inicio .tooltip-content {
+        visibility: hidden;
+        display: inline-block;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        position: absolute;
+        z-index: 1;
+        margin-top: 20px
+    }
+
+    .tooltip-inicio:hover .tooltip-content {
+        visibility: visible;
+    }*/
+
+
+    /*        .tooltip .tooltip-content {
+            visibility: hidden;
+            display: inline-block;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: absolute;
+            z-index: 1;
+            margin-top: 20px
         }
 
+    .tooltip:hover .tooltip-content {
+        visibility: visible;
+    }*/
+    /*
+    .menu-p-inicio a span:last-child {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-100%);
+    }*/
 
-    #big-a {
-        font-size: 11px;
-    }
-
-    .msj {
-        font-size: 50px;
-    }
+    /*
+    .menu-p-inicio .inicio-visible {
+        visibility: hidden;
+    }*/
 }
