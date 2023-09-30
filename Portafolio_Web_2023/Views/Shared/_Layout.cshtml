@@ -98,15 +98,104 @@
 
     </header>
 
+    @*<ul class="menu">
+  <li>
+    <a id="click-inicio" href="#Inicio"">
+    <span>Inicio</span>
+      <span>
+        <i class="fas fa-address-card" aria-hidden="true"></i>
+      </span>
+    </a>
+  </li>
+  <li>
+    <a href="#Perfil">
+    <span>Perfil</span>
+      <span>
+        <i class="fas fa-tasks" aria-hidden="true"></i>    
+      </span>
+    </a>
+  </li>
+  <li>
+    <a id="big-a" href="#Habilidades">
+    <span>Tecnologías</span>
+      <span>
+        <i class="fas fa-users" aria-hidden="true"></i>      
+      </span>
+    </a>
+  </li>
+  <li>
+    <a id="big-a" href="#Proyectos_recientes">
+    <span>Proyectos</span>
+      <span>
+        <i class="fas fa-envelope-open-text" aria-hidden="true"></i>    
+      </span>
+    </a>
+  </li>
+    <li>
+    <a href="#Contacto">
+    <span>Contacto</span>
+    <span>
+    <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
+    </span>
+    </a>
+    </li>
+</ul>
+*@
+
+
+
     <nav class="nav_menu" id="nav_menu_id">
-        <a id="click-inicio" href="#Inicio">Inicio</a>
+        @* <a id="click-inicio" href="#Inicio">Inicio</a>
         <a href="#Perfil">Perfil</a>
         <a id="big-a" href="#Habilidades">Tecnologías</a>
         <a id="big-a" href="#Proyectos_recientes">Proyectos</a>
-        <a href="#Contacto">Contacto</a>
+        <a href="#Contacto">Contacto</a> *@
         @* <button type="button" class="btn btn-primary">Contactar</button> *@
         @* Opción extra para ir al footer desde el nav *@
         @*           <a href="#4">Fin</a> *@
+        <ul class="menu-p-inicio">
+            <li>
+                <a id="click-inicio" href="#Inicio" ">
+                    <span>Inicio</span>
+                    <span>
+                        @* <i class="fas fa-address-card" aria-hidden="true"></i> *@
+                        <i class="bi bi-">
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#Perfil">
+                    <span>Perfil</span>
+                    <span>
+                        <i class="fas fa-tasks" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a id="big-a" href="#Habilidades">
+                    <span>Tecnologías</span>
+                    <span>
+                        <i class="fas fa-users" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a id="big-a" href="#Proyectos_recientes">
+                    <span>Proyectos</span>
+                    <span>
+                        <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#Contacto">
+                    <span>Contacto</span>
+                    <span>
+                        <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </li>
+        </ul>
         @* Span vacio que usaremos para indicar que opción del menú que se selecciono *@
         <span class="indicador" id="indicador_id"></span>
     </nav>
