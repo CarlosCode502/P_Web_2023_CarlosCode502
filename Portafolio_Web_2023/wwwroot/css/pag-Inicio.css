@@ -67,66 +67,6 @@
 /*text-shadow: 0 0 6px;*/
 
 
-/*Menú de navegación
-    VERIFICAR EN CASO DE NECESITAR OTRO MENÚ*/
-.nav_menu {
-    /*color de fondo*/
-    background: #fff;
-    /*altura*/
-    height: 80px;
-    /*sombra*/
-    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
-    /*Para que los elementos se pongan uno al lado de otro con(flexbox)*/
-    display: flex;
-    /*CONFIGURAR EL MENÚ PEGAJOSO (PARA QUE SE MANTENGA)*/
-    /*Con la propiedad sticky*/
-    position: sticky;
-    /*indicamos en donde se quedara pegado*/
-    top: 0; /*Coordenada 0*/
-    /*Para ocultar el indicador en caso de que quede fuera y no se tenga seleccionado (dependiendo el disp será el error)*/
-    overflow: hidden;
-    /*Indica el orden de un elemento posicionado y sus descendientes.*/
-    /*Cuando varios elementos se superponen los de mayor valor cubren a los de menor valor*/
-    z-index: 999;
-}
-
-    /*Efecto sombreado(hover) al pasar el cursor en el nav*/
-    /*    .nav_menu:hover {
-        opacity: 1;
-    }*/
-
-    /*Para que todos los enlaces "a" se muestren espaciados */
-    .nav_menu a {
-        /*CON FLEXBOX*/
-        /*Para que todos tengan el mismo tamaño*/
-        flex: 1;
-        /*alto*/
-        height: 100%;
-        /*Para que el texto se ponga en mayúscula*/
-        text-transform: uppercase;
-        /*Para indicarle que se va a usar flexbox*/
-        display: flex;
-        /*alinear el texto de forma vertical*/
-        align-items: center;
-        /*alinear el texto de forma vertical en los contenedores*/
-        justify-content: center;
-        /*Todo el contenido centrado al ocupar más de 2 lineas*/
-        text-align: center;
-        /*Decoracion del texto(linea de enlace)*/
-        text-decoration: none;
-        /*Colr*/
-        color: #000;
-        /*Transición de tiempo para todas las propiedades*/
-        transition: .2s ease all;
-        /*Texto con negritas fuerte*/
-        font-weight: 500;
-    }
-
-        /*Efecto sombreado(hover) al pasar el cursor en el nav*/
-        .nav_menu a:hover {
-            background: #72a9fb;
-            /*font-size: 20px;*/
-        }
 
 
     .nav_menu .indicador {

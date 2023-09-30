@@ -99,38 +99,38 @@
     </header>
 
     @*<ul class="menu">
-  <li>
+    <li>
     <a id="click-inicio" href="#Inicio"">
     <span>Inicio</span>
-      <span>
-        <i class="fas fa-address-card" aria-hidden="true"></i>
-      </span>
+    <span>
+    <i class="fas fa-address-card" aria-hidden="true"></i>
+    </span>
     </a>
-  </li>
-  <li>
+    </li>
+    <li>
     <a href="#Perfil">
     <span>Perfil</span>
-      <span>
-        <i class="fas fa-tasks" aria-hidden="true"></i>    
-      </span>
+    <span>
+    <i class="fas fa-tasks" aria-hidden="true"></i>
+    </span>
     </a>
-  </li>
-  <li>
+    </li>
+    <li>
     <a id="big-a" href="#Habilidades">
     <span>Tecnologías</span>
-      <span>
-        <i class="fas fa-users" aria-hidden="true"></i>      
-      </span>
+    <span>
+    <i class="fas fa-users" aria-hidden="true"></i>
+    </span>
     </a>
-  </li>
-  <li>
+    </li>
+    <li>
     <a id="big-a" href="#Proyectos_recientes">
     <span>Proyectos</span>
-      <span>
-        <i class="fas fa-envelope-open-text" aria-hidden="true"></i>    
-      </span>
+    <span>
+    <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
+    </span>
     </a>
-  </li>
+    </li>
     <li>
     <a href="#Contacto">
     <span>Contacto</span>
@@ -139,8 +139,8 @@
     </span>
     </a>
     </li>
-</ul>
-*@
+    </ul>
+    *@
 
 
 
@@ -156,58 +156,57 @@
         <ul class="menu-p-inicio">
             <li>
                 <a id="click-inicio" href="#Inicio" ">
-                    <span>Inicio</span>
                     <span>
-                        @* <i class="fas fa-address-card" aria-hidden="true"></i> *@
-                        <i class="bi bi-">
+                        <i class="bi bi-house"></i>
                     </span>
+                    <span>Inicio</span>
                 </a>
             </li>
             <li>
                 <a href="#Perfil">
-                    <span>Perfil</span>
                     <span>
-                        <i class="fas fa-tasks" aria-hidden="true"></i>
+                        <i class="bi bi-person"></i>
                     </span>
+                    <span>Perfil</span>
                 </a>
             </li>
             <li>
                 <a id="big-a" href="#Habilidades">
-                    <span>Tecnologías</span>
                     <span>
-                        <i class="fas fa-users" aria-hidden="true"></i>
+                        <i class="bi bi-terminal"></i>
                     </span>
+                    <span>Tecnologías</span>
                 </a>
             </li>
             <li>
                 <a id="big-a" href="#Proyectos_recientes">
-                    <span>Proyectos</span>
                     <span>
-                        <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
+                        <i class="bi bi-file-earmark"></i>
                     </span>
+                    <span>Proyectos</span>
                 </a>
             </li>
             <li>
                 <a href="#Contacto">
-                    <span>Contacto</span>
                     <span>
-                        <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
+                        <i class="bi bi-telephone"></i>
                     </span>
+                    <span>Contacto</span>
                 </a>
             </li>
         </ul>
-        @* Span vacio que usaremos para indicar que opción del menú que se selecciono *@
+                @* Span vacio que usaremos para indicar que opción del menú que se selecciono *@
         <span class="indicador" id="indicador_id"></span>
     </nav>
 
 
     <div class="container">
         <main role="main" class="pb-3">
-            @RenderBody()
+                @RenderBody()
         </main>
     </div>
 
-    @* <footer class="border-top footer text-muted">
+                @* <footer class="border-top footer text-muted">
     <div class="container">
     &copy; 2023 - Portafolio_Web_2023 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
     </div>
@@ -248,7 +247,7 @@
         </div>
         <div class="footer-content">
             <div class="text-copy"><hr /><br />&copy; Copyright - Carlos Herrera - 2023</div>
-            @* <a href="/terminos" class="texto-gris"> Términos y condiciones de servicio </a>
+                    @* <a href="/terminos" class="texto-gris"> Términos y condiciones de servicio </a>
             <a href="/politicas" class="texto-gris"> - Política de privacidad </a> *@
         </div>
     </footer>
@@ -256,9 +255,9 @@
 
 
     <script src="~/js/Typed.js" asp-append-version="true"></script>
-    @*<script src="~/js/OnClick.js" asp-append-version="true"></script> *@
-    @* <script src="~/js/LoadScripts.js" asp-append-version="true"></script> *@
+                @*<script src="~/js/OnClick.js" asp-append-version="true"></script> *@
+                @* <script src="~/js/LoadScripts.js" asp-append-version="true"></script> *@
     <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+                @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
