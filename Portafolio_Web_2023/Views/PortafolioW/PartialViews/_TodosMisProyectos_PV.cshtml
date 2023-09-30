@@ -5,25 +5,25 @@
 @*
 Importamos/Agregamos el IEnumerable(que contiene todos los proyectos)*@
 @model IEnumerable<ProyectoViewModel>
-                            @* Si el modelo no es nulo has esto *@
-                            @if (Model is not null)
-                            {
-                                <div class="row row-cols-1 row-cols-md-3 g-5">
-                                @* Dentro de este foreach ira una pequeña estructura html para que cada iteración se muestre en un diseño *@
-                                @foreach (var proyecto in Model)
-                                {
-                                    <div class="col mb-5 mb-sm-4">
-                                        <div class="card-proyecto-hijo h-100">
-                                            <img src="@proyecto.ImagenURL" class="card-img-top" alt="imagen proyecto" width="100" height="200" />
-                                            <div class="card-body">
-                                                <h5 class="card-title"><b>@proyecto.Titulo</b></h5>
-                                                <p class="card-text">@proyecto.Descripcion</p>
-                                            </div>
-                                            <div class="card-footer">
-                                                <a class="btn btn-primary" href="@proyecto.Link" target="_blank" rel="noopener noreferrer">Visitar</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                }
+                @* Si el modelo no es nulo has esto *@
+                @if (Model is not null)
+                {
+                    <div class="row row-cols-1 row-cols-md-3 g-5">
+                    @* Dentro de este foreach ira una pequeña estructura html para que cada iteración se muestre en un diseño *@
+                    @foreach (var proyecto in Model)
+                    {
+                        <div class="col mb-5 mb-sm-4">
+                            <div class="card-proyecto-hijo h-100">
+                                <img src="@proyecto.ImagenURL" class="card-img-top" alt="imagen proyecto" width="100" height="200" />
+                                <div class="card-body">
+                                    <h5 class="card-title"><b>@proyecto.Titulo</b></h5>
+                                    <p class="card-text">@proyecto.Descripcion</p>
                                 </div>
-                            }
+                                <div class="card-footer">
+                                    <a class="btn btn-primary" href="@proyecto.Link" target="_blank" rel="noopener noreferrer">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    </div>
+                }
