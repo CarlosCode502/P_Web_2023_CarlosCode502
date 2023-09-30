@@ -31,6 +31,11 @@ body {
 /*overflow: hidden;*/
 /*}*/
 
+.navbar {
+    background-color: #0B5ED7;
+    height: 80px;
+}
+
 /*Color para la imagen y texto del nav*/
 .navbar-brand {
     fill: white;
