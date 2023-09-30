@@ -10,23 +10,30 @@
     /*background-color: #191919;*/
 }
 
+    .footer hr {
+        color: var(--colorGlobal);
+    }
+
     .footer .text-copy {
         /*Separa la linea de los iconos de contacto*/
         margin-block-start: 30px;
         /*Color de texto*/
-        color: var(--colorGlobal);
+        color: #423e3e;
         /*Efecto remarcado al texto*/
-        text-shadow: 0 1px var(--colorGlobal), 0 1px var(--colorGlobal);
+        text-shadow: 0 1px grey, 0 1px grey;
         /*Espacio entre del footer*/
         margin-bottom: 20px;
     }
 
-    .footer .texto-gris {
-        /*Color gris al texto*/
-        color: grey;
-        /*NO SE USA 👇*/
-        /*margin-block-end: 50px;*/
-    }
+/*.footer .texto-gris {*/
+/*Color gris al texto*/
+/*color: grey;
+    }*/
+
+.tiutlo-contacto {
+    color: var(--colorGlobal);
+    padding-bottom: 20px;
+}
 
 
 .img-linkedin, .img-correo, .img-whatsapp, .img-github {
