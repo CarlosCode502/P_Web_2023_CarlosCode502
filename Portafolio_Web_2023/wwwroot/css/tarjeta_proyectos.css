@@ -1,4 +1,10 @@
 ﻿
+:root {
+    /*Color de fondo de toda la página*/
+    --blancoTP: white;
+    --negroTP: black;
+    --colorGlobal: #0d6efd;
+}
 
 * {
     /*box-sizing: border-box;*/
@@ -12,8 +18,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0px 20px 20px 20px;
-    /*Color de fondo de toda la página*/
-    background: #ffffff;
+    background: var(--blancoTP);
 }
 
 /*.nav.menu {
@@ -32,14 +37,20 @@ body {
 /*}*/
 
 .navbar {
-    background-color: #0B5ED7;
+    background: var(--blancoTP);
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
     height: 80px;
 }
 
+/*.navbar:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+}*/
+
 /*Color para la imagen y texto del nav*/
 .navbar-brand {
-    fill: white;
-    color: white;
+    font-weight: 500;
+    fill: var(--colorGlobal);
+    color: var(--colorGlobal);
     /*padding-left: 60px;*/
     /*text-decoration: none;
     cursor: pointer;
@@ -52,8 +63,9 @@ body {
 }
 
     .navbar-brand:hover {
-        fill: black;
-        color: black;
+        font-weight: 600;
+        fill: var(--negroTP);
+        color: var(--negroTP);
     }
 
 .contenido-proyectos {
