@@ -25,7 +25,7 @@ namespace Portafolio_Web_2023.Models
         [DisplayName("Correo")]
         public string Email { get; set; }
 
-        [Compare("Email", ErrorMessage = "El correo no coincide.")]
+        [Compare("Email", ErrorMessage = "Ambos correos no coinciden.")]
         [DisplayName("Confirmar correo")]
         public string ConfirmarEmail { get; set; }
 
