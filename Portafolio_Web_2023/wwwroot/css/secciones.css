@@ -1,6 +1,5 @@
 ﻿:root {
     --colorGlobalS: #0d6efd;
-
 }
 
 /*.secciones {*/
@@ -72,7 +71,6 @@
     display: block;
     /*border-style: groove;*/
     /*margin-bottom:20px;*/
-
     /*border: 1px solid black;*/
 }
 
@@ -191,10 +189,14 @@
 
 
 .contenido-perfil-card {
-    word-wrap: normal;
+    /*word-wrap: normal;*/
     /*text-justify: auto;*/
-    text-align: left;
+    text-align: justify;
 }
+
+    /*.contenido-perfil-card .unorder-list {
+        list-style: myanmar;
+    }*/
 
 /*Estilo al id de la sección perfil*/
 #Perfil {
@@ -209,9 +211,9 @@
 }
 
 .contenido-card-habilidades {
-/*    width: 1060px;
+    /*    width: 1060px;
     height: 818px;*/
-   /* width: auto;
+    /* width: auto;
     height: auto;*/
     padding: 40px 60px;
 }
@@ -266,7 +268,7 @@
         display: block;
         /*Nuevo*/
         /*float: left;*/
-       /* width: 150px;*/
+        /* width: 150px;*/
         /*height: 150px;*/
         shape-outside: url("~/img/undraw_profile.svg");
     }
@@ -287,7 +289,7 @@
         /*padding-bottom: 0;*/
     }
 
-    .contenido-perfil-card{
+    .contenido-perfil-card {
         padding: 0;
     }
 
