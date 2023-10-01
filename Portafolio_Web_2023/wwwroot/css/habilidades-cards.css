@@ -4,6 +4,14 @@
 /*Variables globales*/
 :root {
     --blanco_u: white;
+    --negroTP: black;
+    --colorGlobal: #0d6efd;
+}
+
+
+h1 {
+    color: var(--colorGlobal);
+    text-transform: uppercase;
 }
 
 /*Importante para hacer el scroll más dinámico*/
@@ -135,11 +143,10 @@
     --color_a: #16a085; /*Alto*/
 }
 
-/*Color de icono*/
-/*.net {
-    background-color: #2471a3;*/
-/*fill: #2471a3;*/
-/*}*/
+/*Se aplico un padding-top ya que no se centraba la imagen*/
+.pdd-net {
+    padding-top: 35px;
+}
 
 .net:hover {
     /*Accedemos a la animación*/
@@ -350,5 +357,17 @@
         overflow-y: scroll;
         /*max-height: 700px;
         overflow-y: scroll;*/
+    }
+
+    /*Se aplico un padding-top ya que no se centraba la imagen*/
+    .pdd-net {
+        padding-top: 25px;
+        height: 75%;
+    }
+
+    /*Cambia el tamaño de icono bootstrap en pantallas pequeñas*/
+    .size-bs {
+        padding-top: 15px;
+        height: 90%;
     }
 }
