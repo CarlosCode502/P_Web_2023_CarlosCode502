@@ -270,7 +270,13 @@
         shape-outside: url("~/img/undraw_profile.svg");
     }
 
+    .titulo-sobre-mi {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 15px
+    }
 
+    /*Contenido dentro del scrooll*/
     .overflow-scroll_p {
         /*position: relative;*/
         padding: 0px 8px 0px 8px;
@@ -279,6 +285,10 @@
         overflow-y: auto;
         /*max-height: 700px;
         overflow-y: scroll;*/
+        /*Espacio entre el botón y el contenido*/
+        padding-bottom: 30px;
+        /*Tamaño del texto*/
+        font-size: 20px;
     }
 
     .contenido-card-perfil {
