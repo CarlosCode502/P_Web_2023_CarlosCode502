@@ -74,6 +74,10 @@
     /*border: 1px solid black;*/
 }
 
+.titulo-sobre-mi {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
 /*.img-p:hover{
     border: 2px solid black;
 }
@@ -87,11 +91,6 @@
 /*margin-top: 50px;*/
 /*padding: 0px 60px 0 60px;
 }*/
-
-
-
-
-
 /*Encabezado de las secciones*/
 /*.seccion h1 {
         font-size: 48px;*/
@@ -99,7 +98,6 @@
 /*margin-bottom: 20px;*/
 /*margin: 30px;*/
 /*}*/
-
 /*Parráfos de las secciones*/
 /*.seccion .parrafo-perfil, .parrafo-habilidades, .parrafo-recientes {
         line-height: 38px;*/
@@ -107,16 +105,11 @@
 /*color: #494949;
         font-size: 20px;
     }*/
-
 /*    .seccion card-footer {
         padding: .5rem 1rem;
         background-color: rgba(0,0,0,.03);
         border-top: 1px solid rgba(0,0,0,.125);
     }*/
-
-
-
-
 /*.card .card-proyectos-hijo {*/
 /*Espacio entre el texto y la card de proyectos recientes*/
 /*margin-top: 2rem;
@@ -126,7 +119,6 @@
     border-radius: 8px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 24px;
 }*/
-
 /*.btn-primary {
     color: #fff;
     background-color: #0d6efd;
@@ -153,7 +145,6 @@
     border-radius: .25rem;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }*/
-
 /*.btn {
     display: inline-block;
     font-weight: 400;
@@ -178,26 +169,32 @@
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 */
-
 /*.seccion .card>#Perfil{
     padding: 0;
 } */
-
 .contenido-card-perfil {
     padding: 40px 60px;
-}
-
-
-.contenido-perfil-card {
-    /*word-wrap: normal;*/
-    /*text-justify: auto;*/
     text-align: justify;
 }
 
-    /*.contenido-perfil-card .unorder-list {
+
+/*.contenido-perfil-card {*/
+/*word-wrap: normal;*/
+/*text-justify: auto;*/
+
+/*}*/
+
+/*.contenido-perfil-card .unorder-list {
         list-style: myanmar;
     }*/
 
+/*Contenido dentro del scrooll*/
+.overflow-scroll_p {
+    /*Espacio entre el botón y el contenido*/
+    padding-bottom: 30px;
+    /*Tamaño del texto*/
+    font-size: 20px;
+}
 /*Estilo al id de la sección perfil*/
 #Perfil {
     padding-top: 100px;
