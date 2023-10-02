@@ -6,8 +6,8 @@
     --blanco_u: white;
     --negroTP: black;
     --colorGlobal: #0d6efd;
+    --colorSecciones: #151921;
 }
-
 
 h1 {
     color: var(--colorGlobal);
@@ -53,6 +53,28 @@ h1 {
         display: table;
         clear: both;
     }
+
+
+
+.contenido-card-habilidades {
+    /*    width: 1060px;
+    height: 818px;*/
+    /* width: auto;
+    height: auto;*/
+    padding: 40px 60px;
+}
+/*Estilo al id de la sección Habilidades*/
+#Habilidades {
+    padding-top: 100px;
+    align-content: center;
+    background-size: 100% 100%;
+    /*background-image: url("https://cdn.pixabay.com/photo/2015/02/24/02/05/website-647013_960_720.jpg");*/
+    /*background-image: url("../img/2.jpg");*/
+    /*background-color: #2b2828;*/
+    /*background-image: linear-gradient(180deg, rgb(0, 0, 0, 1), rgb(255, 255, 255, 0));*/
+    background-color: var(--colorSecciones);
+}
+
 
 /* Diseñe las cartas de contador */
 .card-habilidad-hijo {

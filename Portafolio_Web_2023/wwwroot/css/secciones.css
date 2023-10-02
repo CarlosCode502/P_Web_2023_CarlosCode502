@@ -1,5 +1,6 @@
 ﻿:root {
     --colorGlobalS: #0d6efd;
+    --colorSecciones: #151921;
 }
 
 /*.secciones {*/
@@ -45,41 +46,6 @@
         /*box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 24px;*/
         /*margin:40px;*/
     }
-
-
-.contenido-card-habilidades {
-    /*    width: 1060px;
-    height: 818px;*/
-    /* width: auto;
-    height: auto;*/
-    padding: 40px 60px;
-}
-/*Estilo al id de la sección Habilidades*/
-#Habilidades {
-    padding-top: 100px;
-    align-content: center;
-    background-size: 100% 100%;
-    /*background-image: url("https://cdn.pixabay.com/photo/2015/02/24/02/05/website-647013_960_720.jpg");*/
-    /*background-image: url("../img/2.jpg");*/
-    /*background-color: #2b2828;*/
-    /*background-image: linear-gradient(180deg, rgb(0, 0, 0, 1), rgb(255, 255, 255, 0));*/
-    background-color: #151921;
-}
-
-.contenido-card-recientes {
-    padding: 40px 60px;
-}
-/*Estilo al id de la sección Proyectos_recientes*/
-#Proyectos_recientes {
-    padding-top: 100px;
-    align-content: center;
-    background-size: 100% 100%;
-    /*background-color: #0d0c0c;*/
-    /*background-image: url("https://cdn.pixabay.com/photo/2016/11/30/20/44/computer-1873831_960_720.png");*/
-    /*background-image: linear-gradient(180deg, rgb(0, 0, 0, 1), rgb(255, 255, 255, 1));*/
-    background-color: #151921;
-}
-
 
 /*#region Media Querys */
 /*Valores que tomarán los elementos de las secciones cuando la pantalla se encuentre en un rango de width= 500px*/
