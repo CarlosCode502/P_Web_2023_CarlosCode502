@@ -137,16 +137,6 @@ h1 {
     --color_a: #8e44ad; /*Alto*/
 }
 
-.api:hover {
-    /*Accedemos a la animación*/
-    animation: color-me-in 2s infinite;
-    /*Variables locales*/
-    /*Colores api*/
-    --color_b: #73c6b6; /*Bajo*/
-    --color_m: #45b39d; /*Medio*/
-    --color_a: #16a085; /*Alto*/
-}
-
 /*Se aplico un padding-top ya que no se centraba la imagen*/
 .pdd-net {
     padding-top: 35px;
@@ -189,6 +179,43 @@ h1 {
     --color_a: #e74c3c; /*Alto*/
 }
 
+.jquery:hover {
+    /*Accedemos a la animación*/
+    animation: color-me-in 2s infinite;
+    /*Variables locales*/
+    /*Colores java*/
+    --color_b: #7fb3d5; /*Bajo*/
+    --color_m: #5499c7; /*Medio*/
+    --color_a: #2980b9; /*Alto*/
+}
+
+.pdd-sql {
+    
+    margin-left: 38px;
+    width: 850px;
+    height: 150px
+}
+
+.sql:hover {
+    /*Accedemos a la animación*/
+    animation: color-me-in 2s infinite;
+    /*Variables locales*/
+    /*Colores java*/
+    --color_b: #f7dc6f; /*Bajo*/
+    --color_m: #f4d03f; /*Medio*/
+    --color_a: #f1c40f; /*Alto*/
+}
+
+.mysql:hover {
+    /*Accedemos a la animación*/
+    animation: color-me-in 2s infinite;
+    /*Variables locales*/
+    /*Colores java*/
+    --color_b: #3498db; /*Bajo*/
+    --color_m: #E48E00; /*Medio*/
+    --color_a: #00618A; /*Alto*/
+}
+
 .cmas:hover {
     /*Accedemos a la animación*/
     animation: color-me-in 2s infinite;
@@ -198,6 +225,17 @@ h1 {
     --color_m: #5dade2; /*Medio*/
     --color_a: #3498db; /*Alto*/
 }
+
+.api:hover {
+    /*Accedemos a la animación*/
+    animation: color-me-in 2s infinite;
+    /*Variables locales*/
+    /*Colores api*/
+    --color_b: #73c6b6; /*Bajo*/
+    --color_m: #45b39d; /*Medio*/
+    --color_a: #16a085; /*Alto*/
+}
+
 
 .php:hover {
     /*Accedemos a la animación*/
@@ -341,7 +379,7 @@ h1 {
     }
 
     .fila-cols-md-3 > * {
-        flex: 0 0 1;
+        flex: 0 0 auto;
         width: 33.3333333333%;
     }
 
