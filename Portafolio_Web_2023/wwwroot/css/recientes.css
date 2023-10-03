@@ -5,11 +5,11 @@
 }
 
 /*Importante para hacer el scroll más dinámico*/
-*,
+/**,
 *::before,
 *::after {
     box-sizing: border-box;
-}
+}*/
 
 .row-cols-1 > * {
     flex: 0 0 auto;
@@ -46,10 +46,10 @@
 /*.titulo-recientes {*/
     /*font-size: 20px;*/
 /*}*/
-
+/*
 .subtitulo-recientes {
     font-size: 20px;
-}
+}*/
 
 
 
@@ -185,14 +185,14 @@
         margin-bottom: 50px;
         padding: 0px;
     }
-
+/*
     .titulo-recientes {
         font-size: 30px;
     }
 
     .subtitulo-recientes {
         font-size: 15px;
-    }
+    }*/
 
     /*Se aplica a todo el contenido que contenga la clase scroll*/
     .overflow-scroll_r {

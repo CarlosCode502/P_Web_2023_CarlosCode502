@@ -46,6 +46,54 @@
         /*margin:40px;*/
     }
 
+    .seccion .texto-secciones{
+        font-size: 20px;
+    }
+
+    /*ES IMPORTANTE MANEJAR LAS IMAGENES EN TIPO DE FORMA (px) ya que en (%) tiende a dejar espacios*/
+    /*Al momento de trabajar con img se debe asignar un id para evitar errores de concurrencia*/
+    /*Contenedor*/
+    .img-perfil {
+        /*    width: 100%;*/
+        /*position: center;
+    margin: 20px;*/
+        /*position: fixed;*/
+        /*    width: 100%;*/
+        width: auto;
+        padding-bottom: 40px;
+        /*padding: 0 60px 0;*/
+    }
+
+/*Imagen*/
+.img-p {
+    /*width: auto;*/
+    /*max-height: 100%;*/
+    /*height: auto;*/
+    width: 400px;
+    margin: auto;
+    /*Centrar*/
+    display: block;
+    /*border-style: groove;*/
+    /*margin-bottom:20px;*/
+    /*border: 1px solid black;*/
+}
+
+.contenido-card-perfil {
+    padding: 40px 60px;
+    text-align: justify;
+}
+
+/*Estilo al id de la sección perfil*/
+#Perfil {
+    padding-top: 100px;
+    align-content: center;
+    background-size: 100% 100%;
+    /*background-image: url("https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg");*/
+    /*background-image: url("../img/5.jpg");*/
+    /*background-color: #4e4949;*/
+    /*background-image: linear-gradient(180deg, rgb(0, 0, 0, 1), rgb(255, 255, 255, 1));*/
+    background-color: #151921;
+}
 
 .contenido-card-habilidades {
     /*    width: 1060px;
@@ -96,6 +144,10 @@
             border-radius: 8px;
         }
 
+        .seccion .texto-secciones {
+            font-size: 16px;
+        }
+
     .img-p {
         /*width: auto;*/
         /*max-height: 100%;*/
@@ -128,7 +180,7 @@
         /*Espacio entre el botón y el contenido*/
         padding-bottom: 20px;
         /*Tamaño del texto*/
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .contenido-card-perfil {
@@ -141,14 +193,14 @@
     }
 
     .contenido-card-habilidades {
-        padding: 20px;
-        padding-bottom: 0;
+        /*padding: 0 40px;*/
+        padding: 0;
         /*Ancho izquierda-derecha*/
         /*width: 290px;*/
-        width: auto;
+        /*width: auto;*/
         /*Alto arriba-abajo*/
         /*height: 570px;*/
-        height: auto;
+        /*height: auto;*/
     }
 
     .contenido-card-recientes {
