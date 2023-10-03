@@ -48,6 +48,7 @@
 
     .seccion .texto-secciones{
         font-size: 20px;
+        padding-bottom: 20px
     }
 
     /*ES IMPORTANTE MANEJAR LAS IMAGENES EN TIPO DE FORMA (px) ya que en (%) tiende a dejar espacios*/
@@ -174,7 +175,7 @@
         padding: 0px 8px 0px 8px;
         margin: 0px 8px 0px 0;
         max-height: 350px;
-        overflow-y: auto;
+        overflow-y: scroll;
         /*max-height: 700px;
         overflow-y: scroll;*/
         /*Espacio entre el botón y el contenido*/

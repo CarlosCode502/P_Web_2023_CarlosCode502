@@ -44,7 +44,7 @@ h1 {
     max-width: 100%;
     padding-right: 20px;
     padding-left: 20px;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
 }
 
     /* Limpiar flotadores después de las columnas. */
@@ -216,7 +216,37 @@ h1 {
     --color_a: #00618A; /*Alto*/
 }
 
-.cmas:hover {
+.github:hover {
+    /*Accedemos a la animación*/
+    animation: color-me-in 2s infinite;
+    /*Variables locales*/
+    /*Colores java*/
+    --color_b: #566573; /*Bajo*/
+    --color_m: #34495e; /*Medio*/
+    --color_a: #273746; /*Alto*/
+}
+
+.git:hover {
+    /*Accedemos a la animación*/
+    animation: color-me-in 2s infinite;
+    /*Variables locales*/
+    /*Colores java*/
+    --color_b: #ec7063; /*Bajo*/
+    --color_m: #e74c3c; /*Medio*/
+    --color_a: #cb4335; /*Alto*/
+}
+
+.sendgrid:hover {
+    /*Accedemos a la animación*/
+    animation: color-me-in 2s infinite;
+    /*Variables locales*/
+    /*Colores api*/
+    --color_b: #99E1F4; /*Bajo*/
+    --color_m: #009DD9; /*Medio*/
+    --color_a: #1A82E2; /*Alto*/
+}
+
+.vscode:hover {
     /*Accedemos a la animación*/
     animation: color-me-in 2s infinite;
     /*Variables locales*/
@@ -225,17 +255,6 @@ h1 {
     --color_m: #5dade2; /*Medio*/
     --color_a: #3498db; /*Alto*/
 }
-
-.api:hover {
-    /*Accedemos a la animación*/
-    animation: color-me-in 2s infinite;
-    /*Variables locales*/
-    /*Colores api*/
-    --color_b: #73c6b6; /*Bajo*/
-    --color_m: #45b39d; /*Medio*/
-    --color_a: #16a085; /*Alto*/
-}
-
 
 .php:hover {
     /*Accedemos a la animación*/
