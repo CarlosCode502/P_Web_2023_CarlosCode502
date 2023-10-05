@@ -71,7 +71,7 @@ h1 {
     word-wrap: break-word;
     background-color: var(--blanco_u);
     background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
+    /*border: 1px solid rgba(0,0,0,.125);*/
     /*border: 1px solid black;*/
     border-radius: .25rem;
     /*background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);*/
@@ -85,6 +85,11 @@ h1 {
 /*.texto-habilidades{
     font-size: 20px;
 }*/
+
+.html {
+    /*Color de border shadow*/
+    box-shadow: 0 4px 15px 0 #d35400;
+}
 
 /*Al pasar el mouse, agrega una sombra más profunda.*/
 .html:hover {
@@ -107,6 +112,11 @@ h1 {
     --color_a: #d35400; /*Alto*/
 }
 
+.css {
+    /*Color de border shadow*/
+    box-shadow: 0 4px 15px 0 #3498db;
+}
+
 .css:hover {
     /*Accedemos a la animación*/
     animation: color-me-in 2s infinite;
@@ -115,6 +125,11 @@ h1 {
     --color_b: #85c1e9; /*Bajo*/
     --color_m: #5dade2; /*Medio*/
     --color_a: #3498db; /*Alto*/
+}
+
+.js {
+    /*Color de border shadow*/
+    box-shadow: 0 4px 15px 0 #f4d03f;
 }
 
 .js:hover {
@@ -127,6 +142,11 @@ h1 {
     --color_a: #f4d03f; /*Alto*/
 }
 
+.bootstrap {
+    /*Color de border shadow*/
+    box-shadow: 0 4px 15px 0 #8e44ad;
+}
+
 .bootstrap:hover {
     /*Accedemos a la animación*/
     animation: color-me-in 2s infinite;
@@ -135,6 +155,11 @@ h1 {
     --color_b: #bb8fce; /*Bajo*/
     --color_m: #a569bd; /*Medio*/
     --color_a: #8e44ad; /*Alto*/
+}
+
+.net {
+    /*Color de border shadow*/
+    box-shadow: 0 4px 15px 0 #602EC0;
 }
 
 /*Se aplico un padding-top ya que no se centraba la imagen*/
@@ -159,6 +184,11 @@ h1 {
 /*fill: #8e44ad;
 }*/
 
+.csharp {
+    /*Color de border shadow*/
+    box-shadow: 0 4px 15px 0 #8e44ad;
+}
+
 .csharp:hover {
     /*Accedemos a la animación*/
     animation: color-me-in 2s infinite;
@@ -167,6 +197,11 @@ h1 {
     --color_b: #bb8fce; /*Bajo*/
     --color_m: #a569bd; /*Medio*/
     --color_a: #8e44ad; /*Alto*/
+}
+
+.java {
+    /*Color de border shadow*/
+    box-shadow: 0 4px 15px 0 #e74c3c;
 }
 
 .java:hover {
@@ -179,6 +214,11 @@ h1 {
     --color_a: #e74c3c; /*Alto*/
 }
 
+.jquery {
+    /*Color de border shadow*/
+    box-shadow: 0 4px 15px 0 #2980b9;
+}
+
 .jquery:hover {
     /*Accedemos a la animación*/
     animation: color-me-in 2s infinite;
@@ -189,8 +229,12 @@ h1 {
     --color_a: #2980b9; /*Alto*/
 }
 
+.sql {
+    /*Color de border shadow*/
+    box-shadow: 0 4px 15px 0 #f1c40f;
+}
+
 .pdd-sql {
-    
     margin-left: 38px;
     width: 850px;
     height: 150px
@@ -206,6 +250,11 @@ h1 {
     --color_a: #f1c40f; /*Alto*/
 }
 
+.mysql {
+    /*Color de border shadow*/
+    box-shadow: 0 4px 15px 0 #00618A;
+}
+
 .mysql:hover {
     /*Accedemos a la animación*/
     animation: color-me-in 2s infinite;
@@ -214,6 +263,11 @@ h1 {
     --color_b: #3498db; /*Bajo*/
     --color_m: #E48E00; /*Medio*/
     --color_a: #00618A; /*Alto*/
+}
+
+.github {
+    /*Color de border shadow*/
+    box-shadow: 0 4px 15px 0 #273746;
 }
 
 .github:hover {
@@ -226,6 +280,11 @@ h1 {
     --color_a: #273746; /*Alto*/
 }
 
+.git {
+    /*Color de border shadow*/
+    box-shadow: 0 4px 15px 0 #cb4335;
+}
+
 .git:hover {
     /*Accedemos a la animación*/
     animation: color-me-in 2s infinite;
@@ -234,6 +293,11 @@ h1 {
     --color_b: #ec7063; /*Bajo*/
     --color_m: #e74c3c; /*Medio*/
     --color_a: #cb4335; /*Alto*/
+}
+
+.sendgrid {
+    /*Color de border shadow*/
+    box-shadow: 0 4px 15px 0 #1A82E2;
 }
 
 .sendgrid:hover {
@@ -246,6 +310,11 @@ h1 {
     --color_a: #1A82E2; /*Alto*/
 }
 
+.vscode {
+    /*Color de border shadow*/
+    box-shadow: 0 4px 15px 0 #3498db;
+}
+
 .vscode:hover {
     /*Accedemos a la animación*/
     animation: color-me-in 2s infinite;
@@ -254,6 +323,11 @@ h1 {
     --color_b: #85c1e9; /*Bajo*/
     --color_m: #5dade2; /*Medio*/
     --color_a: #3498db; /*Alto*/
+}
+
+.php {
+    /*Color de border shadow*/
+    box-shadow: 0 4px 15px 0 #34495e;
 }
 
 .php:hover {
