@@ -71,7 +71,7 @@ h1 {
     word-wrap: break-word;
     background-color: var(--blanco_u);
     background-clip: border-box;
-    /*border: 1px solid rgba(0,0,0,.125);*/
+    border: 1px solid rgba(0,0,0,.125);
     /*border: 1px solid black;*/
     border-radius: .25rem;
     /*background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);*/
@@ -86,10 +86,10 @@ h1 {
     font-size: 20px;
 }*/
 
-.html {
+/*.html {*/
     /*Color de border shadow*/
-    box-shadow: 0 4px 15px 0 #d35400;
-}
+    /*box-shadow: 0 4px 15px 0 #d35400;
+}*/
 
 /*Al pasar el mouse, agrega una sombra más profunda.*/
 .html:hover {
@@ -112,10 +112,10 @@ h1 {
     --color_a: #d35400; /*Alto*/
 }
 
-.css {
+/*.css {*/
     /*Color de border shadow*/
-    box-shadow: 0 4px 15px 0 #3498db;
-}
+    /*box-shadow: 0 4px 15px 0 #3498db;
+}*/
 
 .css:hover {
     /*Accedemos a la animación*/
@@ -127,10 +127,10 @@ h1 {
     --color_a: #3498db; /*Alto*/
 }
 
-.js {
+/*.js {*/
     /*Color de border shadow*/
-    box-shadow: 0 4px 15px 0 #f4d03f;
-}
+    /*box-shadow: 0 4px 15px 0 #f4d03f;
+}*/
 
 .js:hover {
     /*Accedemos a la animación*/
@@ -142,10 +142,10 @@ h1 {
     --color_a: #f4d03f; /*Alto*/
 }
 
-.bootstrap {
+/*.bootstrap {*/
     /*Color de border shadow*/
-    box-shadow: 0 4px 15px 0 #8e44ad;
-}
+    /*box-shadow: 0 4px 15px 0 #8e44ad;
+}*/
 
 .bootstrap:hover {
     /*Accedemos a la animación*/
@@ -157,10 +157,10 @@ h1 {
     --color_a: #8e44ad; /*Alto*/
 }
 
-.net {
+/*.net {*/
     /*Color de border shadow*/
-    box-shadow: 0 4px 15px 0 #602EC0;
-}
+    /*box-shadow: 0 4px 15px 0 #602EC0;
+}*/
 
 /*Se aplico un padding-top ya que no se centraba la imagen*/
 .pdd-net {
@@ -184,10 +184,10 @@ h1 {
 /*fill: #8e44ad;
 }*/
 
-.csharp {
+/*.csharp {*/
     /*Color de border shadow*/
-    box-shadow: 0 4px 15px 0 #8e44ad;
-}
+    /*box-shadow: 0 4px 15px 0 #8e44ad;
+}*/
 
 .csharp:hover {
     /*Accedemos a la animación*/
@@ -199,10 +199,10 @@ h1 {
     --color_a: #8e44ad; /*Alto*/
 }
 
-.java {
+/*.java {*/
     /*Color de border shadow*/
-    box-shadow: 0 4px 15px 0 #e74c3c;
-}
+    /*box-shadow: 0 4px 15px 0 #e74c3c;
+}*/
 
 .java:hover {
     /*Accedemos a la animación*/
@@ -214,10 +214,10 @@ h1 {
     --color_a: #e74c3c; /*Alto*/
 }
 
-.jquery {
+/*.jquery {*/
     /*Color de border shadow*/
-    box-shadow: 0 4px 15px 0 #2980b9;
-}
+    /*box-shadow: 0 4px 15px 0 #2980b9;
+}*/
 
 .jquery:hover {
     /*Accedemos a la animación*/
@@ -229,10 +229,10 @@ h1 {
     --color_a: #2980b9; /*Alto*/
 }
 
-.sql {
+/*.sql {*/
     /*Color de border shadow*/
-    box-shadow: 0 4px 15px 0 #f1c40f;
-}
+    /*box-shadow: 0 4px 15px 0 #f1c40f;
+}*/
 
 .pdd-sql {
     margin-left: 38px;
@@ -250,10 +250,10 @@ h1 {
     --color_a: #f1c40f; /*Alto*/
 }
 
-.mysql {
+/*.mysql {*/
     /*Color de border shadow*/
-    box-shadow: 0 4px 15px 0 #00618A;
-}
+    /*box-shadow: 0 4px 15px 0 #00618A;
+}*/
 
 .mysql:hover {
     /*Accedemos a la animación*/
@@ -265,10 +265,10 @@ h1 {
     --color_a: #00618A; /*Alto*/
 }
 
-.github {
+/*.github {*/
     /*Color de border shadow*/
-    box-shadow: 0 4px 15px 0 #273746;
-}
+    /*box-shadow: 0 4px 15px 0 #273746;
+}*/
 
 .github:hover {
     /*Accedemos a la animación*/
@@ -280,10 +280,10 @@ h1 {
     --color_a: #273746; /*Alto*/
 }
 
-.git {
+/*.git {*/
     /*Color de border shadow*/
-    box-shadow: 0 4px 15px 0 #cb4335;
-}
+    /*box-shadow: 0 4px 15px 0 #cb4335;
+}*/
 
 .git:hover {
     /*Accedemos a la animación*/
@@ -295,10 +295,10 @@ h1 {
     --color_a: #cb4335; /*Alto*/
 }
 
-.sendgrid {
+/*.sendgrid {*/
     /*Color de border shadow*/
-    box-shadow: 0 4px 15px 0 #1A82E2;
-}
+    /*box-shadow: 0 4px 15px 0 #1A82E2;
+}*/
 
 .sendgrid:hover {
     /*Accedemos a la animación*/
@@ -310,10 +310,10 @@ h1 {
     --color_a: #1A82E2; /*Alto*/
 }
 
-.vscode {
+/*.vscode {*/
     /*Color de border shadow*/
-    box-shadow: 0 4px 15px 0 #3498db;
-}
+    /*box-shadow: 0 4px 15px 0 #3498db;
+}*/
 
 .vscode:hover {
     /*Accedemos a la animación*/
@@ -325,10 +325,10 @@ h1 {
     --color_a: #3498db; /*Alto*/
 }
 
-.php {
+/*.php {*/
     /*Color de border shadow*/
-    box-shadow: 0 4px 15px 0 #34495e;
-}
+    /*box-shadow: 0 4px 15px 0 #34495e;
+}*/
 
 .php:hover {
     /*Accedemos a la animación*/
