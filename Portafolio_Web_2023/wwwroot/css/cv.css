@@ -1,7 +1,8 @@
 ﻿/*Toda la página*/
 
 :root {
-    --colorGlobalCV: #0d6efd;
+    /*--colorGlobalCV: #0d6efd;*/
+    --colorGlobalCV: #d35400;
 }
 
 body {
