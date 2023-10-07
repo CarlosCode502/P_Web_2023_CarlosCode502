@@ -149,16 +149,17 @@
 
 .titulo-seccion {
     font-size: 25px;
+    font-weight: 900;
     color: var(--colorGlobalCV);
     /*padding-top: 1rem;*/
     padding-bottom: 1rem;
 }
 
 /*Sección experiencia*/
-.seccion-expreriencia {
+/*.seccion-expreriencia {*/
     /*margin-top: 1rem;*/
     /*margin-left: 2rem;*/
-}
+/*}*/
 
 /*Mantener en la misma linea titulo y fechas*/
 .titulo-exp {
@@ -166,6 +167,7 @@
     margin-top: 20px;
     margin-bottom: 10px;
     display: flex;
+    font-weight: 900;
 }
 
 /*Para mostrar la fecha a la izquierda y centrada de titulo exp*/
@@ -237,22 +239,27 @@
 */
 
 /*Formato para todos los parráfos*/
-p {
-    font-weight: bolder;
+/*p {
+    font-weight: bolder;*/
     /*Por orden de dependencia todos los elemetos p obedecen este color*/
     /*color: black;*/
-}
+/*}*/
 
 /*Formato para todos los Unorder List y los elementos dentro*/
 ul {
-    font-weight: 100;
-    margin-top: 0px;
+    /*font-weight: 100;*/
+    /*margin-top: 0px;*/
+    list-style: none; /* Quitamos los marcadores */
+    padding: 0; /* Quitamos el padding por defecto de la lista */
+    margin-left: 20px; /* Separamos la lista de la izquierda */
 }
 
-/*ul .li {
-    color:yellow
-}*/
-
+li::before { /* Añadimos contenido antes de cada elemento de la lista */
+    content: "\2022"; /* Insertamos el marcador */
+    font-size
+    padding-right: 8px; /* Establecemos el espacio entre las viñetas y el list item */
+    color: var(--colorGlobalCV); /* Coloreamos la viñeta */
+}
 
 /*Modal*/
 /*.modal {
