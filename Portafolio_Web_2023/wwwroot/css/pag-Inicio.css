@@ -92,29 +92,29 @@
 
     /*Para que todos los enlaces "a" se muestren espaciados */
     /*.nav_menu a {*/
-        /*CON FLEXBOX*/
-        /*Para que todos tengan el mismo tamaño*/
-        /*flex: 1;*/
-        /*alto*/
-        /*height: 100%;*/
-        /*Para que el texto se ponga en mayúscula*/
-        /*text-transform: uppercase;*/
-        /*Para indicarle que se va a usar flexbox*/
-        /*display: flex;*/
-        /*alinear el texto de forma vertical*/
-        /*align-items: center;*/
-        /*alinear el texto de forma vertical en los contenedores*/
-        /*justify-content: center;*/
-        /*Todo el contenido centrado al ocupar más de 2 lineas*/
-        /*text-align: center;*/
-        /*Decoracion del texto(linea de enlace)*/
-        /*text-decoration: none;*/
-        /*Colr*/
-        /*color: var(--colorGlobal);*/
-        /*Transición de tiempo para todas las propiedades*/
-        /*transition: .2s ease all;*/
-        /*Texto con negritas fuerte*/
-        /*font-weight: 600;*/
+    /*CON FLEXBOX*/
+    /*Para que todos tengan el mismo tamaño*/
+    /*flex: 1;*/
+    /*alto*/
+    /*height: 100%;*/
+    /*Para que el texto se ponga en mayúscula*/
+    /*text-transform: uppercase;*/
+    /*Para indicarle que se va a usar flexbox*/
+    /*display: flex;*/
+    /*alinear el texto de forma vertical*/
+    /*align-items: center;*/
+    /*alinear el texto de forma vertical en los contenedores*/
+    /*justify-content: center;*/
+    /*Todo el contenido centrado al ocupar más de 2 lineas*/
+    /*text-align: center;*/
+    /*Decoracion del texto(linea de enlace)*/
+    /*text-decoration: none;*/
+    /*Colr*/
+    /*color: var(--colorGlobal);*/
+    /*Transición de tiempo para todas las propiedades*/
+    /*transition: .2s ease all;*/
+    /*Texto con negritas fuerte*/
+    /*font-weight: 600;*/
     /*}*/
 
     /*Efecto sombreado(hover) al pasar el cursor en el nav*/
@@ -183,10 +183,9 @@
                 padding: 20px;
             }
 
-
-
     .menu-p-inicio svg {
-        font-size: 40px;
+        width: 40px;
+        height: 40px;
     }
 
     .menu-p-inicio a:hover span:first-child {
@@ -308,10 +307,15 @@
     /*font-size: 20px;*/
     /*}*/
 
-    .menu-p-inicio svg {
-        font-size: 30px;
+    /*    .menu-p-inicio svg {
+        font-size: 10px;
     }
+*/
 
+    .menu-p-inicio svg {
+        width: 30px;
+        height: 30px;
+    }
 
 
     /*    .tooltip-inicio .tooltip-content {
