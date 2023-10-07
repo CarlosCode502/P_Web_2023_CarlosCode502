@@ -2,6 +2,7 @@
 
 :root {
     --colorGlobalCV: #0d6efd;
+    --celestesimple: #4e91f5;
 }
 
 /*Se aplica o todo el documento*/
@@ -163,13 +164,19 @@
 .titulo-exp {
     /*margin: 20px;*/
     margin-top: 20px;
+    margin-bottom: 10px;
     display: flex;
 }
 
 /*Para mostrar la fecha a la izquierda y centrada de titulo exp*/
 .fechas {
     /*16px cambia según el tamaño del texto */
-    margin: 16px 0 0 auto;
+    margin: 0px 0 0 auto;
+}
+
+.subtitulo-exp {
+    margin-bottom: 10px;
+    color: grey;
 }
 
 /*Sección educación*/
@@ -241,6 +248,10 @@ ul {
     font-weight: 100;
     margin-top: 0px;
 }
+
+/*ul .li {
+    color:yellow
+}*/
 
 
 /*Modal*/
