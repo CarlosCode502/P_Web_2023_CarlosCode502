@@ -35,8 +35,7 @@
 /*Ocupación/Profesion*/
 .subtitulo {
     font-weight: 900;
-/*Color de subtitulo*/
-
+    /*Color de subtitulo*/
     /*margin-bottom: 20px;*/
 }
 
@@ -157,8 +156,8 @@
 
 /*Sección experiencia*/
 /*.seccion-expreriencia {*/
-    /*margin-top: 1rem;*/
-    /*margin-left: 2rem;*/
+/*margin-top: 1rem;*/
+/*margin-left: 2rem;*/
 /*}*/
 
 /*Mantener en la misma linea titulo y fechas*/
@@ -180,6 +179,28 @@
     margin-bottom: 10px;
     color: grey;
 }
+
+.descripcion-exp {
+    text-align: justify;
+    /*margin: auto 40px 0 40px;*/
+}
+
+/*Formato para todos los Unorder List y los elementos dentro*/
+ul {
+    font-weight: 100;
+    margin-top: 0px;
+    list-style: none; /*Quitamos los marcadores */
+    padding: 0; /*Quitamos el padding por defecto de la lista */
+    /*margin-left: 20px;*/ /*Separamos la lista de la izquierda */
+}
+
+li::before { /*Añadimos contenido antes de cada elemento de la lista */
+    content: "\2022"; /*Insertamos el marcador */
+    font-size: 20px;
+    padding-right: 8px; /*Establecemos el espacio entre las viñetas y el list item */
+    color: var(--colorGlobalCV); /*Coloreamos la viñeta */
+}
+
 
 /*Sección educación*/
 .seccion-educacion {
@@ -241,25 +262,11 @@
 /*Formato para todos los parráfos*/
 /*p {
     font-weight: bolder;*/
-    /*Por orden de dependencia todos los elemetos p obedecen este color*/
-    /*color: black;*/
+/*Por orden de dependencia todos los elemetos p obedecen este color*/
+/*color: black;*/
 /*}*/
 
-/*Formato para todos los Unorder List y los elementos dentro*/
-ul {
-    /*font-weight: 100;*/
-    /*margin-top: 0px;*/
-    list-style: none; /* Quitamos los marcadores */
-    padding: 0; /* Quitamos el padding por defecto de la lista */
-    margin-left: 20px; /* Separamos la lista de la izquierda */
-}
 
-li::before { /* Añadimos contenido antes de cada elemento de la lista */
-    content: "\2022"; /* Insertamos el marcador */
-    font-size
-    padding-right: 8px; /* Establecemos el espacio entre las viñetas y el list item */
-    color: var(--colorGlobalCV); /* Coloreamos la viñeta */
-}
 
 /*Modal*/
 /*.modal {
