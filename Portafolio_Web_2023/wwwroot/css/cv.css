@@ -17,7 +17,7 @@
 }
 
 .cv-estructura {
-    margin: 20px 180px;
+    margin: 10px 180px;
     background-color: white;
     padding: 40px;
 }
@@ -31,9 +31,11 @@
     /*margin-bottom: 5px;*/
 }
 
-/*Ocupación*/
+/*Ocupación/Profesion*/
 .subtitulo {
-    font-weight: 700;
+    font-weight: 900;
+/*Color de subtitulo*/
+
     /*margin-bottom: 20px;*/
 }
 
@@ -54,6 +56,7 @@
     font-weight: 300;
     margin: auto;
     color: var(--colorGlobalCV);
+    text-decoration: none;
     /*display: flex;
     align-content: end;
     align-items: end; */
@@ -143,18 +146,23 @@
     
 }*/
 
-.titulo-seccion{
+.titulo-seccion {
     font-size: 25px;
+    color: var(--colorGlobalCV);
+    /*padding-top: 1rem;*/
+    padding-bottom: 1rem;
 }
 
 /*Sección experiencia*/
 .seccion-expreriencia {
-    margin-top: 1rem;
+    /*margin-top: 1rem;*/
     /*margin-left: 2rem;*/
 }
 
 /*Mantener en la misma linea titulo y fechas*/
 .titulo-exp {
+    /*margin: 20px;*/
+    margin-top: 20px;
     display: flex;
 }
 
@@ -224,7 +232,7 @@
 /*Formato para todos los parráfos*/
 p {
     font-weight: bolder;
-/*Por orden de dependencia todos los elemetos p obedecen este color*/
+    /*Por orden de dependencia todos los elemetos p obedecen este color*/
     /*color: black;*/
 }
 
