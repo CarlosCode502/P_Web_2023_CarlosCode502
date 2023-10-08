@@ -160,6 +160,10 @@
 /*margin-left: 2rem;*/
 /*}*/
 
+.seccion-expreriencia {
+    margin-bottom: 30px;
+}
+
 /*Mantener en la misma linea titulo y fechas*/
 .titulo-exp {
     /*margin: 20px;*/
@@ -178,10 +182,12 @@
 .subtitulo-exp {
     margin-bottom: 10px;
     color: grey;
+    font-weight: 700;
 }
 
 .descripcion-exp {
     text-align: justify;
+    margin-bottom: 30px;
     /*margin: auto 40px 0 40px;*/
 }
 
