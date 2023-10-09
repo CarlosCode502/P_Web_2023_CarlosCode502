@@ -40,26 +40,43 @@
     /*margin: 20px;*/
     padding-left: 30px;
     padding-top: 20px;
-    padding: 20px 75px 0 30px;
+    padding: 20px 60px 0 30px;
     /*margin-bottom: 8px;*/
     display: flex;
     /*font-weight: 600;*/
-    
+}
+
+.img-nav {
     fill: var(--blanco);
+    opacity: 0.30;
+}
+
+.img-nav:hover {
+    opacity: 1;
 }
 
 .texto-nav {
     padding-left: 10px;
     color: var(--blanco);
     text-decoration: none;
+    opacity: 0.30;
 }
+
+.texto-nav:hover {
+    opacity: 1;
+}
+
 /*Para mostrar la fecha a la izquierda y centrada de titulo exp*/
 .boton-descargar {
     /*16px cambia según el tamaño del texto */
     margin: 20px 0 0 auto;
+    opacity: 0.30;
     /*padding-right: 30px;*/
 }
 
+.boton-descargar:hover {
+    opacity: 1;
+}
 
 /*.contenedor-nav {
     display: flex;
