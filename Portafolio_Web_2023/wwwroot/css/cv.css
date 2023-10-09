@@ -151,7 +151,7 @@
     font-weight: 900;
     color: var(--colorGlobalCV);
     /*padding-top: 1rem;*/
-    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 /*Sección experiencia*/
@@ -211,12 +211,17 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
 /*Sección educación*/
 .seccion-educacion {
     margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
     /*Educación 1*/
     .seccion-educacion .edu-d-1 {
-        margin-bottom: 2rem;
+        /*margin-bottom: 2rem;*/
     }
+
+.seccion-cursos {
+    margin-bottom: 2rem;
+}
 
 /*Sección tecnologías*/
 .seccion-tecnologias {
