@@ -137,8 +137,8 @@
     margin: 1.5rem 0 1.5rem 0;
     /*Justificar el texto*/
     text-align: justify;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 /*Bloque de diseño*/
@@ -193,7 +193,7 @@
     text-align: justify;
     margin-bottom: 30px;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.6;
     /*margin: auto 40px 0 40px;*/
 }
 
@@ -221,9 +221,9 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
 }
 
     /*Educación 1*/
-    .seccion-educacion .edu-d-1 {
+    /*.seccion-educacion .edu-d-1 {*/
         /*margin-bottom: 2rem;*/
-    }
+    /*}*/
 
 .seccion-cursos {
     margin-bottom: 2rem;
