@@ -226,6 +226,7 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
 
     .seccion-cursos ul {
         font-weight: 500;
+        line-height: 10px;
         /*word-wrap: normal;*/
         /*word-spacing: 5px;*/
     }
