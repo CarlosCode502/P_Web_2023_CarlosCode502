@@ -221,7 +221,14 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
 
 .seccion-cursos {
     margin-bottom: 2rem;
+    
 }
+
+    .seccion-cursos ul {
+        font-weight: 500;
+        /*word-wrap: normal;*/
+        /*word-spacing: 5px;*/
+    }
 
 /*Sección tecnologías*/
 .seccion-tecnologias {
