@@ -34,6 +34,7 @@
     /*position: fixed;*/
     /*width: 50%;*/
     /*text-align: center;*/
+    text-align: justify;
     padding: 20px;
     background-color: var(--colorGlobalCV); /* blue */
     color: white;
@@ -109,7 +110,7 @@
 /*Para mostrar la fecha a la izquierda y centrada de titulo exp*/
 .boton-descargar {
     /*16px cambia según el tamaño del texto */
-    margin: 20px 0 0 auto;
+    margin: 0 0 0 auto;
     opacity: 0.30;
     /*padding-right: 30px;*/
 }
