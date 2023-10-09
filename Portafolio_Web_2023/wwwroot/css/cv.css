@@ -226,27 +226,32 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
     /*}*/
 
 .seccion-cursos {
-    margin-bottom: 2rem;
-    
+    margin-bottom: 2rem;    
 }
 
     .seccion-cursos ul {
-        font-weight: 500;
-        line-height: 10px;
+        /*font-weight: 600;*/
+        line-height: 0.80;
         /*word-wrap: normal;*/
         /*word-spacing: 5px;*/
     }
 
 /*Sección tecnologías*/
 .seccion-tecnologias {
-    margin-top: 1rem;
+    margin-top: 1rem;    
+}
+
+.tec{
+    margin-bottom: 20px;
 }
 /*Para dividir las tecnologias en columnas*/
 .texto-columnas {
-    margin: 0 auto 0 20%;
+    /*margin-top: 1rem;*/
+    margin: 20px auto 0 22%;
     column-count: 2;
     column-gap: 20px;
     list-style: none;
+    line-height: 1.3;
     /*Hace un diseño como de borde en la columna*/
     column-rule: 4px none gray;
     /*Para integrar a navegadores Chrome y Safari*/
