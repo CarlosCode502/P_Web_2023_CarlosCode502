@@ -3,6 +3,7 @@
 :root {
     --colorGlobalCV: #0d6efd;
     --celestesimple: #4e91f5;
+    --blanco: white;
 }
 
 /*Se aplica o todo el documento*/
@@ -19,7 +20,7 @@
 
 .cv-estructura {
     margin: 10px 180px;
-    background-color: white;
+    background-color: var(--blanco);
     padding: 40px;
 }
 
@@ -35,8 +36,9 @@
 /*Ocupación/Profesion*/
 .subtitulo {
     font-weight: 900;
+    font-size: 25px;
     /*Color de subtitulo*/
-    /*margin-bottom: 20px;*/
+    margin-bottom: 20px;
 }
 
 /*Sección o cuadro de contacto*/
@@ -47,13 +49,14 @@
     align-items: center;
     border: 6px solid var(--colorGlobalCV);
     padding: 10px;
+    font-size: 17px;
     /*position: center;*/
     /*margin-left: 10%;*/
 }
 
 /*Mantener centrados los elementos de contacto*/
 .phone, .gmail, .github {
-    font-weight: 300;
+    font-weight: 700;
     margin: auto;
     color: var(--colorGlobalCV);
     text-decoration: none;
@@ -118,7 +121,6 @@
 /* Propiedades */
 /*}*/
 
-
 /*.contacto .github:hover .contacto {
             border: 4px solid purple;
         }
@@ -127,7 +129,6 @@
 /* Propiedades */
 /*border: 4px solid purple;
 }*/
-
 
 /*Descripción o perfil*/
 .descripcion-perfil {
@@ -357,7 +358,7 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
 
     /*Cambiar padding del contenedor*/
     .container {
-        background-color: white;
+        background-color: var(--blanco);
         padding: 0px;
     }
 
@@ -369,6 +370,7 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
 
     /*Cambiar el borde y cambiar la propiedad de flex a block*/
     .contacto {
+        margin: 0;
         border: 4px solid var(--colorGlobalCV);
         display: block;
         /*padding: 10px;*/
@@ -376,7 +378,7 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
 
     /*Quitar los márgenes*/
     .gmail, .github, .phone {
-        margin: 15px;
+        margin: 10px;
     }
 
     .texto-columnas {
