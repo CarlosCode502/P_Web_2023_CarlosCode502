@@ -27,7 +27,13 @@
         </div>
         </div> *@
 
-       
+       @* Creando alerta *@
+        <div class="alert">
+            @* Se usa un texto o simbolo html para crear la X que es: &times *@
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            This is an alert box.
+        </div>
+
         <nav class="barra-nav top-nav">
             @* <div class="contenedor-nav">
             <a class="texto-nav" asp-area="" asp-controller="PortafolioW" asp-action="Index">
