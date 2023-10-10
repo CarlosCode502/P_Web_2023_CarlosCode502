@@ -568,6 +568,25 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
         padding: 20px 20px;
     }
 
+    .cont-nav{
+        visibility: hidden;
+    }
+
+    /*Para mostrar la fecha a la izquierda y centrada de titulo exp*/
+    .btn-descargar-cv {
+        position: fixed;
+        bottom: 22px;
+        right: 40px;
+        width: 64px;
+        height: 64px;
+        fill: var(--colorGlobal);
+        opacity: 0.5;
+    }
+
+        .btn-descargar-cv:hover {
+            opacity: 1;
+        }
+
     /*Cambiar el borde y cambiar la propiedad de flex a block*/
     .contacto {
         margin: 0;
