@@ -71,8 +71,9 @@ namespace Portafolio_Web_2023.Controllers
 
         public IActionResult Cv()
         {
+            var archivosDropDowList = repositorioArchivos.ListadoArchivos();
 
-            return View("cv");
+            return View("cv", archivosDropDowList);
         }
 
         [HttpGet]

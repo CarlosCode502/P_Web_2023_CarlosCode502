@@ -1,0 +1,33 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model IEnumerable<ArchivosSelectListViewModelcs>
+
+@{
+    Layout = null;
+}
+
+<div id="ventanaModal" class="modal">
+    <div class="ventana">
+        <a class="closebtn" href="#" style='text-decoration:none;'>
+            &times;
+        </a>
+        <p class="texto-modal">Elija el tipo de archivo que desea descargar</p>
+
+        @foreach (var item in Model)
+        {
+            <option value="@Model">Model</option>
+        }
+@* 
+        <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+        </select> *@
+
+        <br><br>
+        <input type="submit" value="Submit">
+    </div>
+</div>

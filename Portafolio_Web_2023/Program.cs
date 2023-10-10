@@ -20,6 +20,8 @@ builder.Services.AddTransient<IRepositorioProyecto, RepositorioProyecto>();
 //Como este servicio no necesita compartir datos usamos AddTransient(cambia el Guid)
 builder.Services.AddTransient<IServicioEmailSendGrid, ServicioEmailSendGrid>();
 
+builder.Services.AddTransient<IRepositorioArchivos, RepositorioArchivos>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
