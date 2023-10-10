@@ -18,17 +18,19 @@ namespace Portafolio_Web_2023.Controllers
         private readonly ILogger<PortafolioWController> logger;
         private readonly IRepositorioProyecto repositorioProyecto;
         private readonly IServicioEmailSendGrid servicioEmailSendGrid;
+        private readonly IRepositorioArchivos repositorioArchivos;
         #endregion
 
         //V#60 Entendiendo ILoger msjs de logs(Cuando se pasa ILogger a HomeController detectara los logs en la consola)
         //Ctrl+. y en Create and assign fiel 'logger' para crearlo como CAMPO y agregar automaticamente los valores
         //V#? Inyección de dependencias(Inyectando el servicio de SendGrid)
-        public PortafolioWController(ILogger<PortafolioWController> logger, IRepositorioProyecto repositorioProyecto, IServicioEmailSendGrid servicioEmailSendGrid)
+        public PortafolioWController(ILogger<PortafolioWController> logger, IRepositorioProyecto repositorioProyecto, IServicioEmailSendGrid servicioEmailSendGrid, IRepositorioArchivos repositorioArchivos)
         {
             //Generados automáticamente
             this.logger = logger;
             this.repositorioProyecto = repositorioProyecto;
             this.servicioEmailSendGrid = servicioEmailSendGrid;
+            this.repositorioArchivos = repositorioArchivos;
         }
 
         public IActionResult Index()
@@ -69,6 +71,7 @@ namespace Portafolio_Web_2023.Controllers
 
         public IActionResult Cv()
         {
+
             return View("cv");
         }
 
