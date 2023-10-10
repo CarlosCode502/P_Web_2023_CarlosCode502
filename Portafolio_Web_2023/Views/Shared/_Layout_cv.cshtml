@@ -34,11 +34,11 @@
             <script>
                 function m() {
                     // $('.alert').animate({ opacity: "0" }, { duration: 1000, queue: false });
-                    $(".alert").fadeOut();
+                    $('.alert').fadeOut();
                 }                
                 setTimeout(function () {
                     m();
-                }, 12000);
+                }, 15000);
             </script>
 
             @* A este div va a apuntar mi funcion js para cerrar el elemento automáticamente *@
@@ -81,30 +81,30 @@
                 <p>Detalle de las opciones</p>
                 </div>
                 </div> *@
-
-                <div id="ventanaModal" class="modal">
-                    <div class="ventana">
-                        <a class="closebtn" href="#" style='text-decoration:none;'>
-                            &times;
-                        </a>
-                        <p class="texto-modal">Elija el tipo de archivo que desea descargar</p>
-
-                        <select name="cars" id="cars">
-                            <option value="volvo">Volvo</option>
-                            <option value="saab">Saab</option>
-                            <option value="opel">Opel</option>
-                            <option value="audi">Audi</option>
-                        </select>
-
-                        <br><br>
-                        <input type="submit" value="Submit">
-                    </div>
-                </div>
             </div>
         </nav>
 
         <div class="btn-descargar-cv">
             <a class="btn-a" href="#ventanaModal">Descargar CV</a>
+        </div>
+
+        <div id="ventanaModal" class="modal">
+            <div class="ventana">
+                <a class="closebtn" href="#" style='text-decoration:none;'>
+                    &times;
+                </a>
+                <p class="texto-modal">Elija el tipo de archivo que desea descargar</p>
+
+                <select name="cars" id="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                </select>
+
+                <br><br>
+                <input type="submit" value="Submit">
+            </div>
         </div>
 
     </header>

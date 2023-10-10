@@ -131,11 +131,12 @@
     background-color: var(--colorGlobalCV);
     width: 300px;
     padding: 10px 20px;
-    margin: 20% auto;
+    margin: 30% auto;
     position: relative;
 }
 
 .modal {
+    /*visibility: hidden;*/
     background-color: rgba(0,0,0,.8);
     position: fixed;
     top: 0px;
@@ -548,9 +549,40 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
         opacity: 1;
     }*/
 
+/*.btn-descargar-cv, .btn-a {*/
+    /*visibility: hidden;*/
+    /*color: #2B2A33;
+    background-color: #2B2A33;*/
+    /*opacity: 0;
+}*/
+
+.btn-descargar-cv {
+    visibility: hidden;
+    position: fixed;
+    /*bottom: 40px;
+    right: 40px;
+    padding: 10px;
+    border-radius: 8px;*/
+    /*width: 64px;*/
+    /*height: 64px;*/
+    /*background-color: var(--colorGlobalCV);
+    opacity: 0.5;*/
+}
+/*
+    .btn-descargar-cv:hover {
+        opacity: 1;
+    }
+
+.btn-a {
+    text-decoration: none;
+    color: var(--blanco);
+}*/
+
 /*En pantallas menores de 650px*/
-/*@media screen and (max-width: 650px) {
-    
+/*@media screen and (max-width: 809pxpx) {
+    .btn-descargar-cv{
+        visibility: hidden;
+    }
 }*/
 
 /* cuando sea como maximo 450, es decir menor */
@@ -574,6 +606,7 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
 
     /*Para mostrar la fecha a la izquierda y centrada de titulo exp*/
     .btn-descargar-cv {
+        visibility: visible;
         position: fixed;
         bottom: 40px;
         right: 40px;
@@ -593,6 +626,45 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
         text-decoration: none;
         color: var(--blanco);
     }
+
+    .ventana {
+        border-radius: 8px;
+        background-color: var(--colorGlobalCV);
+        width: 300px;
+        padding: 10px 20px;
+        margin: 100% auto;
+        position: relative;
+    }
+
+    .modal {
+        background-color: rgba(0,0,0,.8);
+        position: fixed;
+        top: 0px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 1s;
+    }
+
+    /* The close button */
+    /*.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;*/
+    /*transition: 5s;*/
+    /*}*/
+
+    #ventanaModal:target {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
 
     /*Cambiar el borde y cambiar la propiedad de flex a block*/
     .contacto {
