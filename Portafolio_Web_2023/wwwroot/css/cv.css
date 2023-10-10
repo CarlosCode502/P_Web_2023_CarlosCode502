@@ -110,7 +110,14 @@
 /*Para mostrar la fecha a la izquierda y centrada de titulo exp*/
 .boton-descargar {
     /*16px cambia según el tamaño del texto */
+/*Actualmente para que se fije a la derecha*/
     margin: 0 0 0 auto;
+    /*opacity: 1;*/
+    padding: 8px;
+    background-color: gray;
+    border-radius: 8px;
+    color: var(--blanco);
+    text-decoration: none;
     opacity: 0.30;
     /*padding-right: 30px;*/
 }
@@ -118,6 +125,38 @@
     .boton-descargar:hover {
         opacity: 1;
     }
+
+.ventana {
+    border-radius: 8px;
+    background-color: var(--colorGlobalCV);
+    width: 300px;
+    padding: 10px 20px;
+    margin: 20% auto;
+    position: relative;
+}
+
+.modal {
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+#ventanaModal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/*.opcion {*/ /*width: 100px;
+        background-color:yellow;
+border:1px solid black;*/
+/*}*/
+
 
 /*.contenedor-nav {
     display: flex;

@@ -27,9 +27,7 @@
         </div>
         </div> *@
 
-       @* Creando alerta *@
-
-
+        @* Creando alerta *@
         <nav class="barra-nav top-nav">
             <div class="alert">
                 @* Se usa un texto o simbolo html para crear la X que es: &times *@
@@ -38,35 +36,62 @@
             </div>
             @* <div class="contenedor-nav">
             <a class="texto-nav" asp-area="" asp-controller="PortafolioW" asp-action="Index">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="bi bi-arrow-left d-inline-block align-text-top" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
-                </svg>
-                Regresar al Inicio
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="bi bi-arrow-left d-inline-block align-text-top" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+            </svg>
+            Regresar al Inicio
             </a>
             </div> *@
 
             <div class="cont-nav">
-                <a class="img-nav" asp-area="" asp-controller="PortafolioW" asp-action="Index">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="bi bi-arrow-left d-inline-block align-text-top" viewBox="0 0 16 16"><title>Regresar al Inicio</title>
-                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
-                    </svg>              
-                    @* Regresar al Inicio *@
-                </a>
-                <a class="texto-nav" asp-area="" asp-controller="PortafolioW" asp-action="Index">Regresar al Inicio</a>
+                @* <div class="regresar"> *@
+                    <a class="img-nav" asp-area="" asp-controller="PortafolioW" asp-action="Index">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="bi bi-arrow-left d-inline-block align-text-top" viewBox="0 0 16 16">
+                            <title>Regresar al Inicio</title>
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                        </svg>
+                        @* Regresar al Inicio *@
+                    </a>
+                    <a class="texto-nav" asp-area="" asp-controller="PortafolioW" asp-action="Index">Regresar al Inicio</a>
+                @* </div> *@
+                <a class="boton-descargar" href="#ventanaModal">Descargar CV</a>
 
-                <button class="boton-descargar" type="button">Descargar CV</button>
+                @* <a class="boton-descargar" href="#ventanaModal">Descargar CV</a>
+
+                <div id="ventanaModal" class="modal">
+                <div id="ventana">
+                @*                         <a href="#" style='text-decoration:none;'>
+                X
+                </a>
+                <span href="#ventana" onclick="this.parentElement.style.display='none';">&times;</span>
+                <h2>Ventana</h2>
+                <p>Detalle de las opciones</p>
+                </div>
+                </div> *@
+
+                <div id="ventanaModal" class="modal">
+                    <div class="ventana">
+                        <a href="#" style='text-decoration:none;'>
+                            X
+                        </a>
+                        <h2>Ventana</h2>
+                        <p>Detalle de las opciones</p>
+                    </div>
+                </div>
+
+
             </div>
 
         </nav>
 
     </header>
-@*     <div class="superior"> *@
-        <div class="container">
-            <main role="main" class="pb-3">
-                @RenderBody()
-            </main>
-        </div>
-   @*  </div> *@
+    @*     <div class="superior"> *@
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    @*  </div> *@
 
     <footer>
     </footer>
