@@ -31,20 +31,21 @@
         <nav class="barra-nav top-nav">
 
             @* funcion js para mostrar un elemento y ocultarlo luego de unos segundos *@
- @*            <script>
+            <script>
                 function m() {
-                    $('.alert').animate({ opacity: "0" }, { duration: 1000, queue: false });
-                }
-
+                    // $('.alert').animate({ opacity: "0" }, { duration: 1000, queue: false });
+                    $(".alert").fadeOut();
+                }                
                 setTimeout(function () {
                     m();
-                }, 3000);
-            </script> *@
+                }, 12000);
+            </script>
 
+            @* A este div va a apuntar mi funcion js para cerrar el elemento automáticamente *@
             <div class="alert">
                 @* Se usa un texto o simbolo html para crear la X que es: &times *@
                 <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                Se esta mostrando una vista HTML de mi cv, si desea puede descargarlo o en su lugar descargar un diseño hecho en Canva <a href="#ventanaModal">aquí</a>.
+                Se esta mostrando una vista HTML de mi cv, si desea puede descargarlo o en su lugar uno con diseño hecho en Canva, haciendo click en el botón <strong>Descargar CV</strong>.
             </div>
             @* <div class="contenedor-nav">
             <a class="texto-nav" asp-area="" asp-controller="PortafolioW" asp-action="Index">

@@ -437,7 +437,7 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
 .texto-columnas {
     /*margin-top: 1rem;*/
     font-size: 16px;
-    margin: 20px auto 0 22%;
+    margin: 20px auto 0 22% ;
     column-count: 2;
     column-gap: 20px;
     list-style: none;
@@ -554,7 +554,7 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
 }*/
 
 /* cuando sea como maximo 450, es decir menor */
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 810px) {
 
     /*Cambiar padding del contenedor*/
     .container {
@@ -581,27 +581,35 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
         margin: 10px;
     }
 
-    .texto-columnas {
+  /*  .texto-columnas {
         margin-left: 35.35px;
+    }*/
+
+    /*Para dividir las tecnologias en columnas*/
+    .texto-columnas {
+        /*margin-top: 1rem;*/
+        /*font-size: 16px;*/
+        margin: 20px auto 0 14%;       
     }
+
 
     /*Color para correo*/
-    .hover_class_style1 {
-        border: 4px solid #ea0101;
+    /*.hover_class_style1 {
+        border: 4px solid #ea0101;*/
         /*  background: blue;*/
-    }
+    /*}*/
 
     /*Color para github*/
-    .hover_class_style2 {
-        border: 4px solid #a06ed9;
+    /*.hover_class_style2 {
+        border: 4px solid #a06ed9;*/
         /*background: blue;*/
-    }
+    /*}*/
 
     /*Color para teléfono*/
-    .hover_class_style3 {
-        border: 4px solid #0DC143;
+    /*.hover_class_style3 {
+        border: 4px solid #0DC143;*/
         /*background: blue;*/
-    }
+    /*}*/
 }
 
 
