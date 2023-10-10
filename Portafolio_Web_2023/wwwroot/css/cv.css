@@ -44,7 +44,7 @@
     opacity: 1;
     /*transition: opacity 0.9s;*/ /* 600ms to fade out */
     cursor: pointer;
-    transition: opacity 0.33s;
+    transition: opacity 0.3s;
 }
 
 /*.alert {
@@ -146,6 +146,18 @@
     pointer-events: none;
     transition: all 1s;
 }
+
+/* The close button */
+/*.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;*/
+    /*transition: 5s;*/
+/*}*/
 
 #ventanaModal:target {
     opacity: 1;
