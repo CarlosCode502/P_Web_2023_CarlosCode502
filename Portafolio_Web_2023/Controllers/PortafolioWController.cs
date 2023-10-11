@@ -4,6 +4,7 @@ using Portafolio_Web_2023.Services;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore;
+using Portafolio_Web_2023.Models.CVs_VM_Resources;
 
 namespace Portafolio_Web_2023.Controllers
 {
@@ -20,19 +21,19 @@ namespace Portafolio_Web_2023.Controllers
         private readonly ILogger<PortafolioWController> logger;
         private readonly IRepositorioProyecto repositorioProyecto;
         private readonly IServicioEmailSendGrid servicioEmailSendGrid;
-        private readonly IRepositorioArchivos repositorioArchivos;
+        //private readonly IRepositorioArchivos repositorioArchivos;
         #endregion
 
         //V#60 Entendiendo ILoger msjs de logs(Cuando se pasa ILogger a HomeController detectara los logs en la consola)
         //Ctrl+. y en Create and assign fiel 'logger' para crearlo como CAMPO y agregar automaticamente los valores
         //V#? Inyección de dependencias(Inyectando el servicio de SendGrid)
-        public PortafolioWController(ILogger<PortafolioWController> logger, IRepositorioProyecto repositorioProyecto, IServicioEmailSendGrid servicioEmailSendGrid, IRepositorioArchivos repositorioArchivos)
+        public PortafolioWController(ILogger<PortafolioWController> logger, IRepositorioProyecto repositorioProyecto, IServicioEmailSendGrid servicioEmailSendGrid/*, IRepositorioArchivos repositorioArchivos*/)
         {
             //Generados automáticamente
             this.logger = logger;
             this.repositorioProyecto = repositorioProyecto;
             this.servicioEmailSendGrid = servicioEmailSendGrid;
-            this.repositorioArchivos = repositorioArchivos;
+            //this.repositorioArchivos = repositorioArchivos;
         }
 
         public IActionResult Index()
@@ -92,9 +93,27 @@ namespace Portafolio_Web_2023.Controllers
             //    modelo.ArchviosListados.Add(new SelectListItem { Text = archivo.Name, Value = archivo.Id.ToString() });
             //}
 
-            var archivosList = repositorioArchivos.ListadoArchivos();
 
-            return View("cv", archivosList);
+
+            //var archivosList = repositorioArchivos.ListadoArchivos();
+            //return View("cv", archivosList);
+
+            //Asignamos una var para obtener el listado del repo
+            //obtendra todos los elementos como una lista estatica
+            var cvsData = new RepositorioArchivos().ListadoArchivos();
+
+            //Inicializamos el modelo que contendra la lista y el elemento seleccionado 
+            //para asi pasar los datos del repo al modelo list
+            var modelo = new CVs_Portafolio_ViewModel();
+            modelo.cvs_selectListItems = new List<SelectListItem>();
+
+            //Ahora un bucle que ira recorriendo y mostrando las propiedades
+            foreach (var item in collection)
+            {
+
+            }
+
+            return View("cv");
         }
 
         [HttpPost]

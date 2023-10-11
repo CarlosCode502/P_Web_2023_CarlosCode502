@@ -2,8 +2,9 @@
 
 namespace Portafolio_Web_2023.Services
 {
-    public class RepositorioArchivos : IRepositorioArchivos
+    public class RepositorioArchivos
     {
+        //Lista que contiene el nombre y la ruta de mis archivos
         public List<ArchivosViewModel> ListadoArchivos()
         {
             return new List<ArchivosViewModel>(){
