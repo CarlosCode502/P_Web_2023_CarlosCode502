@@ -1,8 +1,12 @@
-﻿using Portafolio_Web_2023.Models;
+﻿using Humanizer.Localisation;
+using Microsoft.AspNetCore.Hosting.Server;
+using Portafolio_Web_2023.Models;
+using System.IO.Pipes;
+using System.Security.Policy;
 
 namespace Portafolio_Web_2023.Services
 {
-    public class RepositorioArchivos
+    public class RepositorioArchivos : IRepositorioArchivos
     {
         //Lista que contiene el nombre y la ruta de mis archivos
         public List<ArchivosViewModel> ListadoArchivos()
@@ -12,13 +16,13 @@ namespace Portafolio_Web_2023.Services
                 {
                     Id = 1,
                     Name = "Cv con diseño HTML.",
-                    Ruta = "Algún lado"
+                    Ruta = "/Resources/Currículum Vitae Cv.pdf"
                 },
                 new ArchivosViewModel
                 {
                     Id = 2,
                     Name = "Cv hecho en Canva.",
-                    Ruta = "Algún otro lado"
+                    Ruta = "/Resources/Currículum Vitae Cv.pdf"
                 },
                 new ArchivosViewModel
                 {

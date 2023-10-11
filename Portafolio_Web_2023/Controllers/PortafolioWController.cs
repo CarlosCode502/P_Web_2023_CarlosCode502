@@ -22,19 +22,19 @@ namespace Portafolio_Web_2023.Controllers
         private readonly ILogger<PortafolioWController> logger;
         private readonly IRepositorioProyecto repositorioProyecto;
         private readonly IServicioEmailSendGrid servicioEmailSendGrid;
-        //private readonly IRepositorioArchivos repositorioArchivos;
+        private readonly IRepositorioArchivos repositorioArchivos;
         #endregion
 
         //V#60 Entendiendo ILoger msjs de logs(Cuando se pasa ILogger a HomeController detectara los logs en la consola)
         //Ctrl+. y en Create and assign fiel 'logger' para crearlo como CAMPO y agregar automaticamente los valores
         //V#? Inyección de dependencias(Inyectando el servicio de SendGrid)
-        public PortafolioWController(ILogger<PortafolioWController> logger, IRepositorioProyecto repositorioProyecto, IServicioEmailSendGrid servicioEmailSendGrid/*, IRepositorioArchivos repositorioArchivos*/)
+        public PortafolioWController(ILogger<PortafolioWController> logger, IRepositorioProyecto repositorioProyecto, IServicioEmailSendGrid servicioEmailSendGrid, IRepositorioArchivos repositorioArchivos)
         {
             //Generados automáticamente
             this.logger = logger;
             this.repositorioProyecto = repositorioProyecto;
             this.servicioEmailSendGrid = servicioEmailSendGrid;
-            //this.repositorioArchivos = repositorioArchivos;
+            this.repositorioArchivos = repositorioArchivos;
         }
 
         public IActionResult Index()
@@ -94,15 +94,13 @@ namespace Portafolio_Web_2023.Controllers
             //    modelo.ArchviosListados.Add(new SelectListItem { Text = archivo.Name, Value = archivo.Id.ToString() });
             //}
 
-
-
             //var archivosList = repositorioArchivos.ListadoArchivos();
             //return View("cv", archivosList);
 
             //Asignamos una var para obtener el listado del repo
             //obtendra todos los elementos como una lista estatica
             var cvsData = new RepositorioArchivos().ListadoArchivos();
-
+            
             //Inicializamos el modelo que contendra la lista y el elemento seleccionado 
             //para asi pasar los datos del repo al modelo list
             var modelo = new CVs_Portafolio_ViewModel();
@@ -113,6 +111,7 @@ namespace Portafolio_Web_2023.Controllers
             {
                 //segun se vaya recorriendo se agregara un elemento al drop con valor y nombre
                 modelo.cvs_selectListItems.Add(new SelectListItem { Text = cvs.Name, Value = cvs.Id.ToString() });
+                //var ruta = cvs.Ruta;
             }
 
             return View("cv", modelo);
@@ -122,7 +121,8 @@ namespace Portafolio_Web_2023.Controllers
         public IActionResult Cv(CVs_Portafolio_ViewModel cVs_Portafolio_ViewModel)
         {
             //creamos una variable para obtener el valor del elemento seleccionado
-            CVsViewModel cVsViewModel = new CVsViewModel();
+            //CVsViewModel cVsViewModel = new CVsViewModel();
+            //RepositorioArchivos repositorioArchivos = new RepositorioArchivos();    
 
             var cvseleccionado = cVs_Portafolio_ViewModel.CV_Seleccionado;
             int obInt = Convert.ToInt32(cvseleccionado);
@@ -130,12 +130,13 @@ namespace Portafolio_Web_2023.Controllers
             if (obInt >= 0)
             {
                 if (obInt == 1)
+                {                    
+                    return RedirectToAction("ArchivoHtml");
+                }
+                else if (obInt == 2)
                 {
                     return RedirectToAction("Archivo");
                 }
-                //var ruta = string.Empty;
-                //RedirectToAction("Archivo", ruta = Server.MapPath("./Resources/Intro Exel.pdf"));
-                return RedirectToAction();
             }
 
             //return View("cv",cVs_Portafolio_ViewModel);
@@ -144,15 +145,29 @@ namespace Portafolio_Web_2023.Controllers
 
         ////V#9 Decarga de archivo von FileResult
         ////RETORNAR UN ARCHIVO DE NUESTRO SERVIDOR AL USUARIO(Descargar)
-        //public FileResult Archivo(CVsViewModel cVsViewModel)
-        //{
-        //    //CVsViewModel cVsViewModel = new CVsViewModel();
+        public FileResult ArchivoHtml()
+        {
+            //CVsViewModel cVsViewModel = new CVsViewModel();
 
-        //    var ruta = cVsViewModel.Ruta;
+            //var ruta = cVsViewModel.Ruta;
+            var ruta = "/Resources/Currículum Vitae Cv.pdf";
+            //var ruta = repositorioArchivos.ListadoArchivos();
+            //ruta = Server.MapPath("./Resources/Intro Exel.pdf");
+            return File(ruta, "application/pdf", "Cv-Carlos-Herrera(HTML).pdf");
+        }
 
-        //    ruta = Server.MapPath("./Resources/Intro Exel.pdf");
-        //    return File(ruta, "application/pdf", "Intro Exel.pdf");
-        //}
+        ////V#9 Decarga de archivo von FileResult
+        ////RETORNAR UN ARCHIVO DE NUESTRO SERVIDOR AL USUARIO(Descargar)
+        public FileResult Archivo()
+        {
+            //CVsViewModel cVsViewModel = new CVsViewModel();
+
+            //var ruta = cVsViewModel.Ruta;
+            var ruta = "/Resources/Currículum Vitae Cv.pdf";
+            //var ruta = repositorioArchivos.ListadoArchivos();
+            //ruta = Server.MapPath("./Resources/Intro Exel.pdf");
+            return File(ruta, "application/pdf", "Cv-Carlos-Herrera.pdf");
+        }
 
 
 
