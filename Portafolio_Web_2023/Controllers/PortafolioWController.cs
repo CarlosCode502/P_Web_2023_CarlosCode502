@@ -70,6 +70,7 @@ namespace Portafolio_Web_2023.Controllers
             return View(proyectos);
         }
 
+        [HttpGet]
         public IActionResult Cv()
         {
             //var archivosDropDowList = repositorioArchivos.ListadoArchivos();
@@ -94,6 +95,23 @@ namespace Portafolio_Web_2023.Controllers
 
             return View("cv", archivosList);
         }
+
+        [HttpPost]
+        public IActionResult Cv()
+        {
+            RedirectToAction("");
+        }
+
+        @*         //V#9 Decarga de archivo von FileResult
+        //RETORNAR UN ARCHIVO DE NUESTRO SERVIDOR AL USUARIO(Descargar)
+        ///public FileResult Index()
+        ///{
+        ///    var ruta = Server.MapPath("./Resources/Intro Exel.pdf");
+        ///    return File(ruta, "application/pdf", "Intro Exel.pdf");
+        ///}
+        /// *@
+
+
 
         [HttpGet]
         //V#63 Creando un simple formulario
