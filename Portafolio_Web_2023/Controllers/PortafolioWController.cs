@@ -5,6 +5,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore;
 using Portafolio_Web_2023.Models.CVs_VM_Resources;
+//using Grpc.Core;
 
 namespace Portafolio_Web_2023.Controllers
 {
@@ -114,24 +115,64 @@ namespace Portafolio_Web_2023.Controllers
                 modelo.cvs_selectListItems.Add(new SelectListItem { Text = cvs.Name, Value = cvs.Id.ToString() });
             }
 
-            return View("cv",modelo);
+            return View("cv", modelo);
         }
 
         [HttpPost]
-        public IActionResult Cv(ArchivosViewModel archivosViewModel)
+        public IActionResult Cv(CVs_Portafolio_ViewModel cVs_Portafolio_ViewModel)
         {
+            //creamos una variable para obtener el valor del elemento seleccionado
+            CVsViewModel cVsViewModel = new CVsViewModel();
 
-            //var ruta = string.Empty;
-            //RedirectToAction("Archivo", ruta = Server.MapPath("./Resources/Intro Exel.pdf"));
-            return RedirectToAction();
+            var cvseleccionado = cVs_Portafolio_ViewModel.CV_Seleccionado;
+            int obInt = Convert.ToInt32(cvseleccionado);
+
+            if (obInt >= 0)
+            {
+                if (obInt == 1)
+                {
+                    return RedirectToAction("Archivo");
+                }
+                //var ruta = string.Empty;
+                //RedirectToAction("Archivo", ruta = Server.MapPath("./Resources/Intro Exel.pdf"));
+                return RedirectToAction();
+            }
+
+            //return View("cv",cVs_Portafolio_ViewModel);
+            return RedirectToAction("cv");
         }
 
-        //V#9 Decarga de archivo von FileResult
-        //RETORNAR UN ARCHIVO DE NUESTRO SERVIDOR AL USUARIO(Descargar)
-        //public FileResult Archivo(string ruta)
+        ////V#9 Decarga de archivo von FileResult
+        ////RETORNAR UN ARCHIVO DE NUESTRO SERVIDOR AL USUARIO(Descargar)
+        //public FileResult Archivo(CVsViewModel cVsViewModel)
         //{
+        //    //CVsViewModel cVsViewModel = new CVsViewModel();
+
+        //    var ruta = cVsViewModel.Ruta;
+
         //    ruta = Server.MapPath("./Resources/Intro Exel.pdf");
         //    return File(ruta, "application/pdf", "Intro Exel.pdf");
+        //}
+
+
+
+        //public async Task<FileResult> GetFoto(int id)
+        //{
+        //    //byte[] fileBytes = 
+        //    var ms = new MemoryStream(fileBytes!);
+        //    return new FileStreamResult(ms, "application/pdf");
+        //    // o tambien:
+        //    //return File(fileBytes, "application/pdf", "nombre.pdf");
+        //}
+
+
+        //public IActionResult DamePdf(LDModel ld, string returnUrl)
+        //{
+        //    string contentType = System.Net.Mime.MediaTypeNames.Application.Pdf;
+        //    return new FilePathResult(ld.fullPathfileName, contentType);
+        //      //{ 
+        //      //    FileDownloadName = ld.FileName,
+        //      //};
         //}
 
 

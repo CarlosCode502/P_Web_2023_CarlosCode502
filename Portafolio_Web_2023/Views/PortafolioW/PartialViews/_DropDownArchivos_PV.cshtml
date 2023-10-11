@@ -26,7 +26,9 @@
             <div class="dropdown">
                 <label class="form-label">Select cv</label>
                 @* <option value="-1">>---- Elija una opción ----<</option> *@
-                <select class="form-select" asp-items="Model.cvs_selectListItems"></select>
+                @* Esta etiqueta Html helper obtiene y muestra los elementos del drop, además permite obtener el e
+                elemento que se leccionado a traves de HHelper asp-for="CV_Seleccionado" *@
+                <select class="form-select" asp-items="Model.cvs_selectListItems" asp-for="CV_Seleccionado"></select>
             </div>
             <div class="btn">
                 <button type="submit" class="btn btn-primary">Aceptar</button>
