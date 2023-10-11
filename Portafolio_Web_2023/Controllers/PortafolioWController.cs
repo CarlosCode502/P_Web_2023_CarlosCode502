@@ -72,25 +72,27 @@ namespace Portafolio_Web_2023.Controllers
 
         public IActionResult Cv()
         {
-            var archivosDropDowList = repositorioArchivos.ListadoArchivos();
+            //var archivosDropDowList = repositorioArchivos.ListadoArchivos();
 
-            var modelo = new ArchivosSelectListViewModelcs
-            {
-                //Casteamos para poder importar el método
-                ArchviosListados = new List<SelectListItem>()
-            };
+            //var modelo = new ArchivosSelectListViewModelcs
+            //{
+            //    //Casteamos para poder importar el método
+            //    ArchviosListados = new List<SelectListItem>()
+            //};
 
-            //var modelo = new ArchivosViewModel();
-            //modelo.archivosDropDowList = new List<SelectListItem>(); 
+            ////var modelo = new ArchivosViewModel();
+            ////modelo.archivosDropDowList = new List<SelectListItem>(); 
 
-            //ViewData["archivo"] = archivosDropDowList;
+            ////ViewData["archivo"] = archivosDropDowList;
 
-            foreach (var archivo in archivosDropDowList)
-            {
-                modelo.ArchviosListados.Add(new SelectListItem { Text = archivo.Name, Value = archivo.Id.ToString() });
-            }
+            //foreach (var archivo in archivosDropDowList)
+            //{
+            //    modelo.ArchviosListados.Add(new SelectListItem { Text = archivo.Name, Value = archivo.Id.ToString() });
+            //}
 
-            return View("cv", modelo);
+            var archivosList = repositorioArchivos.ListadoArchivos();
+
+            return View("cv", archivosList);
         }
 
         [HttpGet]

@@ -6,8 +6,7 @@ namespace Portafolio_Web_2023.Services
     {
         public List<ArchivosViewModel> ListadoArchivos()
         {
-            return new List<ArchivosViewModel>
-            {
+            return new List<ArchivosViewModel>(){
                 new ArchivosViewModel
                 {
                     Id = 1,
