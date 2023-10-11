@@ -23,7 +23,7 @@
         *@
 
         <select name="cars" id="cars">
-
+            <option value="-1">>---- Elija una opción ----<</option>
             @foreach (var item in Model)
             {
                 <option value="@item.Name">@item.Name</option>

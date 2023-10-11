@@ -3,6 +3,7 @@ using Portafolio_Web_2023.Models;
 using Portafolio_Web_2023.Services;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore;
 
 namespace Portafolio_Web_2023.Controllers
 {
@@ -97,19 +98,21 @@ namespace Portafolio_Web_2023.Controllers
         }
 
         [HttpPost]
-        public IActionResult Cv()
+        public IActionResult Cv(ArchivosViewModel archivosViewModel)
         {
-            RedirectToAction("");
+
+            //var ruta = string.Empty;
+            //RedirectToAction("Archivo", ruta = Server.MapPath("./Resources/Intro Exel.pdf"));
+            return RedirectToAction();
         }
 
-        @*         //V#9 Decarga de archivo von FileResult
+        //V#9 Decarga de archivo von FileResult
         //RETORNAR UN ARCHIVO DE NUESTRO SERVIDOR AL USUARIO(Descargar)
-        ///public FileResult Index()
-        ///{
-        ///    var ruta = Server.MapPath("./Resources/Intro Exel.pdf");
-        ///    return File(ruta, "application/pdf", "Intro Exel.pdf");
-        ///}
-        /// *@
+        //public FileResult Archivo(string ruta)
+        //{
+        //    ruta = Server.MapPath("./Resources/Intro Exel.pdf");
+        //    return File(ruta, "application/pdf", "Intro Exel.pdf");
+        //}
 
 
 
