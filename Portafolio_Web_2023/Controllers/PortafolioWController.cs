@@ -108,12 +108,13 @@ namespace Portafolio_Web_2023.Controllers
             modelo.cvs_selectListItems = new List<SelectListItem>();
 
             //Ahora un bucle que ira recorriendo y mostrando las propiedades
-            foreach (var item in collection)
+            foreach (var cvs in cvsData)
             {
-
+                //segun se vaya recorriendo se agregara un elemento al drop con valor y nombre
+                modelo.cvs_selectListItems.Add(new SelectListItem { Text = cvs.Name, Value = cvs.Id.ToString() });
             }
 
-            return View("cv");
+            return View("cv",modelo);
         }
 
         [HttpPost]

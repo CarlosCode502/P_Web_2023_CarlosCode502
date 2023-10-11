@@ -3,7 +3,8 @@
 *@
 
 @* @model Portafolio_Web_2023.Models.ArchivosViewModel *@
-@model IEnumerable<ArchivosViewModel>
+@* @model IEnumerable<ArchivosViewModel> *@
+@model Portafolio_Web_2023.Models.CVs_VM_Resources.CVs_Portafolio_ViewModel
 @*
 @{
     Layout = null;
@@ -14,7 +15,24 @@
         <a class="closebtn" href="#" style='text-decoration:none;'>
             &times;
         </a>
-        <p class="texto-modal">Elija el tipo de archivo que desea descargar</p>
+        @* <p class="texto-modal">Elija el tipo de archivo que desea descargar</p> *@
+
+        @* Se crea el formulario para mostrar el drop y se relaciona el modelo para poder utilizarlo
+        junto con el html helper asp-items
+        *@
+
+        @* Este formulario se lanzara en el método httppost *@
+        <form asp-controller="PortafolioW" asp-action="cv" method="post">
+            <div class="dropdown">
+                <label class="form-label">Select cv</label>
+                @* <option value="-1">>---- Elija una opción ----<</option> *@
+                <select class="form-select" asp-items="Model.cvs_selectListItems"></select>
+            </div>
+            <div class="btn">
+                <button type="submit" class="btn btn-primary">Aceptar</button>
+            </div>
+        </form>
+
 
         @*  <label class="form-label">Elija el documento que desea descargar</label>
         <select class="form-select" asp-items="Model.">
@@ -22,14 +40,14 @@
         </select>
         *@
 
-        <select name="cars" id="cars">
-            <option value="-1">>---- Elija una opción ----<</option>
-            @foreach (var item in Model)
-            {
-                <option value="@item.Name">@item.Name</option>
+        @*         <select name="cars" id="cars">
+        <option value="-1">>---- Elija una opción ----<</option>
+        @foreach (var item in Model)
+        {
+        <option value="@item.Name">@item.Name</option>
 
-            }
-        </select>
+        }
+        </select> *@
         @*
         <select name="cars" id="cars">
         <option value="@Model.Id">@Model.Name</option>
@@ -38,7 +56,7 @@
         <option value="audi">Audi</option>
         </select>
         *@
-        <br><br>
-        <input type="submit" value="Submit">
+        @* <br><br>
+        <input type="submit" value="Submit"> *@
     </div>
 </div>
