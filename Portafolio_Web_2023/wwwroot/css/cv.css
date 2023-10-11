@@ -126,15 +126,7 @@
         opacity: 1;
     }
 
-.ventana {
-    border-radius: 8px;
-    background-color: var(--colorGlobalCV);
-    width: 300px;
-    padding: 10px 20px;
-    margin: 30% auto;
-    position: relative;
-}
-
+/*Diseño de la ventana modal*/
 .modal {
     /*visibility: hidden;*/
     background-color: rgba(0,0,0,.8);
@@ -148,29 +140,84 @@
     transition: all 1s;
 }
 
-/* The close button */
-/*.closebtn {
-    margin-left: 15px;
-    color: white;
-    font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 20px;
-    cursor: pointer;*/
-/*transition: 5s;*/
-/*}*/
+.ventana {
+    text-align: center;
+    border-radius: 8px;
+    background-color: var(--blanco);
+    width: 300px;
+    padding: 10px 20px;
+    margin: 30% auto;
+    position: relative;
+}
+
+    .ventana .closebtn {
+        color: var(--colorGlobalCV);
+    }
+
+        .ventana .closebtn:hover {
+            color: black;
+        }
+
+    /*Titulo del formulario*/
+    .ventana .titulo-modal {
+        color: var(--colorGlobalCV);
+        font-size: 25px;
+        font-weight: bolder;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /*Todo el dropdown y contenido*/
+    .ventana .form-select {
+        font-size: 16px;
+        border: 1px solid var(--colorGlobalCV);
+        border-radius: 6px;
+        margin-bottom: 20px;
+    }
+
+        .ventana .form-select .opc-default {
+            color: red;
+            /*background-color: green;*/
+        }
+
+
+    /*.ventana li {
+        background-color: var(--blanco);
+    }*/
+    .ventana .btn-aceptar {
+        background-color: var(--colorGlobalCV);
+        padding: 15px 60px;
+        /*margin: 20px;*/
+        border-radius: 10px;
+        /*border-color: none;*/
+        /*transform-style: inherit;*/
+        color: var(--blanco)
+    }
+
+        .ventana .btn-aceptar:hover {
+            background-color: var(--celestesimple)
+        }
+
+
+/*.card-footer-primary {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+*/
 
 #ventanaModal:target {
     opacity: 1;
     pointer-events: auto;
 }
 
+
 /*.opcion {*/ /*width: 100px;
         background-color:yellow;
 border:1px solid black;*/
 /*}*/
-
-
 /*.contenedor-nav {
     display: flex;
     margin-top: 15px;*/
@@ -194,7 +241,6 @@ border:1px solid black;*/
 /*fill: var(--blanco);
     
 }*/
-
 .container {
     background-color: #2B2A33;
     padding: 40px;
@@ -550,10 +596,10 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
     }*/
 
 /*.btn-descargar-cv, .btn-a {*/
-    /*visibility: hidden;*/
-    /*color: #2B2A33;
+/*visibility: hidden;*/
+/*color: #2B2A33;
     background-color: #2B2A33;*/
-    /*opacity: 0;
+/*opacity: 0;
 }*/
 
 .btn-descargar-cv {

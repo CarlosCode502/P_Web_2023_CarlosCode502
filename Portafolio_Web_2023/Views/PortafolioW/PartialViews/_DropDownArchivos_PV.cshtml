@@ -10,37 +10,57 @@
     Layout = null;
 }
  *@
-<div id="ventanaModal" class="modal">
-    <div class="ventana">
-        <a class="closebtn" href="#" style='text-decoration:none;'>
-            &times;
-        </a>
-        @* <p class="texto-modal">Elija el tipo de archivo que desea descargar</p> *@
 
-        @* Se crea el formulario para mostrar el drop y se relaciona el modelo para poder utilizarlo
+@if (Model is not null)
+{
+    <div id="ventanaModal" class="modal">
+        <div class="ventana">
+            @* Se le aplica el mismo diseño que al btn cerrar de la alerta *@
+            <a class="closebtn" href="#" style='text-decoration:none;'>
+                &times;
+            </a>
+
+            <p class="titulo-modal">Archivos disponibles:</p>
+
+            @* Se crea el formulario para mostrar el drop y se relaciona el modelo para poder utilizarlo
         junto con el html helper asp-items
-        *@
-
-        @* Este formulario se lanzara en el método httppost *@
-        <form asp-controller="PortafolioW" asp-action="cv" method="post">
-            <div class="dropdown">
-                <label class="form-label">Select cv</label>
-                @* <option value="-1">>---- Elija una opción ----<</option> *@
-                @* Esta etiqueta Html helper obtiene y muestra los elementos del drop, además permite obtener el e
+        Este formulario se lanzara en el método httppost *@
+            <form asp-controller="PortafolioW" asp-action="cv" method="post">
+                <div class="dropdown">
+                    @* <label class="form-label">Select cv</label>                 *@
+                    @* Esta etiqueta Html helper obtiene y muestra los elementos del drop, además permite obtener el e
                 elemento que se leccionado a traves de HHelper asp-for="CV_Seleccionado" *@
-                <select class="form-select" asp-items="Model.cvs_selectListItems" asp-for="CV_Seleccionado"></select>
-            </div>
-            <div class="btn">
-                <button type="submit" class="btn btn-primary">Aceptar</button>
-            </div>
-        </form>
+                    <select class="form-select" asp-items="Model.cvs_selectListItems" asp-for="CV_Seleccionado">
+                        <option value="-1"><p class="opc-default">Elija el archivo que desea descargar:</p></option>
+                    </select>
+                </div>
+                <div>
+                    <button class="btn-aceptar">Aceptar</button>
+                </div>
+
+            </form>
+
+            @*         <div class="card-footer-primary">
+        <ul class="menu">
+        <li>
+        <a class="btn-secciones btn-pdd-perfil">
+        Aceptar
+        <span class="border border-top"></span>
+        <span class="border border-right"></span>
+        <span class="border border-bottom"></span>
+        <span class="border border-left"></span>
+        </a>
+        </li>
+        </ul>
+        </div>  *@
 
 
-        @*  <label class="form-label">Elija el documento que desea descargar</label>
+
+            @*  <label class="form-label">Elija el documento que desea descargar</label>
         <select class="form-select" asp-items="Model.">
 
         </select>
-        *@
+
 
         @*         <select name="cars" id="cars">
         <option value="-1">>---- Elija una opción ----<</option>
@@ -50,7 +70,7 @@
 
         }
         </select> *@
-        @*
+            @*
         <select name="cars" id="cars">
         <option value="@Model.Id">@Model.Name</option>
         <option value="saab">Saab</option>
@@ -58,7 +78,9 @@
         <option value="audi">Audi</option>
         </select>
         *@
-        @* <br><br>
+            @* <br><br>
         <input type="submit" value="Submit"> *@
+        </div>
     </div>
-</div>
+
+}
