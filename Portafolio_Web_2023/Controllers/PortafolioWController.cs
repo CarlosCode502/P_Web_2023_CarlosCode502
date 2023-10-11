@@ -2,6 +2,7 @@
 using Portafolio_Web_2023.Models;
 using Portafolio_Web_2023.Services;
 using System.Diagnostics;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Portafolio_Web_2023.Controllers
 {
@@ -73,7 +74,23 @@ namespace Portafolio_Web_2023.Controllers
         {
             var archivosDropDowList = repositorioArchivos.ListadoArchivos();
 
-            return View("cv", archivosDropDowList);
+            var modelo = new ArchivosSelectListViewModelcs
+            {
+                //Casteamos para poder importar el método
+                ArchviosListados = new List<SelectListItem>()
+            };
+
+            //var modelo = new ArchivosViewModel();
+            //modelo.archivosDropDowList = new List<SelectListItem>(); 
+
+            //ViewData["archivo"] = archivosDropDowList;
+
+            foreach (var archivo in archivosDropDowList)
+            {
+                modelo.ArchviosListados.Add(new SelectListItem { Text = archivo.Name, Value = archivo.Id.ToString() });
+            }
+
+            return View("cv", modelo);
         }
 
         [HttpGet]

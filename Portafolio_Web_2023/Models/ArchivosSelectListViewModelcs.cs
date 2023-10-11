@@ -7,6 +7,6 @@ namespace Portafolio_Web_2023.Models
         public string ArchivoSeleccionado { get; set; }
 
         //Mostrar las propiedades
-        public IEnumerable<SelectListItem> ArchviosListados { get; set; }
+        public List<SelectListItem> ArchviosListados { get; set; }
     }
 }

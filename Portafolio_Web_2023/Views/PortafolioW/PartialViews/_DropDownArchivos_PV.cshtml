@@ -2,12 +2,12 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 
-@model IEnumerable<ArchivosSelectListViewModelcs>
-
+@model Portafolio_Web_2023.Models.ArchivosViewModel
+@* 
 @{
     Layout = null;
 }
-
+ *@
 <div id="ventanaModal" class="modal">
     <div class="ventana">
         <a class="closebtn" href="#" style='text-decoration:none;'>
@@ -15,17 +15,24 @@
         </a>
         <p class="texto-modal">Elija el tipo de archivo que desea descargar</p>
 
-        @foreach (var item in Model)
+       @*  <label class="form-label">Elija el documento que desea descargar</label>
+        <select class="form-select" asp-items="Model.">
+
+        </select>
+ *@
+
+
+        @* @foreach (var item in ViewBag.archivo)
         {
-            <option value="@Model">Model</option>
-        }
-@* 
+            <option value="@item.Name">@item.Name</option>
+        } *@
+
         <select name="cars" id="cars">
-            <option value="volvo">Volvo</option>
+            <option value="@Model.Id">@Model.Name</option>
             <option value="saab">Saab</option>
             <option value="opel">Opel</option>
             <option value="audi">Audi</option>
-        </select> *@
+        </select>
 
         <br><br>
         <input type="submit" value="Submit">
