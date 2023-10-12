@@ -26,18 +26,41 @@
         junto con el html helper asp-items
         Este formulario se lanzara en el método httppost *@
             <form asp-controller="PortafolioW" asp-action="cv" method="post">
+                @*                 @if (Model.CV_Seleccionado == "-1")
+            {
+
+
+            <div class="dropdown">
+            @* <label class="form-label">Select cv</label>
+
+
+            <select class="form-select" asp-items="Model.cvs_selectListItems" asp-for="CV_Seleccionado">
+            <option value="-1"><p class="opc-default">Elija el archivo que desea descargar:</p> </option>
+            </select>
+
+            </div>
+            <div>
+            <button class="btn-aceptar" disabled="disabled">Aceptar</button>
+            </div>
+
+            }
+            else
+            { *@
+
                 <div class="dropdown">
                     @* <label class="form-label">Select cv</label>                 *@
                     @* Esta etiqueta Html helper obtiene y muestra los elementos del drop, además permite obtener el e
                 elemento que se leccionado a traves de HHelper asp-for="CV_Seleccionado" *@
+
                     <select class="form-select" asp-items="Model.cvs_selectListItems" asp-for="CV_Seleccionado">
-                        <option value="-1"><p class="opc-default">Elija el archivo que desea descargar:</p></option>
+                        <option value="-1"><p class="opc-default">Elija el archivo que desea descargar:</p> </option>
                     </select>
+
                 </div>
                 <div>
                     <button class="btn-aceptar">Aceptar</button>
                 </div>
-
+                @*  } *@
             </form>
 
             @*         <div class="card-footer-primary">
