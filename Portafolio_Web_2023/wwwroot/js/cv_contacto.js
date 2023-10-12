@@ -1,10 +1,9 @@
-﻿
-/*MODIFICADO (funciones y if individual)*/
-function child_hover1(child) {
+﻿/*MODIFICADO (funciones y if individual)*/
+function child_hover0(child) {
     let parent = child.parentElement;
 
-    if (!parent.classList.contains("hover_class_style1"))
-        parent.classList.add("hover_class_style1");
+    if (!parent.classList.contains("hover_class_style0"))
+        parent.classList.add("hover_class_style0");
 
     //    //if (!parent.classList.contains("hover_class_style1")) {
     //    //    parent.classList.add("hover_class_style1");
@@ -26,11 +25,11 @@ function child_hover1(child) {
 
 }
 
-function child_exit1(child) {
+function child_exit0(child) {
 
     let parent = child.parentElement;
     /* if (parent.classList.contains("hover_class_style1"))*/
-    parent.classList.remove("hover_class_style1");
+    parent.classList.remove("hover_class_style0");
 
 
     //    //if (parent.classList.contains("hover_class_style1")) {
@@ -52,11 +51,19 @@ function child_exit1(child) {
 
 }
 
-////let childrens = document.querySelectorAll(".github");
-////childrens.forEach(el => {
-////    el.onmouseenter = () => child_hover(el);
-////    el.onmouseout = () => child_exit(el);
-////});
+/*MODIFICADO (funciones y if individual)*/
+function child_hover1(child) {
+    let parent = child.parentElement;
+
+    if (!parent.classList.contains("hover_class_style1"))
+        parent.classList.add("hover_class_style1");
+}
+
+function child_exit1(child) {
+    let parent = child.parentElement;
+    parent.classList.remove("hover_class_style1");
+}
+
 
 
 function child_hover2(child) {
@@ -71,6 +78,7 @@ function child_exit2(child) {
 }
 
 
+
 function child_hover3(child) {
     let parent = child.parentElement;
     if (!parent.classList.contains("hover_class_style3"))
@@ -80,6 +88,19 @@ function child_hover3(child) {
 function child_exit3(child) {
     let parent = child.parentElement;
     parent.classList.remove("hover_class_style3");
+}
+
+
+
+function child_hover4(child) {
+    let parent = child.parentElement;
+    if (!parent.classList.contains("hover_class_style4"))
+        parent.classList.add("hover_class_style4");
+}
+
+function child_exit4(child) {
+    let parent = child.parentElement;
+    parent.classList.remove("hover_class_style4");
 }
 
 ///*Aqui*/
