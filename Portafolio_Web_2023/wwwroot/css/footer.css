@@ -36,7 +36,7 @@
 }
 
 
-.img-linkedin, .img-correo, .img-whatsapp, .img-github {
+.img-linkedin, .img-correo, .img-ubicacion, .img-whatsapp, .img-github {
     /*Espacios entre cada icono */
     margin: 20px;
     /*PARA CENTRAR LOS ICONOS (no precisamente)*/
@@ -103,6 +103,14 @@
     fill: #ea0101;
 }
 
+/*Color verde naranja para ubicación*/
+.img-ubicacion svg:hover {
+    height: 100%;
+    width: 75px;
+    height: 75px;
+    fill: #ff6a00;
+}
+
 /*Color verde para whatsapp*/
 .img-whatsapp svg:hover {
     height: 100%;
@@ -149,7 +157,7 @@
         }*/
 
 
-    .img-linkedin, .img-correo, .img-whatsapp, .img-github {
+    .img-linkedin, .img-correo, .img-ubicacion,.img-whatsapp, .img-github {
         /*Espacios entre cada icono */
         margin: 20px;
         /*Alto y acho de iconos*/
@@ -173,6 +181,14 @@
             width: 64px;
             height: 64px;
             fill: #ea0101;
+        }
+
+        /*Color verde naranja para ubicación*/
+        .img-ubicacion svg:hover {
+            /*height: 100%;*/
+            width: 64px;
+            height: 64px;
+            fill: #ff6a00;
         }
 
         /*Color verde para whatsapp*/
