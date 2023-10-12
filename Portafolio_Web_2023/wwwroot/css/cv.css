@@ -270,9 +270,14 @@ border:1px solid black;*/
     margin-bottom: 22px;
 }
 
+/*.cont-contacto {
+    font-size: 17px;
+    font-weight: lighter;
+}
+*/
 /*Sección o cuadro de contacto*/
 .contacto {
-    margin: 20px;
+    margin: 10px 20px;
     display: flex;
     align-content: center;
     align-items: center;
