@@ -284,7 +284,7 @@ border:1px solid black;*/
 }
 
 /*Mantener centrados los elementos de contacto*/
-.phone, .gmail, .github {
+.linkedin, .phone, .mapa, .gmail, .github {
     font-weight: 500;
     margin: auto;
     color: var(--colorGlobalCV);
@@ -318,15 +318,21 @@ border:1px solid black;*/
 }
 */
 
+/*Color para linkedin*/
+.hover_class_style0 {
+    border: 6px solid #0d6efd;
+    /*background: blue;*/
+}
+
 /*Color para correo*/
 .hover_class_style1 {
     border: 6px solid #ea0101;
     /*background: blue;*/
 }
 
-/*Color para github*/
+/*Color para mapa*/
 .hover_class_style2 {
-    border: 6px solid #a06ed9;
+    border: 6px solid #e5770d;
     /*background: blue;*/
 }
 
@@ -335,6 +341,13 @@ border:1px solid black;*/
     border: 6px solid #0DC143;
     /*background: blue;*/
 }
+
+/*Color para github*/
+.hover_class_style4 {
+    border: 6px solid #a06ed9;
+    /*background: blue;*/
+}
+
 
 /*.hover_class_style2 {
     border: 4px solid purple;*/
