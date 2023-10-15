@@ -325,14 +325,14 @@ h1 {
     --color_a: #3498db; /*Alto*/
 }
 
-.vscode:hover {
+.vsstudio:hover {
     /*Accedemos a la animación*/
     animation: color-me-in 2s infinite;
     /*Variables locales*/
     /*Colores cmas*/
-    --color_b: #85c1e9; /*Bajo*/
-    --color_m: #5dade2; /*Medio*/
-    --color_a: #3498db; /*Alto*/
+    --color_b: #C993F6; /*Bajo*/
+    --color_m: #7051A7; /*Medio*/
+    --color_a: #4D3B71; /*Alto*/
 }
 
 /*.php {*/
@@ -447,7 +447,6 @@ h1 {
 
 
 
-
 /*Para pantallas grandes*/
 @media (min-width: 910px) {
     /*Para colocar las filas a la izquirda en 2 lineas*/
@@ -469,6 +468,14 @@ h1 {
         overflow-y: scroll;
         /*max-height: 700px;
         overflow-y: scroll;*/
+    }
+
+    .ver-iconos {
+        /*display: flex;*/
+        /*position: absolute;*/
+        /*text-decoration: none;*/
+        padding-left: 90%;
+        color: #96989a;
     }
 }
 
@@ -514,5 +521,13 @@ h1 {
     .size-bs {
         padding-top: 15px;
         height: 90%;
+    }
+
+    .ver-iconos {
+        /*display: flex;*/
+        /*position: absolute;*/
+        /*text-decoration: none;*/
+        /*padding-left: 65%;*/
+        color: #96989a;
     }
 }
