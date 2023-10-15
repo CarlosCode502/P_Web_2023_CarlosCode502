@@ -16,7 +16,7 @@
     <div id="ventanaModal" class="modal">
         <div class="ventana">
             @* Se le aplica el mismo diseño que al btn cerrar de la alerta *@
-            <a class="closebtn" href="#" style='text-decoration:none;'>
+            <a class="closebtn" href="#" title="Cerrar ventana" style='text-decoration:none;'>
                 &times;
             </a>
 
@@ -53,7 +53,7 @@
                 elemento que se leccionado a traves de HHelper asp-for="CV_Seleccionado" *@
 
                     <select class="form-select" asp-items="Model.cvs_selectListItems" asp-for="CV_Seleccionado">
-                        <option value="-1"><p class="opc-default">Elija el archivo que desea descargar:</p> </option>
+                        <option value="-1" >Elija el archivo que desea descargar:</option>
                     </select>
 
                 </div>

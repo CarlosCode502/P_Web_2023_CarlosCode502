@@ -15,21 +15,22 @@ namespace Portafolio_Web_2023.Services
                 new ArchivosViewModel
                 {
                     Id = 1,
-                    Name = "Cv con diseño HTML.",
+                    Name = "Cv simple.",
                     Ruta = "/Resources/Currículum Vitae Cv.pdf"
                 },
                 new ArchivosViewModel
                 {
                     Id = 2,
-                    Name = "Cv hecho en Canva.",
+                    Name = "Cv con diseño.",
                     Ruta = "/Resources/Currículum Vitae Cv.pdf"
-                },
-                new ArchivosViewModel
-                {
-                    Id = 3,
-                    Name = "No c",
-                    Ruta = "Cpa"
                 }
+                //,
+                //new ArchivosViewModel
+                //{
+                //    Id = 3,
+                //    Name = "No c",
+                //    Ruta = "Cpa"
+                //}
             };
         }
     }

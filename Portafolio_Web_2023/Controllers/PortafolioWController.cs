@@ -135,7 +135,7 @@ namespace Portafolio_Web_2023.Controllers
                 }
                 else if (obInt == 2)
                 {
-                    return RedirectToAction("Archivo");
+                    return RedirectToAction("ArchivoCanva");
                 }
             }
 
@@ -150,23 +150,22 @@ namespace Portafolio_Web_2023.Controllers
             //CVsViewModel cVsViewModel = new CVsViewModel();
 
             //var ruta = cVsViewModel.Ruta;
-            var ruta = "/Resources/Currículum Vitae Cv.pdf";
+            var ruta = "/Resources/Simple Cv-Carlos-Herrera.pdf";
             //var ruta = repositorioArchivos.ListadoArchivos();
             //ruta = Server.MapPath("./Resources/Intro Exel.pdf");
-            return File(ruta, "application/pdf", "Cv-Carlos-Herrera(HTML).pdf");
+            return File(ruta, "application/pdf", "Cv-Simple-Carlos-Herrera.pdf");
         }
 
         ////V#9 Decarga de archivo von FileResult
         ////RETORNAR UN ARCHIVO DE NUESTRO SERVIDOR AL USUARIO(Descargar)
-        public FileResult Archivo()
+        public FileResult ArchivoCanva()
         {
             //CVsViewModel cVsViewModel = new CVsViewModel();
 
             //var ruta = cVsViewModel.Ruta;
             var ruta = "/Resources/Currículum Vitae Cv.pdf";
-            //var ruta = repositorioArchivos.ListadoArchivos();
-            //ruta = Server.MapPath("./Resources/Intro Exel.pdf");
-            return File(ruta, "application/pdf", "Cv-Carlos-Herrera.pdf");
+
+            return File(ruta, "application/pdf", "Cv-Carlos-Herrera Canva.pdf");
         }
 
 
