@@ -163,7 +163,7 @@ namespace Portafolio_Web_2023.Controllers
             //CVsViewModel cVsViewModel = new CVsViewModel();
 
             //var ruta = cVsViewModel.Ruta;
-            var ruta = "/Resources/Currículum Vitae Cv.pdf";
+            var ruta = "/Resources/Cv-Carlos-Herrera Canva.pdf";
 
             return File(ruta, "application/pdf", "Cv-Carlos-Herrera Canva.pdf");
         }
