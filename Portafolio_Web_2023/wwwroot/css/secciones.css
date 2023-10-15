@@ -48,7 +48,7 @@
 
     .seccion .texto-secciones{
         font-size: 20px;
-        padding-bottom: 20px
+        /*padding-bottom: 20px*/
     }
 
     /*ES IMPORTANTE MANEJAR LAS IMAGENES EN TIPO DE FORMA (px) ya que en (%) tiende a dejar espacios*/
