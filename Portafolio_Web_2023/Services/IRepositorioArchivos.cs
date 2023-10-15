@@ -4,6 +4,6 @@ namespace Portafolio_Web_2023.Services
 {
     public interface IRepositorioArchivos
     {
-        List<ArchivosViewModel> ListadoArchivos();
+        List<CVsViewModel> ListadoArchivos();
     }
 }

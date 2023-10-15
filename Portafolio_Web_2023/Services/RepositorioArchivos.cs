@@ -9,20 +9,20 @@ namespace Portafolio_Web_2023.Services
     public class RepositorioArchivos : IRepositorioArchivos
     {
         //Lista que contiene el nombre y la ruta de mis archivos
-        public List<ArchivosViewModel> ListadoArchivos()
+        public List<CVsViewModel> ListadoArchivos()
         {
-            return new List<ArchivosViewModel>(){
-                new ArchivosViewModel
+            return new List<CVsViewModel>(){
+                new CVsViewModel
                 {
                     Id = 1,
-                    Name = "Cv simple.",
-                    Ruta = "/Resources/Currículum Vitae Cv.pdf"
+                    Nombre = "Cv simple."
+                    //Ruta = "/Resources/Currículum Vitae Cv.pdf"
                 },
-                new ArchivosViewModel
+                new CVsViewModel
                 {
                     Id = 2,
-                    Name = "Cv con diseño.",
-                    Ruta = "/Resources/Currículum Vitae Cv.pdf"
+                    Nombre = "Cv con diseño."
+                    //Ruta = "/Resources/Currículum Vitae Cv.pdf"
                 }
                 //,
                 //new ArchivosViewModel

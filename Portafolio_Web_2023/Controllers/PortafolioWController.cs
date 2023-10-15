@@ -110,7 +110,7 @@ namespace Portafolio_Web_2023.Controllers
             foreach (var cvs in cvsData)
             {
                 //segun se vaya recorriendo se agregara un elemento al drop con valor y nombre
-                modelo.cvs_selectListItems.Add(new SelectListItem { Text = cvs.Name, Value = cvs.Id.ToString() });
+                modelo.cvs_selectListItems.Add(new SelectListItem { Text = cvs.Nombre, Value = cvs.Id.ToString() });
                 //var ruta = cvs.Ruta;
             }
 
