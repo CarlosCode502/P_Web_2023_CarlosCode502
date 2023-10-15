@@ -124,7 +124,6 @@ namespace Portafolio_Web_2023.Controllers
             //CVsViewModel cVsViewModel = new CVsViewModel();
             //RepositorioArchivos repositorioArchivos = new RepositorioArchivos();    
 
-
             var cvseleccionado = cVs_Portafolio_ViewModel.CV_Seleccionado;
             int obInt = Convert.ToInt32(cvseleccionado);
 
