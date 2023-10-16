@@ -135,8 +135,12 @@ namespace Portafolio_Web_2023.Controllers
                 }
                 else if (obInt == 2)
                 {
-                    return RedirectToAction("ArchivoCanva");
+                    return RedirectToAction("ArchivoCanvaConFoto");
                 }
+                //else if (obInt == 3)
+                //{
+                //    return RedirectToAction("ArchivoCanvaSinFoto");
+                //}
             }
 
             //return View("cv",cVs_Portafolio_ViewModel);
@@ -158,7 +162,7 @@ namespace Portafolio_Web_2023.Controllers
 
         ////V#9 Decarga de archivo von FileResult
         ////RETORNAR UN ARCHIVO DE NUESTRO SERVIDOR AL USUARIO(Descargar)
-        public FileResult ArchivoCanva()
+        public FileResult ArchivoCanvaConFoto()
         {
             //CVsViewModel cVsViewModel = new CVsViewModel();
 
@@ -167,6 +171,18 @@ namespace Portafolio_Web_2023.Controllers
 
             return File(ruta, "application/pdf", "Cv-Carlos-Herrera Canva.pdf");
         }
+
+        //////V#9 Decarga de archivo von FileResult
+        //////RETORNAR UN ARCHIVO DE NUESTRO SERVIDOR AL USUARIO(Descargar)
+        //public FileResult ArchivoCanvaSinFoto()
+        //{
+        //    //CVsViewModel cVsViewModel = new CVsViewModel();
+
+        //    //var ruta = cVsViewModel.Ruta;
+        //    var ruta = "/Resources/Cv-Carlos-Herrera Canva.pdf";
+
+        //    return File(ruta, "application/pdf", "Cv-Carlos-Herrera Canva.pdf");
+        //}
 
 
 

@@ -3,6 +3,7 @@
 :root {
     --colorGlobalCV: #0d6efd;
     --celestesimple: #4e91f5;
+    --rojosimple: #e17f7f;
     --blanco: white;
 }
 
@@ -184,20 +185,40 @@
     /*.ventana li {
         background-color: var(--blanco);
     }*/
+
+/*    .ventana .botones{
+        font-size: 20px;
+    }*/
+
     .ventana .btn-aceptar {
         background-color: var(--colorGlobalCV);
-        padding: 15px 60px;
+        padding: 10px 40px;
         /*margin: 20px;*/
         border-radius: 10px;
         /*border-color: none;*/
         /*transform-style: inherit;*/
-        color: var(--blanco)
+        color: var(--blanco);
+        font-size: 18px;
     }
 
         .ventana .btn-aceptar:hover {
             background-color: var(--celestesimple)
         }
 
+    .ventana .btn-cancelar {
+        background-color: gray;
+        padding: 10px 30px;
+        /*margin: 20px;*/
+        border-radius: 10px;
+        /*border-color: none;*/
+        /*transform-style: inherit;*/
+        color: var(--blanco); 
+        font-size: 18px;
+    }
+
+        .ventana .btn-cancelar:hover {
+            background-color: var(--rojosimple)
+        }
 
 /*.card-footer-primary {
     margin-top: 10px;
@@ -741,18 +762,30 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
     }*/
         .ventana .btn-aceptar {
             /*background-color: var(--colorGlobalCV);*/
-            padding: 15px 50px;
+            padding: 10px 30px;
             /*margin: 20px;*/
             /*border-radius: 10px;*/
             /*border-color: none;*/
             /*transform-style: inherit;*/
             /*color: var(--blanco)*/
+            font-size: 16px;
         }
 
 /*            .ventana .btn-aceptar:hover {
                 background-color: var(--celestesimple)
             }
 */
+        .ventana .btn-cancelar {
+            /*background-color: var(--colorGlobalCV);*/
+            padding: 10px 20px;
+            /*margin: 20px;*/
+            /*border-radius: 10px;*/
+            /*border-color: none;*/
+            /*transform-style: inherit;*/
+            /*color: var(--blanco)*/
+            font-size: 16px;
+        }
+
 
     /*Cambiar el borde y cambiar la propiedad de flex a block*/
     .contacto {
