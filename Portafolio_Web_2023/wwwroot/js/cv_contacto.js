@@ -22,15 +22,12 @@ function child_hover0(child) {
     //    //else if (!parent.classList.contains("hover_class_style3")) {
     //    //    parent.classList.add("hover_class_style3");
     //    //}
-
 }
 
 function child_exit0(child) {
-
     let parent = child.parentElement;
     /* if (parent.classList.contains("hover_class_style1"))*/
     parent.classList.remove("hover_class_style0");
-
 
     //    //if (parent.classList.contains("hover_class_style1")) {
     //    //    parent.classList.remove("hover_class_style1");
@@ -48,7 +45,6 @@ function child_exit0(child) {
     //    //else if (parent.classList.contains("hover_class_style3")) {
     //    //    parent.classList.remove("hover_class_style3");
     //    //}
-
 }
 
 /*MODIFICADO (funciones y if individual)*/
@@ -102,6 +98,19 @@ function child_exit4(child) {
     let parent = child.parentElement;
     parent.classList.remove("hover_class_style4");
 }
+
+
+//FUNCIÓN PARA MOSTRAR UNA ALERTA POR X TIEMPO Y CERRARLA AUTOMÁTICAMENTE
+/*@* funcion js para mostrar un elemento y ocultarlo luego de unos segundos * @*/
+function ocultarAlerta() {
+    // $('.alert').animate({ opacity: "0" }, { duration: 1000, queue: false });
+    //Cierra o oculta la alerta o elemento
+    $('.alert').fadeOut();
+}
+setTimeout(function () {
+    //en un intervalo de tiempo se lanza una funcion    
+    ocultarAlerta();
+}, 25000);// tiempo en ms para que se cierre la alerta.
 
 ///*Aqui*/
 ///*3 en uno*/

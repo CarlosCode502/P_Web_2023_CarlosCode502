@@ -35,17 +35,6 @@
         @* Creando alerta *@
         <nav class="barra-nav top-nav">
 
-            @* funcion js para mostrar un elemento y ocultarlo luego de unos segundos *@
-            <script>
-                function m() {
-                    // $('.alert').animate({ opacity: "0" }, { duration: 1000, queue: false });
-                    $('.alert').fadeOut();
-                }                
-                setTimeout(function () {
-                    m();
-                }, 30000);// tiempo en ms para que se cierre la alerta.
-            </script>
-
             @* A este div va a apuntar mi funcion js para cerrar el elemento automáticamente *@
             <div class="alert">
                 @* Se usa un texto o simbolo html para crear la X que es: &times *@
