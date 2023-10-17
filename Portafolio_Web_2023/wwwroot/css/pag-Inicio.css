@@ -3,7 +3,10 @@
 }
 
 .imagen {
-    background-image: url(../img/person-paisaje.jpg);
+    /*background-image: url(../img/person-paisaje.jpg);*/
+    /*background-image: url("http://pixabay.com/es/photos/persona-mirando-paisaje-personas-3613567/");*/
+    background-image: linear-gradient(rgba(23, 32, 42, 0.25), rgba(23, 32, 42, 0.25)), url("../img/person-paisaje.jpg");
+    /*background-image: src("http://pixabay.com/es/photos/persona-mirando-paisaje-personas-3613567/");*/
     background-repeat: no-repeat;
     /*hace que la imagen se vea un poco más compacta (mejor en pantallas pequeñas)*/
     background-attachment: fixed;
@@ -15,6 +18,7 @@
     height: 100px;*/
     /* background: #FF7A59;*/
     /*opacity: 0.90;*/
+    /*    z-index:2800;*/
 }
 
 .contenido-imagen {
