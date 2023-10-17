@@ -4,7 +4,8 @@
     --colorGlobal: #0d6efd;
 }
 
-.imagen {
+/*Contenedor de imagen*/
+.contenedor-imagen {
     /*background-image: url(../img/person-paisaje.jpg);*/
     /*background-image: url("http://pixabay.com/es/photos/persona-mirando-paisaje-personas-3613567/");*/
     /*background-image: src("http://pixabay.com/es/photos/persona-mirando-paisaje-personas-3613567/");*/
@@ -12,28 +13,63 @@
     /*En este caso puedo datle un formato transparente*/
     /*background-image: linear-gradient(rgba(23, 32, 42, 0.25), rgba(23, 32, 42, 0.25)), url("../img/person-paisaje.jpg");*/
     /*ABAJO ESTABA HABILITADO*/
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
     /*hace que la imagen se vea un poco más compacta (mejor en pantallas pequeñas)*/
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     /*100% el tamaño de la imagen en height y with*/
-    background-size: 100% 100%;
+    /*background-size: 100% 100%;*/
+
+    position: relative;
+    display: block;
+    /*min-height: 100vh;*/
 }
 
-.contenido-imagen {
-    /*ABAJO ESTABA HABILITADO*/
-    display: flex;
-    /*position: relative;*/
-    flex-direction: column;
-    /*Alinear el texto a la izquierda*/
-    align-items: flex-start;
-    /*Justificar contenido al centro*/
-    justify-content: center;
-    /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
+    .contenedor-imagen img {
+        /*width: 400px;*/
+        margin: auto;
+        display: block;
+        /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
         que ocupe el 100% (v*h viewpor hight alto del dispositivo)
         SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);*/
-    height: calc(100vh - 80px);
-    max-width: 100%;
-}
+        /*Sin este deja un espacio abajo*/
+        height: calc(100vh - 80px);
+        /*Para que la imagen se adapte a la pantalla y no muestre su tam real*/
+        max-width: 100%;
+    }
+
+    /*NO SE USA*/
+    /*.bloque-img {
+    text-align: center;
+    display: block;
+    }*/
+
+    /*Texto que se muestra sobre la imagen*/
+    .contenedor-imagen .contenido-imagen {
+        position: absolute;
+        top: 50%;
+        /*left: 50%;*/
+        padding-left: 2rem;
+        transform: translate(-0%, -50%);
+        /*NO SE USA*/
+        /*text-align: left;
+        position: center;
+        top: 20%;
+        padding-left: 20px;*/
+        /*transform: translate(-0%, -60%);*/
+        /*ABAJO ESTABA HABILITADO*/
+        /*display: flex;*/
+        /*position: relative;*/
+        /*flex-direction: column;*/
+        /*Alinear el texto a la izquierda*/
+        /*align-items: flex-start;*/
+        /*Justificar contenido al centro*/
+        /*justify-content: center;*/
+        /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
+        que ocupe el 100% (v*h viewpor hight alto del dispositivo)
+        SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);*/
+        /*height: calc(100vh - 80px);
+        max-width: 100%;*/
+    }
 
 /*NO SE USA*/
 /*Titulo*/
@@ -226,6 +262,75 @@
 /*Ayudan a mostrar las animaciones según el tamaño de la pantalla si es menor o mayor*/
 /*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
 @media screen and (max-width: 600px) {
+
+    /*Contenedor de imagen*/
+    .contenedor-imagen {
+        /*background-image: url(../img/person-paisaje.jpg);*/
+        /*background-image: url("http://pixabay.com/es/photos/persona-mirando-paisaje-personas-3613567/");*/
+        /*background-image: src("http://pixabay.com/es/photos/persona-mirando-paisaje-personas-3613567/");*/
+        /*Se debe usar una imagen de fondo para darle diseño UNICAMENTE*/
+        /*En este caso puedo datle un formato transparente*/
+        /*background-image: linear-gradient(rgba(23, 32, 42, 0.25), rgba(23, 32, 42, 0.25)), url("../img/person-paisaje.jpg");*/
+        /*ABAJO ESTABA HABILITADO*/
+        /*background-repeat: no-repeat;*/
+        /*hace que la imagen se vea un poco más compacta (mejor en pantallas pequeñas)*/
+        /*background-attachment: fixed;*/
+        /*100% el tamaño de la imagen en height y with*/
+        /*background-size: 100% 100%;*/
+
+        position: relative;
+        display: block;
+        /*min-height: 100vh;*/
+    }
+
+        .contenedor-imagen img {
+            /*width: 400px;*/
+            margin: auto;
+            display: block;
+            /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
+        que ocupe el 100% (v*h viewpor hight alto del dispositivo)
+        SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);*/
+            /*Sin este deja un espacio abajo*/
+            height: calc(100vh - 80px);
+            /*Para que la imagen se adapte a la pantalla y no muestre su tam real*/
+            max-width: 100%;
+        }
+
+        /*NO SE USA*/
+        /*.bloque-img {
+    text-align: center;
+    display: block;
+    }*/
+
+        /*Texto que se muestra sobre la imagen*/
+        .contenedor-imagen .contenido-imagen {
+            position: absolute;
+            top: 50%;
+            /*left: 50%;*/
+            padding-left: 2rem;
+            transform: translate(-0%, -50%);
+            /*NO SE USA*/
+            /*text-align: left;
+        position: center;
+        top: 20%;
+        padding-left: 20px;*/
+            /*transform: translate(-0%, -60%);*/
+            /*ABAJO ESTABA HABILITADO*/
+            /*display: flex;*/
+            /*position: relative;*/
+            /*flex-direction: column;*/
+            /*Alinear el texto a la izquierda*/
+            /*align-items: flex-start;*/
+            /*Justificar contenido al centro*/
+            /*justify-content: center;*/
+            /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
+        que ocupe el 100% (v*h viewpor hight alto del dispositivo)
+        SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);*/
+            /*height: calc(100vh - 80px);
+        max-width: 100%;*/
+        }       
+
+/*CONFIGURACION ANTERIOR DEL CONTENIDO DE LA IMAGEN*/
     .imagen {
         /*hace que la imagen se vea un poco más compacta (mejor en pantallas pequeñas)*/
         background-attachment: unset;
