@@ -34,6 +34,7 @@ body {
     background: #F5F5F5;
 }
 
+/*Tamaño y fuente para todo el contenido dentro del header(nav y texto de escritura automatica)*/
 header {
     font-family: 'Quicksand', sans-serif;
     font-size: 70px;
@@ -44,7 +45,7 @@ header {
     /*font-family: 'Satisfy', cursive;*/
 }
 
-
+/*Botón flotante*/
 .btn-inicio-float {
     position: fixed;
     /*bottom: 22px;*/

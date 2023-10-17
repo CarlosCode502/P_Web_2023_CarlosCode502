@@ -7,23 +7,20 @@
 .imagen {
     /*background-image: url(../img/person-paisaje.jpg);*/
     /*background-image: url("http://pixabay.com/es/photos/persona-mirando-paisaje-personas-3613567/");*/
-    background-image: linear-gradient(rgba(23, 32, 42, 0.25), rgba(23, 32, 42, 0.25)), url("../img/person-paisaje.jpg");
     /*background-image: src("http://pixabay.com/es/photos/persona-mirando-paisaje-personas-3613567/");*/
+    /*Se debe usar una imagen de fondo para darle diseño UNICAMENTE*/
+    /*En este caso puedo datle un formato transparente*/
+    /*background-image: linear-gradient(rgba(23, 32, 42, 0.25), rgba(23, 32, 42, 0.25)), url("../img/person-paisaje.jpg");*/
+    /*ABAJO ESTABA HABILITADO*/
     background-repeat: no-repeat;
     /*hace que la imagen se vea un poco más compacta (mejor en pantallas pequeñas)*/
     background-attachment: fixed;
     /*100% el tamaño de la imagen en height y with*/
     background-size: 100% 100%;
-    /*background-color: rgba(00,00,255,0.5);*/
-    /*NO SE USA*/
-    /*width: 100px;
-    height: 100px;*/
-    /* background: #FF7A59;*/
-    /*opacity: 0.90;*/
-    /*    z-index:2800;*/
 }
 
 .contenido-imagen {
+    /*ABAJO ESTABA HABILITADO*/
     display: flex;
     /*position: relative;*/
     flex-direction: column;
@@ -31,27 +28,11 @@
     align-items: flex-start;
     /*Justificar contenido al centro*/
     justify-content: center;
-    /*padding-bottom: 50px;*/
     /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
         que ocupe el 100% (v*h viewpor hight alto del dispositivo)
         SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);*/
     height: calc(100vh - 80px);
-    /*NO SE USA*/
-    /*margin-top:500px;*/
-    /*padding-top:5rem;*/
-    /*margin-left: 30px;*/
-    /*margin-right: 50%;*/
-    /*background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;*/
-    /*alpha(opacity=70);*/
-    /*filter: opacity(500px); */
-    /*-moz-opacity: .70;*/
-    /*opacity: 0.9;*/
-    /*color: #f2f2f2;*/
-    /*content: image('~/img/person-paisaje.jpg');*/
     max-width: 100%;
-    /*height: auto;*/
 }
 
 /*NO SE USA*/
@@ -251,6 +232,7 @@
         /*100% el tamaño de la imagen en height y with*/
         background-size: 100% 100%;
     }
+
     .contenido-imagen {
         display: flex;
         /*position: relative;*/
@@ -278,17 +260,17 @@
         /*opacity: 0.9;*/
         /*color: #f2f2f2;*/
         /*content: image('~/img/person-paisaje.jpg');*/
-        max-width: 100%;
+        /*max-width: 80%;*/
         /*height: auto;*/
     }
 
-    .contenido-imagen .titulo {
-        margin-left: 20px;
-        font-size: 50px;
-        font-weight: normal;
-        /*NO SE USA 👇*/
-        /*margin-bottom: 20px;*/
-    }
+        .contenido-imagen .titulo {
+            margin-left: 20px;
+            font-size: 50px;
+            font-weight: normal;
+            /*NO SE USA 👇*/
+            /*margin-bottom: 20px;*/
+        }
 
     #big-a {
         font-size: 10px;
