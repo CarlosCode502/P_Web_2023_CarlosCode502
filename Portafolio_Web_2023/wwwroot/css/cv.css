@@ -61,7 +61,7 @@
     font-size: 22px;
     line-height: 20px;
     cursor: pointer;
-    /*transition: 5s;*/
+    transition: 0.1s;
 }
 
     /* When moving the mouse over the close button */
@@ -186,9 +186,11 @@
         background-color: var(--blanco);
     }*/
 
-/*    .ventana .botones{
-        font-size: 20px;
-    }*/
+    .ventana .botones {
+        padding-bottom: 20px;
+    }
+
+
 
     .ventana .btn-aceptar {
         background-color: var(--colorGlobalCV);
@@ -212,8 +214,9 @@
         border-radius: 10px;
         /*border-color: none;*/
         /*transform-style: inherit;*/
-        color: var(--blanco); 
+        color: var(--blanco);
         font-size: 18px;
+        text-decoration: none;
     }
 
         .ventana .btn-cancelar:hover {
@@ -784,6 +787,7 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
             /*transform-style: inherit;*/
             /*color: var(--blanco)*/
             font-size: 16px;
+            
         }
 
 
