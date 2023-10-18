@@ -45,51 +45,32 @@
 
             }
             else
-            { *@
+            { *@            
 
             <div class="dropdown">
                 @* <label class="form-label">Select cv</label>                 *@
                 @* Esta etiqueta Html helper obtiene y muestra los elementos del drop, además permite obtener el e
                 elemento que se leccionado a traves de HHelper asp-for="CV_Seleccionado" *@
 
-
-
                 @* LISTA CV DESDE EL SERVIDOR *@
                 <select class="form-select" asp-items="Model.cvs_selectListItems" asp-for="CV_Seleccionado">
                     <option>Elija el archivo que desea descargar:</option>
                 </select>
+@* 
+                @while (Model.CV_Seleccionado == null)
+                {
+                    <button class="btn-aceptar" disabled>Aceptar</button>
+                } *@
 
                 @* LISTA CV DESDE EL CLIENTE *@
-@*                 <select class="form-select" asp-items="@(new SelectList(Model.cvs_selectListItems, Model.cvs_selectListItems., "Nombre"))" asp-for="CV_Seleccionado">
-                    <option>Elija el archivo que desea descargar:</option>
+                @*                 <select class="form-select" asp-items="@(new SelectList(Model.cvs_selectListItems, Model.cvs_selectListItems., "Nombre"))" asp-for="CV_Seleccionado">
+                <option>Elija el archivo que desea descargar:</option>
                 </select><br /><br /> *@
                 @* <select class="form-select" asp-items="Model.cvs_selectListItems" asp-for="CV_Seleccionado">
-                    <option>Elija el archivo que desea descargar:</option>
+                <option>Elija el archivo que desea descargar:</option>
                 </select> *@
 
             </div>
-
-            @* @if(Model.CV_Seleccionado != null)
-            {
-                <button class="btn-aceptar" disabled>Aceptar</button>
-            }
-            else
-            {
-                <button class="btn-aceptar">Aceptar</button>
-            } *@
-               
-            <div class="botones">
-                @* Botón aceptar *@
-                <a class="btn-aceptar" onclick="onsubmit" href="">Aceptar</a>
-                
-
-
-                @* <a class="btn-aceptar" type="text/asp">Aceptar</a> *@
-                @* Botón cerrar *@
-                <a class="btn-cancelar" href="#">Cancelar</a>
-            </div>
-            
-            @*  } *@
         </form>
 
         @*         <div class="card-footer-primary">

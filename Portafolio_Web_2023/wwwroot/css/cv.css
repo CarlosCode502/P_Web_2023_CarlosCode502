@@ -190,9 +190,21 @@
         padding-bottom: 20px;
     }
 
-
-
+/*
+border:0;
+padding:0;
+margin:0;
+text-decoration:underline;
+background:none;
+color:#000088;
+font-family: arial, sans-serif;
+font-size: 1em;
+line-height:1em;
+*/
     .ventana .btn-aceptar {
+        /*display: inline;*/
+        border: 0;
+        /*text-decoration: underline;*/
         background-color: var(--colorGlobalCV);
         padding: 10px 40px;
         /*margin: 20px;*/
@@ -201,6 +213,7 @@
         /*transform-style: inherit;*/
         color: var(--blanco);
         font-size: 18px;
+        text-decoration: none;
     }
 
         .ventana .btn-aceptar:hover {
@@ -209,7 +222,7 @@
 
     .ventana .btn-cancelar {
         background-color: gray;
-        padding: 10px 30px;
+        padding: 9px 30px;
         /*margin: 20px;*/
         border-radius: 10px;
         /*border-color: none;*/
