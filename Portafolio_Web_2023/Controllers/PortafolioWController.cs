@@ -145,6 +145,8 @@ namespace Portafolio_Web_2023.Controllers
                 case "2":
                     return RedirectToAction("ArchivoCanvaConFoto");
 
+                //default:
+                //    break;
             }
 
             //if (cVs_Portafolio_ViewModel.CV_Seleccionado == "1")

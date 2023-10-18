@@ -28,8 +28,6 @@
         <form asp-controller="PortafolioW" asp-action="cv" method="post">
             @*                 @if (Model.CV_Seleccionado == "-1")
             {
-
-
             <div class="dropdown">
             @* <label class="form-label">Select cv</label>
 
@@ -69,8 +67,12 @@
                 @* <select class="form-select" asp-items="Model.cvs_selectListItems" asp-for="CV_Seleccionado">
                 <option>Elija el archivo que desea descargar:</option>
                 </select> *@
-
             </div>
+            <div class="botones">
+                <button class="btn-aceptar">Aceptar</button>
+                <a class="btn-cancelar" href="#">Cancelar</a>
+            </div>
+
         </form>
 
         @*         <div class="card-footer-primary">
