@@ -4,20 +4,12 @@
 
 /* fin de zona común a todas las resoluciones */
 @media screen and (max-width:400px) {
-    /*body {
-        font-size: 100%;*/
-    /* ampliamos los textos si mide más de 800px */
-    /*}*/
     .secciones {
         background-color: purple;
     }
 }
 
 @media screen and (max-width:800px) and (min-width:401px) {
-/*    body {
-        font-size: 100%;
-        ampliamos los textos si mide más de 800px
-    }*/
 
     .secciones {
         background-color: red;
@@ -25,10 +17,7 @@
 }
 
 @media screen and (min-width:801px) {
-    /*body {
-        font-size: 100%;*/
-        /* ampliamos los textos si mide más de 800px */
-    /*}*/
+
     .secciones {
         background-color: green;
     }
@@ -36,10 +25,7 @@
 
 /* fin de la zona para más de 800px de ancho de pantalla */
 @media screen and (min-width:1200px) {
-    /*body {
-        font-size: 120%;*/
-        /* ampliamos más aún los textos si mide más de 1200px */
-    /*}*/
+
     .secciones{
         background-color:yellow;
     }
