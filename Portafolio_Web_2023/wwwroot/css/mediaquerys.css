@@ -1,0 +1,163 @@
+﻿
+/*GENERALES*/
+/*DISPOSITIVOS CON PANTALLA MENOR A 375px de ancho y 760px de alto*/
+/*Width(Ancho)                              Height(Alto)  (min-width: 361px) and */
+@media screen and (min-height: 668px) {
+    .seccion {
+        padding: 20px;
+        background-color: red;
+    }
+
+        .seccion .card {
+            /*            height: 90%;*/
+            /*Es como el margen en las tarjetas*/
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .seccion .texto-secciones {
+            font-size: 16px;
+        }
+
+    .img-p {
+        /*width: auto;*/
+        /*max-height: 100%;*/
+        /*  height: auto;*/
+        width: 200px;
+        padding: 20px;
+        display: block;
+        /*Nuevo*/
+        /*float: left;*/
+        /* width: 150px;*/
+        /*height: 150px;*/
+        shape-outside: url("~/img/undraw_profile.svg");
+    }
+
+    .titulo-sobre-mi {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 12px
+    }
+
+    /*Contenido dentro del scrooll*/
+    .overflow-scroll_p {
+        /*position: relative;*/
+        padding: 0px 8px 0px 8px;
+        margin: 0px 8px 0px 0;
+        max-height: 350px;
+        overflow-y: scroll;
+        /*max-height: 700px;
+        overflow-y: scroll;*/
+        /*Espacio entre el botón y el contenido*/
+        padding-bottom: 20px;
+        /*Tamaño del texto*/
+        font-size: 16px;
+    }
+
+    .contenido-card-perfil {
+        padding: 0px;
+        /*padding-bottom: 0;*/
+    }
+
+    .contenido-perfil-card {
+        padding: 0;
+    }
+
+    .contenido-card-habilidades {
+        /*padding: 0 40px;*/
+        padding: 0;
+        /*Ancho izquierda-derecha*/
+        /*width: 290px;*/
+        /*width: auto;*/
+        /*Alto arriba-abajo*/
+        /*height: 570px;*/
+        /*height: auto;*/
+    }
+
+    .contenido-card-recientes {
+        padding: 0 20px;
+    }
+}
+
+
+/*GENERALES*/
+/*DISPOSITIVOS CON PANTALLA MENOR A 375px de ancho y 760px de alto*/
+/*Width(Ancho)                              Height(Alto) and (max-width: 360px)  */
+@media screen and (max-height: 667px) {
+    .seccion {
+        padding: 20px;
+        background-color: purple;
+    }
+
+        .seccion .card {
+            /*            height: 90%;*/
+            /*Es como el margen en las tarjetas*/
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .seccion .texto-secciones {
+            font-size: 16px;
+        }
+
+    .img-p {
+        /*width: auto;*/
+        /*max-height: 100%;*/
+        /*  height: auto;*/
+        width: 200px;
+        padding: 20px;
+        display: block;
+        /*Nuevo*/
+        /*float: left;*/
+        /* width: 150px;*/
+        /*height: 150px;*/
+        shape-outside: url("~/img/undraw_profile.svg");
+    }
+
+    .titulo-sobre-mi {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 12px
+    }
+
+    /*Contenido dentro del scrooll*/
+    .overflow-scroll_p {
+        /*position: relative;*/
+        padding: 0px 8px 0px 8px;
+        margin: 0px 8px 0px 0;
+        max-height: 350px;
+        overflow-y: scroll;
+        /*max-height: 700px;
+        overflow-y: scroll;*/
+        /*Espacio entre el botón y el contenido*/
+        padding-bottom: 20px;
+        /*Tamaño del texto*/
+        font-size: 16px;
+    }
+
+    .contenido-card-perfil {
+        padding: 0px;
+        /*padding-bottom: 0;*/
+    }
+
+    .contenido-perfil-card {
+        padding: 0;
+    }
+
+    .contenido-card-habilidades {
+        /*padding: 0 40px;*/
+        padding: 0;
+        /*Ancho izquierda-derecha*/
+        /*width: 290px;*/
+        /*width: auto;*/
+        /*Alto arriba-abajo*/
+        /*height: 570px;*/
+        /*height: auto;*/
+    }
+
+    .contenido-card-recientes {
+        padding: 0 20px;
+    }
+}
+
+
