@@ -225,7 +225,6 @@ namespace Portafolio_Web_2023.Controllers
         //}
 
 
-
         [HttpGet]
         //V#63 Creando un simple formulario
         //Solicitud HTTP Get solo mostrar datos

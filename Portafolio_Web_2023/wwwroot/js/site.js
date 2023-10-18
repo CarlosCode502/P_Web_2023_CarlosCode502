@@ -117,4 +117,14 @@ window.addEventListener('resize', onResize);
 
 
 
+//Funcion para mostrar y ocultar el botón flotante segun el scroll
+btnIni.onclick = function () {
+    window.scrollTo(this.scrollY, 0);
+    //window.scrollTo(pageYOffset, 0); Anterior ya esta obsoleto la solución reemplazarlo con scrollY
 
+    // después de scrollTo, habrá un evento "scroll", entonces la flecha se ocultará automáticamente
+};
+
+window.addEventListener('scroll', function () {
+    btnIni.hidden = (this.scrollY < document.documentElement.clientHeight);
+});

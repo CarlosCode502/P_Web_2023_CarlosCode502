@@ -1,4 +1,7 @@
-﻿//DE ESTA MANERA ES POSIBLE QUE LOS BUSCADORES DE GOOGLE ÚBIQUEN LA WEB
+﻿//La libreria Typed.js
+//Corresponde al creador Matt Boldt -> https://github.com/mattboldt
+
+//DE ESTA MANERA ES POSIBLE QUE LOS BUSCADORES DE GOOGLE ÚBIQUEN LA WEB
 /*AQUI ABAJO ESTA TODO EL CODIGO DE MI ANIMACIÓN ESCRITURA*/
 // Esta es una propiedad de JS (min 10:35)
 //'.typed-name' corresponde a la clase del span

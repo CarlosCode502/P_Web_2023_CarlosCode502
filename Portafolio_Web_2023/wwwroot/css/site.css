@@ -50,12 +50,13 @@ header {
 .btn-inicio-float {
     position: fixed;
     /*bottom: 22px;*/
-    bottom: 22px;
-    right: 40px;
+    bottom: 88px;
+    right: 35px;
     width: 64px;
     height: 64px;
     fill: var(--colorGlobal);
     opacity: 0.5;
+    animation: ease-in 2s;
 }
 
     .btn-inicio-float:hover {
