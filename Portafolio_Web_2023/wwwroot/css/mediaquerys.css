@@ -1,36 +1,8 @@
 ﻿
+@media only screen and (min-width: 360px) and (max-width: 767px) { /* Your Styles... */
 
-
-
-/* fin de zona común a todas las resoluciones */
-@media screen and (max-width:400px) {
-    .secciones {
-        background-color: purple;
-    }
 }
 
-@media screen and (max-width:800px) and (min-width:401px) {
-
-    .secciones {
-        background-color: red;
-    }
+@media only screen and (min-width: 375px) and (max-width: 767px) { /* Your Styles... */
+    ..                                                                   
 }
-
-@media screen and (min-width:801px) {
-
-    .secciones {
-        background-color: green;
-    }
-}
-
-/* fin de la zona para más de 800px de ancho de pantalla */
-@media screen and (min-width:1200px) {
-
-    .secciones{
-        background-color:yellow;
-    }
-}
-
-/* fin de la zona para más de 1200px de ancho de pantalla */
-https://disenowebakus.net/diseno-web-responsive.php
-
