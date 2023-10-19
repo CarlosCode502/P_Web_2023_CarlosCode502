@@ -47,8 +47,9 @@
     }
 
     .seccion .texto-secciones {
-        /*font-size: 20px;*/        
-        /*padding-bottom: 20px*/
+        /*font-size: 20px;*/
+        font-size: 1.25em;
+        padding-bottom: 20px
     }
 
     /*ES IMPORTANTE MANEJAR LAS IMAGENES EN TIPO DE FORMA (px) ya que en (%) tiende a dejar espacios*/
@@ -149,7 +150,8 @@
         }
 
         .seccion .texto-secciones {
-            font-size: 16px;
+            /*font-size: 16px;*/
+            font-size: 1em;
         }
 
     .img-p {
@@ -169,7 +171,8 @@
     .titulo-sobre-mi {
         padding-top: 10px;
         padding-bottom: 10px;
-        font-size: 12px
+        /*font-size: 12px*/
+        font-size: 0.75em;
     }
 
     /*Contenido dentro del scrooll*/
@@ -184,7 +187,8 @@
         /*Espacio entre el botón y el contenido*/
         padding-bottom: 20px;
         /*Tamaño del texto*/
-        font-size: 16px;
+        /*font-size: 16px;*/
+        font-size: 1em;
     }
 
     .contenido-card-perfil {

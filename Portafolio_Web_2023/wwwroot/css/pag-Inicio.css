@@ -18,9 +18,11 @@
     /*background-attachment: fixed;*/
     /*100% el tamaño de la imagen en height y with*/
     /*background-size: 100% 100%;*/
-
+    /*background-image: linear-gradient(rgba(23, 32, 42, 0.8), rgba(23, 32, 42, 0.8));*/
     position: relative;
     display: block;
+     
+     /*height: 80vh;*/
     /*min-height: 100vh;*/
 }
 
@@ -32,9 +34,10 @@
         que ocupe el 100% (v*h viewpor hight alto del dispositivo)
         SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);*/
         /*Sin este deja un espacio abajo*/
-        height: calc(100vh - 80px);
         /*Para que la imagen se adapte a la pantalla y no muestre su tam real*/
         max-width: 100%;
+        height: calc(100vh - 80px);
+        /*max-height: 100%;*/
     }
 
     /*NO SE USA*/
@@ -47,7 +50,7 @@
     .contenedor-imagen .contenido-imagen {
         position: absolute;
         top: 50%;
-        /*left: 50%;*/
+        /*left: 40%;*/
         padding-left: 2rem;
         transform: translate(-0%, -50%);
         /*NO SE USA*/
@@ -289,29 +292,35 @@
             transform: translate(-0%, -50%);
         }
 
-        .contenido-imagen .titulo {
-            padding-right: 10px;
-            font-size: 40px;
-            font-weight: normal;
-            /*NO SE USA 👇*/
-            /*margin-bottom: 20px;*/
-        }
+    .contenido-imagen .titulo {
+        padding-right: 10px;
+        /*font-size: 40px;*/
+        font-size: 2.5em;
+        font-weight: normal;
+        /*NO SE USA 👇*/
+        /*margin-bottom: 20px;*/
+    }
 
     dev {
-        font-size: 50px;
+        /*font-size: 50px;*/
+        font-size: 3.125em;
     }
 
     .msj {
-        font-size: 50px;
+        /*font-size: 50px;*/
+        font-size: 3.125em;
     }
 
     #big-a {
-        font-size: 10px;
+        /*font-size: 10px;*/
+        font-size: 0.625em;
+
         font-weight: 600;
     }
 
     .nav_menu a {
-        font-size: 12px;
+        /*font-size: 12px;*/
+        font-size: 0.75em;
         /*NO SE USA 👇*/
         /*padding: 5px;*/
     }

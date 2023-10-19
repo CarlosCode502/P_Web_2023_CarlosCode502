@@ -58,7 +58,8 @@
     color: white;
     font-weight: bold;
     float: right;
-    font-size: 22px;
+    /*font-size: 22px;*/
+    font-size: 1.375em;
     line-height: 20px;
     cursor: pointer;
     transition: 0.1s;
@@ -162,7 +163,8 @@
     /*Titulo del formulario*/
     .ventana .titulo-modal {
         color: var(--colorGlobalCV);
-        font-size: 25px;
+        /*font-size: 25px;*/
+        font-size: 1.5625em;
         font-weight: bolder;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -170,7 +172,9 @@
 
     /*Todo el dropdown y contenido*/
     .ventana .form-select {
-        font-size: 16px;
+        /*font-size: 16px;*/
+        font-size: 1em;
+
         border: 1px solid var(--colorGlobalCV);
         border-radius: 6px;
         margin-bottom: 20px;
@@ -201,7 +205,9 @@
         /*border-color: none;*/
         /*transform-style: inherit;*/
         color: var(--blanco);
-        font-size: 18px;
+        /*font-size: 18px;*/
+        font-size: 1.125em;
+
         text-decoration: none;
     }
 
@@ -217,7 +223,8 @@
         /*border-color: none;*/
         /*transform-style: inherit;*/
         color: var(--blanco);
-        font-size: 18px;
+        /*font-size: 18px;*/
+        font-size: 1.125em;
         text-decoration: none;
     }
 
@@ -284,14 +291,16 @@ border:1px solid black;*/
     font-weight: 600;
     color: var(--colorGlobalCV);
     /*background-color: var(--colorGlobalCV);*/
-    font-size: 50px;
+    /*font-size: 50px;*/
+    font-size: 3.125em;
     /*margin-bottom: 5px;*/
 }
 
 /*Ocupación/Profesion*/
 .subtitulo {
     font-weight: 600;
-    font-size: 25px;
+    /*font-size: 25px;*/
+    font-size: 1.5625em;
     /*Color de subtitulo*/
     margin-bottom: 22px;
 }
@@ -309,7 +318,8 @@ border:1px solid black;*/
     align-items: center;
     border: 6px solid var(--colorGlobalCV);
     padding: 10px;
-    font-size: 17px;
+    /*font-size: 17px;*/
+    font-size: 1.0625em;
     /*position: center;*/
     /*margin-left: 10%;*/
 }
@@ -409,7 +419,8 @@ border:1px solid black;*/
     margin: 1.5rem 0 1.5rem 0;
     /*Justificar el texto*/
     text-align: justify;
-    font-size: 16px;
+    /*font-size: 16px;*/
+    font-size: 1em;
     line-height: 1.6;
 }
 
@@ -423,7 +434,8 @@ border:1px solid black;*/
 }*/
 
 .titulo-seccion {
-    font-size: 25px;
+    /*font-size: 25px;*/
+    font-size: 1.5625em;
     font-weight: 600;
     color: var(--colorGlobalCV);
     /*padding-top: 1rem;*/
@@ -464,7 +476,8 @@ border:1px solid black;*/
 .descripcion-exp {
     text-align: justify;
     margin-bottom: 30px;
-    font-size: 16px;
+    /*font-size: 16px;*/
+    font-size: 1em;
     line-height: 1.6;
     /*margin: auto 40px 0 40px;*/
 }
@@ -480,7 +493,8 @@ ul {
 
 li::before { /*Añadimos contenido antes de cada elemento de la lista */
     content: "\2022"; /*Insertamos el marcador */
-    font-size: 20px;
+    /*font-size: 20px;*/
+    font-size: 1.25em;
     padding-right: 8px; /*Establecemos el espacio entre las viñetas y el list item */
     color: var(--colorGlobalCV); /*Coloreamos la viñeta */
 }
@@ -495,7 +509,9 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
     .seccion-educacion ul {
         /*font-weight: 600;*/
         line-height: 1;
-        font-size: 16px;
+        /*font-size: 16px;*/
+        font-size: 1em;
+
         /*word-wrap: normal;*/
         /*word-spacing: 5px;*/
     }
@@ -531,7 +547,9 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
 /*Para dividir las tecnologias en columnas*/
 .texto-columnas {
     /*margin-top: 1rem;*/
-    font-size: 16px;
+    /*font-size: 16px;*/
+    font-size: 1em;
+
     margin: 20px auto 0 22%;
     column-count: 2;
     column-gap: 20px;
@@ -742,7 +760,8 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
         /*Titulo del formulario*/
         .ventana .titulo-modal {
             color: var(--colorGlobalCV);
-            font-size: 22px;
+            /*font-size: 22px;*/
+            font-size: 1.375em;
             font-weight: bolder;
             margin-top: 20px;
             margin-bottom: 20px;
@@ -750,7 +769,8 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
 
         /*Todo el dropdown y contenido*/
         .ventana .form-select {
-            font-size: 14px;
+            /*font-size: 14px;*/
+            font-size: 0.875em;
             border: 1px solid var(--colorGlobalCV);
             border-radius: 6px;
             margin-bottom: 20px;
@@ -773,7 +793,9 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
             /*border-color: none;*/
             /*transform-style: inherit;*/
             /*color: var(--blanco)*/
-            font-size: 16px;
+            /*font-size: 16px;*/
+            font-size: 1em;
+
         }
 
 /*            .ventana .btn-aceptar:hover {
@@ -788,8 +810,8 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
             /*border-color: none;*/
             /*transform-style: inherit;*/
             /*color: var(--blanco)*/
-            font-size: 16px;
-            
+            /*font-size: 16px;*/
+            font-size: 1em;
         }
 
 

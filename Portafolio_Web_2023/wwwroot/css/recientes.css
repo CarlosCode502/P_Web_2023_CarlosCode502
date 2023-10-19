@@ -97,13 +97,13 @@
 
 /*Título de la tarjeta*/
 .card-title {
-    font-size: 1rem;
+    font-size: 1em;
     padding: 15px;
 }
 
 /*Texto de la tarjeta*/
 .card-text {
-    font-size: 1rem;
+    font-size: 1em;
     padding: 15px;
 }
 
@@ -139,7 +139,7 @@
     border-bottom-color: transparent;
     border-left-color: transparent;
     padding: .375rem .75rem;
-    font-size: 1rem;
+    font-size: 1em;
     border-radius: .25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }

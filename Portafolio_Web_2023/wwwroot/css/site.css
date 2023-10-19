@@ -37,13 +37,13 @@ body {
 /*Tamaño y fuente para todo el contenido dentro del header(nav y texto de escritura automatica)*/
 header {
     font-family: 'Quicksand', sans-serif;
-    font-size: 70px;
+    /*font-size: 70px;*/
+    /*font-size: 4.375em;*/
     /*font-weight: 900;*/
     /*font-family: 'Francois One', sans-serif;*/
     /*font-family: 'Josefin Slab', serif;*/
     /*font-family: 'Montserrat', sans-serif;*/
     /*font-family: 'Satisfy', cursive;*/
-
 }
 
 /*Botón flotante*/
