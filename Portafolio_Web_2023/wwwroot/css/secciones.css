@@ -95,7 +95,7 @@
     /*background-color: #4e4949;*/
     /*background-image: linear-gradient(180deg, rgb(0, 0, 0, 1), rgb(255, 255, 255, 1));*/
 
-    /*background-color: #151921;*/
+    background-color: #151921;
 }
 
 .contenido-card-habilidades {
@@ -115,7 +115,7 @@
     /*background-color: #2b2828;*/
     /*background-image: linear-gradient(180deg, rgb(0, 0, 0, 1), rgb(255, 255, 255, 0));*/
 
-    /*background-color: #151921;*/
+    background-color: #151921;
 }
 
 .contenido-card-recientes {
@@ -130,7 +130,88 @@
     /*background-image: url("https://cdn.pixabay.com/photo/2016/11/30/20/44/computer-1873831_960_720.png");*/
     /*background-image: linear-gradient(180deg, rgb(0, 0, 0, 1), rgb(255, 255, 255, 1));*/
 
-    /*background-color: #151921;*/
+    background-color: #151921;
 }
 
 
+/*#region Media Querys */
+/*Valores que tomarán los elementos de las secciones cuando la pantalla se encuentre en un rango de width= 500px*/
+/*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
+@media screen and (max-width: 1050px) {
+    .seccion {
+        padding: 20px;
+    }
+
+        .seccion .card {
+            /*            height: 90%;*/
+            /*Es como el margen en las tarjetas*/
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .seccion .texto-secciones {
+            /*font-size: 16px;*/
+            font-size: 1em;
+        }
+
+    .img-p {
+        /*width: auto;*/
+        /*max-height: 100%;*/
+        /*  height: auto;*/
+        width: 200px;
+        padding: 20px;
+        display: block;
+        /*Nuevo*/
+        /*float: left;*/
+        /* width: 150px;*/
+        /*height: 150px;*/
+        shape-outside: url("~/img/undraw_profile.svg");
+    }
+
+    /*.titulo-sobre-mi {
+        padding-top: 10px;
+        padding-bottom: 10px;*/
+        /*font-size: 12px*/
+        /*font-size: 0.75em;
+    }*/
+
+    /*Contenido dentro del scrooll*/
+    .overflow-scroll_p {
+        /*position: relative;*/
+        padding: 0px 8px 0px 8px;
+        margin: 0px 8px 0px 0;
+        max-height: 350px;
+        overflow-y: scroll;
+        /*max-height: 700px;
+        overflow-y: scroll;*/
+        /*Espacio entre el botón y el contenido*/
+        padding-bottom: 20px;
+        /*Tamaño del texto*/
+        /*font-size: 16px;*/
+        font-size: 1em;
+    }
+
+    .contenido-card-perfil {
+        padding: 0px;
+        /*padding-bottom: 0;*/
+    }
+
+    .contenido-perfil-card {
+        padding: 0;
+    }
+
+    .contenido-card-habilidades {
+        /*padding: 0 40px;*/
+        padding: 0;
+        /*Ancho izquierda-derecha*/
+        /*width: 290px;*/
+        /*width: auto;*/
+        /*Alto arriba-abajo*/
+        /*height: 570px;*/
+        /*height: auto;*/
+    }
+
+    .contenido-card-recientes {
+        padding: 0 20px;
+    }
+}

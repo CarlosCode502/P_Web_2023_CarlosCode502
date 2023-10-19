@@ -129,3 +129,83 @@
 
 /*#endregion */
 
+
+
+/*#region Media Querys */
+/*Ayudan a mostrar las animaciones según el tamaño de la pantalla si es menor o mayor*/
+/*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
+@media screen and (max-width: 500px) {
+    /*NO SE USA 👇*/
+    /*    .hero {
+        
+        padding-bottom: 0px;
+    }*/
+
+    /*.seccion {
+        padding-top: 0%;
+    }
+
+        .seccion h1 {
+            font-size: 32px;*/
+    /*NO SE USA 👇*/
+    /*margin-bottom: 20px;*/
+    /*}
+
+        .seccion p {
+            line-height: 28px;
+            font-size: 15px;
+        }*/
+
+
+    .img-linkedin, .img-correo, .img-ubicacion,.img-whatsapp, .img-github {
+        /*Espacios entre cada icono */
+        margin: 20px;
+        /*Alto y acho de iconos*/
+        width: 42px;
+        height: 42px;
+    }
+
+
+
+        /*Color azul para linkedin*/
+        .img-linkedin svg:hover {
+            /*height: 100%;*/
+            width: 64px;
+            height: 64px;
+            fill: #22A7F2;
+        }
+
+        /*Color rojo para gmail*/
+        .img-correo svg:hover {
+            /*height: 100%;*/
+            width: 64px;
+            height: 64px;
+            fill: #ea0101;
+        }
+
+        /*Color verde naranja para ubicación*/
+        .img-ubicacion svg:hover {
+            /*height: 100%;*/
+            width: 64px;
+            height: 64px;
+            fill: #ff6a00;
+        }
+
+        /*Color verde para whatsapp*/
+        .img-whatsapp svg:hover {
+            /*height: 100%;*/
+            width: 64px;
+            height: 64px;
+            fill: #0DC143;
+        }
+
+        /*Color morado para github*/
+        .img-github svg:hover {
+            /*height: 100%;*/
+            width: 64px;
+            height: 64px;
+            fill: #5C2D91;
+        }
+
+    /*#endregion */
+}

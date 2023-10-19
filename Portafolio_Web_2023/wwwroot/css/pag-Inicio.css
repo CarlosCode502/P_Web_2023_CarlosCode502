@@ -245,3 +245,172 @@
     }
 
 
+
+/*#region Media Querys */
+/*
+@media screen and (min-height: 601px) {
+    .menu-p-inicio a span:last-child {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-100%);
+    }
+}*/
+
+/*Ayudan a mostrar las animaciones según el tamaño de la pantalla si es menor o mayor*/
+/*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
+@media screen and (max-width: 600px) {
+
+    /*Contenedor de imagen*/
+    /*.contenedor-imagen {
+        position: relative;
+        display: block;*/
+        /*min-height: 100vh;*/
+    /*}*/
+
+        .contenedor-imagen img {
+            /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
+        que ocupe el 100% (v*h viewpor hight alto del dispositivo)
+        SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);*/
+            /*Sin este deja un espacio abajo*/
+            /*height: calc(100vh - 90px);*/
+            /*height: 85vh;*/
+            /*Para que la imagen se adapte a la pantalla y no muestre su tam real*/
+            max-width: 100%;
+        }
+
+        /*Texto que se muestra sobre la imagen*/
+        .contenedor-imagen .contenido-imagen {
+            position: absolute;
+            top: 50%;
+            padding-left: 1rem;
+            transform: translate(-0%, -50%);
+        }
+
+    .contenido-imagen .titulo {
+        padding-right: 10px;
+        /*font-size: 40px;*/
+        font-size: 2.5em;
+        font-weight: normal;
+        /*NO SE USA 👇*/
+        /*margin-bottom: 20px;*/
+    }
+
+    dev {
+        /*font-size: 50px;*/
+        font-size: 3.125em;
+    }
+
+    .msj {
+        /*font-size: 50px;*/
+        font-size: 1em;
+    }
+
+    #big-a {
+        /*font-size: 10px;*/
+        font-size: 0.625em;
+
+        font-weight: 600;
+    }
+
+    .nav_menu a {
+        /*font-size: 12px;*/
+        font-size: 0.75em;
+        /*NO SE USA 👇*/
+        /*padding: 5px;*/
+    }
+
+    .nav_menu .indicador {
+        /*ancho se cambio el valor ya que se debe calcular el tamaño del boton por
+            medio de JS aqui en css a traves de los media querys.
+        */
+        width: 0px;
+        /*altura*/
+        height: 7px;
+        /*color*/
+        background: var(--colorGlobal);
+        /*Posicionamiento*/
+        position: absolute;
+        /*Posicionar el la parte de abajo del nav*/
+        bottom: 0;
+        /*Va a tener trnsisciones de tiempo para todas las propiedades*/
+        /*Va a tener una animación*/
+        transition: .2s ease-out all;
+        /*para demostrar mientras va aumentando va ir cambiando*/
+        /*el indicador va a ir de izquierda a derecha va a aparecer por eso es negativo*/
+        /*transform: translate(-500px);*/
+        /*Para ocultar el indicador en caso de que quede fuera y no se tenga seleccionado (dependiendo el disp será el error)*/
+        /* overflow: hidden;*/
+    }
+
+    /*Efecto sombreado(hover) al pasar el cursor en el nav*/
+    /*.nav_menu a:hover {
+            background: var(--colorGlobal);*/
+    /*NO SE USA 👇*/
+    /*font-size: 20px;*/
+    /*}*/
+
+    /*    .menu-p-inicio svg {
+        font-size: 10px;
+    }
+*/
+
+    .menu-p-inicio svg {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    /*    .tooltip-inicio .tooltip-content {
+        visibility: hidden;
+        display: inline-block;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        position: absolute;
+        z-index: 1;
+        margin-top: 20px
+    }
+
+    .tooltip-inicio:hover .tooltip-content {
+        visibility: visible;
+    }*/
+
+
+    /*        .tooltip .tooltip-content {
+            visibility: hidden;
+            display: inline-block;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: absolute;
+            z-index: 1;
+            margin-top: 20px
+        }
+
+    .tooltip:hover .tooltip-content {
+        visibility: visible;
+    }*/
+    /*
+    .menu-p-inicio a span:last-child {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-100%);
+    }*/
+
+    /*
+    .menu-p-inicio .inicio-visible {
+        visibility: hidden;
+    }*/
+}

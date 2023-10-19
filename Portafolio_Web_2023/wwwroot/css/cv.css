@@ -697,4 +697,197 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
     }
 }*/
 
+/* cuando sea como maximo 450, es decir menor */
+@media screen and (max-width: 810px) {
 
+    /*Cambiar padding del contenedor*/
+    .container {
+        background-color: var(--blanco);
+        padding: 0px;
+    }
+
+    /*Cambiar los márgenes*/
+    .cv-estructura {
+        margin: 10px 20px;
+        padding: 20px 20px;
+    }
+
+    .cont-nav {
+        visibility: hidden;
+    }
+
+    /*Para mostrar la fecha a la izquierda y centrada de titulo exp*/
+    .btn-descargar-cv {
+        visibility: visible;
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        padding: 10px;
+        border-radius: 8px;
+        /*width: 64px;*/
+        /*height: 64px;*/
+        background-color: var(--colorGlobalCV);
+        opacity: 0.5;
+    }
+
+        .btn-descargar-cv:hover {
+            opacity: 1;
+        }
+
+    .btn-a {
+        text-decoration: none;
+        color: var(--blanco);
+    }
+
+    .ventana {
+        /*text-align: center;*/
+        /*border-radius: 8px;*/
+        /*background-color: var(--blanco);*/
+        /*width: 300px;*/
+        /*padding: 10px 20px;*/
+        margin: 90% auto;
+        /*position: relative;*/
+    }
+
+     /*   .ventana .closebtn {
+            color: var(--colorGlobalCV);
+        }*/
+
+         /*   .ventana .closebtn:hover {
+                color: black;
+            }
+*/
+        /*Titulo del formulario*/
+        .ventana .titulo-modal {
+            color: var(--colorGlobalCV);
+            /*font-size: 22px;*/
+            font-size: 1.375em;
+            font-weight: bolder;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        /*Todo el dropdown y contenido*/
+        .ventana .form-select {
+            /*font-size: 14px;*/
+            font-size: 0.875em;
+            border: 1px solid var(--colorGlobalCV);
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+            /*.ventana .form-select .opc-default {*/
+                /*fill: red;*/
+                /*background-color: green;*/
+            /*}*/
+
+
+        /*.ventana li {
+        background-color: var(--blanco);
+    }*/
+        .ventana .btn-aceptar {
+            /*background-color: var(--colorGlobalCV);*/
+            padding: 10px 30px;
+            /*margin: 20px;*/
+            /*border-radius: 10px;*/
+            /*border-color: none;*/
+            /*transform-style: inherit;*/
+            /*color: var(--blanco)*/
+            /*font-size: 16px;*/
+            font-size: 1em;
+
+        }
+
+/*            .ventana .btn-aceptar:hover {
+                background-color: var(--celestesimple)
+            }
+*/
+        .ventana .btn-cancelar {
+            /*background-color: var(--colorGlobalCV);*/
+            padding: 10px 20px;
+            /*margin: 20px;*/
+            /*border-radius: 10px;*/
+            /*border-color: none;*/
+            /*transform-style: inherit;*/
+            /*color: var(--blanco)*/
+            /*font-size: 16px;*/
+            font-size: 1em;
+        }
+
+
+    /*Cambiar el borde y cambiar la propiedad de flex a block*/
+    .contacto {
+        margin: 0;
+        border: 4px solid var(--colorGlobalCV);
+        display: block;
+        /*padding: 10px;*/
+    }
+
+    /*Quitar los márgenes*/
+    .gmail, .github, .phone {
+        margin: 10px;
+    }
+
+    /*  .texto-columnas {
+        margin-left: 35.35px;
+    }*/
+
+    /*Para dividir las tecnologias en columnas*/
+    .texto-columnas {
+        /*margin-top: 1rem;*/
+        /*font-size: 16px;*/
+        margin: 20px auto 0 14%;
+    }
+
+
+    /*Color para correo*/
+    /*.hover_class_style1 {
+        border: 4px solid #ea0101;*/
+    /*  background: blue;*/
+    /*}*/
+
+    /*Color para github*/
+    /*.hover_class_style2 {
+        border: 4px solid #a06ed9;*/
+    /*background: blue;*/
+    /*}*/
+
+    /*Color para teléfono*/
+    /*.hover_class_style3 {
+        border: 4px solid #0DC143;*/
+    /*background: blue;*/
+    /*}*/
+}
+
+
+/* cuando sea como minimo 451, es decir mayor */
+/*@media screen and (min-width:451px) {*/
+
+/*Cambiar padding del contenedor*/
+/*.container {
+        background-color: white;
+        padding: 0px;
+    }*/
+
+/*Cambiar los márgenes*/
+/*.cv-estructura {
+        margin: 10px 20px;
+        padding: 20px 20px;
+    }*/
+
+/*Cambiar el borde y cambiar la propiedad de flex a block*/
+/*.contacto {
+        border: 4px solid dodgerblue;
+        display: block;*/
+/*padding: 10px;*/
+/*}*/
+
+/*Quitar los márgenes*/
+/*.gmail, .github, .phone {
+        margin: 60px;
+    }
+
+    .texto-columnas {
+        margin-left: 25%;
+    }
+}*/
