@@ -262,35 +262,35 @@
     }
 }*/
 
+/*PARA EQUIPOS CON ANCHO DE 600px para abajo*/
 /*Ayudan a mostrar las animaciones según el tamaño de la pantalla si es menor o mayor*/
 /*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
-@media screen and (max-width: 600px) {
-
+@media screen and (max-width: 600px){
+/*@media only screen and (min-height: 761px) and (min-height: 1000px) {*/
+    /**/
     /*Contenedor de imagen*/
     /*.contenedor-imagen {
         position: relative;
         display: block;*/
-        /*min-height: 100vh;*/
+    /*min-height: 100vh;*/
     /*}*/
-
-        .contenedor-imagen img {
-            /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
+    .contenedor-imagen img {
+        /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
         que ocupe el 100% (v*h viewpor hight alto del dispositivo)
         SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);*/
-            /*Sin este deja un espacio abajo*/
-            /*height: calc(100vh - 90px);*/
-            /*height: 85vh;*/
-            /*Para que la imagen se adapte a la pantalla y no muestre su tam real*/
-            max-width: 100%;
-        }
-
-        /*Texto que se muestra sobre la imagen*/
-        .contenedor-imagen .contenido-imagen {
-            position: absolute;
-            top: 50%;
-            padding-left: 1rem;
-            transform: translate(-0%, -50%);
-        }
+        /*Sin este deja un espacio abajo*/
+        /*height: calc(100vh - 90px);*/
+        /*height: 85vh;*/
+        /*Para que la imagen se adapte a la pantalla y no muestre su tam real*/
+        max-width: 100%;
+    }
+    /*Texto que se muestra sobre la imagen*/
+    .contenedor-imagen .contenido-imagen {
+        position: absolute;
+        top: 50%;
+        padding-left: 1rem;
+        transform: translate(-0%, -50%);
+    }
 
     .contenido-imagen .titulo {
         padding-right: 10px;
@@ -314,7 +314,6 @@
     #big-a {
         /*font-size: 10px;*/
         font-size: 0.625em;
-
         font-weight: 600;
     }
 
@@ -347,14 +346,12 @@
         /*Para ocultar el indicador en caso de que quede fuera y no se tenga seleccionado (dependiendo el disp será el error)*/
         /* overflow: hidden;*/
     }
-
     /*Efecto sombreado(hover) al pasar el cursor en el nav*/
     /*.nav_menu a:hover {
             background: var(--colorGlobal);*/
     /*NO SE USA 👇*/
     /*font-size: 20px;*/
     /*}*/
-
     /*    .menu-p-inicio svg {
         font-size: 10px;
     }
@@ -364,8 +361,6 @@
         width: 30px;
         height: 30px;
     }
-
-
     /*    .tooltip-inicio .tooltip-content {
         visibility: hidden;
         display: inline-block;
@@ -380,8 +375,6 @@
     .tooltip-inicio:hover .tooltip-content {
         visibility: visible;
     }*/
-
-
     /*        .tooltip .tooltip-content {
             visibility: hidden;
             display: inline-block;
@@ -408,7 +401,6 @@
         justify-content: center;
         transform: translateY(-100%);
     }*/
-
     /*
     .menu-p-inicio .inicio-visible {
         visibility: hidden;

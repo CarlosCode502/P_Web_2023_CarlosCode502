@@ -87,8 +87,8 @@ h1 {
 }*/
 
 /*.html {*/
-    /*Color de border shadow*/
-    /*box-shadow: 0 4px 15px 0 #d35400;
+/*Color de border shadow*/
+/*box-shadow: 0 4px 15px 0 #d35400;
 }*/
 
 /*Al pasar el mouse, agrega una sombra más profunda.*/
@@ -113,8 +113,8 @@ h1 {
 }
 
 /*.css {*/
-    /*Color de border shadow*/
-    /*box-shadow: 0 4px 15px 0 #3498db;
+/*Color de border shadow*/
+/*box-shadow: 0 4px 15px 0 #3498db;
 }*/
 
 .css:hover {
@@ -128,8 +128,8 @@ h1 {
 }
 
 /*.js {*/
-    /*Color de border shadow*/
-    /*box-shadow: 0 4px 15px 0 #f4d03f;
+/*Color de border shadow*/
+/*box-shadow: 0 4px 15px 0 #f4d03f;
 }*/
 
 .js:hover {
@@ -143,8 +143,8 @@ h1 {
 }
 
 /*.bootstrap {*/
-    /*Color de border shadow*/
-    /*box-shadow: 0 4px 15px 0 #8e44ad;
+/*Color de border shadow*/
+/*box-shadow: 0 4px 15px 0 #8e44ad;
 }*/
 
 .bootstrap:hover {
@@ -158,8 +158,8 @@ h1 {
 }
 
 /*.net {*/
-    /*Color de border shadow*/
-    /*box-shadow: 0 4px 15px 0 #602EC0;
+/*Color de border shadow*/
+/*box-shadow: 0 4px 15px 0 #602EC0;
 }*/
 
 /*Se aplico un padding-top ya que no se centraba la imagen*/
@@ -185,8 +185,8 @@ h1 {
 }*/
 
 /*.csharp {*/
-    /*Color de border shadow*/
-    /*box-shadow: 0 4px 15px 0 #8e44ad;
+/*Color de border shadow*/
+/*box-shadow: 0 4px 15px 0 #8e44ad;
 }*/
 
 .csharp:hover {
@@ -200,8 +200,8 @@ h1 {
 }
 
 /*.java {*/
-    /*Color de border shadow*/
-    /*box-shadow: 0 4px 15px 0 #e74c3c;
+/*Color de border shadow*/
+/*box-shadow: 0 4px 15px 0 #e74c3c;
 }*/
 
 .java:hover {
@@ -215,8 +215,8 @@ h1 {
 }
 
 /*.jquery {*/
-    /*Color de border shadow*/
-    /*box-shadow: 0 4px 15px 0 #2980b9;
+/*Color de border shadow*/
+/*box-shadow: 0 4px 15px 0 #2980b9;
 }*/
 
 .jquery:hover {
@@ -230,8 +230,8 @@ h1 {
 }
 
 /*.sql {*/
-    /*Color de border shadow*/
-    /*box-shadow: 0 4px 15px 0 #f1c40f;
+/*Color de border shadow*/
+/*box-shadow: 0 4px 15px 0 #f1c40f;
 }*/
 
 .pdd-sql {
@@ -251,8 +251,8 @@ h1 {
 }
 
 /*.mysql {*/
-    /*Color de border shadow*/
-    /*box-shadow: 0 4px 15px 0 #00618A;
+/*Color de border shadow*/
+/*box-shadow: 0 4px 15px 0 #00618A;
 }*/
 
 .mysql:hover {
@@ -266,8 +266,8 @@ h1 {
 }
 
 /*.github {*/
-    /*Color de border shadow*/
-    /*box-shadow: 0 4px 15px 0 #273746;
+/*Color de border shadow*/
+/*box-shadow: 0 4px 15px 0 #273746;
 }*/
 
 .github:hover {
@@ -281,8 +281,8 @@ h1 {
 }
 
 /*.git {*/
-    /*Color de border shadow*/
-    /*box-shadow: 0 4px 15px 0 #cb4335;
+/*Color de border shadow*/
+/*box-shadow: 0 4px 15px 0 #cb4335;
 }*/
 
 .git:hover {
@@ -296,8 +296,8 @@ h1 {
 }
 
 /*.sendgrid {*/
-    /*Color de border shadow*/
-    /*box-shadow: 0 4px 15px 0 #1A82E2;
+/*Color de border shadow*/
+/*box-shadow: 0 4px 15px 0 #1A82E2;
 }*/
 
 .sendgrid:hover {
@@ -311,8 +311,8 @@ h1 {
 }
 
 /*.vscode {*/
-    /*Color de border shadow*/
-    /*box-shadow: 0 4px 15px 0 #3498db;
+/*Color de border shadow*/
+/*box-shadow: 0 4px 15px 0 #3498db;
 }*/
 
 .vscode:hover {
@@ -336,8 +336,8 @@ h1 {
 }
 
 /*.php {*/
-    /*Color de border shadow*/
-    /*box-shadow: 0 4px 15px 0 #34495e;
+/*Color de border shadow*/
+/*box-shadow: 0 4px 15px 0 #34495e;
 }*/
 
 .php:hover {
@@ -448,7 +448,8 @@ h1 {
 
 
 /*Para pantallas grandes*/
-@media (min-width: 910px) {
+/*@media (min-width: 910px) {*/
+@media (min-width: 811px) {
     /*Para colocar las filas a la izquirda en 2 lineas*/
     .fila-cols-md-3 > * {
         flex: 0 0 auto;
@@ -481,7 +482,8 @@ h1 {
 
 
 /* Columnas responsivas: diseño de una columna (vertical) en pantallas pequeñas */
-@media screen and (max-width: 909px) {
+/*@media screen and (max-width: 909px) {*/
+@media screen and (max-width: 810px) {
     /*Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas*/
     .fila {
         padding-right: 0px;
