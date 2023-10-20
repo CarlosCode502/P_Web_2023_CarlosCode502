@@ -1,6 +1,368 @@
 ﻿
 
 /*s7 Edge        and (max-width: 375px)*/
+@media only screen and (min-height: 1080px) {
+    /*    .seccion {
+        padding: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }*/
+
+    /*    .tiutlo-contacto {
+        font-size: 1.90em;
+    }*/
+    /**/
+    #Perfil, #Habilidades, #Proyectos_recientes {
+        background-color:red;
+    }
+
+    .contenedor-imagen img {
+        /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
+        que ocupe el 100% (v*h viewpor hight alto del dispositivo)
+        SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);*/
+        /*Sin este deja un espacio abajo*/
+        /*height: calc(100vh - 90px);*/
+        /*height: 85vh;*/
+        /*Para que la imagen se adapte a la pantalla y no muestre su tam real*/
+        max-width: 100%;
+    }
+    /*Texto que se muestra sobre la imagen*/
+    .contenedor-imagen .contenido-imagen {
+        position: absolute;
+        top: 50%;
+        padding-left: 1rem;
+        transform: translate(-0%, -50%);
+    }
+
+    .contenido-imagen .titulo {
+        padding-right: 10px;
+        /*font-size: 40px;*/
+        font-size: 2.5em;
+        font-weight: normal;
+        /*NO SE USA 👇*/
+        /*margin-bottom: 20px;*/
+    }
+
+    dev {
+        /*font-size: 50px;*/
+        font-size: 3.125em;
+    }
+
+    .msj {
+        /*font-size: 50px;*/
+        font-size: 1em;
+    }
+
+    #big-a {
+        /*font-size: 10px;*/
+        font-size: 0.625em;
+        font-weight: 600;
+    }
+
+    .nav_menu a {
+        /*font-size: 12px;*/
+        font-size: 0.75em;
+        /*NO SE USA 👇*/
+        /*padding: 5px;*/
+    }
+
+    .nav_menu .indicador {
+        /*ancho se cambio el valor ya que se debe calcular el tamaño del boton por
+            medio de JS aqui en css a traves de los media querys.
+        */
+        width: 0px;
+        /*altura*/
+        height: 7px;
+        /*color*/
+        background: var(--colorGlobal);
+        /*Posicionamiento*/
+        position: absolute;
+        /*Posicionar el la parte de abajo del nav*/
+        bottom: 0;
+        /*Va a tener trnsisciones de tiempo para todas las propiedades*/
+        /*Va a tener una animación*/
+        transition: .2s ease-out all;
+        /*para demostrar mientras va aumentando va ir cambiando*/
+        /*el indicador va a ir de izquierda a derecha va a aparecer por eso es negativo*/
+        /*transform: translate(-500px);*/
+        /*Para ocultar el indicador en caso de que quede fuera y no se tenga seleccionado (dependiendo el disp será el error)*/
+        /* overflow: hidden;*/
+    }
+
+    .menu-p-inicio svg {
+        width: 30px;
+        height: 30px;
+    }
+    /*PAG INICIO FIN*/
+
+    .seccion .card {
+        /*height: 90%;*/
+        /*Es como el margen en las tarjetas*/
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .seccion .texto-secciones {
+        /*font-size: 16px;*/
+
+        font-size: 0.85em;
+        /*padding-bottom: 0;*/
+        /*padding-bottom: 15px;*/
+    }
+
+    .img-p {
+        /*width: auto;*/
+        /*max-height: 100%;*/
+        /*  height: auto;*/
+        width: 200px;
+        /*padding: 20px;*/
+        /*display: block;*/
+        /*Nuevo*/
+        /*float: left;*/
+        /* width: 150px;*/
+        /*height: 150px;*/
+        /*shape-outside: url("~/img/undraw_profile.svg");*/
+    }
+
+    .img-perfil {
+        padding: 0;
+    }
+
+    /*.titulo-sobre-mi {*/
+    /*padding-top: 10px;*/
+    /*padding-bottom: 10px;*/
+    /*font-size: 12px*/
+    /*font-size: 50%;
+    }*/
+    /*    .texto-secciones {
+        font-size: 0.5em;
+    }*/
+
+    /*Padding personalizado para btn perfil*/
+    .btn-pdd-perfil {
+        padding: 10px 78px 10px 78px;
+    }
+
+    /*Contenido dentro del scrooll*/
+    .overflow-scroll_p {
+        /*position: relative;*/
+        padding: 0px 8px 0px 8px;
+        margin: 0px 8px 0px 0;
+        max-height: 260px;
+        overflow-y: scroll;
+        /*max-height: 700px;
+        overflow-y: scroll;*/
+        /*Espacio entre el botón y el contenido*/
+        padding-bottom: 20px;
+        /*Tamaño del texto*/
+        /*font-size: 16px;*/
+        font-size: 1em;
+    }
+
+    .contenido-card-perfil {
+        padding: 0px;
+        /*padding-bottom: 0;*/
+    }
+
+    .contenido-perfil-card {
+        padding: 0;
+    }
+
+    .contenido-card-habilidades {
+        /*padding: 0 40px;*/
+        padding: 10px;
+        /*Ancho izquierda-derecha*/
+        /*width: 290px;*/
+        /*width: auto;*/
+        /*Alto arriba-abajo*/
+        /*height: 570px;*/
+        /*height: auto;*/
+    }
+
+    /*INICIO HABILIDADES*/
+
+    /*Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas*/
+    .fila {
+        padding: 0px;
+        padding-left: 25%;
+    }
+
+    .fila-cols-md-3 > * {
+        flex: 0 0 auto;
+        padding-left: 10px;
+        width: 33.33333%;
+    }
+
+    .columna {
+        width: 60%;
+        display: block;
+        margin-bottom: 14px;
+        padding: 0px;
+    }
+
+    /*Se aplica a todo el contenido que contenga la clase scroll*/
+    .overflow-scroll_h {
+        max-height: 396px;
+    }
+
+    /*#region Efecto zoom */
+    /*Imagen de la tarjeta*/
+    .card-img-logo {
+        width: 100px;
+    }
+
+
+    /*#region Efecto zoom */
+    /*Imagen de la tarjeta*/
+    .card-img-logo {
+        padding-top: 10px;
+        padding-left: 10px;
+        width: 90px;
+    }
+
+    /*Cuerpo o contenido de la tarjeta*/
+    .card-img-h {
+        flex: 1 1 auto;
+        /*padding: 1rem 1rem;*/
+        /*font-size: 1rem;*/
+        /*border-radius: 100px;*/
+        /*  width: 64%;
+    height: 64%;*/
+        /*margin-top: 20px;*/
+        /*display: block;*/
+        margin: 10px auto 10px auto;
+        width: 100px;
+        height: 100px;
+    }
+
+    /*para js y otros*/
+    .menos {
+        /*width: 50%;*/
+        height: 85%;
+    }
+    /*Se aplico un padding-top ya que no se centraba la imagen*/
+    .pdd-net {
+        padding-top: 25px;
+        height: 75%;
+    }
+
+    /*Cambia el tamaño de icono bootstrap en pantallas pequeñas*/
+    .size-bs {
+        padding-top: 15px;
+        height: 90%;
+    }
+
+    .ver-iconos {
+        /*display: flex;*/
+        /*position: absolute;*/
+        /*text-decoration: none;*/
+        /*padding-left: 65%;*/
+        color: #96989a;
+    }
+    /*FIN HABILIDADES*/
+
+
+
+
+    /*INICIO RECIENTES*/
+    .contenido-card-recientes {
+        padding: 0 10px;
+    }
+    /*Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas*/
+    .row {
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-top: 0px;
+    }
+
+    .row-cols-md-3 > * {
+        flex: 0 0 auto;
+        width: 33.3333333333%;
+    }
+
+    .col {
+        width: 100%;
+        /*padding-left: 20%;*/
+        display: block;
+        margin-bottom: 50px;
+        padding: 0px;
+    }
+    /*
+    .titulo-recientes {
+        font-size: 30px;
+    }
+
+    .subtitulo-recientes {
+        font-size: 15px;
+    }*/
+
+    .card-img-top {
+        width: 100%;
+        /*height: 150px;*/
+        /*padding-left: 40px;*/
+        padding: 20px;
+        padding-bottom: 0;
+        border-top-left-radius: calc(.25rem - 1px);
+        border-top-right-radius: calc(.25rem - 1px);
+    }
+
+    /*Se aplica a todo el contenido que contenga la clase scroll*/
+    .overflow-scroll_r {
+        /*position: relative;*/
+        padding: 0px 26px 0px 26px;
+        margin: 0px 8px 0px 0;
+        max-height: 325px;
+        overflow-y: scroll;
+        /*max-height: 700px;
+        overflow-y: scroll;*/
+    }
+
+    .card-title {
+        font-size: 0.9em;
+        padding: 15px;
+        padding-bottom: 0;
+    }
+
+    .card-text {
+        font-size: 0.9em;
+        padding: 15px;
+    }
+
+    .btn-primary {
+        border-radius: 8px;
+    }
+
+    .btn-pdd-recientes {
+        padding: 10px;
+        /*padding: 10px 58px 10px 58px;*/
+    }
+    /*FIN HABILIDADES*/
+
+
+    /*iPhone SE*/
+    /*@media  screen and (min-width: 375px) and (max-height: 767px) {*/ /* Your Styles... */
+    /*.seccion{
+        background-color: red;
+        
+    }                                           
+}*/
+
+    /*S9 +*/
+    /*@media  screen and (min-width: 360px) and (max-height: 740px) {*/ /* Your Styles... */
+    /*.seccion {
+        background-color: green;
+    }
+}*/
+}
+
+
+
+
+
+
+
+
+/*s7 Edge        and (max-width: 375px)*/
 @media only screen and (max-height: 760px) {
     /*    .seccion {
         padding: 40px;
