@@ -37,6 +37,10 @@
         padding-right: 20px;
     }*/
 
+    /*    .tiutlo-contacto {
+        font-size: 1.90em;
+    }*/
+
     .seccion .card {
         /*height: 90%;*/
         /*Es como el margen en las tarjetas*/
@@ -47,7 +51,7 @@
     .seccion .texto-secciones {
         /*font-size: 16px;*/
 
-        font-size: 0.92em;
+        font-size: 0.85em;
         /*padding-bottom: 15px;*/
     }
 
@@ -205,10 +209,57 @@
 
 
 
-
+    /*INICIO RECIENTES*/
     .contenido-card-recientes {
-        padding: 0 20px;
+        padding: 0 10px;
     }
+    /*Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas*/
+    .row {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .row-cols-md-3 > * {
+        flex: 0 0 auto;
+        width: 33.3333333333%;
+    }
+
+    .col {
+        width: 75%;
+        margin-left: 15%;
+        display: block;
+        margin-bottom: 30px;
+        padding: 0px;
+    }
+    /*
+    .titulo-recientes {
+        font-size: 30px;
+    }
+
+    .subtitulo-recientes {
+        font-size: 15px;
+    }*/
+
+    .card-img-top {
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        padding-left: 10px
+        /*border-top-left-radius: calc(.25rem - 1px);*/
+        /*border-top-right-radius: calc(.25rem - 1px);*/
+    }
+
+    /*Se aplica a todo el contenido que contenga la clase scroll*/
+    .overflow-scroll_r {
+        /*position: relative;*/
+        /*padding: 0px 8px 0px 8px;*/
+        /*margin: 0px 8px 0px 0;*/
+        max-height: 305px;
+        overflow-y: scroll;
+        /*max-height: 700px;
+        overflow-y: scroll;*/
+    }
+    /*FIN HABILIDADES*/
 }
 
 /*iPhone SE*/
