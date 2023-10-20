@@ -37,7 +37,7 @@
         /*Para que la imagen se adapte a la pantalla y no muestre su tam real*/
         max-width: 100%;
         height: calc(100vh - 80px);
-        /*max-height: 100%;*/
+        /*height: 100%;*/
     }
 
     /*NO SE USA*/

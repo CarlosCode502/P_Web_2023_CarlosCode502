@@ -68,17 +68,17 @@ header {
 
 
 /*Para pantallas grandes*/
-@media (min-width: 721px) {
-}
+/*@media (min-width: 721px) {
+}*/
 
 
 /* En pantallas pequeñas */
-@media screen and (max-width: 720px) {
+/*@media screen and (max-width: 720px) {*/
 /*    Ocultar el botón regresar al inicio
     .btn-inicio-float {
         visibility: hidden;
     }*/
-}
+/*}*/
 
 
 /*NO SE USA*/
