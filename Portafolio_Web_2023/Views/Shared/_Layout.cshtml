@@ -30,6 +30,7 @@
     @* LA RAZON POR LA QUE ESTE SCRIPT ESTA HASTA ARRIBA ES PORQUE PRESENTABA PROBLEMAS AL MOMENTO DE CARGAR Y RECARGAR
     YA QUE DURANTE UNAS MILESIMAS DE SEGUNDO SE VEHIA EL TEXTO, Y SE SOLUCIONO DE ESTA FORMA (otra dentro del header)*@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js" asp-append-version="true"></script>
+    <script src="https://kit.fontawesome.com/082c2a7b48.js" crossorigin="anonymous" asp-append-version="true"></script> 
 
 </head>
 <body>
@@ -109,7 +110,7 @@
             </a>
         </div>
 
-        <div class="btn-deslice" id="btnDeslizar">
+        @* <div class="btn-deslice" id="btnDeslizar">
             <div class="text-deslizar">DESLIZAR</div>
             <div class="deslizar">
                 <a title="Volver al Inicio">
@@ -119,6 +120,10 @@
                     </svg>
                 </a>
             </div>
+        </div> *@
+
+        <div class="elemento">
+            <a title="Saber más!" class="menuPpal suavizado" href="#ideas"><i class="fa fa-angle-down fa-2x flecha animatedColor" aria-hidden="true"></i> <i class="bi bi-chevron-double-down"></i></a>
         </div>
 
     </header>

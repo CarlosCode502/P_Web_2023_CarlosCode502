@@ -21,8 +21,7 @@
     /*background-image: linear-gradient(rgba(23, 32, 42, 0.8), rgba(23, 32, 42, 0.8));*/
     position: relative;
     display: block;
-     
-     /*height: 80vh;*/
+    /*height: 80vh;*/
     /*min-height: 100vh;*/
 }
 
@@ -244,51 +243,46 @@
         transform: translateY(-100%);
     }
 
-
-
-/*BOTON DESLIZAR*/
-/*Botón flotante*/
-.btn-deslice {
-    position: absolute;
-    /*text-align: center;*/
-    /*bottom: 22px;*/
+.elemento {
+    width: 100px;
+    /*height: 50px;*/
     bottom: 130px;
     right: 70px;
-    width: 74px;
-    height: 84px;
-    color: #0d6efd;
-    /*background-color: #0d6efd;*/
-    opacity: 0.3;
-    font-size: 1em;
-    animation: ease-in 2s;
+    /*margin: 0 auto;*/
+    position: absolute;
 }
 
-
-/*Texto con animación de parpadeo de la sección Gracias*/
-.texto-parpadear {
-    text-align: center;
-    /*font-size: 6.5em;*/
-    /*color: #fff;*/
+.animatedColor {
     color: var(--colorGlobal);
-    /*Espacio entre letras*/
-    /*letter-spacing: -7px;*/
-    /*font-weight: 700;*/
-    text-transform: uppercase;
-    animation: parpadear 2.5s ease-out infinite;
-    /*animation: parpadear 2s ea;*/
-    /*animation-duration:*/
-    text-shadow: 0px 0px 5px var(--blanco), 0px 0px 7px var(--blanco);
 }
 
-/*Animación del texto parpadar*/
-@keyframes parpadear {
-    from {
-        text-shadow: 0px 0px 10px var(--blanco), 0px 0px 10px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 50px var(--blanco), 0px 0px 50px var(--blanco), 0px 0px 50px var(--colorGlobal), 0px 0px 150px var(--colorGlobal), 0px 10px 100px var(--colorGlobal), 0px 10px 100px var(--colorGlobal), 0px 10px 100px var(--colorGlobal), 0px 10px 100px var(--colorGlobal), 0px -10px 100px var(--colorGlobal), 0px -10px 100px var(--colorGlobal);
+.flecha {
+    animation: arrow 2s ease-in-out infinite;
+    font-size: 40px;
+}
+
+    .flecha:hover {
+        animation: arrow 2s ease-out infinite !important;
+        color: #ffffff;
+    }
+
+
+@keyframes arrow {
+    0% {
+        transform: translate(0px, 50px);
+    }
+
+    50% {
+        transform: translate(0px, 60px);
+    }
+
+    100% {
+        transform: translate(0px, 50px);
     }
 }
 
-    /*#region Media Querys */
-    /*
+/*#region Media Querys */
+/*
 @media screen and (min-height: 601px) {
     .menu-p-inicio a span:last-child {
         position: absolute;
@@ -302,19 +296,19 @@
         transform: translateY(-100%);
     }
 }*/
-    /*PARA EQUIPOS CON ANCHO DE 600px para abajo*/
-    /*Ayudan a mostrar las animaciones según el tamaño de la pantalla si es menor o mayor*/
-    /*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
-    @media screen and (max-width: 600px) {
-        /*@media only screen and (min-height: 761px) and (min-height: 1000px) {*/
-        /**/
-        /*Contenedor de imagen*/
-        /*.contenedor-imagen {
+/*PARA EQUIPOS CON ANCHO DE 600px para abajo*/
+/*Ayudan a mostrar las animaciones según el tamaño de la pantalla si es menor o mayor*/
+/*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
+@media screen and (max-width: 600px) {
+    /*@media only screen and (min-height: 761px) and (min-height: 1000px) {*/
+    /**/
+    /*Contenedor de imagen*/
+    /*.contenedor-imagen {
         position: relative;
         display: block;*/
-        /*min-height: 100vh;*/
-        /*}*/
-        .contenedor-imagen img {
+    /*min-height: 100vh;*/
+    /*}*/
+    .contenedor-imagen img {
         /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
         que ocupe el 100% (v*h viewpor hight alto del dispositivo)
         SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);*/
