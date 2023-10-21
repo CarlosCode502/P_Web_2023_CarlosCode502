@@ -246,10 +246,14 @@
 .elemento {
     width: 100px;
     /*height: 50px;*/
-    bottom: 130px;
+    bottom: 180px;
     right: 70px;
     /*margin: 0 auto;*/
     position: absolute;
+}
+
+.text-deslizar{
+
 }
 
 .animatedColor {
@@ -257,12 +261,12 @@
 }
 
 .flecha {
-    animation: arrow 2s ease-in-out infinite;
-    font-size: 40px;
+    animation: arrow 1.5s ease-in-out infinite;
+    /*font-size: 80px;*/
 }
 
-    .flecha:hover {
-        animation: arrow 2s ease-out infinite !important;
+    .flecha:hover  {
+        animation: arrow 1.5s ease-out infinite !important;
         color: #ffffff;
     }
 
