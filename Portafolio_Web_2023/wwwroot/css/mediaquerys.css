@@ -1,15 +1,62 @@
 ﻿
-@media only screen and (min-width: 800px) and (max-height: 1280px) {
-   /* #Perfil, #Habilidades, #Proyectos_recientes {
+/*Kindle Fire*/
+@media only screen and (min-width: 800px) and (min-height: 1280px) {
+ /*    #Perfil, #Habilidades, #Proyectos_recientes {
         background-color: purple;
     }*/
+
+    /*Secciones*/
     .seccion {
-        padding: 20px;
-        /*background-color:red;*/
+        padding: 50px;
+        
+        /*Minímo Zoom*/
+        min-height: 100vh;
+        /*Máximo Zoom*/
+        /*max-width: 1800px;*/
+        /*Tamaño que ocupa la seccion de la pag principal*/
+        /*width: 90%;*/
+        /*Margénes automáticos*/
+        /*margin: auto;*/
+        /*margin: auto 30% auto 0%;*/
+        /*Espacio todas partes de la seccion*/
+        /*padding: 70px;*/
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*align-items: center;*/
+        /*justify-content: center;*/
+        /*CONFIGURACIÓN PARA LA IMG DE FONDO * SECCION*/
+        /*background-position: center;*/
+        /*background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;*/
     }
+
+        /*Tarjeta dentro de la seccion*/
+        .seccion .card {
+            /*background: #FFFFFF;*/
+            /*height: 50%;*/
+            /*Es como el margen en las tarjetas*/
+            /* padding: 40px;*/
+            /*border-radius: 8px;*/
+            /* border-top: 1px solid rgb(0, 0, 0, 1);
+        border-left: 1px solid rgb(128, 128, 128);
+        border-right: 1px solid rgb(128, 128, 128);
+        border-bottomB: 1px solid rgb(128, 128, 128);*/
+            /*border: 1px solid rgba(0,0,0,.125);*/
+            /*box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 24px;*/
+            /*margin:40px;*/
+        }
+
+        .seccion .texto-secciones {
+            /*font-size: 20px;*/
+            font-size: 1em;
+            padding-bottom: 20px
+        }
+
     row-cols-md-3 > * {
-        flex: 0 0 auto;
+        flex: 0 0 0;
         width: 33.3333333333%;
+        margin-top: 0;
     }
 
 
@@ -19,7 +66,8 @@
         /*float: left;*/
         /*width: 25%;*/
         /*padding: 40px 40px 40px 0px;*/
-        padding: 10px
+        padding: 0px; 
+        padding-top: 0;
     }
 
     /*Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas*/
@@ -28,38 +76,120 @@
         /*display: flex;*/
         /*flex-wrap: wrap;*/
         /*max-width: 100%;*/
-        padding-right: 0px;
-        padding-left: 0px;
-        /*margin-top: 20px;*/
+        /*padding-right: 0px;*/
+        /*padding-left: 0px;*/
+        margin-top: 0px;
         /*margin-bottom: 20px;*/
     }
 
         /* Limpiar flotadores después de las columnas. */
-        .row:after {
+        /*.row:after {*/
             /*content: "";*/
             /*display: table;*/
             /*clear: both;*/
             /*margin-bottom: 20px;*/
-        }
+        /*}*/
 
     /*Imagen de la tarjeta*/
     .card-img-top {
-        /*width: 100%;*/
+        width: 100%;
         padding: 5px;
         /*border-top-left-radius: calc(.25rem - 1px);*/
         /*border-top-right-radius: calc(.25rem - 1px);*/
+    }
+
+    .overflow-scroll_r {
+        /*position: relative;*/
+        padding: 0px 16px 0px 8px;
+        margin: 0px 8px 0px 0;
+        /*max-height: 420px;*/
+        overflow-y: scroll;
+        max-height: 830px;
+        /*Espacio entre el botón y el contenido*/
+        /*padding-bottom: 20px;*/
+    }
+
+    .btn-pdd-recientes {
+        padding: 15px;
+    }
+
+/*FIN RECIENTES*/
+
+/*INICIO HABILIDADES*/
+
+    /*Para colocar las filas a la izquirda en 2 lineas*/
+    .fila-cols-md-3 > * {
+        flex: 0 0 auto;
+        padding-left: 5px;
+        width: 33.3333333333%;
+    }
+
+    /*Se aplica a todo el contenido que contenga la clase scroll*/
+    .overflow-scroll_h {
+        /*position: relative;*/
+        padding: 0px 0px 0px 0px;
+        /*margin: 0px 8px 0px 0;*/
+        max-height: 880px;
+        /*overflow-y: scroll;*/
+        /*max-height: 700px;
+        overflow-y: scroll;*/
+    }
+
+/*INICIO PERFIL*/
+    .img-perfil {
+        /*    width: 100%;*/
+        /*position: center;
+    margin: 20px;*/
+        /*position: fixed;*/
+        /*    width: 100%;*/
+        width: auto;
+        padding-bottom: 60px;
+        /*padding: 0 60px 0;*/
+    }
+
+    /*Imagen*/
+    .img-p {
+        /*width: auto;*/
+        /*max-height: 100%;*/
+        /*height: auto;*/
+        width: 500px;
+        margin: auto;
+        /*Centrar*/
+        /*display: block;*/
+        /*border-style: groove;*/
+        /*margin-bottom:20px;*/
+        /*border: 1px solid black;*/
+    }
+
+    .contenido-card-perfil {
+        padding: 50px 60px;
+        text-align: justify;
+        font-size: 1.15em;
+        line-height: 1.5;
+    }
+
+    .btn-pdd-perfil {
+        padding: 10px 80px 10px 80px;
+    }
+
+    .card-footer-primary {
+       /* margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;*/
+        margin-top: 0px;
     }
 }
 
 /*iPad OS*/
 /*@media only screen and (min-height: 1080px) and (max-height: 1100px) {*/
-@media only screen and (min-width: 810px) and (max-height: 1080px) {
-    .seccion {
-        padding: 20px;
+/*@media only screen and (min-width: 810px) and (max-height: 1080px) {
+    .seccion:before {
+        padding: 20px;*/
         /*background-color:red;*/
-    }
+    /*}
 
-/*    #Perfil, #Habilidades, #Proyectos_recientes {
+        #Perfil, #Habilidades, #Proyectos_recientes {
         background-color: red;
     }*/
     /*
@@ -68,40 +198,40 @@
         width: 100%;
     }*/
 
-    .row-cols-md-3 > * {
+    /*.row-cols-md-3 > * {
         flex: 0 0 auto;
         width: 33.3333333333%;
-    }
+    }*/
 
 
     /* Flotar cuatro columnas una al lado de la otra */
-    .col {
+    /*.col {*/
         /*flex: 1 0 0%;*/
         /*float: left;*/
         /*width: 25%;*/
         /*padding: 40px 40px 40px 0px;*/
-        padding: 10px
-    }
+        /*padding: 10px
+    }*/
 
     /*Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas*/
-    .row {
+    /*.row {*/
         /*margin: 0 -5px;*/
         /*display: flex;*/
         /*flex-wrap: wrap;*/
         /*max-width: 100%;*/
-        padding-right: 0px;
-        padding-left: 0px;
+        /*padding-right: 0px;
+        padding-left: 0px;*/
         /*margin-top: 20px;*/
         /*margin-bottom: 20px;*/
-    }
+    /*}*/
 
         /* Limpiar flotadores después de las columnas. */
-        .row:after {
+        /*.row:after {*/
             /*content: "";*/
             /*display: table;*/
             /*clear: both;*/
             /*margin-bottom: 20px;*/
-        }
+        /*}*/
 
     /*.titulo-recientes {*/
     /*font-size: 20px;*/
@@ -142,15 +272,15 @@
     }*/
 
     /*Imagen de la tarjeta*/
-    .card-img-top {
+    /*.card-img-top {*/
         /*width: 100%;*/
-        padding: 5px;
+        /*padding: 5px;*/
         /*border-top-left-radius: calc(.25rem - 1px);*/
         /*border-top-right-radius: calc(.25rem - 1px);*/
-    }
-/*H*/
+    /*}*/
+    /*H*/
 
-}
+/*}*/
 
 
 
@@ -409,6 +539,12 @@
     .size-bs {
         padding-top: 15px;
         height: 90%;
+    }
+
+    .pdd-sql {
+        margin-left: 22px;
+        width: 90%;
+        height: 85%;
     }
 
     .ver-iconos {
