@@ -50,7 +50,7 @@ header {
 .btn-inicio-float {
     position: fixed;
     /*bottom: 22px;*/
-    bottom: 88px;
+    bottom: 60px;
     right: 35px;
     width: 64px;
     height: 64px;
