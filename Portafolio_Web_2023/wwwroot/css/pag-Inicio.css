@@ -244,17 +244,19 @@
     }
 
 .elemento {
-    width: 100px;
+    /*width: 50px;*/
     /*height: 50px;*/
-    bottom: 180px;
-    right: 70px;
+    bottom: 200px;
+    right: 60px;
     /*margin: 0 auto;*/
     position: absolute;
+    font-size: 1em;
 }
 
-.text-deslizar{
-
-}
+/*.text-deslizar {*/
+    
+    /*font-size: 0.4em;*/
+/*}*/
 
 .animatedColor {
     color: var(--colorGlobal);
