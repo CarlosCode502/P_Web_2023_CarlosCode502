@@ -204,6 +204,7 @@
     }*/
 
     .elemento {
+        bottom: 190px;
         right: 30px;
         font-size: 0.68em;
     }
@@ -213,7 +214,7 @@
         que ocupe el 100% (v*h viewpor hight alto del dispositivo)
         SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);*/
         /*Sin este deja un espacio abajo*/
-        /*height: calc(100vh - 90px);*/
+        height: calc(100vh - 120px);
         /*height: 85vh;*/
         /*Para que la imagen se adapte a la pantalla y no muestre su tam real*/
         max-width: 100%;

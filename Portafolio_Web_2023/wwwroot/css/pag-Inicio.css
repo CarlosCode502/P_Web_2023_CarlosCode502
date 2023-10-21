@@ -260,15 +260,12 @@
 
 .flecha {
     animation: arrow 1.5s ease-in-out infinite;
-    /*font-size: 80px;*/
 }
 
     .flecha:hover  {
         animation: arrow 1.5s ease-out infinite !important;
         color: #ffffff;
-        /*opacity: 6;*/
     }
-
 
 @keyframes arrow {
     0% {
@@ -299,6 +296,7 @@
         transform: translateY(-100%);
     }
 }*/
+
 /*PARA EQUIPOS CON ANCHO DE 600px para abajo*/
 /*Ayudan a mostrar las animaciones según el tamaño de la pantalla si es menor o mayor*/
 /*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
