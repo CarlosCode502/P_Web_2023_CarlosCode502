@@ -5,6 +5,12 @@
         background-color: purple;
     }*/
 
+    .elemento {
+        right: 30px;
+        bottom: 165px;
+        font-size: 1em;
+    }
+
     /*Secciones*/
     .seccion {
         padding: 50px;
@@ -181,114 +187,6 @@
     }
 }
 
-/*iPad OS*/
-/*@media only screen and (min-height: 1080px) and (max-height: 1100px) {*/
-/*@media only screen and (min-width: 810px) and (max-height: 1080px) {
-    .seccion:before {
-        padding: 20px;*/
-        /*background-color:red;*/
-    /*}
-
-        #Perfil, #Habilidades, #Proyectos_recientes {
-        background-color: red;
-    }*/
-    /*
-    .row-cols-1 > * {
-        flex: 0 0 auto;
-        width: 100%;
-    }*/
-
-    /*.row-cols-md-3 > * {
-        flex: 0 0 auto;
-        width: 33.3333333333%;
-    }*/
-
-
-    /* Flotar cuatro columnas una al lado de la otra */
-    /*.col {*/
-        /*flex: 1 0 0%;*/
-        /*float: left;*/
-        /*width: 25%;*/
-        /*padding: 40px 40px 40px 0px;*/
-        /*padding: 10px
-    }*/
-
-    /*Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas*/
-    /*.row {*/
-        /*margin: 0 -5px;*/
-        /*display: flex;*/
-        /*flex-wrap: wrap;*/
-        /*max-width: 100%;*/
-        /*padding-right: 0px;
-        padding-left: 0px;*/
-        /*margin-top: 20px;*/
-        /*margin-bottom: 20px;*/
-    /*}*/
-
-        /* Limpiar flotadores después de las columnas. */
-        /*.row:after {*/
-            /*content: "";*/
-            /*display: table;*/
-            /*clear: both;*/
-            /*margin-bottom: 20px;*/
-        /*}*/
-
-    /*.titulo-recientes {*/
-    /*font-size: 20px;*/
-    /*}*/
-    /*
-.subtitulo-recientes {
-    font-size: 20px;
-}*/
-
-
-
-    /* Diseñe las cartas de contador */
-    /*.card-proyecto-hijo {*/
-    /* Agrega sombras para crear el efecto de "tarjeta". */
-    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.3s;*/
-    /*padding-top: 15px;*/
-    /*text-align: center;*/
-    /*background-color: #f1f1f1;*/
-    /*position: relative;*/
-    /*display: flex;
-        flex-direction: column;
-        min-width: 0;
-        word-wrap: break-word;
-        background-color: #fff;
-        background-clip: border-box;
-        border: 1px solid rgba(0,0,0,.125);
-        border-radius: .25rem;
-    }*/
-
-    /*Al pasar el mouse, agrega una sombra más profunda.*/
-    /*.card-proyecto-hijo:hover {
-            box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
-        }
-
-    .h-100 {
-        height: 100% !important
-    }*/
-
-    /*Imagen de la tarjeta*/
-    /*.card-img-top {*/
-        /*width: 100%;*/
-        /*padding: 5px;*/
-        /*border-top-left-radius: calc(.25rem - 1px);*/
-        /*border-top-right-radius: calc(.25rem - 1px);*/
-    /*}*/
-    /*H*/
-
-/*}*/
-
-
-
-
-
-
-
-
 /*s7 Edge        and (max-width: 375px)*/
 @media only screen and (max-height: 760px) {
     /*    .seccion {
@@ -304,6 +202,11 @@
     #Perfil, #Habilidades, #Proyectos_recientes {
         background-color:red;
     }*/
+
+    .elemento {
+        right: 30px;
+        font-size: 0.68em;
+    }
 
     .contenedor-imagen img {
         /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador

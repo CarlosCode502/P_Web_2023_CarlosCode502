@@ -246,17 +246,13 @@
 .elemento {
     /*width: 50px;*/
     /*height: 50px;*/
-    bottom: 200px;
-    right: 60px;
+    bottom: 170px;
+    right: 40px;
     /*margin: 0 auto;*/
     position: absolute;
     font-size: 1em;
+    opacity: 0.8;
 }
-
-/*.text-deslizar {*/
-    
-    /*font-size: 0.4em;*/
-/*}*/
 
 .animatedColor {
     color: var(--colorGlobal);
@@ -270,6 +266,7 @@
     .flecha:hover  {
         animation: arrow 1.5s ease-out infinite !important;
         color: #ffffff;
+        /*opacity: 6;*/
     }
 
 
