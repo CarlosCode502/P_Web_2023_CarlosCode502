@@ -46,6 +46,7 @@
     /*transition: opacity 0.9s;*/ /* 600ms to fade out */
     cursor: pointer;
     transition: opacity 0.3s;
+    z-index: 1060;
 }
 
 /*.alert {
@@ -174,7 +175,6 @@
     .ventana .form-select {
         /*font-size: 16px;*/
         font-size: 1em;
-
         border: 1px solid var(--colorGlobalCV);
         border-radius: 6px;
         margin-bottom: 20px;
@@ -207,7 +207,6 @@
         color: var(--blanco);
         /*font-size: 18px;*/
         font-size: 1.125em;
-
         text-decoration: none;
     }
 
@@ -511,34 +510,32 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
         line-height: 1;
         /*font-size: 16px;*/
         font-size: 1em;
-
         /*word-wrap: normal;*/
         /*word-spacing: 5px;*/
     }
-
-/*Educación 1*/
-/*.seccion-educacion .edu-d-1 {*/
-/*margin-bottom: 2rem;*/
-/*}*/
-
-.seccion-idiomas .negrita{
-    font-weight: 600;
-}
 
 .seccion-cursos {
     margin-bottom: 2rem;
 }
 
     .seccion-cursos ul {
-        /*font-weight: 600;*/
+        font-weight: normal;
         line-height: 0.80;
         /*word-wrap: normal;*/
         /*word-spacing: 5px;*/
     }
 
+.seccion-idiomas {
+    font-weight: lighter;
+}
+
+    .seccion-idiomas .negrita {
+        font-weight: 600;
+    }
 /*Sección tecnologías*/
 .seccion-tecnologias {
     margin-top: 1rem;
+    font-weight: bold;
 }
 
 .tec {
@@ -549,7 +546,6 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
     /*margin-top: 1rem;*/
     /*font-size: 16px;*/
     font-size: 1em;
-
     margin: 20px auto 0 22%;
     column-count: 2;
     column-gap: 20px;
@@ -668,18 +664,47 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
 /*opacity: 0;
 }*/
 
-.btn-descargar-cv {
-    visibility: hidden;
+.btn-regresar-min {
+    /*visibility: hidden;*/
     position: fixed;
-    /*bottom: 40px;
+    right: 10px;
+    top: 6px;
+    /*mostrar en pantalla pequeña*/
+    /*visibility: visible;*/
+    /*position: fixed;*/
+    /*bottom: 40px;*/
+    /*right: 40px;*/
+    padding: 10px;
+    /*border-radius: 8px;*/
+    /*background-color: var(--colorGlobalCV);*/
+    opacity: 0.5;
+    z-index: 1050;
+}
+
+    .btn-regresar-min:hover {
+        /*color: black;*/
+        opacity: 1
+    }
+
+    .btn-regresar-min .cont-regresar {
+        /*bottom: 20px;*/
+        text-decoration: none;
+        color: var(--colorGlobalCV);
+        
+    }
+
+    .btn-descargar-cv {
+        visibility: hidden;
+        position: fixed;
+        /*bottom: 40px;
     right: 40px;
     padding: 10px;
     border-radius: 8px;*/
-    /*width: 64px;*/
-    /*height: 64px;*/
-    /*background-color: var(--colorGlobalCV);
+        /*width: 64px;*/
+        /*height: 64px;*/
+        /*background-color: var(--colorGlobalCV);
     opacity: 0.5;*/
-}
+    }
 /*
     .btn-descargar-cv:hover {
         opacity: 1;
@@ -749,11 +774,11 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
         /*position: relative;*/
     }
 
-     /*   .ventana .closebtn {
+        /*   .ventana .closebtn {
             color: var(--colorGlobalCV);
         }*/
 
-         /*   .ventana .closebtn:hover {
+        /*   .ventana .closebtn:hover {
                 color: black;
             }
 */
@@ -776,10 +801,10 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
             margin-bottom: 20px;
         }
 
-            /*.ventana .form-select .opc-default {*/
-                /*fill: red;*/
-                /*background-color: green;*/
-            /*}*/
+        /*.ventana .form-select .opc-default {*/
+        /*fill: red;*/
+        /*background-color: green;*/
+        /*}*/
 
 
         /*.ventana li {
@@ -795,10 +820,9 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
             /*color: var(--blanco)*/
             /*font-size: 16px;*/
             font-size: 1em;
-
         }
 
-/*            .ventana .btn-aceptar:hover {
+        /*            .ventana .btn-aceptar:hover {
                 background-color: var(--celestesimple)
             }
 */
@@ -838,56 +862,4 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
         /*font-size: 16px;*/
         margin: 20px auto 0 14%;
     }
-
-
-    /*Color para correo*/
-    /*.hover_class_style1 {
-        border: 4px solid #ea0101;*/
-    /*  background: blue;*/
-    /*}*/
-
-    /*Color para github*/
-    /*.hover_class_style2 {
-        border: 4px solid #a06ed9;*/
-    /*background: blue;*/
-    /*}*/
-
-    /*Color para teléfono*/
-    /*.hover_class_style3 {
-        border: 4px solid #0DC143;*/
-    /*background: blue;*/
-    /*}*/
 }
-
-
-/* cuando sea como minimo 451, es decir mayor */
-/*@media screen and (min-width:451px) {*/
-
-/*Cambiar padding del contenedor*/
-/*.container {
-        background-color: white;
-        padding: 0px;
-    }*/
-
-/*Cambiar los márgenes*/
-/*.cv-estructura {
-        margin: 10px 20px;
-        padding: 20px 20px;
-    }*/
-
-/*Cambiar el borde y cambiar la propiedad de flex a block*/
-/*.contacto {
-        border: 4px solid dodgerblue;
-        display: block;*/
-/*padding: 10px;*/
-/*}*/
-
-/*Quitar los márgenes*/
-/*.gmail, .github, .phone {
-        margin: 60px;
-    }
-
-    .texto-columnas {
-        margin-left: 25%;
-    }
-}*/
