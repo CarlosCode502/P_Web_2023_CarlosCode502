@@ -46,12 +46,9 @@
     /*transition: opacity 0.9s;*/ /* 600ms to fade out */
     cursor: pointer;
     transition: opacity 0.3s;
-    z-index: 1060;
+    /*No tiene efecto ya que no esta posicionado*/
+    /*z-index: 1090;*/
 }
-
-/*.alert {
-    
-}*/
 
 /* The close button */
 .closebtn {
@@ -76,7 +73,7 @@
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1030;
+    z-index: 999;
 }
 
 /*Mantener en la misma linea titulo y fechas*/
@@ -665,8 +662,8 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
 }*/
 
 .btn-regresar-min {
-    /*visibility: hidden;*/
-    position: fixed;
+    visibility: hidden;
+    /*position: fixed;*/
     right: 10px;
     top: 6px;
     /*mostrar en pantalla pequeña*/
@@ -679,6 +676,7 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
     /*background-color: var(--colorGlobalCV);*/
     opacity: 0.5;
     z-index: 1050;
+    font-weight: 500;
 }
 
     .btn-regresar-min:hover {
@@ -688,14 +686,14 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
 
     .btn-regresar-min .cont-regresar {
         /*bottom: 20px;*/
-        text-decoration: none;
+        text-decoration: none;        
         color: var(--colorGlobalCV);
         
     }
 
     .btn-descargar-cv {
         visibility: hidden;
-        position: fixed;
+        /*position: fixed;*/
         /*bottom: 40px;
     right: 40px;
     padding: 10px;
@@ -738,7 +736,12 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
     }
 
     .cont-nav {
-        visibility: hidden;
+        /*visibility: hidden;*/
+        display: none;
+    }
+
+    .btn-regresar-min {
+        visibility: visible;
     }
 
     /*Para mostrar la fecha a la izquierda y centrada de titulo exp*/
@@ -746,6 +749,7 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
         visibility: visible;
         position: fixed;
         bottom: 40px;
+        /*top: 40px;*/
         right: 40px;
         padding: 10px;
         border-radius: 8px;

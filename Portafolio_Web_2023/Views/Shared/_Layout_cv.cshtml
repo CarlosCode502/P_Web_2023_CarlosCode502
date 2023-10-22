@@ -12,6 +12,7 @@
     @* CSS *@
     <link rel="stylesheet" href="~/css/cv.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/botones-desing.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/mediaquerys.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/footer.css" asp-append-version="true" />
     <!--//V#52 Instalando íconos de Boostrap-->
     <!--Lo encontramos en la pag de boostrap en el apartado de descargas-->
@@ -33,7 +34,7 @@
         </div> *@
 
         @* Creando alerta *@
-        <nav class="top-nav">
+        <nav class="barra-nav top-nav">
             @* A este div va a apuntar mi funcion js para cerrar el elemento automáticamente *@
             <div class="alert">
                 @* Se usa un texto o simbolo html para crear la X que es: &times *@
@@ -75,22 +76,21 @@
                 </div>
                 </div> *@
             </div>
+
+            <div class="btn-regresar-min">
+                <a class="cont-regresar" asp-area="" asp-controller="PortafolioW" asp-action="Index">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="bi bi-arrow-left d-inline-block align-text-top" viewBox="0 0 16 16">
+                        @* <title>Regresar al Inicio</title> *@
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" fill="#0d6efd" />
+                    </svg>
+                    Regresar al Inicio
+                </a>
+            </div>
+
+            <div class="btn-descargar-cv">
+                <a title="" class="btn-a" href="#ventanaModal">Descargar CV</a>
+            </div>
         </nav>
-
-        <div class="btn-regresar-min">
-        <a class="cont-regresar" asp-area="" asp-controller="PortafolioW" asp-action="Index">
-                
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="bi bi-arrow-left d-inline-block align-text-top" viewBox="0 0 16 16">
-                @* <title>Regresar al Inicio</title> *@
-                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" fill="#0d6efd" />
-            </svg>
-                Regresar al Inicio
-        </a>
-        </div>
-
-        <div class="btn-descargar-cv">
-            <a class="btn-a" href="#ventanaModal">Descargar CV</a>
-        </div>
 
         @* <div id="ventanaModal" class="modal">
             <div class="ventana">

@@ -185,9 +185,10 @@
         align-items: center;*/
         margin-top: 0px;
     }
+
 }
 
-/*s7 Edge        and (max-width: 375px)*/
+/*ESTILOS DE CV SI LA PANTALLA ES PEQUEÑA*/
 @media only screen and (max-height: 760px) {
     /*    .seccion {
         padding: 40px;
@@ -539,8 +540,12 @@
 
 
 /*ESTYLOS DE CV SI LA PANTALLA ES PEQUEÑA*/
-    .top-nav {
-        display:none
+    .cont-nav {
+        display: none
+    }
+
+    .btn-regresar-min {
+        visibility: visible;
     }
 
 
