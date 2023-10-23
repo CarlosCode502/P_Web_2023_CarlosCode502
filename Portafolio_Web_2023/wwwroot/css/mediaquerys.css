@@ -25,10 +25,10 @@
             padding-bottom: 20px
         }
 
-    .btn-secciones:hover {
+    /* .btn-secciones:hover {
         opacity: 0.7;
     }
-
+*/
     /*SECCIONES FIN*/
 
     /*INCIO RECIENTES*/
@@ -81,6 +81,27 @@
         padding: 0px 10px 0px 0px;
         max-height: 880px;
     }
+
+    /*#region Efecto zoom */
+    /*Imagen de la tarjeta*/
+    .card-img-logo {
+        width: 150px;
+        transition: 1.5s ease; /*con ease los elementos no se sobreponen del nav*/
+        -moz-transition: 1.5s ease; /* Firefox */
+        -webkit-transition: 1.5s ease; /* Chrome - Safari */
+        -o-transition: 1.5s ease; /* Opera */
+        /*border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);*/
+    }
+
+        .card-img-logo:hover {
+            transform: scale(1.2);
+            -moz-transform: scale(1.2); /* Firefox */
+            -webkit-transform: scale(1.2); /* Chrome - Safari */
+            -o-transform: scale(1.2); /* Opera */
+            -ms-transform: scale(1.2); /* IE9 */
+        }
+
     /*FIN HABILIDADES*/
 
     /*INICIO PERFIL*/
@@ -184,6 +205,21 @@
     .btn-secciones:hover {
         opacity: 0.7;
     }
+
+    /*Footer de las tarjetas*/
+    .card-footer-primary {
+        /* margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;*/
+        margin-top: 20px;
+    }
+
+    /*Cambiar opacidad al pasar el cursor por este */
+    .btn:hover {
+        opacity: 0.7;
+    }
+
     /*SECCIONES FIN*/
 
 
@@ -204,41 +240,29 @@
         /*z-index: 999;*/
     }
 
+    /*Contenido dentro de la tarjeta*/
     .contenido-card-perfil {
         padding: 0px;
         /*padding-bottom: 0;*/
     }
 
+    /*Contenido de la tarjeta*/
     .contenido-perfil-card {
         padding: 0;
     }
 
     /*Contenido perfil dentro del scrooll*/
     .overflow-scroll_p {
-        /*position: relative;*/
-        padding: 0px 8px 0px 8px;
-        margin: 0px 8px 0px 0;
         max-height: 260px;
         overflow-y: scroll;
-        /*max-height: 700px;
-        overflow-y: scroll;*/
         /*Espacio entre el botón y el contenido*/
         padding-bottom: 10px;
         /*Tamaño del texto*/
         /*font-size: 16px;*/
         font-size: 1em;
     }
-
     /*PERFIL FIN*/
 
-    /*Footer de las tarjetas*/
-    .card-footer-primary {
-        /* margin-top: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;*/
-        margin-top: 20px;
-    }
 
     /*HABILIDADES INICIO*/
     /*card habilidades*/
@@ -273,7 +297,7 @@
 
     /*Cuerpo o contenido de la tarjeta*/
     .card-img-h {
-        flex: 1 1 auto;
+        /*flex: 1 1 auto;*/
         margin: 10px auto 10px auto;
         width: 100px;
         height: 100px;
@@ -301,23 +325,15 @@
         width: 90%;
         height: 85%;
     }
-
-    .ver-iconos {
-        /*display: flex;*/
-        /*position: absolute;*/
-        /*text-decoration: none;*/
-        /*padding-left: 65%;*/
-        color: #96989a;
-    }
     /*FIN HABILIDADES*/
 
 
-
-
     /*INICIO RECIENTES*/
+    /*Contenido de la tarjeta recientes*/
     .contenido-card-recientes {
         padding: 0 10px;
     }
+
     /*Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas*/
     .row {
         padding-right: 0px;
@@ -325,26 +341,17 @@
         margin-top: 0px;
     }
 
-    .row-cols-md-3 > * {
+    /*.row-cols-md-3 > * {
         flex: 0 0 auto;
         width: 33.3333333333%;
-    }
+    }*/
 
     .col {
         width: 100%;
-        /*padding-left: 20%;*/
         display: block;
         margin-bottom: 50px;
         padding: 0px;
     }
-    /*
-    .titulo-recientes {
-        font-size: 30px;
-    }
-
-    .subtitulo-recientes {
-        font-size: 15px;
-    }*/
 
     .card-img-top {
         width: 100%;
@@ -377,21 +384,16 @@
         padding: 15px;
     }
 
-    .btn-primary {
-        border-radius: 8px;
-    }
-
     .btn-pdd-recientes {
         padding: 10px;
-        /*padding: 10px 58px 10px 58px;*/
     }
-    /*FIN HABILIDADES*/
+    /*RECIENTES FIN*/
 
 
     /*EXTRAS*/
     /*Centrar ventana modal*/
     .ventana {
-        margin: 75% auto;
+        margin: 60% auto;
     }
 
     /*Div del texto flotante deslizar*/

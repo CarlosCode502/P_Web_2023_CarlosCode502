@@ -142,12 +142,19 @@
     font-size: 1em;
     border-radius: .25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    opacity: 1;
 }
+
+    /*Cambiar opacidad al pasar el cursor por este */
+    .btn:hover {
+        opacity: 0.7;
+    }
 
 .btn-primary {
     color: #fff;
     background-color: var(--colorGlobalR);
     border-color: inherit;
+    
 }
 
 
