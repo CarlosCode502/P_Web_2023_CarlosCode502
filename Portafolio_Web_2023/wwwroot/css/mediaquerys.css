@@ -186,7 +186,16 @@
         margin-top: 0px;
     }
 
+    /*OCULTAR LOS BORDES DE LOS BOTONES */
+    .border {
+        display: none;
+    }
 }
+
+
+
+
+
 
 /*ESTILOS DE CV SI LA PANTALLA ES PEQUEÑA*/
 @media only screen and (max-height: 760px) {
@@ -337,6 +346,14 @@
         padding: 10px 78px 10px 78px;
     }
 
+    .card-footer-primary {
+        /* margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;*/
+        margin-top: 20px;
+    }
+
     /*Contenido dentro del scrooll*/
     .overflow-scroll_p {
         /*position: relative;*/
@@ -347,7 +364,7 @@
         /*max-height: 700px;
         overflow-y: scroll;*/
         /*Espacio entre el botón y el contenido*/
-        padding-bottom: 20px;
+        padding-bottom: 10px;
         /*Tamaño del texto*/
         /*font-size: 16px;*/
         font-size: 1em;
@@ -548,19 +565,9 @@
         visibility: visible;
     }
 
-
-    /*iPhone SE*/
-    /*@media  screen and (min-width: 375px) and (max-height: 767px) {*/ /* Your Styles... */
-    /*.seccion{
-        background-color: red;
-        
-    }                                           
-}*/
-
-    /*S9 +*/
-    /*@media  screen and (min-width: 360px) and (max-height: 740px) {*/ /* Your Styles... */
-    /*.seccion {
-        background-color: green;
+/*OCULTAR LOS BORDES DE LOS BOTONES */
+    .border {
+        display: none;
     }
-}*/
 }
+

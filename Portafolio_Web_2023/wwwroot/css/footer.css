@@ -133,36 +133,51 @@
 
 /*#region Media Querys */
 /*Ayudan a mostrar las animaciones según el tamaño de la pantalla si es menor o mayor*/
-/*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
-@media screen and (max-width: 500px) {
-    /*NO SE USA 👇*/
-    /*    .hero {
-        
-        padding-bottom: 0px;
-    }*/
-
-    /*.seccion {
-        padding-top: 0%;
+/*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9 max-width: 500px)*/
+@media only screen and (max-height: 760px) {
+    .footer {
+        /*Espacio entre el "Contactame" y el último secction*/
+        padding-top: 4rem;
+        /*Espacion entre el texto y las img de contacto*/
+        /*line-height: 30px;*/
+        /*Contenido centrado*/
+        /*text-align: center;*/
+        /*Color de fondo*/
+        /*background-color: #191919;*/
     }
 
-        .seccion h1 {
-            font-size: 32px;*/
-    /*NO SE USA 👇*/
-    /*margin-bottom: 20px;*/
-    /*}
-
-        .seccion p {
-            line-height: 28px;
-            font-size: 15px;
+        /*.footer hr {
+            color: var(--colorGlobal);
         }*/
 
+        /*.footer .text-copy {*/
+            /*Separa la linea de los iconos de contacto*/
+            /*margin-block-start: 30px;*/
+            /*Color de texto*/
+            /*color: #423e3e;*/
+            /*Efecto remarcado al texto*/
+            /*text-shadow: 0 1px grey, 0 1px grey;*/
+            /*Espacio entre del footer*/
+            /*margin-bottom: 20px;
+        }*/
 
-    .img-linkedin, .img-correo, .img-ubicacion,.img-whatsapp, .img-github {
+    /*.footer .texto-gris {*/
+    /*Color gris al texto*/
+    /*color: grey;
+    }*/
+
+    .tiutlo-contacto {
+        color: var(--colorGlobal);
+        padding-bottom: 20px;
+    }
+
+
+    .img-linkedin, .img-correo, .img-ubicacion, .img-whatsapp, .img-github {
         /*Espacios entre cada icono */
         margin: 20px;
         /*Alto y acho de iconos*/
-        width: 42px;
-        height: 42px;
+        width: 52px;
+        height: 52px;
     }
 
 
@@ -180,7 +195,7 @@
             /*height: 100%;*/
             width: 64px;
             height: 64px;
-            fill: #ea0101;
+            /*fill: #ea0101;*/
         }
 
         /*Color verde naranja para ubicación*/
@@ -188,7 +203,7 @@
             /*height: 100%;*/
             width: 64px;
             height: 64px;
-            fill: #ff6a00;
+            /*fill: #ff6a00;*/
         }
 
         /*Color verde para whatsapp*/
@@ -196,7 +211,7 @@
             /*height: 100%;*/
             width: 64px;
             height: 64px;
-            fill: #0DC143;
+            /*fill: #0DC143;*/
         }
 
         /*Color morado para github*/
@@ -204,7 +219,7 @@
             /*height: 100%;*/
             width: 64px;
             height: 64px;
-            fill: #5C2D91;
+            /*fill: #5C2D91;*/
         }
 
     /*#endregion */
