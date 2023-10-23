@@ -5,24 +5,9 @@
 }
 
 /*Contenedor de imagen*/
-.contenedor-imagen {
-    /*background-image: url(../img/person-paisaje.jpg);*/
-    /*background-image: url("http://pixabay.com/es/photos/persona-mirando-paisaje-personas-3613567/");*/
-    /*background-image: src("http://pixabay.com/es/photos/persona-mirando-paisaje-personas-3613567/");*/
-    /*Se debe usar una imagen de fondo para darle diseño UNICAMENTE*/
-    /*En este caso puedo datle un formato transparente*/
-    /*background-image: linear-gradient(rgba(23, 32, 42, 0.25), rgba(23, 32, 42, 0.25)), url("../img/person-paisaje.jpg");*/
-    /*ABAJO ESTABA HABILITADO*/
-    /*background-repeat: no-repeat;*/
-    /*hace que la imagen se vea un poco más compacta (mejor en pantallas pequeñas)*/
-    /*background-attachment: fixed;*/
-    /*100% el tamaño de la imagen en height y with*/
-    /*background-size: 100% 100%;*/
-    /*background-image: linear-gradient(rgba(23, 32, 42, 0.8), rgba(23, 32, 42, 0.8));*/
+.contenedor-imagen {    
     position: relative;
     display: block;
-    /*height: 80vh;*/
-    /*min-height: 100vh;*/
 }
 
     .contenedor-imagen img {
@@ -39,55 +24,13 @@
         /*height: 100%;*/
     }
 
-    /*NO SE USA*/
-    /*.bloque-img {
-    text-align: center;
-    display: block;
-    }*/
-
     /*Texto que se muestra sobre la imagen*/
     .contenedor-imagen .contenido-imagen {
         position: absolute;
         top: 50%;
-        /*left: 40%;*/
         padding-left: 2rem;
-        transform: translate(-0%, -50%);
-        /*NO SE USA*/
-        /*text-align: left;
-        position: center;
-        top: 20%;
-        padding-left: 20px;*/
-        /*transform: translate(-0%, -60%);*/
-        /*ABAJO ESTABA HABILITADO*/
-        /*display: flex;*/
-        /*position: relative;*/
-        /*flex-direction: column;*/
-        /*Alinear el texto a la izquierda*/
-        /*align-items: flex-start;*/
-        /*Justificar contenido al centro*/
-        /*justify-content: center;*/
-        /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
-        que ocupe el 100% (v*h viewpor hight alto del dispositivo)
-        SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);*/
-        /*height: calc(100vh - 80px);
-        max-width: 100%;*/
+        transform: translate(-0%, -50%);     
     }
-
-/*NO SE USA*/
-/*Titulo*/
-/*.hero h1 {
-        margin-top: 2rem;*/
-/*margin-left: 2rem;*/
-/*font-size: 80px;
-    }*/
-/*Subtitulo*/
-/*.hero p {*/
-/*margin-left: 0;*/
-/*font-size: 30px;*/
-/*text-transform: uppercase;*/
-/*color: #113CFC;*/
-/*text-shadow: 0 0 6px;*/
-
 
 /*Menú de navegación
     VERIFICAR EN CASO DE NECESITAR OTRO MENÚ*/

@@ -129,26 +129,7 @@
 
 /*ESTILOS DE CV SI LA PANTALLA ES PEQUEÑA*/
 @media only screen and (max-height: 760px) {
-    /*    .seccion {
-        padding: 40px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }*/
-
-    /*    .tiutlo-contacto {
-        font-size: 1.90em;
-    }*/
-    /*
-    #Perfil, #Habilidades, #Proyectos_recientes {
-        background-color:red;
-    }*/
-
-    .elemento {
-        bottom: 190px;
-        right: 30px;
-        font-size: 0.68em;
-    }
-
+/*Imagen inicio dentro del contenedor*/
     .contenedor-imagen img {
         /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
         que ocupe el 100% (v*h viewpor hight alto del dispositivo)
@@ -162,10 +143,10 @@
 
     /*Texto que se muestra en el contenedor de imagen*/
     .contenedor-imagen .contenido-imagen {
-        position: absolute;
-        top: 50%;
-        padding-left: 1rem;
-        transform: translate(-0%, -50%);
+        /*position: absolute;*/
+        /*top: 50%;*/
+        /*padding-left: 1rem;*/
+        /*transform: translate(-0%, -50%);*/
     }
 
     /*Bienvenida y nombre de la escritura*/
@@ -188,24 +169,11 @@
         font-size: 1em;
     }
 
-    #big-a {
-        /*font-size: 10px;*/
-        font-size: 0.625em;
-        font-weight: 600;
-    }
-
-    .nav_menu a {
-        /*font-size: 12px;*/
-        font-size: 0.75em;
-        /*NO SE USA 👇*/
-        /*padding: 5px;*/
-    }
-
     .nav_menu .indicador {
         /*ancho se cambio el valor ya que se debe calcular el tamaño del boton por
             medio de JS aqui en css a traves de los media querys.
         */
-        width: 0px;
+        /*width: 0px;*/
         /*altura*/
         height: 7px;
         /*color*/
@@ -489,7 +457,12 @@
 
 
     /*EXTRAS*/
+    /*Centrar ventana modal*/
+    .ventana {
+        margin: 75% auto;
+    }
 
+    /*Div del texto flotante deslizar*/
     .elemento {
         bottom: 190px;
         right: 30px;
