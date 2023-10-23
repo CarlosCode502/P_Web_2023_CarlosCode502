@@ -53,40 +53,6 @@
     z-index: 999;
 }
 
-    /*Para que todos los enlaces "a" se muestren espaciados */
-    /*.nav_menu a {*/
-    /*CON FLEXBOX*/
-    /*Para que todos tengan el mismo tamaño*/
-    /*flex: 1;*/
-    /*alto*/
-    /*height: 100%;*/
-    /*Para que el texto se ponga en mayúscula*/
-    /*text-transform: uppercase;*/
-    /*Para indicarle que se va a usar flexbox*/
-    /*display: flex;*/
-    /*alinear el texto de forma vertical*/
-    /*align-items: center;*/
-    /*alinear el texto de forma vertical en los contenedores*/
-    /*justify-content: center;*/
-    /*Todo el contenido centrado al ocupar más de 2 lineas*/
-    /*text-align: center;*/
-    /*Decoracion del texto(linea de enlace)*/
-    /*text-decoration: none;*/
-    /*Colr*/
-    /*color: var(--colorGlobal);*/
-    /*Transición de tiempo para todas las propiedades*/
-    /*transition: .2s ease all;*/
-    /*Texto con negritas fuerte*/
-    /*font-weight: 600;*/
-    /*}*/
-
-    /*Efecto sombreado(hover) al pasar el cursor en el nav*/
-    /*.nav_menu a:hover {
-            background: #72a9fb;*/
-    /*font-size: 20px;*/
-    /*}*/
-
-
     .nav_menu .indicador {
         /*ancho se cambio el valor ya que se debe calcular el tamaño del boton por
             medio de JS aqui en css a traves de los media querys.
@@ -224,22 +190,6 @@
     }
 }
 
-/*#region Media Querys */
-/*
-@media screen and (min-height: 601px) {
-    .menu-p-inicio a span:last-child {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: translateY(-100%);
-    }
-}*/
-
 /*PARA EQUIPOS CON ANCHO DE 600px para abajo*/
 /*Ayudan a mostrar las animaciones según el tamaño de la pantalla si es menor o mayor*/
 /*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
@@ -270,8 +220,6 @@
         /*font-size: 40px;*/
         font-size: 2.5em;
         font-weight: normal;
-        /*NO SE USA 👇*/
-        /*margin-bottom: 20px;*/
     }
 
     /*Profesión texto*/
@@ -321,63 +269,9 @@
         /*Para ocultar el indicador en caso de que quede fuera y no se tenga seleccionado (dependiendo el disp será el error)*/
         /* overflow: hidden;*/
     }
-    /*Efecto sombreado(hover) al pasar el cursor en el nav*/
-    /*.nav_menu a:hover {
-            background: var(--colorGlobal);*/
-    /*NO SE USA 👇*/
-    /*font-size: 20px;*/
-    /*}*/
-    /*    .menu-p-inicio svg {
-        font-size: 10px;
-    }
-*/
 
     .menu-p-inicio svg {
         width: 30px;
         height: 30px;
     }
-    /*    .tooltip-inicio .tooltip-content {
-        visibility: hidden;
-        display: inline-block;
-        padding: 10px;
-        background-color: #333;
-        color: #fff;
-        position: absolute;
-        z-index: 1;
-        margin-top: 20px
-    }
-
-    .tooltip-inicio:hover .tooltip-content {
-        visibility: visible;
-    }*/
-    /*        .tooltip .tooltip-content {
-            visibility: hidden;
-            display: inline-block;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-            position: absolute;
-            z-index: 1;
-            margin-top: 20px
-        }
-
-    .tooltip:hover .tooltip-content {
-        visibility: visible;
-    }*/
-    /*
-    .menu-p-inicio a span:last-child {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: translateY(-100%);
-    }*/
-    /*
-    .menu-p-inicio .inicio-visible {
-        visibility: hidden;
-    }*/
 }
