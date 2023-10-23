@@ -331,30 +331,6 @@ border:1px solid black;*/
     align-items: end; */
 }
 
-/*.parent_class {
-    background: gray;
-    width: 100px;
-    height: 100px;
-}
-*/
-/*
-    .phone:hover {
-        --color: #0DC143;
-    }
-
-    .gmail:hover {
-        --color: #ea0101;
-    }
-
-    .github:hover {
-        --color: #a06ed9;
-    }
-
-.contacto{
-    border: 6px solid var(--color);
-}
-*/
-
 /*Color para linkedin*/
 .hover_class_style0 {
     border: 6px solid #468bef;
@@ -504,6 +480,7 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
 
     .seccion-educacion ul {
         /*font-weight: 600;*/
+        font-weight: normal;
         line-height: 1;
         /*font-size: 16px;*/
         font-size: 1em;
@@ -523,7 +500,8 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
     }
 
 .seccion-idiomas {
-    font-weight: lighter;
+    /*font-weight: lighter;*/
+    font-weight: normal;
 }
 
     .seccion-idiomas .negrita {
@@ -532,7 +510,8 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
 /*Sección tecnologías*/
 .seccion-tecnologias {
     margin-top: 1rem;
-    font-weight: bold;
+    /*font-weight: bold;*/
+    font-weight: normal;
 }
 
 .tec {
