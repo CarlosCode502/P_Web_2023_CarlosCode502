@@ -14,36 +14,13 @@
     font-family: 'Inter', sans-serif;
 }
 
-/*.barra-nav{
-    background-color: var(--blanco);*/
-/* width: 100%;*/
-/*height: 80px;
-    position: fixed;
-    top: 0;
-}*/
-
-/*.barra-nav {*/
-/*background: var(--blanco);*/
-/*box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;*/
-/*height: 80px;   
-}*/
-
 /* The alert message box */
-.alert {
-    /*display: flex;
-    align-content: center;*/
-    /*position: fixed;*/
-    /*width: 50%;*/
-    /*text-align: center;*/
+.alert {   
     text-align: justify;
     padding: 20px;
     background-color: var(--colorGlobalCV); /* blue */
-    color: white;
-    /*margin-bottom: 15px;*/
-    /*margin-top: 40%;*/
-    /*margin-left: 25%;*/
+    color: white;    
     opacity: 1;
-    /*transition: opacity 0.9s;*/ /* 600ms to fade out */
     cursor: pointer;
     transition: opacity 0.3s;
     /*No tiene efecto ya que no esta posicionado*/
@@ -78,13 +55,10 @@
 
 /*Mantener en la misma linea titulo y fechas*/
 .cont-nav {
-    /*margin: 20px;*/
     padding-left: 30px;
     padding-top: 20px;
     padding: 20px 60px 0 30px;
-    /*margin-bottom: 8px;*/
     display: flex;
-    /*font-weight: 600;*/
 }
 
 .img-nav {
@@ -112,14 +86,12 @@
     /*16px cambia según el tamaño del texto */
     /*Actualmente para que se fije a la derecha*/
     margin: 0 0 0 auto;
-    /*opacity: 1;*/
     padding: 8px;
     background-color: gray;
     border-radius: 8px;
     color: var(--blanco);
     text-decoration: none;
     opacity: 0.30;
-    /*padding-right: 30px;*/
 }
 
     .boton-descargar:hover {
@@ -128,7 +100,6 @@
 
 /*Diseño de la ventana modal*/
 .modal {
-    /*visibility: hidden;*/
     background-color: rgba(0,0,0,.8);
     position: fixed;
     top: 0px;
@@ -179,28 +150,18 @@
 
         .ventana .form-select .opc-default {
             color: gray;
-            /*background-color: green;*/
         }
-
-
-    /*.ventana li {
-        background-color: var(--blanco);
-    }*/
 
     .ventana .botones {
         padding-bottom: 20px;
     }
 
     .ventana .btn-aceptar {
-        /*display: inline;*/
         border: 0;
         /*text-decoration: underline;*/
         background-color: var(--colorGlobalCV);
         padding: 10px 40px;
-        /*margin: 20px;*/
         border-radius: 10px;
-        /*border-color: none;*/
-        /*transform-style: inherit;*/
         color: var(--blanco);
         /*font-size: 18px;*/
         font-size: 1.125em;
@@ -214,10 +175,7 @@
     .ventana .btn-cancelar {
         background-color: gray;
         padding: 10px 35px;
-        /*margin: 20px;*/
         border-radius: 10px;
-        /*border-color: none;*/
-        /*transform-style: inherit;*/
         color: var(--blanco);
         /*font-size: 18px;*/
         font-size: 1.125em;
@@ -228,48 +186,11 @@
             background-color: var(--rojosimple)
         }
 
-/*.card-footer-primary {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-*/
-
 #ventanaModal:target {
     opacity: 1;
     pointer-events: auto;
 }
 
-
-/*.opcion {*/ /*width: 100px;
-        background-color:yellow;
-border:1px solid black;*/
-/*}*/
-/*.contenedor-nav {
-    display: flex;
-    margin-top: 15px;*/
-/*flex-wrap: inherit;*/
-/*align-items: center;*/
-/*justify-content: space-between;*/
-/*}
-
-.barra-nav a {
-    text-decoration: none;
-    color: var(--blanco);
-    margin: 0:
-}
-
-.texto-nav {
-    font-size: 1rem;
-}
-
-.texto-nav svg {*/
-/*margin-top: 40px;*/
-/*fill: var(--blanco);
-    
-}*/
 .container {
     background-color: #2B2A33;
     padding: 40px;
@@ -301,11 +222,6 @@ border:1px solid black;*/
     margin-bottom: 22px;
 }
 
-/*.cont-contacto {
-    font-size: 17px;
-    font-weight: lighter;
-}
-*/
 /*Sección o cuadro de contacto*/
 .contacto {
     margin: 10px 20px;
@@ -316,8 +232,6 @@ border:1px solid black;*/
     padding: 10px;
     /*font-size: 17px;*/
     font-size: 1.0625em;
-    /*position: center;*/
-    /*margin-left: 10%;*/
 }
 
 /*Mantener centrados los elementos de contacto*/
@@ -326,68 +240,35 @@ border:1px solid black;*/
     margin: auto;
     color: var(--colorGlobalCV);
     text-decoration: none;
-    /*display: flex;
-    align-content: end;
-    align-items: end; */
 }
 
 /*Color para linkedin*/
 .hover_class_style0 {
     border: 6px solid #468bef;
-    /*background: blue;*/
 }
 
 /*Color para correo*/
 .hover_class_style1 {
     border: 6px solid #ea0101;
-    /*background: blue;*/
 }
 
 /*Color para mapa*/
 .hover_class_style2 {
     border: 6px solid #e5770d;
-    /*background: blue;*/
 }
 
 /*Color para teléfono*/
 .hover_class_style3 {
     border: 6px solid #0DC143;
-    /*background: blue;*/
 }
 
 /*Color para github*/
 .hover_class_style4 {
     border: 6px solid #a06ed9;
-    /*background: blue;*/
 }
-
-
-/*.hover_class_style2 {
-    border: 4px solid purple;*/
-/*background: blue;*/
-/*}
-
-.hover_class_style3 {
-    border: 4px solid green;*/
-/*background: blue;*/
-/*}*/
-
-/*.child_class {*/
-/* Propiedades */
-/*}*/
-
-/*.contacto .github:hover .contacto {
-            border: 4px solid purple;
-        }
-*/
-/*.contacto:has(.gmail:hover) {*/
-/* Propiedades */
-/*border: 4px solid purple;
-}*/
 
 /*Descripción o perfil*/
 .descripcion-perfil {
-    /*font-weight: 100;*/
     margin: 1.5rem 0 1.5rem 0;
     /*Justificar el texto*/
     text-align: justify;
@@ -396,29 +277,14 @@ border:1px solid black;*/
     line-height: 1.6;
 }
 
-/*Bloque de diseño*/
-/*.bloque-izquierdo-1 {
-    background: gray;
-    width: 20px;
-    height: 100px;
-    border-top: 0;
-    
-}*/
 
 .titulo-seccion {
     /*font-size: 25px;*/
     font-size: 1.5625em;
     font-weight: 600;
     color: var(--colorGlobalCV);
-    /*padding-top: 1rem;*/
     padding-top: 1rem;
 }
-
-/*Sección experiencia*/
-/*.seccion-expreriencia {*/
-/*margin-top: 1rem;*/
-/*margin-left: 2rem;*/
-/*}*/
 
 .seccion-expreriencia {
     margin-bottom: 30px;
@@ -426,7 +292,6 @@ border:1px solid black;*/
 
 /*Mantener en la misma linea titulo y fechas*/
 .titulo-exp {
-    /*margin: 20px;*/
     margin-top: 20px;
     margin-bottom: 8px;
     display: flex;
@@ -451,7 +316,6 @@ border:1px solid black;*/
     /*font-size: 16px;*/
     font-size: 1em;
     line-height: 1.6;
-    /*margin: auto 40px 0 40px;*/
 }
 
 /*Formato para todos los Unorder List y los elementos dentro*/
@@ -471,7 +335,6 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
     color: var(--colorGlobalCV); /*Coloreamos la viñeta */
 }
 
-
 /*Sección educación*/
 .seccion-educacion {
     margin-top: 1rem;
@@ -479,13 +342,10 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
 }
 
     .seccion-educacion ul {
-        /*font-weight: 600;*/
         font-weight: normal;
         line-height: 1;
         /*font-size: 16px;*/
         font-size: 1em;
-        /*word-wrap: normal;*/
-        /*word-spacing: 5px;*/
     }
 
 .seccion-cursos {
@@ -495,12 +355,9 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
     .seccion-cursos ul {
         font-weight: normal;
         line-height: 0.80;
-        /*word-wrap: normal;*/
-        /*word-spacing: 5px;*/
     }
 
 .seccion-idiomas {
-    /*font-weight: lighter;*/
     font-weight: normal;
 }
 
@@ -510,7 +367,6 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
 /*Sección tecnologías*/
 .seccion-tecnologias {
     margin-top: 1rem;
-    /*font-weight: bold;*/
     font-weight: normal;
 }
 
@@ -519,8 +375,6 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
 }
 /*Para dividir las tecnologias en columnas*/
 .texto-columnas {
-    /*margin-top: 1rem;*/
-    /*font-size: 16px;*/
     font-size: 1em;
     margin: 20px auto 0 22%;
     column-count: 2;
@@ -550,109 +404,11 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
     /*column-rule: 4px dotted gray;*/
 }
 
-/*Formato para todos los encabezados del h1 a h6*/
-/*h1, h2, h3, h4, h5, h6 {
-    margin: 0px;
-}*/
-
-/*Formato diferente para todos los h5*/
-/*h5 {
-    font-weight: bold;
-    color: var(--colorGlobalCV);
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-*/
-
-/*Formato para todos los parráfos*/
-/*p {
-    font-weight: bolder;*/
-/*Por orden de dependencia todos los elemetos p obedecen este color*/
-/*color: black;*/
-/*}*/
-
-
-
-/*Modal*/
-/*.modal {
-    width: 100%;
-    height: 100vh;
-    background: rgba(0,0,0,0.8);
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    animation: modal 2s 3s forwards;
-    visibility: hidden;
-    opacity: 0;
-}
-
-.contenido-modal {
-    margin: auto;
-    width: 40%;
-    height: 40%;
-    background: white;
-    border-radius: 10px;
-}*/
-
-/*Botón cerrar(id)*/
-/*#cerrar {
-    display: none;
-}
-
-#btn-cerrar {
-    padding-left: 20px;
-}*/
-
-/*Botón cerrar se va a aplicar con el label VERIFICAR*/
-/*#cerrar + label {
-    position: absolute;
-    color: #fff;
-    font-size: 25px;
-    z-index: 60;
-    background: darkred;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    border-radius: 100%;
-    right: 320px;
-    top: 210px;
-    cursor: pointer;
-    animation: modal 2s 3s forwards;
-    visibility: hidden;
-    opacity: 0;
-}
-
-#cerrar:checked + label, #cerrar:checked ~ .modal {
-    display: none;
-}
-
-@keyframes modal {
-    100% {
-        visibility: visible;
-        opacity: 1;
-    }*/
-
-/*.btn-descargar-cv, .btn-a {*/
-/*visibility: hidden;*/
-/*color: #2B2A33;
-    background-color: #2B2A33;*/
-/*opacity: 0;
-}*/
-
 .btn-regresar-min {
     visibility: hidden;
-    /*position: fixed;*/
     right: 10px;
     top: 6px;
-    /*mostrar en pantalla pequeña*/
-    /*visibility: visible;*/
-    /*position: fixed;*/
-    /*bottom: 40px;*/
-    /*right: 40px;*/
     padding: 10px;
-    /*border-radius: 8px;*/
-    /*background-color: var(--colorGlobalCV);*/
     opacity: 0.5;
     z-index: 1050;
     font-weight: 500;
@@ -671,33 +427,9 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
     }
 
     .btn-descargar-cv {
-        visibility: hidden;
-        /*position: fixed;*/
-        /*bottom: 40px;
-    right: 40px;
-    padding: 10px;
-    border-radius: 8px;*/
-        /*width: 64px;*/
-        /*height: 64px;*/
-        /*background-color: var(--colorGlobalCV);
-    opacity: 0.5;*/
-    }
-/*
-    .btn-descargar-cv:hover {
-        opacity: 1;
+        visibility: hidden;       
     }
 
-.btn-a {
-    text-decoration: none;
-    color: var(--blanco);
-}*/
-
-/*En pantallas menores de 650px*/
-/*@media screen and (max-width: 809pxpx) {
-    .btn-descargar-cv{
-        visibility: hidden;
-    }
-}*/
 
 /* cuando sea como maximo 450, es decir menor */
 @media screen and (max-width: 810px) {
@@ -732,8 +464,6 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
         right: 40px;
         padding: 10px;
         border-radius: 8px;
-        /*width: 64px;*/
-        /*height: 64px;*/
         background-color: var(--colorGlobalCV);
         opacity: 0.5;
     }
@@ -748,23 +478,9 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
     }
 
     .ventana {
-        /*text-align: center;*/
-        /*border-radius: 8px;*/
-        /*background-color: var(--blanco);*/
-        /*width: 300px;*/
-        /*padding: 10px 20px;*/
         margin: 90% auto;
-        /*position: relative;*/
     }
 
-        /*   .ventana .closebtn {
-            color: var(--colorGlobalCV);
-        }*/
-
-        /*   .ventana .closebtn:hover {
-                color: black;
-            }
-*/
         /*Titulo del formulario*/
         .ventana .titulo-modal {
             color: var(--colorGlobalCV);
@@ -784,40 +500,13 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
             margin-bottom: 20px;
         }
 
-        /*.ventana .form-select .opc-default {*/
-        /*fill: red;*/
-        /*background-color: green;*/
-        /*}*/
-
-
-        /*.ventana li {
-        background-color: var(--blanco);
-    }*/
         .ventana .btn-aceptar {
-            /*background-color: var(--colorGlobalCV);*/
-            padding: 10px 30px;
-            /*margin: 20px;*/
-            /*border-radius: 10px;*/
-            /*border-color: none;*/
-            /*transform-style: inherit;*/
-            /*color: var(--blanco)*/
-            /*font-size: 16px;*/
+            padding: 10px 30px;           
             font-size: 1em;
         }
 
-        /*            .ventana .btn-aceptar:hover {
-                background-color: var(--celestesimple)
-            }
-*/
         .ventana .btn-cancelar {
-            /*background-color: var(--colorGlobalCV);*/
             padding: 10px 20px;
-            /*margin: 20px;*/
-            /*border-radius: 10px;*/
-            /*border-color: none;*/
-            /*transform-style: inherit;*/
-            /*color: var(--blanco)*/
-            /*font-size: 16px;*/
             font-size: 1em;
         }
 
@@ -827,7 +516,6 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
         margin: 0;
         border: 4px solid var(--colorGlobalCV);
         display: block;
-        /*padding: 10px;*/
     }
 
     /*Quitar los márgenes*/
@@ -835,13 +523,8 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
         margin: 10px;
     }
 
-    /*  .texto-columnas {
-        margin-left: 35.35px;
-    }*/
-
     /*Para dividir las tecnologias en columnas*/
     .texto-columnas {
-        /*margin-top: 1rem;*/
         /*font-size: 16px;*/
         margin: 20px auto 0 14%;
     }
