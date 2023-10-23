@@ -245,13 +245,7 @@
 /*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
 @media screen and (max-width: 600px) {
     /*@media only screen and (min-height: 761px) and (min-height: 1000px) {*/
-    /**/
-    /*Contenedor de imagen*/
-    /*.contenedor-imagen {
-        position: relative;
-        display: block;*/
-    /*min-height: 100vh;*/
-    /*}*/
+
     .contenedor-imagen img {
         /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
         que ocupe el 100% (v*h viewpor hight alto del dispositivo)
@@ -270,6 +264,7 @@
         transform: translate(-0%, -50%);
     }
 
+    /*Bienvenida y nombre de la escritura*/
     .contenido-imagen .titulo {
         padding-right: 10px;
         /*font-size: 40px;*/
@@ -279,11 +274,13 @@
         /*margin-bottom: 20px;*/
     }
 
+    /*Profesión texto*/
     dev {
         /*font-size: 50px;*/
         font-size: 3.125em;
     }
 
+    /*Mensaje texto*/
     .msj {
         /*font-size: 50px;*/
         font-size: 1em;

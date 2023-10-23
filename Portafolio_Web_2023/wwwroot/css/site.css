@@ -53,12 +53,11 @@ header {
     bottom: 60px;
     right: 35px;
     width: 64px;
-    height: 64px;
-    
+    height: 64px;    
     color: #0d6efd;
-    /*background-color: #0d6efd;*/
     opacity: 0.3;
     animation: ease-in 2s;
+    z-index: 1000;
 }
 
     .btn-inicio-float:hover {
