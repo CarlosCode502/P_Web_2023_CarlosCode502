@@ -8,25 +8,29 @@
     color: var(--colorGlobal);
 }
 
-/*Texto con animación de parpadeo de la sección Gracias*/
-.texto-parpadear {
-    text-align: center;
-    /*font-size: 6.5em;*/
-    /*color: #fff;*/
-    color: var(--colorGlobal);
-    /*Espacio entre letras*/
-    /*letter-spacing: -7px;*/
-    /*font-weight: 700;*/
-    text-transform: uppercase;
-    animation: parpadear 2.5s ease-out infinite;
-    /*animation: parpadear 2s ea;*/
-    /*animation-duration:*/
-    text-shadow: 0px 0px 5px var(--blanco), 0px 0px 7px var(--blanco);
-}
 
-/*Animación del texto parpadar*/
-@keyframes parpadear {
-    from {
-        text-shadow: 0px 0px 10px var(--blanco), 0px 0px 10px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 50px var(--blanco), 0px 0px 50px var(--blanco), 0px 0px 50px var(--colorGlobal), 0px 0px 150px var(--colorGlobal), 0px 10px 100px var(--colorGlobal), 0px 10px 100px var(--colorGlobal), 0px 10px 100px var(--colorGlobal), 0px 10px 100px var(--colorGlobal), 0px -10px 100px var(--colorGlobal), 0px -10px 100px var(--colorGlobal);
+@media screen and (min-width: 800px) {
+
+    /*Texto con animación de parpadeo de la sección Gracias*/
+    .texto-parpadear {
+        text-align: center;
+        /*font-size: 6.5em;*/
+        /*color: #fff;*/
+        color: var(--colorGlobal);
+        /*Espacio entre letras*/
+        /*letter-spacing: -7px;*/
+        /*font-weight: 700;*/
+        text-transform: uppercase;
+        animation: parpadear 2.5s ease-out infinite;
+        /*animation: parpadear 2s ea;*/
+        /*animation-duration:*/
+        text-shadow: 0px 0px 5px var(--blanco), 0px 0px 7px var(--blanco);
+    }
+
+    /*Animación del texto parpadar*/
+    @keyframes parpadear {
+        from {
+            text-shadow: 0px 0px 10px var(--blanco), 0px 0px 10px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 50px var(--blanco), 0px 0px 50px var(--blanco), 0px 0px 50px var(--colorGlobal), 0px 0px 150px var(--colorGlobal), 0px 10px 100px var(--colorGlobal), 0px 10px 100px var(--colorGlobal), 0px 10px 100px var(--colorGlobal), 0px 10px 100px var(--colorGlobal), 0px -10px 100px var(--colorGlobal), 0px -10px 100px var(--colorGlobal);
+        }
     }
 }

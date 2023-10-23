@@ -387,10 +387,6 @@
 
     /*EXTRAS*/
     /*Centrar ventana modal*/
-    .texto-parpadear{
-        animation-fill-mode: none;
-    }
-
     .ventana {
         margin: 60% auto;
     }
