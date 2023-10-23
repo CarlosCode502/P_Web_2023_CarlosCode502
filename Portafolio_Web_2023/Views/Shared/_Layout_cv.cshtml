@@ -20,19 +20,7 @@
 </head>
 <body>
     <header>
-        @* <input type="checkbox" id="cerrar"/>
-        <label for="cerrar" id="btn-cerrar">X</label>
-        <div class="modal">
-        <div class="contenido-modal">
-        <h1><strong>Atención:</strong></h1>
-        <p>Mi CV se esta mostrando como representación a un documento, toda la estructura esta hecha a través de html y css.</p>
-        <p>Si desea descargar mi CV en pdf puede hacer clic en el botón flotante al fondo.</p>
-        <div class="btn-aceptar">
-        <button type="button">Aceptar</button>
-        </div>
-        </div>
-        </div> *@
-
+       
         @* Creando alerta *@
         <nav class="barra-nav top-nav">
             @* A este div va a apuntar mi funcion js para cerrar el elemento automáticamente *@
@@ -41,15 +29,7 @@
                 <span class="closebtn" onclick="this.parentElement.style.display='none';" title="Cerrar alerta">&times;</span>
                 Se esta mostrando una vista HTML de mi cv, si desea puede descargarlo o en su lugar uno con diseño hecho en Canva, haciendo click en el botón <strong>Descargar CV</strong>.
             </div>
-            @* <div class="contenedor-nav">
-            <a class="texto-nav" asp-area="" asp-controller="PortafolioW" asp-action="Index">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="bi bi-arrow-left d-inline-block align-text-top" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
-            </svg>
-            Regresar al Inicio
-            </a>
-            </div> *@
-
+          
             <div class="cont-nav">
                 @* <div class="regresar"> *@
                 <a class="img-nav" asp-area="" asp-controller="PortafolioW" asp-action="Index">
@@ -63,18 +43,6 @@
                 @* </div> *@
                 <a class="boton-descargar" href="#ventanaModal">Descargar CV</a>
 
-                @* <a class="boton-descargar" href="#ventanaModal">Descargar CV</a>
-
-                <div id="ventanaModal" class="modal">
-                <div id="ventana">
-                @*                         <a href="#" style='text-decoration:none;'>
-                X
-                </a>
-                <span href="#ventana" onclick="this.parentElement.style.display='none';">&times;</span>
-                <h2>Ventana</h2>
-                <p>Detalle de las opciones</p>
-                </div>
-                </div> *@
             </div>
 
             <div class="btn-regresar-min">
@@ -90,31 +58,7 @@
             <div class="btn-descargar-cv">
                 <a title="" class="btn-a" href="#ventanaModal">Descargar CV</a>
             </div>
-        </nav>
-
-        @* <div id="ventanaModal" class="modal">
-            <div class="ventana">
-                <a class="closebtn" href="#" style='text-decoration:none;'>
-                    &times;
-                </a>
-                <p class="texto-modal">Elija el tipo de archivo que desea descargar</p>
-
-                <select name="cars" id="cars">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
-                </select>
-
-                <br><br>
-                <input type="submit" value="Submit">
-            </div>
-        </div> *@
-
-        @* C:\Users\admin\source\repos\Portafolio_Web_2023\Portafolio_Web_2023\Portafolio_Web_2023\Views\PortafolioW\PartialViews\_DropDownArchivos_PV.cshtml *@
-        @* <partial name="PartialViews/_DropDownArchivos_PV.cshtml" /> *@
-        @* C:\Users\admin\source\repos\Portafolio_Web_2023\Portafolio_Web_2023\Portafolio_Web_2023\Views\PortafolioW\PartialViews\_DropDownArchivos_PV.cshtml *@
-        
+        </nav>      
 
 
     </header>

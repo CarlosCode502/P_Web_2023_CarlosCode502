@@ -22,9 +22,10 @@
         text-shadow: 0px 0px 5px var(--blanco), 0px 0px 7px var(--blanco);
     }
 
-/*Animación del texto parpadar*/
-@keyframes parpadear {
-    from {
-        text-shadow: 0px 0px 10px var(--blanco), 0px 0px 10px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 50px var(--blanco), 0px 0px 50px var(--blanco), 0px 0px 50px var(--colorGlobal), 0px 0px 150px var(--colorGlobal), 0px 10px 100px var(--colorGlobal), 0px 10px 100px var(--colorGlobal), 0px 10px 100px var(--colorGlobal), 0px 10px 100px var(--colorGlobal), 0px -10px 100px var(--colorGlobal), 0px -10px 100px var(--colorGlobal);
+    /*Animación del texto parpadar*/
+    @keyframes parpadear {
+        from {
+            text-shadow: 0px 0px 10px var(--blanco), 0px 0px 10px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 25px var(--blanco), 0px 0px 50px var(--blanco), 0px 0px 50px var(--blanco), 0px 0px 50px var(--colorGlobal), 0px 0px 150px var(--colorGlobal), 0px 10px 100px var(--colorGlobal), 0px 10px 100px var(--colorGlobal), 0px 10px 100px var(--colorGlobal), 0px 10px 100px var(--colorGlobal), 0px -10px 100px var(--colorGlobal), 0px -10px 100px var(--colorGlobal);
+        }
     }
 }

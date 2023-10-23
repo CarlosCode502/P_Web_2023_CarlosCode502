@@ -35,43 +35,7 @@
 </head>
 <body>
     <header>
-        @* <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-        <div class="container-fluid">
-        <a class="navbar-brand" asp-area="" asp-controller="PortafolioW" asp-action="Index">Portafolio_Web_2023</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-        <ul class="navbar-nav flex-grow-1">
-        <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="" asp-controller="PortafolioW" asp-action="Index">Inicio</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="" asp-controller="PortafolioW" asp-action="Privacy">Privacy</a>
-        </li>
-        </ul>
-        </div>
-        </div>
-        </nav> *@
-
-        @* <div class="hero" id="Inicio">
-        <h1>MENÚ SLIDER</h1>
-        <p>HTML • CSS • Javascript</p>
-        </div> *@
-        @* <div class="contenedor-texto"> *@
-        @*    <!-- Forma 1: (20.00)
-        Esta forma es muy útil y funcional, pero tiene el defecto de que al momento de indexarlo en los buscadores
-        el texto aparecerá en blanco o no aparecera y este es un error -->
-        <!-- <h2 class="titulo">Mi nombre es:<br/><span class="typed-name"></span></h2> -->
-        <!-- <p>Desarrollador de software, encantado de poder ayudarte a hacer realidad tu proyecto.</p> -->
-        <!-- <p><b>Tengo habilidades en:</b><br/><span class="typed"></span></p> -->
-        <!-- Forma 2: (22.00) -->
-        <!-- Esta forma ayudará a evitar el error y ahora los buscadores podrán indexar el contenido  -->
-        <!-- <h1>Mi nombre es:</h1> --> *@
-        @*  @{
-        string presionar = "typed-name";
-        } *@
+       
         @* Imagen de <a href="https://pixabay.com/es/users/soykhaler-6351521/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3613567">Diego Ortiz</a> en <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3613567">Pixabay</a> *@
         <div class="contenedor-imagen" id="Inicio">
             @*  <span class="bloque-img"> *@
@@ -87,17 +51,11 @@
 
                 @* Array de cadenas que se van a mostrar como escritura de máquina. *@
                 <div class="titulo" id="cadenas-texto">
-                    @*    <p>Console.WriteLine("<br /><i class="name">HolaMundo</i>").</p>
-                    <p>Console.WriteLine("<br /><i class="name">HelloWorld</i>").</p> *@
-                    @* <p>Mi nombre es:<br /><i class="name">Carlos Enrique</i></p>
-                    <p>Mi nombre es:<br /><i class="name">Herrera López.</i></p> *@
+
                     <p><i class="name">¡Hola Mundo!</i></p>
                     <p>Mi nombre es:<br /><i class="name">Carlos Herrera.</i></p>
                     <p>Soy:<br /><i class="name dev">Desarrollador Junior .Net</i></p>
                     <p><i class="msj">¡LISTO PARA HACER REALIDAD TU PROYECTO!</i>^10000</p>@*^4000 Representa una pausa al finalizar de escibir los strings*@
-                    @*    <!-- <p><i class="name">Herrera López.</i></p> -->
-                    <!-- <p>Mi nombre es: <br><i class="mascota">CadHerrera</i></p> -->
-                    <!-- <p><b>Tengo habilidades en:</b><br/><span class="typed"></span></p> --> *@
                 </div>
             </div>
         </div>
@@ -121,62 +79,7 @@
 
     </header>
 
-    @*<ul class="menu">
-    <li>
-    <a id="click-inicio" href="#Inicio"">
-    <span>Inicio</span>
-    <span>
-    <i class="fas fa-address-card" aria-hidden="true"></i>
-    </span>
-    </a>
-    </li>
-    <li>
-    <a href="#Perfil">
-    <span>Perfil</span>
-    <span>
-    <i class="fas fa-tasks" aria-hidden="true"></i>
-    </span>
-    </a>
-    </li>
-    <li>
-    <a id="big-a" href="#Habilidades">
-    <span>Tecnologías</span>
-    <span>
-    <i class="fas fa-users" aria-hidden="true"></i>
-    </span>
-    </a>
-    </li>
-    <li>
-    <a id="big-a" href="#Proyectos_recientes">
-    <span>Proyectos</span>
-    <span>
-    <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
-    </span>
-    </a>
-    </li>
-    <li>
-    <a href="#Contacto">
-    <span>Contacto</span>
-    <span>
-    <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
-    </span>
-    </a>
-    </li>
-    </ul>
-    *@
-
-
-    @* AQUI ESTABA EL NAV *@
-
     <nav class="nav_menu" id="nav_menu_id">
-        @* <a id="click-inicio" href="#Inicio">Inicio</a>
-        <a href="#Perfil">Perfil</a>
-        <a id="big-a" href="#Habilidades">Tecnologías</a>
-        <a id="big-a" href="#Proyectos_recientes">Proyectos</a>
-        <a href="#Contacto">Contacto</a> *@
-        @* <button type="button" class="btn btn-primary">Contactar</button> *@
-        @* Opción extra para ir al footer desde el nav *@
-        @*           <a href="#4">Fin</a> *@
         <ul class="menu-p-inicio">
             <li title="Inicio">
                 @* <span class="tooltip-content">Inicio</span> *@
@@ -250,12 +153,6 @@
         </main>
     </div>
 
-    @* <footer class="border-top footer text-muted">
-    <div class="container">
-    &copy; 2023 - Portafolio_Web_2023 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-    </div>
-    </footer> *@
-
     <footer class="footer" id="Contacto">
         <h1 class="tiutlo-contacto">Contacto:</h1>
         <div class="img-center">
@@ -297,11 +194,7 @@
                 </a>
             </div>
         </div>
-        @* <div class="footer-content"> *@
         <div class="text-copy"><hr /><br />&copy; Copyright - <a class="text-copy" href="#Perfil">Carlos Herrera</a>  - 2023</div>
-        @* <a href="/terminos" class="texto-gris"> Términos y condiciones de servicio </a>
-        <a href="/politicas" class="texto-gris"> - Política de privacidad </a> *@
-        @*  </div> *@
     </footer>
 
 

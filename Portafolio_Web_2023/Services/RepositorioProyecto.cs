@@ -2,14 +2,6 @@
 
 namespace Portafolio_Web_2023.Services
 {
-    //V#56 Principio de responsabilidad Única
-    //Una buena práctica ya que se esta separando la capa de acceso a datos centralizandola
-    //en clases de tipo servicios o repositorios.
-
-    /// <summary>
-    /// Un repositorio es una clase que se encarga se servir datos que se conecta con una BD o
-    /// para realizar alguna operación en la BD.
-    /// </summary>
     public class RepositorioProyecto : IRepositorioProyecto
     {
         //V#56 Principio de responsabilidad Única
