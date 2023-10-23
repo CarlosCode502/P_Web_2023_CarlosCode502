@@ -14,34 +14,12 @@
     font-family: 'Inter', sans-serif;
 }
 
-/*.barra-nav{
-    background-color: var(--blanco);*/
-/* width: 100%;*/
-/*height: 80px;
-    position: fixed;
-    top: 0;
-}*/
-
-/*.barra-nav {*/
-/*background: var(--blanco);*/
-/*box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;*/
-/*height: 80px;   
-}*/
-
 /* The alert message box */
 .alert {
-    /*display: flex;
-    align-content: center;*/
-    /*position: fixed;*/
-    /*width: 50%;*/
-    /*text-align: center;*/
     text-align: justify;
     padding: 20px;
     background-color: var(--colorGlobalCV); /* blue */
     color: white;
-    /*margin-bottom: 15px;*/
-    /*margin-top: 40%;*/
-    /*margin-left: 25%;*/
     opacity: 1;
     /*transition: opacity 0.9s;*/ /* 600ms to fade out */
     cursor: pointer;
@@ -326,64 +304,37 @@ border:1px solid black;*/
     margin: auto;
     color: var(--colorGlobalCV);
     text-decoration: none;
-    /*display: flex;
-    align-content: end;
-    align-items: end; */
 }
+
+/*#region contacto colorear a traves de función JS*/
 
 /*Color para linkedin*/
 .hover_class_style0 {
     border: 6px solid #468bef;
-    /*background: blue;*/
 }
 
 /*Color para correo*/
 .hover_class_style1 {
     border: 6px solid #ea0101;
-    /*background: blue;*/
 }
 
 /*Color para mapa*/
 .hover_class_style2 {
     border: 6px solid #e5770d;
-    /*background: blue;*/
 }
 
 /*Color para teléfono*/
 .hover_class_style3 {
     border: 6px solid #0DC143;
-    /*background: blue;*/
 }
 
 /*Color para github*/
 .hover_class_style4 {
     border: 6px solid #a06ed9;
-    /*background: blue;*/
 }
+/*#region end*/
 
 
-/*.hover_class_style2 {
-    border: 4px solid purple;*/
-/*background: blue;*/
-/*}
-
-.hover_class_style3 {
-    border: 4px solid green;*/
-/*background: blue;*/
-/*}*/
-
-/*.child_class {*/
-/* Propiedades */
-/*}*/
-
-/*.contacto .github:hover .contacto {
-            border: 4px solid purple;
-        }
-*/
-/*.contacto:has(.gmail:hover) {*/
-/* Propiedades */
-/*border: 4px solid purple;
-}*/
 
 /*Descripción o perfil*/
 .descripcion-perfil {
@@ -550,95 +501,6 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
     /*column-rule: 4px dotted gray;*/
 }
 
-/*Formato para todos los encabezados del h1 a h6*/
-/*h1, h2, h3, h4, h5, h6 {
-    margin: 0px;
-}*/
-
-/*Formato diferente para todos los h5*/
-/*h5 {
-    font-weight: bold;
-    color: var(--colorGlobalCV);
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-*/
-
-/*Formato para todos los parráfos*/
-/*p {
-    font-weight: bolder;*/
-/*Por orden de dependencia todos los elemetos p obedecen este color*/
-/*color: black;*/
-/*}*/
-
-
-
-/*Modal*/
-/*.modal {
-    width: 100%;
-    height: 100vh;
-    background: rgba(0,0,0,0.8);
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    animation: modal 2s 3s forwards;
-    visibility: hidden;
-    opacity: 0;
-}
-
-.contenido-modal {
-    margin: auto;
-    width: 40%;
-    height: 40%;
-    background: white;
-    border-radius: 10px;
-}*/
-
-/*Botón cerrar(id)*/
-/*#cerrar {
-    display: none;
-}
-
-#btn-cerrar {
-    padding-left: 20px;
-}*/
-
-/*Botón cerrar se va a aplicar con el label VERIFICAR*/
-/*#cerrar + label {
-    position: absolute;
-    color: #fff;
-    font-size: 25px;
-    z-index: 60;
-    background: darkred;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    border-radius: 100%;
-    right: 320px;
-    top: 210px;
-    cursor: pointer;
-    animation: modal 2s 3s forwards;
-    visibility: hidden;
-    opacity: 0;
-}
-
-#cerrar:checked + label, #cerrar:checked ~ .modal {
-    display: none;
-}
-
-@keyframes modal {
-    100% {
-        visibility: visible;
-        opacity: 1;
-    }*/
-
-/*.btn-descargar-cv, .btn-a {*/
-/*visibility: hidden;*/
-/*color: #2B2A33;
-    background-color: #2B2A33;*/
-/*opacity: 0;
-}*/
 
 .btn-regresar-min {
     visibility: hidden;
@@ -672,32 +534,7 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
 
     .btn-descargar-cv {
         visibility: hidden;
-        /*position: fixed;*/
-        /*bottom: 40px;
-    right: 40px;
-    padding: 10px;
-    border-radius: 8px;*/
-        /*width: 64px;*/
-        /*height: 64px;*/
-        /*background-color: var(--colorGlobalCV);
-    opacity: 0.5;*/
     }
-/*
-    .btn-descargar-cv:hover {
-        opacity: 1;
-    }
-
-.btn-a {
-    text-decoration: none;
-    color: var(--blanco);
-}*/
-
-/*En pantallas menores de 650px*/
-/*@media screen and (max-width: 809pxpx) {
-    .btn-descargar-cv{
-        visibility: hidden;
-    }
-}*/
 
 /* cuando sea como maximo 450, es decir menor */
 @media screen and (max-width: 810px) {
