@@ -1,66 +1,26 @@
-﻿
-/*#click-inicio{
-    text-decoration: none;
-}*/
-
-/** {
-    font-family: 'Francois One', sans-serif;
-    font-family: 'Josefin Slab', serif;*/
-    /*font-family: 'Satisfy', cursive;*/
-/*}*/
-/**/
-/*.bloque{
-    width: auto;
-    height: auto;
-    background-color: white;
-    position: relative;
-}*/
-/**/
-/*CÓDIGO CSS DE MI ANIMACIÓN ESCRITURA*/
+﻿/*CÓDIGO CSS DE MI ANIMACIÓN ESCRITURA*/
 .titulo {
-    /*font-size: 90px;*/
-    /*font-weight: bolder;*/
     margin-right: 50%;
-    /*opacity: 1;*/
     margin-left: 20px;
-    /*color del titulo*/
     color: var(--colorGlobal);
     font-size: 6.25em;
-    /*    width: 600px;
-    height: 600px;*/
 }
 
 /*nombhre*/
 .typed-name {
     /*Color del cursor*/
     color: var(--colorGlobal);
-    /*font-family: 'Francois One', sans-serif;*/
 }
 
 /*Textos*/
 .name {
     color: white;
-    /*font-weight: bold;*/
     font-style: normal;
-    /*font-size: 4.25em;*/
 }
 
 /*Mensajes*/
 .msj {
     color: white;
-    /*font-weight: bold;*/
     font-style: normal;
-    /*font-size: 100px;*/
-    /*font-size: 6.25em;*/
-    /*   animation: parpadear 5s infinite backwards;
-    transition: .2s ease-in-out all;*/
 }
 
-/*SE QUITO EL EFECTO DE ANIMACIÓN AL ÚLTIMO TEXTO*/
-
-/*@keyframes parpadear {
-    to {
-        color: #0b36f7;
-        text-shadow: 0 16px 24px;
-    }
-}*/
