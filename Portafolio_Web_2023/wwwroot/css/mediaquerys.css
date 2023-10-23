@@ -229,7 +229,8 @@
         /*Para que la imagen se adapte a la pantalla y no muestre su tam real*/
         max-width: 100%;
     }
-    /*Texto que se muestra sobre la imagen*/
+
+    /*Texto que se muestra en el contenedor de imagen*/
     .contenedor-imagen .contenido-imagen {
         position: absolute;
         top: 50%;
@@ -237,20 +238,21 @@
         transform: translate(-0%, -50%);
     }
 
+    /*Bienvenida y nombre de la escritura*/
     .contenido-imagen .titulo {
         padding-right: 10px;
         /*font-size: 40px;*/
         font-size: 2.5em;
         font-weight: normal;
-        /*NO SE USA 👇*/
-        /*margin-bottom: 20px;*/
     }
 
+    /*Profesión texto*/
     dev {
         /*font-size: 50px;*/
         font-size: 3.125em;
     }
 
+    /*Mensaje texto*/
     .msj {
         /*font-size: 50px;*/
         font-size: 1em;
@@ -555,6 +557,16 @@
     }
     /*FIN HABILIDADES*/
 
+
+    /*EXTRAS*/
+
+    .elemento {
+        bottom: 190px;
+        right: 30px;
+        font-size: 0.68em;
+        /*Oculta el deslizar flotante*/
+        /*display: none;*/
+    }
 
 /*ESTYLOS DE CV SI LA PANTALLA ES PEQUEÑA*/
     .cont-nav {
