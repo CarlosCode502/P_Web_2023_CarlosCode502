@@ -1,14 +1,17 @@
 ﻿@*   <!--//V#55 Pasando datos a una vista parcial--> *@
 @model IEnumerable<ProyectoViewModel>
-
 @if (Model is not null)
 {
-<div class="card h-100">
+
+
+<!--MIS ÚLTIMOS PROYECTOS-->
+                    <div class="card h-100">                        
                         <div class="contenido-card-recientes">
                             <div class="texto-secciones">
                                 <h1>Mis trabajos recientes</h1>
                                 <p>Aquí se muestrán algunos de mís trabajos más recientes.</p>
                             </div>
+
                             <div class="overflow-scroll_r">                        
                                 <partial name="PartialViews\_TodosMisProyectos_PV" model="Model" />
                             </div>
@@ -16,6 +19,7 @@
                             <div class="card-footer-primary">
                                 <ul class="menu">
                                     <li>
+                                        <!--BOTÓN VER TODOS LOS PROYECTOS-->
                                         <a class="btn-secciones btn-pdd-recientes" asp-area="" asp-controller="PortafolioW" asp-action="Proyectos">
                                             Ver todos los proyectos
                                             <span class="border border-top"></span>

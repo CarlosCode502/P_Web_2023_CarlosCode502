@@ -2,17 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    @*  ¿Cómo podemos impedir que los navegadores móviles escalen nuestros sitios y los miniaturicen? La solución
-    es una nueva etiqueta meta cuyo name es “viewport”, que solo es aplicada por dispositivos móviles y es
-    ignorada en computadoras de escritorio. *@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    @* <meta name="viewport" content="width=device-width, initial-scale=1.0" /> *@
     <title>@ViewData["Title - "]Portafolio Web 2023</title>
 
+    <!--Fuentes de Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
 
+    <!--Hojas de estilos CSS-->
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/escritura.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/pag-Inicio.css" asp-append-version="true" />
@@ -24,34 +22,31 @@
     <link rel="stylesheet" href="~/css/mediaquerys.css" asp-append-version="true">
     <link rel="stylesheet" href="~/css/footer.css" asp-append-version="true" />
 
-    @* <!--//V#52 Instalando íconos de Boostrap-->
-    <!--Lo encontramos en la pag de boostrap en el apartado de descargas--> *@
+    <!--Bostrap para iconos-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    @* LA RAZON POR LA QUE ESTE SCRIPT ESTA HASTA ARRIBA ES PORQUE PRESENTABA PROBLEMAS AL MOMENTO DE CARGAR Y RECARGAR
-    YA QUE DURANTE UNAS MILESIMAS DE SEGUNDO SE VEHIA EL TEXTO, Y SE SOLUCIONO DE ESTA FORMA (otra dentro del header)*@
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js" asp-append-version="true"></script>
+
+    <!--Iconos de Font Awesome-->
     <script src="https://kit.fontawesome.com/082c2a7b48.js" crossorigin="anonymous" asp-append-version="true"></script>
 
+    @* En este lugar no presenta problemas al cargar (tampoco dentro de header) *@
+    <!--Agregando la librería Typed.js de Matt Boldt -> https://github.com/mattboldt -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js" asp-append-version="true"></script>
 </head>
 <body>
     <header>
-       
-        @* Imagen de <a href="https://pixabay.com/es/users/soykhaler-6351521/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3613567">Diego Ortiz</a> en <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3613567">Pixabay</a> *@
+
+        <!--SECCIÓN INICIO -->
+        <!--Imagen de <a href="https://pixabay.com/es/users/soykhaler-6351521/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3613567">Diego Ortiz</a> en <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3613567">Pixabay</a>-->
         <div class="contenedor-imagen" id="Inicio">
-            @*  <span class="bloque-img"> *@
-            @* <img src="http://pixabay.com/es/photos/persona-mirando-paisaje-personas-3613567/" /> *@
+            <!--<img src="http://pixabay.com/es/photos/persona-mirando-paisaje-personas-3613567/" />-->
             <img src="~/img/person-paisaje.jpg" />
-            @* </span> *@
             <div class="contenido-imagen">
-                @* <div class="bloque"></div> *@
                 @* Mi cursor *@
                 <h2 class="titulo">
                     <span class="typed-name"></span>
                 </h2>
-
                 @* Array de cadenas que se van a mostrar como escritura de máquina. *@
                 <div class="titulo" id="cadenas-texto">
-
                     <p><i class="name">¡Hola Mundo!</i></p>
                     <p>Mi nombre es:<br /><i class="name">Carlos Herrera.</i></p>
                     <p>Soy:<br /><i class="name dev">Desarrollador Junior .Net</i></p>
@@ -60,6 +55,7 @@
             </div>
         </div>
 
+        <!--BOTÓN FLOTANTE VOLVER AL INICIO-->
         <div class="btn-inicio-float" id="btnIni" hidden>
             <a href="#Inicio" title="Volver al Inicio">
                 <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
@@ -68,6 +64,7 @@
             </a>
         </div>
 
+        <!--BOTÓN FLOTANTE DESLIZAR -->
         <div class="elemento">
             @* <div class="">DESLIZAR</div> *@
             <a title="Deslizar hacia abajo" href="#Proyectos_recientes">
@@ -79,6 +76,7 @@
 
     </header>
 
+    <!--SECCIÓN BARRA DE NAVEGACIÓN (NAV - TEXTO - SVG) -->
     <nav class="nav_menu" id="nav_menu_id">
         <ul class="menu-p-inicio">
             <li title="Inicio">
@@ -143,19 +141,25 @@
                 </a>
             </li>
         </ul>
-        @* Span vacio que usaremos para indicar que opción del menú que se selecciono *@
+        <!--INDICADOR DE SECCIONES (bloque bajo el NAV)-->
         <span class="indicador" id="indicador_id"></span>
     </nav>
 
+    <!--CONTENEDOR DE SECCIONES-->
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
+    <!--SECCIÓN PIE DE PÁGINA-->
     <footer class="footer" id="Contacto">
+
         <h1 class="tiutlo-contacto">Contacto:</h1>
+
+        <!--IMAGENES SVG OBTENIDAS DE Bootstrap Icons-->
         <div class="img-center">
+
             <div class="img-linkedin">
                 <a href="https://www.linkedin.com/in/carlos-herrera-code502" rel="noopener noreferrer" target="_blank" class="w-100 h-100 flex main-center cross-center" title="Linkedin">
                     <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -193,16 +197,13 @@
                     </svg>
                 </a>
             </div>
+
         </div>
+        <!--SECCIÓN COPYRIGHT-->
         <div class="text-copy"><hr /><br />&copy; Copyright - <a class="text-copy" href="#Perfil">Carlos Herrera</a>  - 2023</div>
     </footer>
 
-
-
-
     <script src="~/js/Typed.js" asp-append-version="true"></script>
-    @*<script src="~/js/OnClick.js" asp-append-version="true"></script> *@
-    @* <script src="~/js/LoadScripts.js" asp-append-version="true"></script> *@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
