@@ -193,7 +193,7 @@
 /*PARA EQUIPOS CON ANCHO DE 600px para abajo*/
 /*Ayudan a mostrar las animaciones según el tamaño de la pantalla si es menor o mayor*/
 /*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     /*@media only screen and (min-height: 761px) and (min-height: 1000px) {*/
 
     .contenedor-imagen img {
@@ -273,5 +273,9 @@
     .menu-p-inicio svg {
         width: 30px;
         height: 30px;
+    }
+
+    .elemento {
+        font-size: 0.70em;
     }
 }
