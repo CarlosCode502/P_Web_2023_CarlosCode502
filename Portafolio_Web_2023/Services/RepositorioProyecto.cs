@@ -56,7 +56,7 @@ namespace Portafolio_Web_2023.Services
                     Titulo = "Interés Simple y Compuesto",
                     Descripcion = "Programa echo en WindowsForms con C#, simula una herramienta para calcular el interés simple y compuesto.",
                     Link = "https://github.com/CarlosCode502/InteresSimple_Y_Compuesto.git",
-                    ImagenURL = "/img/Interés SyC.jpg" //Img de 720 / 580
+                    ImagenURL = "/img/Interés SyC.jpg"
                 },
 
                 new ProyectoViewModel
