@@ -48,7 +48,7 @@
     .card-img-top {
         width: 100%;
         padding: 5px;
-        border-radius: 10px;
+        border-bottom: none;
     }
 
     .overflow-scroll_r {
@@ -365,13 +365,12 @@
         padding: 0px;
     }
 
+    /*Imagen de la tarjeta*/
     .card-img-top {
         width: 100%;
-        /*height: 150px;*/
-        /*padding-left: 40px;*/
         padding: 20px;
         padding-bottom: 0;
-        border-radius: 20px;
+        border-bottom: none;
     }
 
     /*Se aplica a todo el contenido que contenga la clase scroll*/

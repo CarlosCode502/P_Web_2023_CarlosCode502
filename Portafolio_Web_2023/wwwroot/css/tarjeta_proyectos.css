@@ -19,6 +19,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0px 20px 20px 20px;
     background: var(--blancoTP);
+    /*background:  #eaecee;*/
 }
 
 
@@ -50,8 +51,8 @@ body {
     box-shadow: 0 8px 16px 2px rgb(0, 0, 0);
 }
 
+
 .card-body {
     flex: 1 1 auto;
     padding: 1rem 1rem;
 }
-

@@ -63,8 +63,13 @@
 /*Imagen de la tarjeta*/
 .card-img-top {
     width: 100%;
-    border-top-left-radius: calc(.25rem - 1px);
-    border-top-right-radius: calc(.25rem - 1px);
+    /*border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);*/
+    /*padding: 10px;*/
+    /*border: 1px solid transparent;*/
+    /*border-image-slice: 10%;*/
+    /*border-bottom: 1px solid rgba(0,0,0,.125);*/
+    border-bottom: 1px solid black;
 }
 
 /*Cuerpo o contenido de la tarjeta*/
