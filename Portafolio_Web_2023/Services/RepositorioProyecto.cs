@@ -27,11 +27,11 @@ namespace Portafolio_Web_2023.Services
             //IMPORTANTE PONER LA MISMA CANTIDAD DE DESCRIPCIÓN(LINEAS)
 
             return new List<ProyectoViewModel>() {
-                                new ProyectoViewModel
+                new ProyectoViewModel
                 {
                     Titulo = "Portafolio Web",
                     Descripcion = "Este es mi portafolio en donde muestro los proyectos en los que he trabajado en las distintas tecnologías.",
-                    Link = "https://github.com/CarlosCode502/Registro_NCapas_CRUD_POO_SQL.git",
+                    Link = "https://github.com/CarlosCode502/Portafolio_Web_2023.git",
                         ImagenURL = "/img/Portafolio.jpg"
                 },
 
