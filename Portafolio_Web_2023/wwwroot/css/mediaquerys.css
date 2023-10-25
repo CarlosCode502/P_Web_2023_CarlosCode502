@@ -354,7 +354,7 @@
         /*padding-left: 40px;*/
         padding: 20px;
         padding-bottom: 0;
-        border-radius: 20px;
+        border-bottom: none;
     }
 
     /*Se aplica a todo el contenido que contenga la clase scroll*/
