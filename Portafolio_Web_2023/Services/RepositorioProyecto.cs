@@ -64,7 +64,7 @@ namespace Portafolio_Web_2023.Services
                     Titulo = "App de menú para restaurante",
                     Descripcion = "Aplicación de Consola en lenguaje C#, en donde se puede ver el funcionamiento de una orden en un restaurante/comedor",
                     Link = "https://github.com/CarlosCode502/App_Menu_Restaurante.git",
-                    ImagenURL = "/img/Sistema Menú Restaurante.jpg"//Img de 1080 / 540
+                    ImagenURL = "/img/menu-restaurante.jpg"
                 }
             };
         }
