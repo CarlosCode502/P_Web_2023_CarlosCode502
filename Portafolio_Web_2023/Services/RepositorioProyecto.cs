@@ -27,6 +27,14 @@ namespace Portafolio_Web_2023.Services
             //IMPORTANTE PONER LA MISMA CANTIDAD DE DESCRIPCIÓN(LINEAS)
 
             return new List<ProyectoViewModel>() {
+                                new ProyectoViewModel
+                {
+                    Titulo = "Portafolio Web",
+                    Descripcion = "Este es mi portafolio en donde muestro los proyectos en los que he trabajado en las distintas tecnologías.",
+                    Link = "https://github.com/CarlosCode502/Registro_NCapas_CRUD_POO_SQL.git",
+                        ImagenURL = "/img/Portafolio.jpg"
+                },
+
                 new ProyectoViewModel
                 {
                     Titulo = "Sistema de registro de productos",
@@ -40,7 +48,7 @@ namespace Portafolio_Web_2023.Services
                     Titulo = "Calculadora Científica-básica",
                     Descripcion = "Aplicación de Windows Forms en lenguaje C# que simula la función de una calculadora cientifíca-básica.",
                     Link = "https://github.com/CarlosCode502/CalculadoraCientifica.git",
-                    ImagenURL = "/img/Calculadora.PNG"
+                    ImagenURL = "/img/calculadora-basica.jpg"
                 },
 
                 new ProyectoViewModel
@@ -57,38 +65,6 @@ namespace Portafolio_Web_2023.Services
                     Descripcion = "Aplicación de Consola en lenguaje C#, en donde se puede ver el funcionamiento de una orden en un restaurante/comedor",
                     Link = "https://github.com/CarlosCode502/App_Menu_Restaurante.git",
                     ImagenURL = "/img/Sistema Menú Restaurante.jpg"//Img de 1080 / 540
-                },
-
-                new ProyectoViewModel
-                {
-                    Titulo = "Sistema de registro de productos",
-                    Descripcion = "Aplicación de WF en lenguaje C# utilizando POO arquitectura en N Capas y principios de Clean Architecture.",
-                    Link = "https://github.com/CarlosCode502/Registro_NCapas_CRUD_POO_SQL.git",
-                        ImagenURL = "/img/1.jpg"
-                },
-
-                new ProyectoViewModel
-                {
-                    Titulo = "Calculadora Científica-básica",
-                    Descripcion = "Aplicación de Windows Forms en lenguaje C# que simula la función de una calculadora cientifíca-básica.",
-                    Link = "https://github.com/CarlosCode502/CalculadoraCientifica.git",
-                    ImagenURL = "/img/5.jpg"
-                },
-
-                new ProyectoViewModel
-                {
-                    Titulo = "Interés Simple y Compuesto",
-                    Descripcion = "Programa echo en WindowsForms con C#, simula una herramienta para calcular el interés simple y compuesto.",
-                    Link = "https://github.com/CarlosCode502/InteresSimple_Y_Compuesto.git",
-                    ImagenURL = "/img/3.jpg"
-                },
-
-                new ProyectoViewModel
-                {
-                    Titulo = "App de menú para restaurante",
-                    Descripcion = "Aplicación de Consola en lenguaje C#, en donde se puede ver el funcionamiento de una orden en un restaurante/comedor",
-                    Link = "https://github.com/CarlosCode502/App_Menu_Restaurante.git",
-                    ImagenURL = "/img/4.jpg"
                 }
             };
         }
