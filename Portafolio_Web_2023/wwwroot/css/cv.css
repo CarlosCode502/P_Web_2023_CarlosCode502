@@ -530,10 +530,11 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
         /*bottom: 20px;*/
         text-decoration: none;        
         color: var(--colorGlobalCV);
-        
+        cursor: default;
     }
 
     .btn-descargar-cv {
+        font-weight: 600;
         visibility: hidden;
     }
 
