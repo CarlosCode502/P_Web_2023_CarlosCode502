@@ -502,41 +502,35 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
     /*column-rule: 4px dotted gray;*/
 }
 
-
 .btn-regresar-min {
     visibility: hidden;
-    /*position: fixed;*/
     right: 10px;
     top: 6px;
-    /*mostrar en pantalla pequeña*/
-    /*visibility: visible;*/
-    /*position: fixed;*/
-    /*bottom: 40px;*/
-    /*right: 40px;*/
     padding: 10px;
-    /*border-radius: 8px;*/
-    /*background-color: var(--colorGlobalCV);*/
     opacity: 0.5;
     z-index: 1050;
-    font-weight: 500;
 }
 
     .btn-regresar-min:hover {
-        /*color: black;*/
-        opacity: 1
+        opacity: 1;
+        font-weight: 600;
     }
 
     .btn-regresar-min .cont-regresar {
-        /*bottom: 20px;*/
-        text-decoration: none;        
+        text-decoration: none;
         color: var(--colorGlobalCV);
         cursor: default;
+        font-size: 1.4em;
     }
 
-    .btn-descargar-cv {
-        font-weight: 600;
-        visibility: hidden;
-    }
+        .btn-regresar-min .cont-regresar:hover {
+            font-size: 1.4em;
+        }
+
+.btn-descargar-cv {
+    visibility: hidden;
+}
+
 
 /* cuando sea como maximo 450, es decir menor */
 @media screen and (max-width: 810px) {
