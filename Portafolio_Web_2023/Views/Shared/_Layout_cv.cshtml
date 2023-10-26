@@ -32,26 +32,26 @@
           
             <div class="cont-nav">
                 @* <div class="regresar"> *@
-                <a class="img-nav" asp-area="" asp-controller="PortafolioW" asp-action="Index">
+                @* Se utiliza un evento JS de OnClick para regresar a la página y estado anterior *@
+                <a class="img-nav" onclick="history.back()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="bi bi-arrow-left d-inline-block align-text-top" viewBox="0 0 16 16">
-                        <title>Regresar al Inicio</title>
+                        <title>Regresar</title>
                         <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
                     </svg>
                     @* Regresar al Inicio *@
                 </a>
-                <a class="texto-nav" asp-area="" asp-controller="PortafolioW" asp-action="Index">Regresar al Inicio</a>
+                <a class="texto-nav" onclick="history.back()">Regresar</a>
                 @* </div> *@
                 <a class="boton-descargar" href="#ventanaModal">Descargar CV</a>
-
             </div>
 
-            <div class="btn-regresar-min">
-                <a class="cont-regresar" asp-area="" asp-controller="PortafolioW" asp-action="Index">
+            <div class="btn-regresar-min">                
+                <a class="cont-regresar" onclick="history.back()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="bi bi-arrow-left d-inline-block align-text-top" viewBox="0 0 16 16">
                         @* <title>Regresar al Inicio</title> *@
                         <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" fill="#0d6efd" />
                     </svg>
-                    Regresar al Inicio
+                    Regresar
                 </a>
             </div>
 
