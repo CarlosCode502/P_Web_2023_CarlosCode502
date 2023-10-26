@@ -52,9 +52,9 @@ body {
     fill: var(--blancoTP);
     color: var(--blancoTP);
     /*padding-left: 60px;*/
-    /*text-decoration: none;
+    /*text-decoration: none;*/
     cursor: pointer;
-    -webkit-user-select: none;
+    /*-webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;*/
     /*Se usaba para centrar el texto del nav solo con css*/

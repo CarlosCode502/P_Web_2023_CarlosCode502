@@ -79,6 +79,7 @@
     color: var(--blanco);
     text-decoration: none;
     opacity: 0.30;
+    cursor:pointer;
 }
 
     .texto-nav:hover {
