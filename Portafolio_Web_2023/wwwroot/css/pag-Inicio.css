@@ -39,10 +39,6 @@
     background: var(--blanco);
     /*sombra*/
     box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
-    /*Para que los elementos se pongan uno al lado de otro con(flexbox)*/
-    /*display: flex;*/
-    /*CONFIGURAR EL MENÚ PEGAJOSO (PARA QUE SE MANTENGA)*/
-    /*Con la propiedad sticky*/
     position: sticky;
     /*indicamos en donde se quedara pegado*/
     top: 0; /*Coordenada 0*/
@@ -87,7 +83,6 @@
 }
 
     .menu-p-inicio li {
-        /*margin-right: 70px;*/
         /*Para que todos tengan el mismo tamaño o espacio*/
         flex: 1;
         /*transition: transform 0.2s ease-in-out;*/
@@ -131,15 +126,11 @@
 
     .menu-p-inicio a:hover span:first-child {
         transform: translateY(100%);
-        /*background: black;*/
-        /*color: black;*/
     }
 
     .menu-p-inicio a:hover span:last-child,
     .menu-p-inicio[data-animation] a:hover span:last-child {
         transform: none;
-        /*background: black;*/
-        /*color: black;*/
     }
 
     /* ANIMATIONS
@@ -153,11 +144,8 @@
     }
 
 .elemento {
-    /*width: 50px;*/
-    /*height: 50px;*/
     bottom: 170px;
     right: 40px;
-    /*margin: 0 auto;*/
     position: absolute;
     font-size: 1em;
     opacity: 0.8;
@@ -197,13 +185,6 @@
     /*@media only screen and (min-height: 761px) and (min-height: 1000px) {*/
 
     .contenedor-imagen img {
-        /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
-        que ocupe el 100% (v*h viewpor hight alto del dispositivo)
-        SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);*/
-        /*Sin este deja un espacio abajo*/
-        /*height: calc(100vh - 90px);*/
-        /*height: 85vh;*/
-        /*Para que la imagen se adapte a la pantalla y no muestre su tam real*/
         max-width: 100%;
     }
     /*Texto que se muestra sobre la imagen*/
@@ -243,8 +224,6 @@
     .nav_menu a {
         /*font-size: 12px;*/
         font-size: 0.75em;
-        /*NO SE USA 👇*/
-        /*padding: 5px;*/
     }
 
     .nav_menu .indicador {
@@ -263,11 +242,6 @@
         /*Va a tener trnsisciones de tiempo para todas las propiedades*/
         /*Va a tener una animación*/
         transition: .2s ease-out all;
-        /*para demostrar mientras va aumentando va ir cambiando*/
-        /*el indicador va a ir de izquierda a derecha va a aparecer por eso es negativo*/
-        /*transform: translate(-500px);*/
-        /*Para ocultar el indicador en caso de que quede fuera y no se tenga seleccionado (dependiendo el disp será el error)*/
-        /* overflow: hidden;*/
     }
 
     .menu-p-inicio svg {

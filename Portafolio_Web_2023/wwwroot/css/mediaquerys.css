@@ -25,10 +25,6 @@
             padding-bottom: 20px
         }
 
-    /* .btn-secciones:hover {
-        opacity: 0.7;
-    }
-*/
     /*SECCIONES FIN*/
 
     /*INCIO RECIENTES*/
@@ -94,8 +90,6 @@
         -moz-transition: 1.5s ease; /* Firefox */
         -webkit-transition: 1.5s ease; /* Chrome - Safari */
         -o-transition: 1.5s ease; /* Opera */
-        /*border-top-left-radius: calc(.25rem - 1px);
-    border-top-right-radius: calc(.25rem - 1px);*/
     }
 
         .card-img-logo:hover {
@@ -177,7 +171,7 @@
         que ocupe el 100% (v*h viewpor hight alto del dispositivo)
         SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);*/
         /*Sin este deja un espacio abajo*/
-        height: calc(100vh - 120px);
+        height: calc(100vh - 140px);
         /*height: 85vh;*/
         /*Para que la imagen se adapte a la pantalla y no muestre su tam real*/
         max-width: 100%;
@@ -216,10 +210,6 @@
 
     /*Footer de las tarjetas*/
     .card-footer-primary {
-        /* margin-top: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;*/
         margin-top: 20px;
     }
 
@@ -269,8 +259,6 @@
         overflow-y: scroll;
         /*Espacio entre el botón y el contenido*/
         padding-bottom: 10px;
-        /*Tamaño del texto*/
-        /*font-size: 16px;*/
         font-size: 1em;
     }
     /*PERFIL FIN*/
@@ -352,11 +340,6 @@
         padding-left: 0px;
         margin-top: 0px;
     }
-
-    /*.row-cols-md-3 > * {
-        flex: 0 0 auto;
-        width: 33.3333333333%;
-    }*/
 
     .col {
         width: 100%;

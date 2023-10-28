@@ -116,7 +116,7 @@ namespace Portafolio_Web_2023.Controllers
                 if (ModelState.IsValid)
                 {
                     await servicioEmailSendGrid.Enviar(contactoViewModel);
-                    return RedirectToAction(nameof(Gracias));
+                    return RedirectToAction("Gracias");
                 }
 
             }

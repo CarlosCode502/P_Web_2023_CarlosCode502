@@ -13,7 +13,6 @@
     margin-top: 20px;
 }
 
-
 /*Diseño de los botones ver todos los proyectos y cv los (a)*/
 .btn-secciones {
     position: relative;
@@ -49,10 +48,7 @@ ul {
 .menu .border {
     position: absolute;
     left: 0;
-    /*background: currentColor;*/
-    /*color: red;*/
     border: 2px solid black;
-    /*border-radius: .75rem;*/
     border-radius: 6px;
 }
 
