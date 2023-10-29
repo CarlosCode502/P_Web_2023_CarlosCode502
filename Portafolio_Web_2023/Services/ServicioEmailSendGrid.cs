@@ -18,7 +18,6 @@ namespace Portafolio_Web_2023.Services
 
         public async Task Enviar(ContactoViewModel contactoViewModel)
         {
-
             var apiKey = configuration.GetValue<string>("SENDGRID_API_KEY");
 
             var email = configuration.GetValue<string>("SENDGRID_FROM");

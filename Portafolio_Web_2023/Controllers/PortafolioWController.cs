@@ -3,15 +3,12 @@ using Portafolio_Web_2023.Models;
 using Portafolio_Web_2023.Services;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.AspNetCore;
 using Portafolio_Web_2023.Models.CVs_VM_Resources;
-//using Grpc.Core;
 
 namespace Portafolio_Web_2023.Controllers
 {
     public class PortafolioWController : Controller
     {
-
         #region Campos generados automáticamente
         private readonly ILogger<PortafolioWController> logger;
         private readonly IRepositorioProyecto repositorioProyecto;
@@ -105,14 +102,12 @@ namespace Portafolio_Web_2023.Controllers
             return File(ruta, "application/pdf", "Cv-Carlos-Herrera-diseño-Canva.pdf");
         }        
 
-
         [HttpGet]
         public IActionResult Contacto()
         {
             return View();
         }
 
-       
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Contacto(ContactoViewModel contactoViewModel)
@@ -130,7 +125,6 @@ namespace Portafolio_Web_2023.Controllers
             {
                 Console.WriteLine($"Error de envio, los detalles son los siguientes:\n{ex.Message}");                
             }
-
             return View(contactoViewModel);
         }
 
@@ -139,8 +133,6 @@ namespace Portafolio_Web_2023.Controllers
         {
             return View();
         }
-
-
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

@@ -1,6 +1,5 @@
 ﻿namespace Portafolio_Web_2023.Models
 {
-
 	public class ProyectoViewModel
 	{
 		public string Titulo { get; set; }

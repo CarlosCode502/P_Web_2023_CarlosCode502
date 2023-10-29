@@ -11,7 +11,7 @@ builder.Services.AddTransient<IRepositorioProyecto, RepositorioProyecto>();
 //V#66 ENVIANDO EMAILS DESDE LA APP
 builder.Services.AddTransient<IServicioEmailSendGrid, ServicioEmailSendGrid>();
 
-builder.Services.AddTransient<IRepositorioArchivos, RepositorioArchivos>();
+//builder.Services.AddTransient<IRepositorioArchivos, RepositorioArchivos>();
 
 var app = builder.Build();
 
