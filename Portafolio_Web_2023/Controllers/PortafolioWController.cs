@@ -103,8 +103,13 @@ namespace Portafolio_Web_2023.Controllers
 
             //Inicializamos el modelo que contendra la lista y el elemento seleccionado 
             //para asi pasar los datos del repo al modelo list
-            var modelo = new CVs_Portafolio_ViewModel();
-            modelo.cvs_selectListItems = new List<SelectListItem>();
+            //var modelo = new CVs_Portafolio_ViewModel();
+            //modelo.cvs_selectListItems = new List<SelectListItem>();
+
+            var modelo = new CVs_Portafolio_ViewModel
+            {
+               cvs_selectListItems = new List<SelectListItem>()
+            };
 
             //Ahora un bucle que ira recorriendo y mostrando las propiedades
             foreach (var cvs in cvsData)
@@ -137,18 +142,24 @@ namespace Portafolio_Web_2023.Controllers
 
             //}
 
-            switch (cVs_Portafolio_ViewModel.CV_Seleccionado.ToString())
+            //switch (cVs_Portafolio_ViewModel.CV_Seleccionado.ToString())
+            //{
+            //    case "1":
+            //        return RedirectToAction("ArchivoHtml");
+
+            //    case "2":
+            //        return RedirectToAction("ArchivoCanvaConFoto");
+
+            //    default:
+            //        return RedirectToAction("cv");
+            //}
+
+            return cVs_Portafolio_ViewModel.CV_Seleccionado.ToString() switch
             {
-                case "1":
-                    return RedirectToAction("ArchivoHtml");
-
-                case "2":
-                    return RedirectToAction("ArchivoCanvaConFoto");
-
-                //default:
-                //    break;
-            }
-
+                "1" => RedirectToAction("ArchivoHtml"), 
+                "2" => RedirectToAction("ArchivoCanvaConFoto"),
+                _ => RedirectToAction("cv"),
+            };
             //if (cVs_Portafolio_ViewModel.CV_Seleccionado == "1")
             //{
             //    return RedirectToAction("ArchivoHtml");
@@ -163,7 +174,7 @@ namespace Portafolio_Web_2023.Controllers
             //}
             //}
             //return View("cv",cVs_Portafolio_ViewModel);
-            return RedirectToAction("cv");
+            //return RedirectToAction("cv");
         }
 
         ////V#9 Decarga de archivo von FileResult
