@@ -8,7 +8,6 @@
 }
 
 <div class="text-center">
-    @* style="width:300px;height:128px; *@
     @* Imagen obtenida de: https://undraw.co/illustrations *@
     <img class="img-fluid img-center mb-sm-3 mb-md-2 mb-lg-4" src="~/img/undraw_group_chat.svg" alt="undraw_group_chat.svg" title="chat grupal.svg" style="width:300px;" />
 
@@ -16,11 +15,9 @@
         <h1 class="mb-0 card-title">Envíeme un correo</h1>
         <p class="mt-0" style="color: #9DA3A8">Proporcionado por la Web API de SendGrid</p>
     </div>
-    @*     @Html.ValidationSummary *@
     <div class="row justify-content-center mt-sm-1 mt-md-2 mt-lg-3">
         <div class=" col-sm-6 col-md-9 col-lg-12">
-            <form asp-action="Contacto" class="fw-bolder">
-                @* <asp-route-returnurl="@ViewData["Index"]"></asp-route-returnurl> *@
+            <form asp-action="Contacto" class="fw-bolder" method="post" autocomplete="off">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-group mb-sm-2 mb-md-3 mb-lg-4">
                     <label asp-for="Nombre" class="control-label fw-bold mb-sm-1 mb-md-2 mb-lg-3"></label>
@@ -32,27 +29,6 @@
                     <input asp-for="Email" class="form-control fw-normal mb-2 mb-sm-2 mb-md-2 mb-lg-2" placeholder="correo@gmail.com" />
                     <span asp-validation-for="Email" class="text-danger fw-light mb-1 mb-sm-2 mb-md-2 mb-lg-2"></span>
                 </div>
-
-                @* <script>
-                    if( $('.micheckbox').prop('checked') ) {
-    alert('Seleccionado');
-}
-                </script> *@
-
-   @*              <div class="form-check text-start fw-light">
-                    <input class="form-check-input " type="checkbox" value="" id="validar" />
-                    <label class="form-check-label" for="validar">comparar correo.</label>
-                </div> *@
-@* 
-                @{
-                    var cb = ".form-check";
-                    // bool seleccionado = Html.CheckBox(s );
-                    if (cb == true)
-                    {
-
-                    }
-                } *@
-
                 <div class="form-group mb-sm-2 mb-md-3 mb-lg-4">
                     <label asp-for="ConfirmarEmail" class="control-label fw-bold mb-sm-1 mb-md-2 mb-lg-3"></label>
                     <input asp-for="ConfirmarEmail" class="form-control fw-normal mb-2 mb-sm-2 mb-md-2 mb-lg-2" placeholder="correo@gmail.com" />
@@ -71,11 +47,6 @@
     </div>
 </div>
 
-
-@* <div>
-    <a asp-action="Gracias" asp-controller="PortafolioW">IR a gracias</a>
-</div>
- *@
 @* Lo que debía escribir *@
 @section Scripts {
     @{

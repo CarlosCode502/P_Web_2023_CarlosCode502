@@ -16,16 +16,16 @@ namespace Portafolio_Web_2023.Controllers
         private readonly ILogger<PortafolioWController> logger;
         private readonly IRepositorioProyecto repositorioProyecto;
         private readonly IServicioEmailSendGrid servicioEmailSendGrid;
-        private readonly IRepositorioArchivos repositorioArchivos;
+        //private readonly IRepositorioArchivos repositorioArchivos;
         #endregion
 
-        public PortafolioWController(ILogger<PortafolioWController> logger, IRepositorioProyecto repositorioProyecto, IServicioEmailSendGrid servicioEmailSendGrid, IRepositorioArchivos repositorioArchivos)
+        public PortafolioWController(ILogger<PortafolioWController> logger, IRepositorioProyecto repositorioProyecto, IServicioEmailSendGrid servicioEmailSendGrid/*, IRepositorioArchivos repositorioArchivos*/)
         {
             //Generados automáticamente
             this.logger = logger;
             this.repositorioProyecto = repositorioProyecto;
             this.servicioEmailSendGrid = servicioEmailSendGrid;
-            this.repositorioArchivos = repositorioArchivos;
+            //this.repositorioArchivos = repositorioArchivos;
         }
 
         public IActionResult Index()
@@ -52,9 +52,11 @@ namespace Portafolio_Web_2023.Controllers
         public IActionResult Cv()
         {                       
             var cvsData = new RepositorioArchivos().ListadoArchivos();
-            
-            var modelo = new CVs_Portafolio_ViewModel();
-            modelo.cvs_selectListItems = new List<SelectListItem>();
+
+            var modelo = new CVs_Portafolio_ViewModel
+            {
+                cvs_selectListItems = new List<SelectListItem>()
+            };
 
             foreach (var cvs in cvsData)
             {
@@ -67,36 +69,40 @@ namespace Portafolio_Web_2023.Controllers
         [HttpPost]
         public IActionResult Cv(CVs_Portafolio_ViewModel cVs_Portafolio_ViewModel)
         {
-            
 
-            switch (cVs_Portafolio_ViewModel.CV_Seleccionado.ToString())
+            //switch expresión
+            return cVs_Portafolio_ViewModel.CV_Seleccionado.ToString() switch
             {
-                case "1":
-                    return RedirectToAction("ArchivoHtml");
+                "1" => RedirectToAction("ArchivoHtml"),
+                "2" => RedirectToAction("ArchivoCanvaConFoto"),
+                _ => RedirectToAction("cv"),
+            };
 
-                case "2":
-                    return RedirectToAction("ArchivoCanvaConFoto");
+            ////Anterior
+            //switch (cVs_Portafolio_ViewModel.CV_Seleccionado.ToString())
+            //{
+            //    case "1":
+            //        return RedirectToAction("ArchivoHtml");
 
-                default:
-                    return RedirectToAction("cv");
-                    //    break;
-            }
-         
-            //return RedirectToAction("cv");
+            //    case "2":
+            //        return RedirectToAction("ArchivoCanvaConFoto");
+
+            //    default:
+            //        return RedirectToAction("cv");
+            //        //    break;
+            //}
         }
 
         public FileResult ArchivoHtml()
-        {
-           
+        {           
             var ruta = "/Resources/Simple Cv-Carlos-Herrera.pdf";
-            return File(ruta, "application/pdf", "Cv-Simple-Carlos-Herrera.pdf");
+            return File(ruta, "application/pdf", "Cv-Carlos-Herrera-Simple.pdf");
         }
 
         public FileResult ArchivoCanvaConFoto()
         {           
             var ruta = "/Resources/Cv-Carlos-Herrera Canva.pdf";
-
-            return File(ruta, "application/pdf", "Cv-Carlos-Herrera Canva.pdf");
+            return File(ruta, "application/pdf", "Cv-Carlos-Herrera-diseño-Canva.pdf");
         }        
 
 
@@ -122,7 +128,7 @@ namespace Portafolio_Web_2023.Controllers
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error de envio, los detalles son los siguientes:\n{ex.Message}");
+                Console.WriteLine($"Error de envio, los detalles son los siguientes:\n{ex.Message}");                
             }
 
             return View(contactoViewModel);

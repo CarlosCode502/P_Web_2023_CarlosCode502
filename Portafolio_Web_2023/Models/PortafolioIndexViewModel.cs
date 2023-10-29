@@ -2,6 +2,6 @@
 {
 	public class PortafolioIndexViewModel
     {
-		public IEnumerable<ProyectoViewModel>? Proyectos { get; set; }
+		public IEnumerable<ProyectoViewModel> Proyectos { get; set; }
 	}
 }
