@@ -10,17 +10,12 @@
 
         <p class="titulo-modal">Archivos disponibles:</p>
 
-        <form asp-controller="PortafolioW" asp-action="cv" method="post">
-      
-
+        <form asp-controller="PortafolioW" asp-action="cv" method="post">      
             <div class="dropdown">
-
-
                 @* LISTA CV DESDE EL SERVIDOR *@
                 <select class="form-select" asp-items="Model.cvs_selectListItems" asp-for="CV_Seleccionado">
                     <option>Elija el archivo que desea descargar:</option>
                 </select>
-
 
             </div>
             <div class="botones">
@@ -29,7 +24,6 @@
                 <button class="btn-aceptar">Aceptar</button>
                 <a class="btn-cancelar" href="#">Cancelar</a>
             </div>
-
         </form>
     </div>
 </div>

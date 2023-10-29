@@ -110,6 +110,7 @@
     opacity: 0;
     pointer-events: none;
     transition: all 1s;
+
 }
 
 .ventana {
@@ -190,6 +191,7 @@
 #ventanaModal:target {
     opacity: 1;
     pointer-events: auto;
+    z-index: 2500;
 }
 
 .container {
