@@ -48,12 +48,53 @@ h1 {
         clear: both;
     }
 
+/*Texto con animación de parpadeo de la sección Gracias*/
+.texto-zoom {
+    display: flex;
+    /*visibility: hidden;*/
+    color: gray;
+    padding-top: 5px;
+}
+
+    .texto-zoom p {
+        font-weight: 600;
+        font-size: 0.85em;
+        padding: 3px 5px 3px 5px;
+        border: 1px solid black;
+        border-radius: 8px;
+        animation: parpadearzoom 2.5s ease infinite;
+    }
+
+    /*Animación del texto parpadar*/
+    @keyframes parpadearzoom {
+        0% {
+        background-color: #e5e7e9;
+    }
+
+    25% {
+        background-color: #d7dbdd;
+    }
+
+    50% {
+        background-color: #cacfd2;
+    }
+
+
+    75% {
+        background-color: #d7dbdd;
+    }
+
+    100% {
+        background-color: #e5e7e9;
+    }
+}
+
 /* Diseñe las cartas de contador */
 .card-habilidad-hijo {
     /* Agrega sombras para crear el efecto de "tarjeta". */
     /*Se quitaron porque crean una linea al dar color por hover*/
     /*  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;*/   
+    transition: 0.3s;*/
     display: flex;
     flex-direction: column;
     min-width: 0;
@@ -329,10 +370,6 @@ h1 {
         overflow-y: scroll;
     }
 
-    .ver-iconos {
-        padding-left: 90%;
-        color: #96989a;
-    }
 }
 
 

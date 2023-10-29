@@ -25,6 +25,8 @@
             padding-bottom: 20px
         }
 
+        .
+
     /*SECCIONES FIN*/
 
     /*INCIO RECIENTES*/
@@ -81,6 +83,12 @@
         padding: 0px 10px 0px 0px;
         max-height: 880px;
     }
+
+    .texto-zoom{
+
+    }
+
+
 
     /*#region Efecto zoom */
     /*Imagen de la tarjeta*/
@@ -285,7 +293,7 @@
 
     /*Se aplica a todo el contenido que contenga la clase scroll*/
     .overflow-scroll_h {
-        max-height: 396px;
+        max-height: 372px;
     }
 
     /*Imagen de la tarjeta*/
