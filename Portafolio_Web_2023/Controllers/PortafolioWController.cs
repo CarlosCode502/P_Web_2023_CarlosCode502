@@ -187,7 +187,7 @@ namespace Portafolio_Web_2023.Controllers
             var ruta = "/Resources/Simple Cv-Carlos-Herrera.pdf";
             //var ruta = repositorioArchivos.ListadoArchivos();
             //ruta = Server.MapPath("./Resources/Intro Exel.pdf");
-            return File(ruta, "application/pdf", "Cv-Simple-Carlos-Herrera.pdf");
+            return File(ruta, "application/pdf", "Cv-Carlos-Herrera-Simple.pdf");
         }
 
         ////V#9 Decarga de archivo von FileResult
@@ -199,7 +199,7 @@ namespace Portafolio_Web_2023.Controllers
             //var ruta = cVsViewModel.Ruta;
             var ruta = "/Resources/Cv-Carlos-Herrera Canva.pdf";
 
-            return File(ruta, "application/pdf", "Cv-Carlos-Herrera Canva.pdf");
+            return File(ruta, "application/pdf", "Cv-Carlos-Herrera-diseño-Canva.pdf");
         }
 
         //////V#9 Decarga de archivo von FileResult
