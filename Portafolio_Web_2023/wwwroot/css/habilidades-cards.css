@@ -52,7 +52,7 @@ h1 {
 .texto-zoom {
     display: flex;
     /*visibility: hidden;*/
-    color: gray;
+    color: white;
     padding-top: 5px;
 }
 
@@ -65,27 +65,28 @@ h1 {
         animation: parpadearzoom 2.5s ease infinite;
     }
 
-    /*Animación del texto parpadar*/
-    @keyframes parpadearzoom {
-        0% {
-        background-color: #e5e7e9;
+/*Animación del texto parpadar*/
+@keyframes parpadearzoom {
+    0% {
+        background-color: #85c1e9;
+        /*color: #a19f9f;*/
     }
 
     25% {
-        background-color: #d7dbdd;
+        background-color: #5dade2;
     }
 
     50% {
-        background-color: #cacfd2;
+        background-color: #3498db;
     }
 
 
     75% {
-        background-color: #d7dbdd;
+        background-color: #5dade2;
     }
 
     100% {
-        background-color: #e5e7e9;
+        background-color: #85c1e9;
     }
 }
 
@@ -240,6 +241,16 @@ h1 {
     --color_a: #cb4335; /*Alto*/
 }
 
+.devops:hover {
+    /*Accedemos a la animación*/
+    animation: color-me-in 2s infinite;
+    /*Variables locales*/
+    /*Colores api*/
+    --color_b: #a9cce3; /*Bajo*/
+    --color_m: #7fb3d5; /*Medio*/
+    --color_a: #2980b9; /*Alto*/
+}
+
 .sendgrid:hover {
     /*Accedemos a la animación*/
     animation: color-me-in 2s infinite;
@@ -366,18 +377,17 @@ h1 {
         /*position: relative;*/
         padding: 0px 8px 0px 8px;
         margin: 0px 8px 0px 0;
-        max-height: 600px;
+        max-height: 530px;
         overflow-y: scroll;
     }
-
 }
 
 
 /* Columnas responsivas: diseño de una columna (vertical) en pantallas pequeñas */
 /*@media screen and (max-width: 909px) {*/
-@media only screen and (max-width: 810px) {
+/*@media only screen and (max-width: 810px) {*/
     /*Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas*/
-    .fila {
+    /*.fila {
         padding-right: 0px;
         padding-left: 0px;
     }
@@ -392,30 +402,26 @@ h1 {
         display: block;
         margin-bottom: 50px;
         padding: 0px;
-    }
+    }*/
 
     /*Se aplica a todo el contenido que contenga la clase scroll*/
-    .overflow-scroll_h {
+    /*.overflow-scroll_h {*/
         /*position: relative;*/
-        padding: 0px 8px 0px 8px;
+        /*padding: 0px 8px 0px 8px;
         margin: 0px 8px 0px 0;
         max-height: 550px;
         overflow-y: scroll;
-    }
+    }*/
 
     /*Se aplico un padding-top ya que no se centraba la imagen*/
-    .pdd-net {
+    /*.pdd-net {
         padding-top: 25px;
         height: 75%;
-    }
+    }*/
 
     /*Cambia el tamaño de icono bootstrap en pantallas pequeñas*/
-    .size-bs {
+    /*.size-bs {
         padding-top: 15px;
         height: 90%;
     }
-
-    .ver-iconos {
-        color: #96989a;
-    }
-}
+}*/

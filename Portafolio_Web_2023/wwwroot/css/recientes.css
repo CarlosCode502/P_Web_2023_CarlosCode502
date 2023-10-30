@@ -89,6 +89,7 @@
 .card-text {
     font-size: 1em;
     padding: 15px;
+    text-align: justify;
 }
 
 .card-footer {
@@ -149,9 +150,9 @@
 
 
 /* Columnas responsivas: diseño de una columna (vertical) en pantallas pequeñas */
-@media screen and (max-width: 810px) {
+/*@media screen and (max-width: 810px) {*/
     /*Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas*/
-    .row {
+    /*.row {
         padding-right: 0px;
         padding-left: 0px;
     }
@@ -166,16 +167,16 @@
         display: block;
         margin-bottom: 50px;
         padding: 0px;
-    }
+    }*/
 
     /*Se aplica a todo el contenido que contenga la clase scroll*/
-    .overflow-scroll_r {
+    /*.overflow-scroll_r {*/
         /*position: relative;*/
-        padding: 0px 8px 0px 8px;
+        /*padding: 0px 8px 0px 8px;
         margin: 0px 8px 0px 0;
         max-height: 420px;
-        overflow-y: scroll;
+        overflow-y: scroll;*/
         /*max-height: 700px;
         overflow-y: scroll;*/
-    }
-}
+    /*}
+}*/

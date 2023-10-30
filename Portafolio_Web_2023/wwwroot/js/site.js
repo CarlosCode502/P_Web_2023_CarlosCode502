@@ -21,7 +21,7 @@ let indexSeccionAcctiva;
 
 //Personal calcular el threshold y rootmargin
 let rootmargin_V = '-100px 0px 0px 0px';
-let threshold_V = 0.65;
+let threshold_V = 0.60; //SE CAMBIO ESTA PROP
 
 //Identificar en que seccion se encuentra
 //Para esto se va a utilizar (IntersectorObserver) para detectar en que seccion estoy

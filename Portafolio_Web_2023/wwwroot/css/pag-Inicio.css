@@ -5,9 +5,11 @@
 }
 
 /*Contenedor de imagen*/
-.contenedor-imagen {    
+.contenedor-imagen {
     position: relative;
     display: block;
+    background-color: black;
+
 }
 
     .contenedor-imagen img {
@@ -19,8 +21,12 @@
         SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);*/
         /*Sin este deja un espacio abajo*/
         /*Para que la imagen se adapte a la pantalla y no muestre su tam real*/
-        max-width: 100%;
-        height: calc(100vh - 80px);
+        /*max-width: 100%;*/
+        object-fit: cover;
+        width: 100%;
+        height: calc(100vh - 65px);
+        /*SE CAMBIO ESTA PROP*/
+        /*height: 100%;*/
         /*height: 100%;*/
     }
 
@@ -29,7 +35,7 @@
         position: absolute;
         top: 50%;
         padding-left: 2rem;
-        transform: translate(-0%, -50%);     
+        transform: translate(-0%, -50%);
     }
 
 /*Menú de navegación
@@ -55,7 +61,7 @@
         */
         width: 0px;
         /*altura*/
-        height: 7px;
+        height: 5px; /*SE CAMBIO ESTA PROP*/
         /*color*/
         background: var(--colorGlobal);
         /*Posicionamiento*/
@@ -78,7 +84,8 @@
     justify-content: center;
     text-align: center;
     /*altura*/
-    height: 80px;
+    height: 65px;
+    /*SE CAMBIO ESTA PROP*/
     /*margin-top: 20px;*/
 }
 
@@ -104,7 +111,8 @@
 
             .menu-p-inicio a span:first-child {
                 display: inline-block;
-                padding: 20px;
+                padding: 15px 15px;
+                /*SE CAMBIO ESTA PROP*/
             }
 
             .menu-p-inicio a span:last-child {
@@ -159,7 +167,7 @@
     animation: arrow 1.5s ease-in-out infinite;
 }
 
-    .flecha:hover  {
+    .flecha:hover {
         animation: arrow 1.5s ease-out infinite !important;
         color: #ffffff;
     }
@@ -178,70 +186,72 @@
     }
 }
 
+
 /*PARA EQUIPOS CON ANCHO DE 600px para abajo*/
 /*Ayudan a mostrar las animaciones según el tamaño de la pantalla si es menor o mayor*/
 /*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
-@media only screen and (max-width: 600px) {
-    /*@media only screen and (min-height: 761px) and (min-height: 1000px) {*/
+/*@media only screen and (max-width: 600px) {*/
+/*@media only screen and (min-height: 761px) and (min-height: 1000px) {*/
 
-    .contenedor-imagen img {
+/*.contenedor-imagen img {
         max-width: 100%;
-    }
-    /*Texto que se muestra sobre la imagen*/
-    .contenedor-imagen .contenido-imagen {
+    }*/
+
+/*Texto que se muestra sobre la imagen*/
+/*.contenedor-imagen .contenido-imagen {
         position: absolute;
         top: 50%;
         padding-left: 1rem;
         transform: translate(-0%, -50%);
-    }
+    }*/
 
-    /*Bienvenida y nombre de la escritura*/
-    .contenido-imagen .titulo {
-        padding-right: 10px;
-        /*font-size: 40px;*/
-        font-size: 2.5em;
+/*Bienvenida y nombre de la escritura*/
+/*.contenido-imagen .titulo {
+        padding-right: 10px;*/
+/*font-size: 40px;*/
+/*font-size: 2.5em;
         font-weight: normal;
+    }*/
+
+/*Profesión texto*/
+/*dev {*/
+/*font-size: 50px;*/
+/*font-size: 3.125em;
+    }*/
+
+/*Mensaje texto*/
+/*.msj {*/
+/*font-size: 50px;*/
+/*font-size: 1em;
     }
 
-    /*Profesión texto*/
-    dev {
-        /*font-size: 50px;*/
-        font-size: 3.125em;
-    }
-
-    /*Mensaje texto*/
-    .msj {
-        /*font-size: 50px;*/
-        font-size: 1em;
-    }
-
-    #big-a {
-        /*font-size: 10px;*/
-        font-size: 0.625em;
+    #big-a {*/
+/*font-size: 10px;*/
+/*font-size: 0.625em;
         font-weight: 600;
     }
 
-    .nav_menu a {
-        /*font-size: 12px;*/
-        font-size: 0.75em;
+    .nav_menu a {*/
+/*font-size: 12px;*/
+/*font-size: 0.75em;
     }
 
-    .nav_menu .indicador {
-        /*ancho se cambio el valor ya que se debe calcular el tamaño del boton por
+    .nav_menu .indicador {*/
+/*ancho se cambio el valor ya que se debe calcular el tamaño del boton por
             medio de JS aqui en css a traves de los media querys.
         */
-        width: 0px;
-        /*altura*/
-        height: 7px;
-        /*color*/
-        background: var(--colorGlobal);
-        /*Posicionamiento*/
-        position: absolute;
-        /*Posicionar el la parte de abajo del nav*/
-        bottom: 0;
-        /*Va a tener trnsisciones de tiempo para todas las propiedades*/
-        /*Va a tener una animación*/
-        transition: .2s ease-out all;
+/*width: 0px;*/
+/*altura*/
+/*height: 7px;*/
+/*color*/
+/*background: var(--colorGlobal);*/
+/*Posicionamiento*/
+/*position: absolute;*/
+/*Posicionar el la parte de abajo del nav*/
+/*bottom: 0;*/
+/*Va a tener trnsisciones de tiempo para todas las propiedades*/
+/*Va a tener una animación*/
+/*transition: .2s ease-out all;
     }
 
     .menu-p-inicio svg {
@@ -252,4 +262,4 @@
     .elemento {
         font-size: 0.70em;
     }
-}
+}*/

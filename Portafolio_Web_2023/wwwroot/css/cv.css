@@ -400,30 +400,39 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
     -ms-column-gap: 20px;
 }
 
+/*btn regresar en pantallas peques*/
 .btn-regresar-min {
     visibility: hidden;
+    display: flex;
     right: 10px;
     top: 6px;
     padding: 10px;
-    opacity: 0.5;
+   /* opacity: 0.5;*/
     z-index: 1050;
 }
 
-    .btn-regresar-min:hover {
+/*    .btn-regresar-min:hover {
         opacity: 1;
         font-weight: 600;
-    }
+    }*/
 
+/*formato para el btn*/
     .btn-regresar-min .cont-regresar {
-        text-decoration: none;        
+        text-decoration: none;
         color: var(--colorGlobalCV);
         cursor: default;
         font-size: 1.4em;
+        opacity: 0.5;
     }
 
+        .btn-regresar-min .cont-regresar:hover {
+            opacity: 1;
+            font-weight: 600;
+        }
+/*
     .btn-regresar-min .cont-regresar:hover {
         font-size: 1.4em;
-    }
+    }*/
 
     .btn-descargar-cv {
         visibility: hidden;       
@@ -431,36 +440,36 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
 
 
 /* cuando sea como maximo 450, es decir menor */
-@media screen and (max-width: 810px) {
+/*@media screen and (max-width: 810px) {*/
 
     /*Cambiar padding del contenedor*/
-    .container {
+    /*.container {
         background-color: var(--blanco);
         padding: 0px;
-    }
+    }*/
 
     /*Cambiar los márgenes*/
-    .cv-estructura {
+    /*.cv-estructura {
         margin: 10px 20px;
         padding: 20px 20px;
     }
 
-    .cont-nav {
+    .cont-nav {*/
         /*visibility: hidden;*/
-        display: none;
+        /*display: none;
     }
 
     .btn-regresar-min {
         visibility: visible;
-    }
+    }*/
 
     /*Para mostrar la fecha a la izquierda y centrada de titulo exp*/
-    .btn-descargar-cv {
+    /*.btn-descargar-cv {
         visibility: visible;
         position: fixed;
-        bottom: 40px;
+        bottom: 40px;*/
         /*top: 40px;*/
-        right: 40px;
+        /*right: 40px;
         padding: 10px;
         border-radius: 8px;
         background-color: var(--colorGlobalCV);
@@ -478,53 +487,53 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
 
     .ventana {
         margin: 90% auto;
-    }
+    }*/
 
         /*Titulo del formulario*/
-        .ventana .titulo-modal {
-            color: var(--colorGlobalCV);
+        /*.ventana .titulo-modal {
+            color: var(--colorGlobalCV);*/
             /*font-size: 22px;*/
-            font-size: 1.375em;
+            /*font-size: 1.375em;
             font-weight: bolder;
             margin-top: 20px;
             margin-bottom: 20px;
-        }
+        }*/
 
         /*Todo el dropdown y contenido*/
-        .ventana .form-select {
+        /*.ventana .form-select {*/
             /*font-size: 14px;*/
-            font-size: 0.875em;
+            /*font-size: 0.875em;
             border: 1px solid var(--colorGlobalCV);
             border-radius: 6px;
             margin-bottom: 20px;
         }
 
         .ventana .btn-aceptar {
-            padding: 10px 30px;           
+            padding: 10px 30px;
             font-size: 1em;
         }
 
         .ventana .btn-cancelar {
             padding: 10px 20px;
             font-size: 1em;
-        }
+        }*/
 
 
     /*Cambiar el borde y cambiar la propiedad de flex a block*/
-    .contacto {
+    /*.contacto {
         margin: 0;
         border: 4px solid var(--colorGlobalCV);
         display: block;
-    }
+    }*/
 
     /*Quitar los márgenes*/
-    .gmail, .github, .phone {
+    /*.gmail, .github, .phone {
         margin: 10px;
-    }
+    }*/
 
     /*Para dividir las tecnologias en columnas*/
-    .texto-columnas {
+    /*.texto-columnas {*/
         /*font-size: 16px;*/
-        margin: 20px auto 0 14%;
+        /*margin: 20px auto 0 14%;
     }
-}
+}*/
