@@ -7,45 +7,60 @@
     Layout = "~/Views/Shared/_Layout_Contacto.cshtml";
 }
 
+
+@* Si el contenido del msj es distinto a null se mostrara la alerta
+Ya que si es null es porque se envio o enviara correctamente el formulario *@
+@if (ViewBag.msjError != null)
+{
+    <div class="alert alert-danger d-flex alert-dismissible fade show" role="alert">
+        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill" /></svg>
+        <div>
+            @ViewBag.msjError
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+}
+
 <div class="text-center">
     @* Imagen obtenida de: https://undraw.co/illustrations *@
-    <img class="img-fluid img-center mb-sm-3 mb-md-2 mb-lg-4" src="~/img/undraw_group_chat.svg" alt="undraw_group_chat.svg" title="chat grupal.svg" style="width:300px;" />
+    <img class="img-fluid img-center mb-sm-3 mb-md-2 mb-lg-4 chat-grup" src="~/img/undraw_group_chat.svg" alt="undraw_group_chat.svg" title="chat grupal.svg"/>
 
-    <div class="text-uppercase mb-sm-2 mb-md-3 mb-lg-4">
+    <div class="text-uppercase mb-sm-2 mb-md-3 mb-lg-4 text">
         <h1 class="mb-0 card-title">Envíeme un correo</h1>
         <p class="mt-0" style="color: #9DA3A8">Proporcionado por la Web API de SendGrid</p>
     </div>
-    <div class="row justify-content-center mt-sm-1 mt-md-2 mt-lg-3">
+    <div class="row justify-content-center mt-sm-2 mt-md-4 mt-lg-5">
         <div class=" col-sm-6 col-md-9 col-lg-12">
-            <form asp-action="Contacto" class="fw-bolder" method="post" autocomplete="off">
+            <form asp-action="Contacto" class="fw-bolder" method="post">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                <div class="form-group mb-sm-2 mb-md-3 mb-lg-4">
+                <div class="form-group mb-sm-2 mb-md-3 mb-lg-4 text">
                     <label asp-for="Nombre" class="control-label fw-bold mb-sm-1 mb-md-2 mb-lg-3"></label>
-                    <input asp-for="Nombre" class="form-control fw-normal mb-2 mb-sm-2 mb-md-2 mb-lg-2" placeholder="Ingrese su nombre." />
+                    <input asp-for="Nombre" class="form-control fw-normal mb-2 mb-sm-2 mb-md-2 mb-lg-2 text" placeholder="Ingrese su nombre." />
                     <span asp-validation-for="Nombre" class="text-danger fw-light mb-1 mb-sm-2 mb-md-2 mb-lg-2"></span>
                 </div>
-                <div class="form-group mb-sm-2 mb-md-3 mb-lg-4">
+                <div class="form-group mb-sm-2 mb-md-3 mb-lg-4 text">
                     <label asp-for="Email" class="control-label fw-bold mb-sm-1 mb-md-2 mb-lg-3"></label>
-                    <input asp-for="Email" class="form-control fw-normal mb-2 mb-sm-2 mb-md-2 mb-lg-2" placeholder="correo@gmail.com" />
+                    <input asp-for="Email" class="form-control fw-normal mb-2 mb-sm-2 mb-md-2 mb-lg-2 text" placeholder="correo@gmail.com" />
                     <span asp-validation-for="Email" class="text-danger fw-light mb-1 mb-sm-2 mb-md-2 mb-lg-2"></span>
                 </div>
-                <div class="form-group mb-sm-2 mb-md-3 mb-lg-4">
+                <div class="form-group mb-sm-2 mb-md-3 mb-lg-4 text">
                     <label asp-for="ConfirmarEmail" class="control-label fw-bold mb-sm-1 mb-md-2 mb-lg-3"></label>
-                    <input asp-for="ConfirmarEmail" class="form-control fw-normal mb-2 mb-sm-2 mb-md-2 mb-lg-2" placeholder="correo@gmail.com" />
+                    <input asp-for="ConfirmarEmail" class="form-control fw-normal mb-2 mb-sm-2 mb-md-2 mb-lg-2 text" placeholder="correo@gmail.com" />
                     <span asp-validation-for="ConfirmarEmail" class="text-danger fw-light mb-1 mb-sm-2 mb-md-2 mb-lg-2"></span>
                 </div>
-                <div class="form-group mb-sm-2 mb-md-3 mb-lg-4">
+                <div class="form-group mb-sm-2 mb-md-3 mb-lg-4 text">
                     <label asp-for="Mensaje" class="control-label fw-bold mb-sm-1 mb-md-2 mb-lg-3"></label>
-                    <textarea asp-for="Mensaje" class="form-control fw-normal mb-2 mb-sm-2 mb-md-2 mb-lg-2" placeholder="Escriba su mensaje."></textarea>
+                    <textarea asp-for="Mensaje" class="form-control fw-normal mb-2 mb-sm-2 mb-md-2 mb-lg-2 text" placeholder="Escriba su mensaje."></textarea>
                     <span asp-validation-for="Mensaje" class="text-danger fw-light mb-1 mb-sm-2 mb-md-2 mb-lg-2"></span>
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Enviar" class="btn btn-primary" />
+                    <input type="submit" value="Enviar" class="btn btn-primary text mb-3" />               
                 </div>
             </form>
         </div>
     </div>
 </div>
+
 
 @* Lo que debía escribir *@
 @section Scripts {

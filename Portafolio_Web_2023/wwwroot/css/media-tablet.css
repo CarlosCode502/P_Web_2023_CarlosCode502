@@ -11,82 +11,63 @@
     /*PAG INICIO INICIO*/
     /*Imagen inicio dentro del contenedor*/
     .contenedor-imagen img {
-        /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
-        que ocupe el 100% (v*h viewpor hight alto del dispositivo)
-        SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);*/
-        /*Sin este deja un espacio abajo*/
-        height: calc(100vh - 100px);
-        /*height: 85vh;*/
-        /*Para que la imagen se adapte a la pantalla y no muestre su tam real*/
-        /*max-width: 100%;*/
         /*display:none;*/
+        /*width: 400px;*/
+        margin: auto;
+        display: block;
+        object-fit: fill;
+        height: calc(100vh - 100px);
+        /*Para que la imagen se adapte a la pantalla y no muestre su tam real*/
+        max-width: 100%;
     }
 
     /*Texto que se muestra sobre la imagen*/
     .contenedor-imagen .contenido-imagen {
-        /*position: absolute;*/
-        /*top: 50%;*/
-        padding-left: 0.80rem;
-        /*transform: translate(-0%, -50%);*/
+        padding-left: 1.2rem;
     }
 
     /*Bienvenida y nombre de la escritura*/
     .contenido-imagen .titulo {
-        padding-right: 10px;
-        /*font-size: 40px;*/
-        font-size: 3.2em;
+        font-size: 6em;
         /*Espaciado entre lineas*/
         line-height: 1.3em;
-        font-weight: normal;
     }
 
     #big-a {
         /*font-size: 10px;*/
-        font-size: 0.75em;
-        font-weight: 600;
+        font-size: 1em;
     }
 
     .nav_menu a {
         /*font-size: 12px;*/
-        font-size: 0.85em;
-        font-weight: 600;
+        font-size: 1em;
+        /*font-weight: 600;*/
     }
 
-    /*.nav_menu .indicador {*/
-    /*ancho se cambio el valor ya que se debe calcular el tamaño del boton por
-            medio de JS aqui en css a traves de los media querys.
-        */
-    /*width: 0px;*/
-    /*altura*/
-    /*height: 5px;*/
-    /*color*/
-    /*background: var(--colorGlobal);*/
-    /*Posicionamiento*/
-    /*position: absolute;*/
-    /*Posicionar el la parte de abajo del nav*/
-    /*bottom: 0;*/
-    /*Va a tener trnsisciones de tiempo para todas las propiedades*/
-    /*Va a tener una animación*/
-    /*transition: .2s ease-out all;*/
-    /*}*/
-
-    .menu-p-inicio svg {
-        width: 40px;
-        height: 40px;
+    .menu-p-inicio {
+        height: 60px;
+        margin-bottom: 15px;
     }
+
+        .menu-p-inicio svg {
+            width: 45px;
+            height: 45px;
+        }
 
     /*Div del texto flotante deslizar*/
     .elemento {
-        bottom: 180px;
-        font-size: 0.60em;
+        bottom: 200px;
+        font-size: 0.80em;
     }
 
     /*Botón flotante reg inicio*/
-    /*.btn-inicio-float {*/
-    /*     bottom: 65px;
-        right: 30px;*/
-    /*opacity: 0.2;
-    }*/
+    .btn-inicio-float {
+        bottom: 60px;
+        right: 75px;
+        width: 94px;
+        height: 70px;
+        opacity: 0.2;
+    }
     /*PAG INICIO FIN*/
     /*#endregion */
 
@@ -94,7 +75,7 @@
     /*#region SECCIONES */
     /*SECCIONES INICIO*/
     .seccion {
-        padding: 20px;
+        padding: 50px;
         /*background-color: red;*/
     }
 
@@ -109,7 +90,7 @@
         /*Texto de las secciones */
         .seccion .texto-secciones {
             /*font-size: 16px;*/
-            font-size: 0.85em;
+            font-size: 1em;
         }
 
     /*    .btn-secciones:hover {
@@ -118,7 +99,7 @@
 
     /*Footer de las tarjetas*/
     .card-footer-primary {
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     /*Cambiar opacidad al pasar el cursor por este */
@@ -137,34 +118,35 @@
     /*#region PERFIL */
     /*PERFIL INCIO*/
     #Perfil {
-        padding-top: 80px;
+        padding-top: 90px;
     }
 
     /*Imagen*/
     .img-p {
-        width: 300px;
+        width: 600px;
         padding: 15px;
         /*display: block;*/
     }
 
     /*Contenedor img*/
     .img-perfil {
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
 
     /*Padding personalizado para btn perfil*/
-    .btn-pdd-perfil {
-        padding: 10px 78px 10px 78px;
-        /*z-index: 999;*/
-    }
+    /*.btn-pdd-perfil{*/
+    /*padding: 10px 78px 10px 78px;*/
+    /*z-index: 999;*/
+    /*font-size: 1.2em;*/
+    /*}*/
 
-        .btn-pdd-perfil:hover {
-            opacity: 0.7;
-        }
+    .btn-pdd-perfil:hover {
+        opacity: 0.7;
+    }
 
     /*Contenido dentro de la tarjeta*/
     .contenido-card-perfil {
-        padding: 0 10px;
+        padding: 0 30px;
     }
 
     /*Contenido de la tarjeta*/
@@ -175,76 +157,88 @@
     /*Contenido dentro del scrooll*/
     .overflow-scroll_p {
         /*position: relative;*/
-        padding: 0px 8px 0px 8px;
-        margin: 0px 8px 0px 0;
-        max-height: 292px;
-        overflow-y: scroll;
+        padding: 12px 5px 0px 5px;
+        /*margin: 0px 8px 0px 0;*/
+        max-height: 492px;
+        /*overflow-y: scroll;*/
         /*Espacio entre el botón y el contenido*/
         /*padding-bottom: 20px;*/
         /*Tamaño del texto*/
         /*font-size: 16px;*/
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
     /*PERFIL FIN*/
     /*#endregion */
 
 
-    /*#region HABILIDADES */
-    /*HABILIDADES INICIO*/
 
+    /*#region HABILIDADES */
+
+    /*HABILIDADES INICIO*/
     #Habilidades {
-        padding-top: 80px;
+        padding-top: 90px;
     }
+
     /*card habilidades*/
     .contenido-card-habilidades {
         padding: 0 10px;
     }
 
-    /*Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas*/
-    .fila {
-        padding: 0px;
-        padding-left: 20%;
-    }
-
-    .fila-cols-md-3 > * {
-        flex: 0 0 auto;
-        width: 33.3333333333%;
-    }
 
     .columna {
-        width: 70%;
-        /*display: block;*/
-        margin-bottom: 18px;
+        width: 35%;
+        margin-bottom: 60px;
         padding: 0px;
+        padding-right: 40px
+    }
+
+    /*Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas*/
+    .fila {
+        padding: 0px 60px 0px 80px;
     }
 
     /*Se aplica a todo el contenido que contenga la clase scroll*/
     .overflow-scroll_h {
         padding: 0px 8px 0px 8px;
         margin: 0px 8px 0px 0;
-        max-height: 475px;
+        max-height: 826px;
         overflow-y: scroll;
-    }
-
-    /*Imagen de la tarjeta*/
-    .card-img-logo {
-        padding-top: 8px;
-        padding-left: 8px;
-        width: 90px;
     }
 
     /*Cuerpo o contenido de la tarjeta*/
     .card-img-h {
         /*flex: 1 1 auto;*/
-        margin: 10px auto 10px auto;
-        width: 100px;
-        height: 100px;
+        /*padding: 1rem 1rem;*/
+        /*font-size: 1rem;*/
+        /*border-radius: 40px;*/
+        /*margin: 40px auto 40px auto;*/
+        margin: 25px auto 0px auto;
+        width: 125px;
+        height: 150px;
     }
+
+
+    /*Imagen de la tarjeta*/
+    .card-img-logo {
+        width: 120px;
+        transition: 1.5s ease; /*con ease los elementos no se sobreponen del nav*/
+        -moz-transition: 1.5s ease; /* Firefox */
+        -webkit-transition: 1.5s ease; /* Chrome - Safari */
+        -o-transition: 1.5s ease; /* Opera */
+    }
+
+        .card-img-logo:hover {
+            transform: scale(1.4);
+            -moz-transform: scale(1.4); /* Firefox */
+            -webkit-transform: scale(1.4); /* Chrome - Safari */
+            -o-transform: scale(1.4); /* Opera */
+            -ms-transform: scale(1.4); /* IE9 */
+        }
 
     /*para js y otros*/
     .menos {
         /*width: 50%;*/
-        height: 85%;
+        height: 75%;
     }
     /*Se aplico un padding-top ya que no se centraba la imagen*/
     .pdd-net {
@@ -254,26 +248,27 @@
 
     /*Cambia el tamaño de icono bootstrap en pantallas pequeñas*/
     .size-bs {
-        padding-top: 15px;
-        padding-bottom: 10px;
-        height: 90%;
+        padding-top: 10px;
+        /*padding-bottom: 10px;*/
+        height: 75%;
     }
 
     .pdd-sql {
-        margin-left: 22px;
+        margin-left: 35px;
         width: 90%;
-        height: 85%;
+        height: 75%;
     }
     /*FIN HABILIDADES*/
+
     /*#endregion */
+
 
 
     /*#region RECIENTES */
     /*INICIO RECIENTES*/
-
     /*Id de seccion reciente (pdd entre seccion y nav)*/
     #Proyectos_recientes {
-        padding-top: 80px;
+        padding-top: 90px;
     }
 
     /*Contenido de la tarjeta recientes*/
@@ -297,25 +292,26 @@
         padding-left: 0px;
     }*/
 
-    .row-cols-md-3 > * {
+    .row-cols-md-2 > * {
         flex: 0 0 auto;
         width: 33.3333333333%;
     }
 
     .col {
         width: 100%;
+        /*height: 120%;*/
         /*display: block;*/
-        margin-top: 12px; /*QUITAR ESTO EN TABLET*/
-        margin-bottom: 30px;
-        padding: 0px;
+        margin-top: 10px;
+        /*margin-bottom: 60px;*/
+        padding: 0 30px 60px 30px;
     }
 
     /*Imagen de la tarjeta*/
     .card-img-top {
-        /*width: 100%;*/
-        padding: 10px;
-        padding-bottom: 0;
-        border-bottom: none;
+        width: 100%;
+        /*padding: 20px;*/
+        /*padding-bottom: 0;*/
+        /*border-bottom: none;*/
     }
 
     /*Se aplica a todo el contenido que contenga la clase scroll*/
@@ -323,34 +319,34 @@
         /*position: relative;*/
         padding: 0px 16px 0px 16px;
         /*margin: 0px 8px 0px 0;*/
-        max-height: 422px;
+        max-height: 778px;
         overflow-y: scroll;
     }
 
-    /*.overflow-scroll_r {*/
-    /*no vaposition: relative;*/
-    /*padding: 0px 8px 0px 8px;
-        margin: 0px 8px 0px 0;
-        max-height: 420px;
-        overflow-y: scroll;
-    }*/
-
     .card-title {
-        font-size: 1em;
-        padding: 15px;
-        padding-bottom: 0;
+        font-size: 1.2em;
+        /*padding: 15px;*/
+        padding: 20px;
+        font-weight: 600;
     }
 
     .card-text {
-        font-size: 0.93em;
+        font-size: 1.2em;
         text-align: justify;
-        /*line-height: 18px;*/
-        padding: 15px;
+        line-height: 26px;
+        padding: 20px;
+        font-weight: normal;
+    }
+
+    .btn-primary {
+        padding: 15px 15px 15px 15px;
+        border-radius: 10px;
+        font-size: 1em;
     }
 
     /*Padding personalizado para btn recientes*/
     .btn-pdd-recientes {
-        padding: 10px;
+        padding: 18px;
     }
 
         .btn-pdd-recientes:hover {
@@ -373,6 +369,7 @@
     .cv-estructura {
         margin: 10px 20px;
         padding: 20px 20px;
+        font-size: 110%;
     }
 
     /*ESTYLOS DE CV SI LA PANTALLA ES PEQUEÑA*/
@@ -394,7 +391,8 @@
         /*top: 40px;*/
         right: 40px;
         padding: 10px;
-        border-radius: 8px;
+        border-radius: 10px;
+        font-size: 1.3em;
         background-color: var(--colorGlobalCV);
         opacity: 0.5;
     }
@@ -403,47 +401,63 @@
             opacity: 1;
         }
 
+    /*Btn (a) descargar cv min*/
     .btn-a {
         text-decoration: none;
         color: var(--blanco);
     }
 
-    /*Centrar ventana modal*/
-    .ventana {
-        margin: 65% auto;
+    .alert-cv {
+        /*text-align: justify;*/
+        /*padding: 30px;*/
+        font-size: 1.2em;
     }
 
-        /*    .ventana {
-        margin: 90% auto;
-    }*/
+    .closebtn {
+        font-size: 2em;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.1s;
+    }
+
+    /*Centrar ventana modal*/
+    .ventana {
+        margin: 50% auto;
+        padding: 10px 50px;
+        /*text-align: center;*/
+    }
 
         /*Titulo del formulario*/
         .ventana .titulo-modal {
             /*color: var(--colorGlobalCV);*/
             /*font-size: 22px;*/
-            /*font-size: 1.375em;*/
+            font-size: 1.7em;
             /*font-weight: bolder;*/
-            /*margin-top: 20px;*/
+            margin-top: 30px;
             /*margin-bottom: 20px;*/
         }
 
         /*Todo el dropdown y contenido*/
         .ventana .form-select {
+            display: flex;
             /*font-size: 14px;*/
-            /*font-size: 0.875em;*/
+            font-size: 1.1em;
             /*border: 1px solid var(--colorGlobalCV);*/
-            /*border-radius: 6px;*/
-            /*margin-bottom: 20px;*/
+            border-radius: 8px;
+            /*margin-right: 40px;*/
+            margin-bottom: 30px;
         }
 
         .ventana .btn-aceptar {
-            padding: 10px 30px;
-            font-size: 1em;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 1.3em;
         }
 
         .ventana .btn-cancelar {
-            padding: 10px 28px;
-            font-size: 1em;
+            padding: 15px 26px;
+            border-radius: 10px;
+            font-size: 1.3em;
         }
 
     /*Cambiar el borde y cambiar la propiedad de flex a block*/
@@ -463,81 +477,89 @@
     /*Para dividir las tecnologias en columnas*/
     .texto-columnas {
         /*font-size: 16px;*/
-        margin: 20px auto 0 10%;
+        margin: 20px auto 0 22%;
     }
     /*CV FIN*/
 
     /*#endregion */
 
+
+    /*#region CONTACTO*/
+    .text {
+        font-size: 110%;
+    }
+
+    .chat-grup {
+        width: 320px;
+    }
+
+    /*#endregion*/
+
+
     /*#region FOOTER */
     /*FOOTER INICIO*/
     .footer {
         /*Espacio entre el "Contactame" y el último secction*/
-        padding-top: 4rem;
+        /*padding-top: 4rem;*/
         /*Espacion entre el texto y las img de contacto*/
         /*line-height: 30px;*/
     }
 
     .tiutlo-contacto {
         color: var(--colorGlobal);
-        padding-bottom: 15px;
+        padding-bottom: 25px;
     }
 
 
     .img-linkedin, .img-correo, .img-ubicacion, .img-whatsapp, .img-github {
         /*Espacios entre cada icono */
-        margin: 16px;
+        margin: 24px;
         /*Alto y acho de iconos*/
-        width: 52px;
-        height: 52px;
+        width: 62px;
+        height: 62px;
     }
 
         /*Color azul para linkedin*/
         .img-linkedin svg:hover {
             /*height: 100%;*/
-            width: 64px;
-            height: 64px;
+            width: 72px;
+            height: 72px;
             /*fill: #22A7F2;*/
         }
 
         /*Color rojo para gmail*/
         .img-correo svg:hover {
-            /*height: 100%;*/
-            width: 64px;
-            height: 64px;
-            /*fill: #ea0101;*/
+            width: 72px;
+            height: 72px;
         }
 
         /*Color verde naranja para ubicación*/
         .img-ubicacion svg:hover {
-            /*height: 100%;*/
-            width: 64px;
-            height: 64px;
-            /*fill: #ff6a00;*/
+            width: 72px;
+            height: 72px;
         }
 
         /*Color verde para whatsapp*/
         .img-whatsapp svg:hover {
-            /*height: 100%;*/
-            width: 64px;
-            height: 64px;
-            /*fill: #0DC143;*/
+            width: 72px;
+            height: 72px;
         }
 
         /*Color morado para github*/
         .img-github svg:hover {
-            /*height: 100%;*/
-            width: 64px;
-            height: 64px;
-            /*fill: #5C2D91;*/
+            width: 72px;
+            height: 72px;
         }
+
+    .footer .text-copy {
+        font-size: 1.1em;
+    }
 
     /*#endregion */
 }
 
 /* landscape orientation */
 @media only screen and (max-height : 810px) and (min-height : 428px) and (orientation : landscape) {
-    /*@media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {*/
 
     #Proyectos_recientes, #Habilidades, #Perfil {
         background-color: dodgerblue;
@@ -547,82 +569,63 @@
     /*PAG INICIO INICIO*/
     /*Imagen inicio dentro del contenedor*/
     .contenedor-imagen img {
-        /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
-        que ocupe el 100% (v*h viewpor hight alto del dispositivo)
-        SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);*/
-        /*Sin este deja un espacio abajo*/
-        height: calc(100vh - 100px);
-        /*height: 85vh;*/
-        /*Para que la imagen se adapte a la pantalla y no muestre su tam real*/
-        /*max-width: 100%;*/
         /*display:none;*/
+        /*width: 400px;*/
+        margin: auto;
+        display: block;
+        object-fit: fill;
+        height: calc(100vh - 100px);
+        /*Para que la imagen se adapte a la pantalla y no muestre su tam real*/
+        max-width: 100%;
     }
 
     /*Texto que se muestra sobre la imagen*/
     .contenedor-imagen .contenido-imagen {
-        /*position: absolute;*/
-        /*top: 50%;*/
-        padding-left: 0.80rem;
-        /*transform: translate(-0%, -50%);*/
+        padding-left: 1.2rem;
     }
 
     /*Bienvenida y nombre de la escritura*/
     .contenido-imagen .titulo {
-        padding-right: 10px;
-        /*font-size: 40px;*/
-        font-size: 3.2em;
+        font-size: 6em;
         /*Espaciado entre lineas*/
         line-height: 1.3em;
-        font-weight: normal;
     }
 
     #big-a {
         /*font-size: 10px;*/
-        font-size: 0.75em;
-        font-weight: 600;
+        font-size: 1em;
     }
 
     .nav_menu a {
         /*font-size: 12px;*/
-        font-size: 0.85em;
-        font-weight: 600;
+        font-size: 1em;
+        /*font-weight: 600;*/
     }
 
-    /*.nav_menu .indicador {*/
-    /*ancho se cambio el valor ya que se debe calcular el tamaño del boton por
-            medio de JS aqui en css a traves de los media querys.
-        */
-    /*width: 0px;*/
-    /*altura*/
-    /*height: 5px;*/
-    /*color*/
-    /*background: var(--colorGlobal);*/
-    /*Posicionamiento*/
-    /*position: absolute;*/
-    /*Posicionar el la parte de abajo del nav*/
-    /*bottom: 0;*/
-    /*Va a tener trnsisciones de tiempo para todas las propiedades*/
-    /*Va a tener una animación*/
-    /*transition: .2s ease-out all;*/
-    /*}*/
-
-    .menu-p-inicio svg {
-        width: 40px;
-        height: 40px;
+    .menu-p-inicio {
+        height: 60px;
+        margin-bottom: 15px;
     }
+
+        .menu-p-inicio svg {
+            width: 45px;
+            height: 45px;
+        }
 
     /*Div del texto flotante deslizar*/
     .elemento {
-        bottom: 180px;
-        font-size: 0.60em;
+        bottom: 200px;
+        font-size: 0.80em;
     }
 
     /*Botón flotante reg inicio*/
-    /*.btn-inicio-float {*/
-    /*     bottom: 65px;
-        right: 30px;*/
-    /*opacity: 0.2;
-    }*/
+    .btn-inicio-float {
+        bottom: 60px;
+        right: 75px;
+        width: 94px;
+        height: 70px;
+        opacity: 0.2;
+    }
     /*PAG INICIO FIN*/
     /*#endregion */
 
@@ -630,7 +633,7 @@
     /*#region SECCIONES */
     /*SECCIONES INICIO*/
     .seccion {
-        padding: 20px;
+        padding: 50px;
         /*background-color: red;*/
     }
 
@@ -645,7 +648,7 @@
         /*Texto de las secciones */
         .seccion .texto-secciones {
             /*font-size: 16px;*/
-            font-size: 0.85em;
+            font-size: 1em;
         }
 
     /*    .btn-secciones:hover {
@@ -654,7 +657,7 @@
 
     /*Footer de las tarjetas*/
     .card-footer-primary {
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     /*Cambiar opacidad al pasar el cursor por este */
@@ -673,34 +676,35 @@
     /*#region PERFIL */
     /*PERFIL INCIO*/
     #Perfil {
-        padding-top: 70px;
+        padding-top: 90px;
     }
 
     /*Imagen*/
     .img-p {
-        width: 200px;
+        width: 600px;
         padding: 15px;
         /*display: block;*/
     }
 
     /*Contenedor img*/
     .img-perfil {
-        padding-bottom: 0px;
+        padding-bottom: 20px;
     }
 
     /*Padding personalizado para btn perfil*/
-    .btn-pdd-perfil {
-        padding: 10px 78px 10px 78px;
-        /*z-index: 999;*/
-    }
+    /*.btn-pdd-perfil{*/
+    /*padding: 10px 78px 10px 78px;*/
+    /*z-index: 999;*/
+    /*font-size: 1.2em;*/
+    /*}*/
 
-        .btn-pdd-perfil:hover {
-            opacity: 0.7;
-        }
+    .btn-pdd-perfil:hover {
+        opacity: 0.7;
+    }
 
     /*Contenido dentro de la tarjeta*/
     .contenido-card-perfil {
-        padding: 0 10px;
+        padding: 0 30px;
     }
 
     /*Contenido de la tarjeta*/
@@ -711,76 +715,88 @@
     /*Contenido dentro del scrooll*/
     .overflow-scroll_p {
         /*position: relative;*/
-        padding: 0px 8px 0px 8px;
-        margin: 0px 8px 0px 0;
-        max-height: 110px;
-        overflow-y: scroll;
+        padding: 12px 5px 0px 5px;
+        /*margin: 0px 8px 0px 0;*/
+        max-height: 492px;
+        /*overflow-y: scroll;*/
         /*Espacio entre el botón y el contenido*/
         /*padding-bottom: 20px;*/
         /*Tamaño del texto*/
         /*font-size: 16px;*/
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
     /*PERFIL FIN*/
     /*#endregion */
 
 
-    /*#region HABILIDADES */
-    /*HABILIDADES INICIO*/
 
+    /*#region HABILIDADES */
+
+    /*HABILIDADES INICIO*/
     #Habilidades {
-        padding-top: 70px;
+        padding-top: 90px;
     }
+
     /*card habilidades*/
     .contenido-card-habilidades {
         padding: 0 10px;
     }
 
-    /*Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas*/
-    .fila {
-        padding: 0px;
-        padding-left: 20%;
-    }
-
-    .fila-cols-md-3 > * {
-        flex: 0 0 auto;
-        width: 33.3333333333%;
-    }
 
     .columna {
-        width: 70%;
-        /*display: block;*/
-        margin-bottom: 18px;
+        width: 35%;
+        margin-bottom: 60px;
         padding: 0px;
+        padding-right: 40px
+    }
+
+    /*Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas*/
+    .fila {
+        padding: 0px 60px 0px 80px;
     }
 
     /*Se aplica a todo el contenido que contenga la clase scroll*/
     .overflow-scroll_h {
         padding: 0px 8px 0px 8px;
         margin: 0px 8px 0px 0;
-        max-height: 220px;
+        max-height: 826px;
         overflow-y: scroll;
-    }
-
-    /*Imagen de la tarjeta*/
-    .card-img-logo {
-        padding-top: 8px;
-        padding-left: 8px;
-        width: 90px;
     }
 
     /*Cuerpo o contenido de la tarjeta*/
     .card-img-h {
         /*flex: 1 1 auto;*/
-        margin: 10px auto 10px auto;
-        width: 100px;
-        height: 100px;
+        /*padding: 1rem 1rem;*/
+        /*font-size: 1rem;*/
+        /*border-radius: 40px;*/
+        /*margin: 40px auto 40px auto;*/
+        margin: 25px auto 0px auto;
+        width: 125px;
+        height: 150px;
     }
+
+
+    /*Imagen de la tarjeta*/
+    .card-img-logo {
+        width: 120px;
+        transition: 1.5s ease; /*con ease los elementos no se sobreponen del nav*/
+        -moz-transition: 1.5s ease; /* Firefox */
+        -webkit-transition: 1.5s ease; /* Chrome - Safari */
+        -o-transition: 1.5s ease; /* Opera */
+    }
+
+        .card-img-logo:hover {
+            transform: scale(1.4);
+            -moz-transform: scale(1.4); /* Firefox */
+            -webkit-transform: scale(1.4); /* Chrome - Safari */
+            -o-transform: scale(1.4); /* Opera */
+            -ms-transform: scale(1.4); /* IE9 */
+        }
 
     /*para js y otros*/
     .menos {
         /*width: 50%;*/
-        height: 85%;
+        height: 75%;
     }
     /*Se aplico un padding-top ya que no se centraba la imagen*/
     .pdd-net {
@@ -790,26 +806,27 @@
 
     /*Cambia el tamaño de icono bootstrap en pantallas pequeñas*/
     .size-bs {
-        padding-top: 15px;
-        padding-bottom: 10px;
-        height: 90%;
+        padding-top: 10px;
+        /*padding-bottom: 10px;*/
+        height: 75%;
     }
 
     .pdd-sql {
-        margin-left: 22px;
+        margin-left: 35px;
         width: 90%;
-        height: 85%;
+        height: 75%;
     }
     /*FIN HABILIDADES*/
+
     /*#endregion */
+
 
 
     /*#region RECIENTES */
     /*INICIO RECIENTES*/
-
     /*Id de seccion reciente (pdd entre seccion y nav)*/
     #Proyectos_recientes {
-        padding-top: 70px;
+        padding-top: 90px;
     }
 
     /*Contenido de la tarjeta recientes*/
@@ -833,25 +850,26 @@
         padding-left: 0px;
     }*/
 
-    .row-cols-md-3 > * {
+    .row-cols-md-2 > * {
         flex: 0 0 auto;
         width: 33.3333333333%;
     }
 
     .col {
         width: 100%;
+        /*height: 120%;*/
         /*display: block;*/
-        margin-top: 12px; /*QUITAR ESTO EN TABLET*/
-        margin-bottom: 30px;
-        padding: 0px;
+        margin-top: 10px;
+        /*margin-bottom: 60px;*/
+        padding: 0 30px 60px 30px;
     }
 
     /*Imagen de la tarjeta*/
     .card-img-top {
-        /*width: 100%;*/
-        padding: 10px;
-        padding-bottom: 0;
-        border-bottom: none;
+        width: 100%;
+        /*padding: 20px;*/
+        /*padding-bottom: 0;*/
+        /*border-bottom: none;*/
     }
 
     /*Se aplica a todo el contenido que contenga la clase scroll*/
@@ -859,34 +877,34 @@
         /*position: relative;*/
         padding: 0px 16px 0px 16px;
         /*margin: 0px 8px 0px 0;*/
-        max-height: 222px;
+        max-height: 778px;
         overflow-y: scroll;
     }
 
-    /*.overflow-scroll_r {*/
-    /*no vaposition: relative;*/
-    /*padding: 0px 8px 0px 8px;
-        margin: 0px 8px 0px 0;
-        max-height: 420px;
-        overflow-y: scroll;
-    }*/
-
     .card-title {
-        font-size: 1em;
-        padding: 15px;
-        padding-bottom: 0;
+        font-size: 1.2em;
+        /*padding: 15px;*/
+        padding: 20px;
+        font-weight: 600;
     }
 
     .card-text {
-        font-size: 0.93em;
+        font-size: 1.2em;
         text-align: justify;
-        /*line-height: 18px;*/
-        padding: 15px;
+        line-height: 26px;
+        padding: 20px;
+        font-weight: normal;
+    }
+
+    .btn-primary {
+        padding: 15px 15px 15px 15px;
+        border-radius: 10px;
+        font-size: 1em;
     }
 
     /*Padding personalizado para btn recientes*/
     .btn-pdd-recientes {
-        padding: 10px;
+        padding: 18px;
     }
 
         .btn-pdd-recientes:hover {
@@ -909,6 +927,7 @@
     .cv-estructura {
         margin: 10px 20px;
         padding: 20px 20px;
+        font-size: 110%;
     }
 
     /*ESTYLOS DE CV SI LA PANTALLA ES PEQUEÑA*/
@@ -930,7 +949,8 @@
         /*top: 40px;*/
         right: 40px;
         padding: 10px;
-        border-radius: 8px;
+        border-radius: 10px;
+        font-size: 1.3em;
         background-color: var(--colorGlobalCV);
         opacity: 0.5;
     }
@@ -939,47 +959,63 @@
             opacity: 1;
         }
 
+    /*Btn (a) descargar cv min*/
     .btn-a {
         text-decoration: none;
         color: var(--blanco);
     }
 
-    /*Centrar ventana modal*/
-    .ventana {
-        margin: 65% auto;
+    .alert-cv {
+        /*text-align: justify;*/
+        /*padding: 30px;*/
+        font-size: 1.2em;
     }
 
-        /*    .ventana {
-        margin: 90% auto;
-    }*/
+    .closebtn {
+        font-size: 2em;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.1s;
+    }
+
+    /*Centrar ventana modal*/
+    .ventana {
+        margin: 50% auto;
+        padding: 10px 50px;
+        /*text-align: center;*/
+    }
 
         /*Titulo del formulario*/
         .ventana .titulo-modal {
             /*color: var(--colorGlobalCV);*/
             /*font-size: 22px;*/
-            /*font-size: 1.375em;*/
+            font-size: 1.7em;
             /*font-weight: bolder;*/
-            /*margin-top: 20px;*/
+            margin-top: 30px;
             /*margin-bottom: 20px;*/
         }
 
         /*Todo el dropdown y contenido*/
         .ventana .form-select {
+            display: flex;
             /*font-size: 14px;*/
-            /*font-size: 0.875em;*/
+            font-size: 1.1em;
             /*border: 1px solid var(--colorGlobalCV);*/
-            /*border-radius: 6px;*/
-            /*margin-bottom: 20px;*/
+            border-radius: 8px;
+            /*margin-right: 40px;*/
+            margin-bottom: 30px;
         }
 
         .ventana .btn-aceptar {
-            padding: 10px 30px;
-            font-size: 1em;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 1.3em;
         }
 
         .ventana .btn-cancelar {
-            padding: 10px 28px;
-            font-size: 1em;
+            padding: 15px 26px;
+            border-radius: 10px;
+            font-size: 1.3em;
         }
 
     /*Cambiar el borde y cambiar la propiedad de flex a block*/
@@ -999,74 +1035,85 @@
     /*Para dividir las tecnologias en columnas*/
     .texto-columnas {
         /*font-size: 16px;*/
-        margin: 20px auto 0 20%;
+        margin: 20px auto 0 22%;
     }
     /*CV FIN*/
 
     /*#endregion */
 
+
+    /*#region CONTACTO*/
+    .text {
+        font-size: 115%;
+    }
+
+    .chat-grup {
+        width: 320px;
+    }
+
+    .text {
+        font-size: 1em;
+    }
+    /*#endregion*/
+
+
     /*#region FOOTER */
     /*FOOTER INICIO*/
     .footer {
         /*Espacio entre el "Contactame" y el último secction*/
-        padding-top: 4rem;
+        /*padding-top: 4rem;*/
         /*Espacion entre el texto y las img de contacto*/
         /*line-height: 30px;*/
     }
 
     .tiutlo-contacto {
         color: var(--colorGlobal);
-        padding-bottom: 15px;
+        padding-bottom: 25px;
     }
 
 
     .img-linkedin, .img-correo, .img-ubicacion, .img-whatsapp, .img-github {
         /*Espacios entre cada icono */
-        margin: 16px;
+        margin: 24px;
         /*Alto y acho de iconos*/
-        width: 52px;
-        height: 52px;
+        width: 62px;
+        height: 62px;
     }
 
         /*Color azul para linkedin*/
         .img-linkedin svg:hover {
             /*height: 100%;*/
-            width: 64px;
-            height: 64px;
+            width: 72px;
+            height: 72px;
             /*fill: #22A7F2;*/
         }
 
         /*Color rojo para gmail*/
         .img-correo svg:hover {
-            /*height: 100%;*/
-            width: 64px;
-            height: 64px;
-            /*fill: #ea0101;*/
+            width: 72px;
+            height: 72px;
         }
 
         /*Color verde naranja para ubicación*/
         .img-ubicacion svg:hover {
-            /*height: 100%;*/
-            width: 64px;
-            height: 64px;
-            /*fill: #ff6a00;*/
+            width: 72px;
+            height: 72px;
         }
 
         /*Color verde para whatsapp*/
         .img-whatsapp svg:hover {
-            /*height: 100%;*/
-            width: 64px;
-            height: 64px;
-            /*fill: #0DC143;*/
+            width: 72px;
+            height: 72px;
         }
 
         /*Color morado para github*/
         .img-github svg:hover {
-            /*height: 100%;*/
-            width: 64px;
-            height: 64px;
-            /*fill: #5C2D91;*/
+            width: 72px;
+            height: 72px;
         }
 
+    .footer .text-copy {
+        font-size: 1.1em;
+    }
     /*#endregion */
 }

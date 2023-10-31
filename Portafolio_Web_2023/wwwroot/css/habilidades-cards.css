@@ -25,7 +25,8 @@ h1 {
     width: 100%;
 }
 
-/* Flotar cuatro columnas una al lado de la otra */
+
+/*/* Flotar cuatro columnas una al lado de la otra */
 .columna {
     flex: 1 0 0%;
     float: left;
@@ -48,7 +49,7 @@ h1 {
         clear: both;
     }
 
-/*Texto con animación de parpadeo de la sección Gracias*/
+/*Texto con animación de parpadeo del cursor*/
 .texto-zoom {
     display: flex;
     /*visibility: hidden;*/
@@ -80,7 +81,6 @@ h1 {
         background-color: #3498db;
     }
 
-
     75% {
         background-color: #5dade2;
     }
@@ -90,7 +90,7 @@ h1 {
     }
 }
 
-/* Diseñe las cartas de contador */
+/* Diseñe las cartas de contenedor */
 .card-habilidad-hijo {
     /* Agrega sombras para crear el efecto de "tarjeta". */
     /*Se quitaron porque crean una linea al dar color por hover*/
@@ -221,7 +221,7 @@ h1 {
     --color_a: #00618A; /*Alto*/
 }
 
-.github:hover {
+.github-ft:hover {
     /*Accedemos a la animación*/
     animation: color-me-in 2s infinite;
     /*Variables locales*/
@@ -362,7 +362,6 @@ h1 {
     }
 
 
-
 /*Para pantallas grandes*/
 /*@media (min-width: 910px) {*/
 @media (min-width: 811px) {
@@ -374,7 +373,7 @@ h1 {
 
     /*Se aplica a todo el contenido que contenga la clase scroll*/
     .overflow-scroll_h {
-        /*position: relative;*/
+        position: relative;
         padding: 0px 8px 0px 8px;
         margin: 0px 8px 0px 0;
         max-height: 530px;
@@ -383,11 +382,11 @@ h1 {
 }
 
 
-/* Columnas responsivas: diseño de una columna (vertical) en pantallas pequeñas */
+/*/* Columnas responsivas: diseño de una columna (vertical) en pantallas pequeñas */
 /*@media screen and (max-width: 909px) {*/
 /*@media only screen and (max-width: 810px) {*/
-    /*Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas*/
-    /*.fila {
+/*Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas*/
+/*.fila {
         padding-right: 0px;
         padding-left: 0px;
     }
@@ -404,23 +403,23 @@ h1 {
         padding: 0px;
     }*/
 
-    /*Se aplica a todo el contenido que contenga la clase scroll*/
-    /*.overflow-scroll_h {*/
-        /*position: relative;*/
-        /*padding: 0px 8px 0px 8px;
+/*Se aplica a todo el contenido que contenga la clase scroll*/
+/*.overflow-scroll_h {*/
+/*position: relative;*/
+/*padding: 0px 8px 0px 8px;
         margin: 0px 8px 0px 0;
         max-height: 550px;
         overflow-y: scroll;
     }*/
 
-    /*Se aplico un padding-top ya que no se centraba la imagen*/
-    /*.pdd-net {
+/*Se aplico un padding-top ya que no se centraba la imagen*/
+/*.pdd-net {
         padding-top: 25px;
         height: 75%;
     }*/
 
-    /*Cambia el tamaño de icono bootstrap en pantallas pequeñas*/
-    /*.size-bs {
+/*Cambia el tamaño de icono bootstrap en pantallas pequeñas*/
+/*.size-bs {
         padding-top: 15px;
         height: 90%;
     }

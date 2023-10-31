@@ -123,7 +123,9 @@ namespace Portafolio_Web_2023.Controllers
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error de envio, los detalles son los siguientes:\n{ex.Message}");                
+                Console.WriteLine($"Error de envio, los detalles son los siguientes:\n{ex.Message}");
+                //Thread.Sleep(500);
+                ViewBag.msjError = "¡NO SE HA PODIDO ENVIAR EL FORMULARIO INTENTE DE OTRA FORMA!";
             }
             return View(contactoViewModel);
         }

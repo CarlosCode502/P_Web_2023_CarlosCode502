@@ -142,7 +142,7 @@
 
 
 @media (min-width: 811px) {
-    .row-cols-md-3 > * {
+    .row-cols-md-2 > * {
         flex: 0 0 auto;
         width: 33.3333333333%;
     }

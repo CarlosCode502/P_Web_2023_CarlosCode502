@@ -8,9 +8,19 @@
     color: var(--colorGlobal);
 }
 
+.chat-grup{
+    width: 320px;
+}
 
+.text {
+    font-size: 1em;
+}
+
+/*.btn-primary {
+    padding-left: 40px;
+}
+*/
 @media screen and (min-width: 800px) {
-
     /*Texto con animación de parpadeo de la sección Gracias*/
     .texto-parpadear {
         text-align: center;
