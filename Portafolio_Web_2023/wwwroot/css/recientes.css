@@ -13,8 +13,6 @@
 .col {
     flex: 1 0 0%;
     float: left;
-    /*width: 25%;*/
-    /*padding: 40px 40px 40px 0px;*/
     padding: 20px
 }
 
@@ -38,7 +36,6 @@
 
 /* Diseñe las cartas de contador */
 .card-proyecto-hijo {
-    /* Agrega sombras para crear el efecto de "tarjeta". */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     display: flex;
@@ -63,20 +60,12 @@
 /*Imagen de la tarjeta*/
 .card-img-top {
     width: 100%;
-    /*border-top-left-radius: calc(.25rem - 1px);
-    border-top-right-radius: calc(.25rem - 1px);*/
-    /*padding: 10px;*/
-    /*border: 1px solid transparent;*/
-    /*border-image-slice: 10%;*/
-    /*border-bottom: 1px solid rgba(0,0,0,.125);*/
     border-bottom: 1px solid black;
 }
 
 /*Cuerpo o contenido de la tarjeta*/
 .card-body {
     flex: 1 1 auto;
-    /*padding: 1rem 1rem;*/
-    /*font-size: 40px;*/
 }
 
 /*Título de la tarjeta*/
@@ -108,7 +97,6 @@
 .btn {
     display: inline-block;
     text-decoration: none;
-    /*vertical-align: middle;*/
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -138,45 +126,9 @@
     
 }
 
-
-
-
 @media (min-width: 811px) {
-    .row-cols-md-2 > * {
+    .row-cols-md-2-pdesing > * {
         flex: 0 0 auto;
         width: 33.3333333333%;
     }
 }
-
-
-/* Columnas responsivas: diseño de una columna (vertical) en pantallas pequeñas */
-/*@media screen and (max-width: 810px) {*/
-    /*Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas*/
-    /*.row {
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-
-    .row-cols-md-3 > * {
-        flex: 0 0 auto;
-        width: 33.3333333333%;
-    }
-
-    .col {
-        width: 100%;
-        display: block;
-        margin-bottom: 50px;
-        padding: 0px;
-    }*/
-
-    /*Se aplica a todo el contenido que contenga la clase scroll*/
-    /*.overflow-scroll_r {*/
-        /*position: relative;*/
-        /*padding: 0px 8px 0px 8px;
-        margin: 0px 8px 0px 0;
-        max-height: 420px;
-        overflow-y: scroll;*/
-        /*max-height: 700px;
-        overflow-y: scroll;*/
-    /*}
-}*/

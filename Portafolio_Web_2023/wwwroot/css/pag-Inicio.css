@@ -15,18 +15,10 @@
         /*width: 400px;*/
         margin: auto;
         display: block;
-        /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
-        que ocupe el 100% (v*h viewpor hight alto del dispositivo)
-        SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);*/
-        /*Sin este deja un espacio abajo*/
-        /*Para que la imagen se adapte a la pantalla y no muestre su tam real*/
-        /*max-width: 100%;*/
         object-fit: cover;
         width: 100%;
         height: calc(100vh - 65px);
-        /*SE CAMBIO ESTA PROP*/
-        /*height: 100%;*/
-        /*height: 100%;*/
+
     }
 
     /*Texto que se muestra sobre la imagen*/
@@ -46,11 +38,8 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
     position: sticky;
     /*indicamos en donde se quedara pegado*/
-    top: 0; /*Coordenada 0*/
-    /*Para ocultar el indicador en caso de que quede fuera y no se tenga seleccionado (dependiendo el disp será el error)*/
+    top: 0;
     overflow: hidden;
-    /*Indica el orden de un elemento posicionado y sus descendientes.*/
-    /*Cuando varios elementos se superponen los de mayor valor cubren a los de menor valor*/
     z-index: 999;
 }
 
@@ -67,14 +56,7 @@
         position: absolute;
         /*Posicionar el la parte de abajo del nav*/
         bottom: 0;
-        /*Va a tener trnsisciones de tiempo para todas las propiedades*/
-        /*Va a tener una animación*/
         transition: .2s ease-out all;
-        /*para demostrar mientras va aumentando va ir cambiando*/
-        /*el indicador va a ir de izquierda a derecha va a aparecer por eso es negativo*/
-        /*transform: translate(-500px);*/
-        /*Para ocultar el indicador en caso de que quede fuera y no se tenga seleccionado (dependiendo el disp será el error)*/
-        /* overflow: hidden;*/
     }
 
 /*Apartado de animaciones de nav*/
@@ -84,14 +66,11 @@
     text-align: center;
     /*altura*/
     height: 65px;
-    /*SE CAMBIO ESTA PROP*/
-    /*margin-top: 20px;*/
 }
 
     .menu-p-inicio li {
         /*Para que todos tengan el mismo tamaño o espacio*/
         flex: 1;
-        /*transition: transform 0.2s ease-in-out;*/
     }
 
     .menu-p-inicio a {
@@ -184,81 +163,3 @@
         transform: translate(0px, 50px);
     }
 }
-
-
-/*PARA EQUIPOS CON ANCHO DE 600px para abajo*/
-/*Ayudan a mostrar las animaciones según el tamaño de la pantalla si es menor o mayor*/
-/*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
-/*@media only screen and (max-width: 600px) {*/
-/*@media only screen and (min-height: 761px) and (min-height: 1000px) {*/
-
-/*.contenedor-imagen img {
-        max-width: 100%;
-    }*/
-
-/*Texto que se muestra sobre la imagen*/
-/*.contenedor-imagen .contenido-imagen {
-        position: absolute;
-        top: 50%;
-        padding-left: 1rem;
-        transform: translate(-0%, -50%);
-    }*/
-
-/*Bienvenida y nombre de la escritura*/
-/*.contenido-imagen .titulo {
-        padding-right: 10px;*/
-/*font-size: 40px;*/
-/*font-size: 2.5em;
-        font-weight: normal;
-    }*/
-
-/*Profesión texto*/
-/*dev {*/
-/*font-size: 50px;*/
-/*font-size: 3.125em;
-    }*/
-
-/*Mensaje texto*/
-/*.msj {*/
-/*font-size: 50px;*/
-/*font-size: 1em;
-    }
-
-    #big-a {*/
-/*font-size: 10px;*/
-/*font-size: 0.625em;
-        font-weight: 600;
-    }
-
-    .nav_menu a {*/
-/*font-size: 12px;*/
-/*font-size: 0.75em;
-    }
-
-    .nav_menu .indicador {*/
-/*ancho se cambio el valor ya que se debe calcular el tamaño del boton por
-            medio de JS aqui en css a traves de los media querys.
-        */
-/*width: 0px;*/
-/*altura*/
-/*height: 7px;*/
-/*color*/
-/*background: var(--colorGlobal);*/
-/*Posicionamiento*/
-/*position: absolute;*/
-/*Posicionar el la parte de abajo del nav*/
-/*bottom: 0;*/
-/*Va a tener trnsisciones de tiempo para todas las propiedades*/
-/*Va a tener una animación*/
-/*transition: .2s ease-out all;
-    }
-
-    .menu-p-inicio svg {
-        width: 30px;
-        height: 30px;
-    }
-
-    .elemento {
-        font-size: 0.70em;
-    }
-}*/

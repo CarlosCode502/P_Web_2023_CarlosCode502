@@ -1,5 +1,4 @@
 ﻿/*Toda la página*/
-
 :root {
     --colorGlobalCV: #0d6efd;
     --celestesimple: #4e91f5;
@@ -9,7 +8,6 @@
 
 /*Se aplica o todo el documento*/
 * {
-    /*background-color: #2B2A33;*/
     margin: 0;
     font-family: 'Inter', sans-serif;
 }
@@ -23,8 +21,6 @@
     opacity: 1;
     cursor: pointer;
     transition: opacity 0.3s;
-    /*No tiene efecto ya que no esta posicionado*/
-    /*z-index: 1090;*/
 }
 
 /* The close button */
@@ -40,7 +36,6 @@
     transition: 0.1s;
 }
 
-    /* When moving the mouse over the close button */
     .closebtn:hover {
         color: black;
     }
@@ -324,7 +319,6 @@ ul {
     margin-top: 0px;
     list-style: none; /*Quitamos los marcadores */
     padding: 0; /*Quitamos el padding por defecto de la lista */
-    /*margin-left: 20px;*/ /*Separamos la lista de la izquierda */
 }
 
 li::before { /*Añadimos contenido antes de cada elemento de la lista */
@@ -356,10 +350,6 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
         font-weight: normal;
         line-height: 0.80;
     }
-
-/*.seccion-idiomas {
-    font-weight: normal;
-}*/
 
     .seccion-idiomas .negrita {
         font-weight: 600;
@@ -407,14 +397,8 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
     right: 10px;
     top: 6px;
     padding: 10px;
-   /* opacity: 0.5;*/
     z-index: 1050;
 }
-
-/*    .btn-regresar-min:hover {
-        opacity: 1;
-        font-weight: 600;
-    }*/
 
 /*formato para el btn*/
     .btn-regresar-min .cont-regresar {
@@ -429,111 +413,7 @@ li::before { /*Añadimos contenido antes de cada elemento de la lista */
             opacity: 1;
             font-weight: 600;
         }
-/*
-    .btn-regresar-min .cont-regresar:hover {
-        font-size: 1.4em;
-    }*/
 
     .btn-descargar-cv {
         visibility: hidden;       
     }
-
-
-/* cuando sea como maximo 450, es decir menor */
-/*@media screen and (max-width: 810px) {*/
-
-    /*Cambiar padding del contenedor*/
-    /*.container {
-        background-color: var(--blanco);
-        padding: 0px;
-    }*/
-
-    /*Cambiar los márgenes*/
-    /*.cv-estructura {
-        margin: 10px 20px;
-        padding: 20px 20px;
-    }
-
-    .cont-nav {*/
-        /*visibility: hidden;*/
-        /*display: none;
-    }
-
-    .btn-regresar-min {
-        visibility: visible;
-    }*/
-
-    /*Para mostrar la fecha a la izquierda y centrada de titulo exp*/
-    /*.btn-descargar-cv {
-        visibility: visible;
-        position: fixed;
-        bottom: 40px;*/
-        /*top: 40px;*/
-        /*right: 40px;
-        padding: 10px;
-        border-radius: 8px;
-        background-color: var(--colorGlobalCV);
-        opacity: 0.5;
-    }
-
-        .btn-descargar-cv:hover {
-            opacity: 1;
-        }
-
-    .btn-a {
-        text-decoration: none;
-        color: var(--blanco);
-    }
-
-    .ventana {
-        margin: 90% auto;
-    }*/
-
-        /*Titulo del formulario*/
-        /*.ventana .titulo-modal {
-            color: var(--colorGlobalCV);*/
-            /*font-size: 22px;*/
-            /*font-size: 1.375em;
-            font-weight: bolder;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }*/
-
-        /*Todo el dropdown y contenido*/
-        /*.ventana .form-select {*/
-            /*font-size: 14px;*/
-            /*font-size: 0.875em;
-            border: 1px solid var(--colorGlobalCV);
-            border-radius: 6px;
-            margin-bottom: 20px;
-        }
-
-        .ventana .btn-aceptar {
-            padding: 10px 30px;
-            font-size: 1em;
-        }
-
-        .ventana .btn-cancelar {
-            padding: 10px 20px;
-            font-size: 1em;
-        }*/
-
-
-    /*Cambiar el borde y cambiar la propiedad de flex a block*/
-    /*.contacto {
-        margin: 0;
-        border: 4px solid var(--colorGlobalCV);
-        display: block;
-    }*/
-
-    /*Quitar los márgenes*/
-    /*.gmail, .github, .phone {
-        margin: 10px;
-    }*/
-
-    /*Para dividir las tecnologias en columnas*/
-    /*.texto-columnas {*/
-        /*font-size: 16px;*/
-        /*margin: 20px auto 0 14%;
-    }
-}*/

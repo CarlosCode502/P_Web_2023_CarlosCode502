@@ -1,7 +1,4 @@
-﻿/*element {
-    background-image: url(img/person-paisaje.jpg);
-}*/
-
+﻿
 /*Color celeste(#0EA5E9) global*/
 :root {
     --colorGlobal: #0d6efd;
@@ -19,31 +16,15 @@ html {
     scroll-behavior: smooth;
     /*Formato del texto del contenido*/
     font-family: 'Inter', sans-serif;
-    /* height: 3500px; */
-    /*position: absolute;*/
-    /*min-height: 100%;*/
 }
 
 body {
-    /*font-family: 'Roboto', sans-serif;*/
-    /*Espacio entre el contenido y el footer*/
-    /*SE CAMBIO ESTA PROPIEDAD ESTABA A 100 POR ESO QUEDABA UN ESPACIO EN BLANCO 
-    ABAJO DE MI FOOTER*/
-    /*margin-bottom: 20px;*/
-    /*Color de fondo de toda la página*/
     background: #F5F5F5;
 }
 
 /*Tamaño y fuente para todo el contenido dentro del header(nav y texto de escritura automatica)*/
 header {
     font-family: 'Quicksand', sans-serif;
-    /*font-size: 70px;*/
-    /*font-size: 4.375em;*/
-    /*font-weight: 900;*/
-    /*font-family: 'Francois One', sans-serif;*/
-    /*font-family: 'Josefin Slab', serif;*/
-    /*font-family: 'Montserrat', sans-serif;*/
-    /*font-family: 'Satisfy', cursive;*/
 }
 
 /*Botón flotante*/
