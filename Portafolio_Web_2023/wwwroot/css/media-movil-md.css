@@ -3,9 +3,9 @@
 @media only screen and (max-width : 428px) and (min-width : 376px) and (orientation : portrait) {
     /*@media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {*/
 
-    #Proyectos_recientes, #Habilidades, #Perfil {
+    /*#Proyectos_recientes, #Habilidades, #Perfil {
         background-color: green;
-    }
+    }*/
 
     /*#region PAG INICIO */
     /*PAG INICIO INICIO*/
@@ -356,6 +356,13 @@
         .btn-pdd-recientes:hover {
             opacity: 0.7;
         }
+
+    .cont-etiqueta .etiqueta-name-tecnologia {
+        padding: 0px;
+        opacity: 0.5;
+        font-size: 1.1em;
+        /*font-weight: 600;*/
+    }
     /*RECIENTES FIN*/
     /*#endregion */
 
@@ -470,6 +477,27 @@
 
     /*#endregion */
 
+
+    /*#region CONTACTO*/
+    .card-title {
+        font-size: 140%;
+        padding-top: 15px;
+    }
+
+    .text {
+        font-size: 110%;
+    }
+
+        .text p {
+            font-size: 100%;
+        }
+
+    .chat-grup {
+        width: 320px;
+    }
+    /*#endregion*/
+
+
     /*#region FOOTER */
     /*FOOTER INICIO*/
     .footer {
@@ -540,9 +568,9 @@
 @media only screen and (max-height : 428px) and (min-height : 376px) and (orientation : landscape) {
     /*@media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {*/
 
-    #Proyectos_recientes, #Habilidades, #Perfil {
+    /*#Proyectos_recientes, #Habilidades, #Perfil {
         background-color: green;
-    }
+    }*/
 
     /*#region PAG INICIO */
     /*PAG INICIO INICIO*/
@@ -893,6 +921,13 @@
         .btn-pdd-recientes:hover {
             opacity: 0.7;
         }
+
+    .cont-etiqueta .etiqueta-name-tecnologia {
+        padding: 0px;
+        opacity: 0.5;
+        font-size: 1.1em;
+        /*font-weight: 600;*/
+    }
     /*RECIENTES FIN*/
     /*#endregion */
 
@@ -948,7 +983,7 @@
 
     /*Centrar ventana modal*/
     .ventana {
-        margin: 65% auto;
+        margin: 15% auto;
     }
 
         /*    .ventana {
@@ -1006,6 +1041,27 @@
     /*CV FIN*/
 
     /*#endregion */
+
+
+    /*#region CONTACTO*/
+    .card-title {
+        font-size: 140%;
+        padding-top: 15px;
+    }
+
+    .text {
+        font-size: 110%;
+    }
+
+        .text p {
+            font-size: 100%;
+        }
+
+    .chat-grup {
+        width: 320px;
+    }
+    /*#endregion*/
+
 
     /*#region FOOTER */
     /*FOOTER INICIO*/

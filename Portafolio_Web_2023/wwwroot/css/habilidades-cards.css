@@ -104,12 +104,28 @@ h1 {
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
+
 }
 
     .card-habilidad-hijo:hover {
         /*Efecto 3d en las tarjetas*/
         box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+        color: var(--color_a);
+        opacity: 1;
     }
+
+    .card-habilidad-hijo .cont-etiqueta {
+        /*display: flex;*/
+        text-align: center;
+        padding-top: -60%;
+    }
+
+.cont-etiqueta .etiqueta-name-tecnologia {
+    padding: 5px 40px;
+    opacity: 0.6;
+    font-size: 1.2em;
+    font-weight: 600;
+}
 
 /*Al pasar el mouse, agrega una sombra más profunda.*/
 .html:hover {
@@ -360,7 +376,6 @@ h1 {
         -o-transform: scale(1.5); /* Opera */
         -ms-transform: scale(1.5); /* IE9 */
     }
-
 
 /*Para pantallas grandes*/
 /*@media (min-width: 910px) {*/

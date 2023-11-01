@@ -125,7 +125,7 @@ namespace Portafolio_Web_2023.Controllers
             {
                 Console.WriteLine($"Error de envio, los detalles son los siguientes:\n{ex.Message}");
                 //Thread.Sleep(500);
-                ViewBag.msjError = "¡NO SE HA PODIDO ENVIAR EL FORMULARIO INTENTE DE OTRA FORMA!";
+                ViewBag.msjError = "¡No se ha podido enviar el formulario, por favor intente por otro medio!";
             }
             return View(contactoViewModel);
         }

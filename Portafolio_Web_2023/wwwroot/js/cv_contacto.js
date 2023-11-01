@@ -71,7 +71,7 @@ function child_exit4(child) {
 function ocultarAlerta() {
     // $('.alert').animate({ opacity: "0" }, { duration: 1000, queue: false });
     //Cierra o oculta la alerta o elemento
-    $('.alert').fadeOut();
+    $('.alert-cv').fadeOut();
 }
 setTimeout(function () {
     //en un intervalo de tiempo se lanza una funcion    
