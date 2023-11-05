@@ -41,7 +41,7 @@
 
 /*Imagen*/
 .img-p {
-    width: 400px;
+    width: 450px;
     margin: auto;
     /*Centrar*/
     display: block;
@@ -51,6 +51,10 @@
     padding: 40px 60px;
     text-align: justify;
 }
+
+    .contenido-card-perfil .overflow-scroll_p {
+        padding-top: 20px;
+    }
 
 /*Estilo al id de la sección perfil*/
 #Perfil {

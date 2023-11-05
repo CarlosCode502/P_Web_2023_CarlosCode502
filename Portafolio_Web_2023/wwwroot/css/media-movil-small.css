@@ -93,11 +93,10 @@
     }
 
     /*Botón flotante reg inicio*/
-    /*.btn-inicio-float {*/
-    /*     bottom: 65px;
-        right: 30px;*/
-    /*opacity: 0.2;
-    }*/
+    .btn-inicio-float {
+        width: 64px;
+        height: 64px;
+    }
     /*PAG INICIO FIN*/
     /*#endregion */
 
@@ -677,11 +676,10 @@
     }
 
     /*Botón flotante reg inicio*/
-    /*.btn-inicio-float {*/
-    /*     bottom: 65px;
-        right: 30px;*/
-    /*opacity: 0.2;
-    }*/
+    .btn-inicio-float {
+        width: 64px;
+        height: 64px;
+    }
     /*PAG INICIO FIN*/
     /*#endregion */
 

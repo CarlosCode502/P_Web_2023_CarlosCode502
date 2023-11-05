@@ -11,7 +11,7 @@ indicador.style.width = tamanioIndicador + 'px';
 let indexSeccionAcctiva;
 
 let rootmargin_V = '-100px 0px 0px 0px';
-let threshold_V = 0.60;
+let threshold_V = 0.58;
 
 const observer = new IntersectionObserver((entradas, observer) => {
    
