@@ -21,6 +21,11 @@
     letter-spacing: 1.5px;
 }
 
+/*#region GRACIAS */
+.img-gracias {
+    width: 500px;
+}
+
 @media only screen and (min-width : 1224px) {
     /*Texto con animación de parpadeo de la sección Gracias*/
     .texto-parpadear {
@@ -38,3 +43,4 @@
         }
     }
 }
+/*#endregion */
