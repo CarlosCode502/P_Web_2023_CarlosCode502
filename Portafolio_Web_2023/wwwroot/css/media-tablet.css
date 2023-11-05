@@ -91,6 +91,7 @@
         .seccion .texto-secciones {
             /*font-size: 16px;*/
             font-size: 1em;
+            padding-bottom: 20px;
         }
 
     /*    .btn-secciones:hover {

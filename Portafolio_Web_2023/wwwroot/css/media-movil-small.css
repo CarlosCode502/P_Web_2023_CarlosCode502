@@ -121,6 +121,7 @@
         .seccion .texto-secciones {
             /*font-size: 16px;*/
             font-size: 0.80em;
+            padding-bottom: 20px;
         }
 
     /*    .btn-secciones:hover {
@@ -704,6 +705,7 @@
         .seccion .texto-secciones {
             /*font-size: 16px;*/
             font-size: 0.80em;
+            padding-bottom: 20px;
         }
 
     /*    .btn-secciones:hover {

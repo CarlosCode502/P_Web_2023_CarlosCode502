@@ -2,7 +2,6 @@
     --colorGlobalS: #0d6efd;
 }
 
-
 /*Secciones*/
 .seccion {
     /*Minímo Zoom*/
@@ -29,7 +28,8 @@
     .seccion .texto-secciones {
         /*font-size: 20px;*/
         font-size: 1.25em;
-        padding-bottom: 20px;        
+        /*Se quito esta propiedad por el espacio en pantallas grandes*/
+        /*padding-bottom: 20px;  */
     }
 
 /*Contenedor*/
@@ -56,12 +56,10 @@
     padding-top: 100px;
     align-content: center;
     background-size: 100% 100%;
-
     background-color: #151921;
 }
 
 .contenido-card-habilidades {
-
     padding: 40px 60px;
 }
 /*Estilo al id de la sección Habilidades*/
@@ -69,7 +67,6 @@
     padding-top: 100px;
     align-content: center;
     background-size: 100% 100%;
-
     background-color: #151921;
 }
 
@@ -81,6 +78,5 @@
     padding-top: 100px;
     align-content: center;
     background-size: 100% 100%;
-
     background-color: #151921;
 }
