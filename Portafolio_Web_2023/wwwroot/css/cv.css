@@ -143,12 +143,13 @@
         border: 1px solid var(--colorGlobalCV);
         border-radius: 6px;
         margin-bottom: 20px;
+        font-weight: normal
     }
 
-        .ventana .form-select .opc-default {
+/*        .ventana .form-select .opc-default {
             color: gray;
         }
-
+*/
     .ventana .botones {
         padding-bottom: 20px;
     }
