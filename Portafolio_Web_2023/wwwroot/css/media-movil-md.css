@@ -249,8 +249,9 @@
     }
     /*Se aplico un padding-top ya que no se centraba la imagen*/
     .pdd-net {
-        padding-top: 25px;
-        height: 75%;
+        padding-top: 5px;
+        /*padding-left: 6px;*/
+        /*height: 75%;*/
     }
 
     /*Cambia el tamaño de icono bootstrap en pantallas pequeñas*/
@@ -815,8 +816,9 @@
     }
     /*Se aplico un padding-top ya que no se centraba la imagen*/
     .pdd-net {
-        padding-top: 25px;
-        height: 75%;
+        padding-top: 5px;
+        /*padding-left: 6px;*/
+        /*height: 75%;*/
     }
 
     /*Cambia el tamaño de icono bootstrap en pantallas pequeñas*/

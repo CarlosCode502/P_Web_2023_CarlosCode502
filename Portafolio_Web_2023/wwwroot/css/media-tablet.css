@@ -194,7 +194,7 @@
 
     /*Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas*/
     .fila {
-        padding: 0px 60px 0px 80px;
+        padding: 0px 60px 0px 100px;
     }
 
     /*Se aplica a todo el contenido que contenga la clase scroll*/
@@ -242,8 +242,9 @@
     }
     /*Se aplico un padding-top ya que no se centraba la imagen*/
     .pdd-net {
-        padding-top: 25px;
-        height: 75%;
+        padding-top: 12px;
+        /*padding-top: 25px;*/
+        /*height: 75%;*/
     }
 
     /*Cambia el tamaño de icono bootstrap en pantallas pequeñas*/
@@ -330,7 +331,7 @@
     }
 
     .card-text {
-        font-size: 1.2em;
+        font-size: 1.1em;
         text-align: justify;
         line-height: 26px;
         padding: 20px;
@@ -368,7 +369,7 @@
     /*Cambiar padding del contenedor*/
     .container {
         /*background-color: var(--blanco);*/
-        background-color: red;
+        /*background-color: red;*/
         padding: 0px;
     }
 
@@ -493,7 +494,7 @@
 
     /*#region CONTACTO*/
     .card-title {
-        font-size: 175%;
+        font-size: 150%;
         padding-top: 15px;
     }
 
