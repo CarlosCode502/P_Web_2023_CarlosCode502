@@ -4,23 +4,27 @@
     margin-left: 20px;
     color: var(--colorGlobal);
     font-size: 6.25em;
+   
 }
 
 /*nombhre*/
 .typed-name {
     /*Color del cursor*/
     color: var(--colorGlobal);
+    font-style: italic;
 }
 
 /*Textos*/
 .name {
     color: white;
     font-style: normal;
+    font-style: italic;
 }
 
 /*Mensajes*/
 .msj {
     color: white;
     font-style: normal;
+    font-style: italic;
 }
 
