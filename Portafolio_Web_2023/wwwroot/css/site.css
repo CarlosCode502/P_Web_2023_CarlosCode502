@@ -6,16 +6,16 @@
 }
 
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 html {
     /*Propiedad para mostrar una animación al momento de ir desde un enlace hacia una seccion*/
     scroll-behavior: smooth;
     /*Formato del texto del contenido*/
-    font-family: 'Inter', sans-serif;    
+    font-family: 'Inter', sans-serif;
 }
 
 body {

@@ -22,7 +22,7 @@ body {
 
 /*Color para la imagen y texto del nav*/
 .navbar-brand {
-    font-weight: 500;
+    font-weight: 600;
     fill: var(--blancoTP);
     color: var(--blancoTP);
     cursor: default;

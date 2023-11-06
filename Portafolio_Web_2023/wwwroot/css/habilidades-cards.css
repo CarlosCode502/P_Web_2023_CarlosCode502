@@ -9,11 +9,11 @@
 }
 
 /*Importante para hacer el scroll más dinámico*/
-*,
+/**,
 *::before,
 *::after {
     box-sizing: border-box;
-}
+}*/
 
 h1 {
     color: var(--colorGlobal);
@@ -167,9 +167,9 @@ h1 {
 }
 
 /*Se aplico un padding-top ya que no se centraba la imagen*/
-.pdd-net {
+/*.pdd-net {
     padding-top: 35px;
-}
+}*/
 
 .net:hover {
     /*Accedemos a la animación*/
