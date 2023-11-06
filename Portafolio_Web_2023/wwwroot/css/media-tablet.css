@@ -367,7 +367,8 @@
 
     /*Cambiar padding del contenedor*/
     .container {
-        background-color: var(--blanco);
+        /*background-color: var(--blanco);*/
+        background-color: red;
         padding: 0px;
     }
 
