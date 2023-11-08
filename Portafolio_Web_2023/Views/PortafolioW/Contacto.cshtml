@@ -33,26 +33,6 @@
                     <span asp-validation-for="Email" class="text-danger fw-light mb-1 mb-sm-2 mb-md-2 mb-lg-2"></span>
                 </div>
 
-                @* <script>
-                    if( $('.micheckbox').prop('checked') ) {
-    alert('Seleccionado');
-}
-                </script> *@
-
-   @*              <div class="form-check text-start fw-light">
-                    <input class="form-check-input " type="checkbox" value="" id="validar" />
-                    <label class="form-check-label" for="validar">comparar correo.</label>
-                </div> *@
-@* 
-                @{
-                    var cb = ".form-check";
-                    // bool seleccionado = Html.CheckBox(s );
-                    if (cb == true)
-                    {
-
-                    }
-                } *@
-
                 <div class="form-group mb-sm-2 mb-md-3 mb-lg-4">
                     <label asp-for="ConfirmarEmail" class="control-label fw-bold mb-sm-1 mb-md-2 mb-lg-3"></label>
                     <input asp-for="ConfirmarEmail" class="form-control fw-normal mb-2 mb-sm-2 mb-md-2 mb-lg-2" placeholder="correo@gmail.com" />
@@ -71,51 +51,9 @@
     </div>
 </div>
 
-
-@* <div>
-    <a asp-action="Gracias" asp-controller="PortafolioW">IR a gracias</a>
-</div>
- *@
 @* Lo que debía escribir *@
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
-
-@* Lo que escribí *@
-@* @section Scripts{
-    <script type="text/javascript" src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
-} *@
-
-@* <script Scripts>
-    Scripts
-</script> *@
-
-@* <div class="pt-5">
-    <h1>Formulario de Contacto</h1>
-    <form asp-area="" asp-controller="PortafolioW" asp-action="Contacto">
-        <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre</label>
-            @* Básicamente se crea un label y un txtbox para ingreso de nombre (el for=nombre apunta el id al momento de hacer clic en este)
-            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escriba aquí su nombre." />
-
-        </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com" />
-        </div>
-        <div class="mb-3">
-            <label for="mensaje" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="mensaje" name="mensaje"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
-</div> *@
-
-
-@* <div>
-    <a asp-action="Index">Back to List</a>
-</div>
- *@
