@@ -309,10 +309,6 @@
     .contenido-card-recientes {
         padding: 0 10px;
     }
-    /*
-    .contenido-card-recientes {
-        padding: 0 20px;
-    }*/
 
     /*Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas*/
     .row {
@@ -499,7 +495,7 @@
 
     /*#region CONTACTO*/
     .card-title {
-        font-size: 120%;
+        font-size: 115%;
         padding-top: 15px;
     }
 

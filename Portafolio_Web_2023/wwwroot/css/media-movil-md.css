@@ -282,10 +282,6 @@
     .contenido-card-recientes {
         padding: 0 10px;
     }
-    /*
-    .contenido-card-recientes {
-        padding: 0 20px;
-    }*/
 
     /*Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas*/
     .row {
