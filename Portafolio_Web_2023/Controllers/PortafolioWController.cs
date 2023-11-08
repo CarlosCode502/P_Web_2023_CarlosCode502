@@ -5,19 +5,11 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore;
 using Portafolio_Web_2023.Models.CVs_VM_Resources;
-//using Grpc.Core;
 
 namespace Portafolio_Web_2023.Controllers
 {
     public class PortafolioWController : Controller
     {
-        //V#57 Inyección de dependencias 
-        //Con la Inyección de dependencias
-        //Delagmos la instanciación de las dependencias de nuestras clases a otras clases
-        //Campo de la clase 
-
-        //Realizamos la inyección del la inerfaz del repositorio
-
         #region Campos generados automáticamente
         private readonly ILogger<PortafolioWController> logger;
         private readonly IRepositorioProyecto repositorioProyecto;
@@ -25,9 +17,6 @@ namespace Portafolio_Web_2023.Controllers
         private readonly IRepositorioArchivos repositorioArchivos;
         #endregion
 
-        //V#60 Entendiendo ILoger msjs de logs(Cuando se pasa ILogger a HomeController detectara los logs en la consola)
-        //Ctrl+. y en Create and assign fiel 'logger' para crearlo como CAMPO y agregar automaticamente los valores
-        //V#? Inyección de dependencias(Inyectando el servicio de SendGrid)
         public PortafolioWController(ILogger<PortafolioWController> logger, IRepositorioProyecto repositorioProyecto, IServicioEmailSendGrid servicioEmailSendGrid/*, IRepositorioArchivos repositorioArchivos*/)
         {
             //Generados automáticamente
