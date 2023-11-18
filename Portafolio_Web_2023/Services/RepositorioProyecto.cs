@@ -4,26 +4,14 @@ namespace Portafolio_Web_2023.Services
 {
     public class RepositorioProyecto : IRepositorioProyecto
     {
-        //V#56 Principio de responsabilidad Única
-        //El principio de responsabilidad única nos dice que cada clase debe tener sólo un motivo para cambiar.
-        //Y la función del controlador únicamente es preparar las vistas a mostrar en base a las peticiones
-
-        //V#54 Listado de Proyectos
-        /// <summary>
-        /// Creamos un método que va a contener un listado de proyectos
-        /// </summary>
-        /// <returns>Un listado de proyectos</returns>
-        //Public para que tengamos acceso desde la clase PortafolioController
         public List<ProyectoViewModel> ObtenerListadoProyectos()
         {
-            //IMPORTANTE PONER LA MISMA CANTIDAD DE DESCRIPCIÓN(LINEAS)
-
             return new List<ProyectoViewModel>() {
                 new ProyectoViewModel
                 {
                     Titulo = "Portafolio Web",
                     Descripcion = "Este es mi portafolio en donde muestro los proyectos en los que he trabajado en las distintas tecnologías.",
-                    Link = "https://github.com/CarlosCode502/Portafolio_Web_2023.git",
+                    Link = "https://github.com/CarlosCode502/P_Web_2023_CarlosCode502.git",
                         ImagenURL = "/img/Portafolio.jpg"
                 },
 
@@ -46,7 +34,7 @@ namespace Portafolio_Web_2023.Services
                 new ProyectoViewModel
                 {
                     Titulo = "Interés Simple y Compuesto",
-                    Descripcion = "Programa echo en WindowsForms con C#, simula una herramienta para calcular el interés simple y compuesto.",
+                    Descripcion = "Programa hecho en WindowsForms con C#, simula una herramienta para calcular el interés simple y compuesto.",
                     Link = "https://github.com/CarlosCode502/InteresSimple_Y_Compuesto.git",
                     ImagenURL = "/img/Interés SyC.jpg" //Img de 720 / 580
                 },

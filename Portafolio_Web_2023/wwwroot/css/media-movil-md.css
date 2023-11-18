@@ -286,14 +286,9 @@
     /*Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas*/
     .row {
         padding: 0px;
-        /*padding-left: 0px;*/
+        padding-left: 0px;
         margin-top: 0px;
     }
-    /*
-    .row {
-        padding-right: 0px;
-        padding-left: 0px;
-    }*/
 
     .row-cols-md-2 > * {
         flex: 0 0 auto;
@@ -302,15 +297,15 @@
 
     .col {
         width: 100%;
-        /*display: block;*/
+        display: block;
         margin-top: 12px; /*QUITAR ESTO EN TABLET*/
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         padding: 0px;
     }
 
     /*Imagen de la tarjeta*/
     .card-img-top {
-        /*width: 100%;*/
+        width: 100%;
         padding: 10px;
         padding-bottom: 0;
         border-bottom: none;
@@ -357,7 +352,7 @@
 
     .cont-etiqueta .etiqueta-name-tecnologia {
         padding: 0px;
-        opacity: 0.5;
+        opacity: 0.2;
         font-size: 1.1em;
         /*font-weight: 600;*/
     }
@@ -924,7 +919,7 @@
 
     .cont-etiqueta .etiqueta-name-tecnologia {
         padding: 0px;
-        opacity: 0.5;
+        opacity: 0.2;
         font-size: 1.1em;
         /*font-weight: 600;*/
     }
