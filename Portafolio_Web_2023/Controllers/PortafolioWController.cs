@@ -90,18 +90,6 @@ namespace Portafolio_Web_2023.Controllers
             //        //    break;
             //}
 
-            switch (cVs_Portafolio_ViewModel.CV_Seleccionado.ToString())
-            {
-                case "1":
-                    return RedirectToAction("ArchivoHtml");
-
-                case "2":
-                    return RedirectToAction("ArchivoCanvaConFoto");
-
-                //default:
-                //    break;
-            }
-
             //if (cVs_Portafolio_ViewModel.CV_Seleccionado == "1")
             //{
             //    return RedirectToAction("ArchivoHtml");
@@ -113,10 +101,10 @@ namespace Portafolio_Web_2023.Controllers
             //else if (obInt == 3)
             //{
             //    return RedirectToAction("ArchivoCanvaSinFoto");
-            //}
+            //
             //}
             //return View("cv",cVs_Portafolio_ViewModel);
-            return RedirectToAction("cv");
+            //return RedirectToAction("cv");
         }
 
         ////V#9 Decarga de archivo von FileResult

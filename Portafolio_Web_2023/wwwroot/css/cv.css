@@ -146,10 +146,6 @@
         font-weight: normal
     }
 
-/*        .ventana .form-select .opc-default {
-            color: gray;
-        }
-*/
     .ventana .botones {
         padding-bottom: 20px;
     }
@@ -275,7 +271,6 @@
     font-size: 1em;
     line-height: 1.6;
 }
-
 
 .titulo-seccion {
     /*font-size: 25px;*/
