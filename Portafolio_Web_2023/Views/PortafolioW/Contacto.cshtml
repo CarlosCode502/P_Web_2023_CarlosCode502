@@ -64,7 +64,8 @@ Ya que si es null es porque se envio o enviara correctamente el formulario *@
 @* Lo que debía escribir *@
 @section Scripts {
     @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        // await Html.RenderPartialAsync("_ValidationScriptsPartial");
+            <partial name="_ValidationScriptsPartial.cshtml" />
     }
 }
 
