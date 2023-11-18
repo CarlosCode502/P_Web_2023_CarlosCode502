@@ -8,22 +8,31 @@
     color: var(--colorGlobal);
 }
 
+.chat-grup {
+    width: 350px;
+}
 
-@media screen and (min-width: 800px) {
+.text {
+    font-size: 1em;
+}
 
+.alert {
+    text-align: justify;
+    letter-spacing: 1.5px;
+}
+
+/*#region GRACIAS */
+.img-gracias {
+    width: 450px;
+}
+
+@media only screen and (min-width : 1224px) {
     /*Texto con animación de parpadeo de la sección Gracias*/
     .texto-parpadear {
         text-align: center;
-        /*font-size: 6.5em;*/
-        /*color: #fff;*/
         color: var(--colorGlobal);
-        /*Espacio entre letras*/
-        /*letter-spacing: -7px;*/
-        /*font-weight: 700;*/
         text-transform: uppercase;
         animation: parpadear 2.5s ease-out infinite;
-        /*animation: parpadear 2s ea;*/
-        /*animation-duration:*/
         text-shadow: 0px 0px 5px var(--blanco), 0px 0px 7px var(--blanco);
     }
 
@@ -34,3 +43,4 @@
         }
     }
 }
+/*#endregion */

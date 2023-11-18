@@ -6,88 +6,28 @@
 
 /*Contenedor de imagen*/
 .contenedor-imagen {
-    /*background-image: url(../img/person-paisaje.jpg);*/
-    /*background-image: url("http://pixabay.com/es/photos/persona-mirando-paisaje-personas-3613567/");*/
-    /*background-image: src("http://pixabay.com/es/photos/persona-mirando-paisaje-personas-3613567/");*/
-    /*Se debe usar una imagen de fondo para darle diseño UNICAMENTE*/
-    /*En este caso puedo datle un formato transparente*/
-    /*background-image: linear-gradient(rgba(23, 32, 42, 0.25), rgba(23, 32, 42, 0.25)), url("../img/person-paisaje.jpg");*/
-    /*ABAJO ESTABA HABILITADO*/
-    /*background-repeat: no-repeat;*/
-    /*hace que la imagen se vea un poco más compacta (mejor en pantallas pequeñas)*/
-    /*background-attachment: fixed;*/
-    /*100% el tamaño de la imagen en height y with*/
-    /*background-size: 100% 100%;*/
-    /*background-image: linear-gradient(rgba(23, 32, 42, 0.8), rgba(23, 32, 42, 0.8));*/
     position: relative;
     display: block;
-    /*height: 80vh;*/
-    /*min-height: 100vh;*/
+    background-color: black;
 }
 
     .contenedor-imagen img {
         /*width: 400px;*/
         margin: auto;
         display: block;
-        /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
-        que ocupe el 100% (v*h viewpor hight alto del dispositivo)
-        SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);*/
-        /*Sin este deja un espacio abajo*/
-        /*Para que la imagen se adapte a la pantalla y no muestre su tam real*/
-        max-width: 100%;
-        height: calc(100vh - 80px);
-        /*height: 100%;*/
-    }
+        object-fit: cover;
+        width: 100%;
+        height: calc(100vh - 65px);
 
-    /*NO SE USA*/
-    /*.bloque-img {
-    text-align: center;
-    display: block;
-    }*/
+    }
 
     /*Texto que se muestra sobre la imagen*/
     .contenedor-imagen .contenido-imagen {
         position: absolute;
         top: 50%;
-        /*left: 40%;*/
         padding-left: 2rem;
         transform: translate(-0%, -50%);
-        /*NO SE USA*/
-        /*text-align: left;
-        position: center;
-        top: 20%;
-        padding-left: 20px;*/
-        /*transform: translate(-0%, -60%);*/
-        /*ABAJO ESTABA HABILITADO*/
-        /*display: flex;*/
-        /*position: relative;*/
-        /*flex-direction: column;*/
-        /*Alinear el texto a la izquierda*/
-        /*align-items: flex-start;*/
-        /*Justificar contenido al centro*/
-        /*justify-content: center;*/
-        /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
-        que ocupe el 100% (v*h viewpor hight alto del dispositivo)
-        SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);*/
-        /*height: calc(100vh - 80px);
-        max-width: 100%;*/
     }
-
-/*NO SE USA*/
-/*Titulo*/
-/*.hero h1 {
-        margin-top: 2rem;*/
-/*margin-left: 2rem;*/
-/*font-size: 80px;
-    }*/
-/*Subtitulo*/
-/*.hero p {*/
-/*margin-left: 0;*/
-/*font-size: 30px;*/
-/*text-transform: uppercase;*/
-/*color: #113CFC;*/
-/*text-shadow: 0 0 6px;*/
-
 
 /*Menú de navegación
     VERIFICAR EN CASO DE NECESITAR OTRO MENÚ*/
@@ -96,53 +36,12 @@
     background: var(--blanco);
     /*sombra*/
     box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
-    /*Para que los elementos se pongan uno al lado de otro con(flexbox)*/
-    /*display: flex;*/
-    /*CONFIGURAR EL MENÚ PEGAJOSO (PARA QUE SE MANTENGA)*/
-    /*Con la propiedad sticky*/
     position: sticky;
     /*indicamos en donde se quedara pegado*/
-    top: 0; /*Coordenada 0*/
-    /*Para ocultar el indicador en caso de que quede fuera y no se tenga seleccionado (dependiendo el disp será el error)*/
+    top: 0;
     overflow: hidden;
-    /*Indica el orden de un elemento posicionado y sus descendientes.*/
-    /*Cuando varios elementos se superponen los de mayor valor cubren a los de menor valor*/
     z-index: 999;
 }
-
-    /*Para que todos los enlaces "a" se muestren espaciados */
-    /*.nav_menu a {*/
-    /*CON FLEXBOX*/
-    /*Para que todos tengan el mismo tamaño*/
-    /*flex: 1;*/
-    /*alto*/
-    /*height: 100%;*/
-    /*Para que el texto se ponga en mayúscula*/
-    /*text-transform: uppercase;*/
-    /*Para indicarle que se va a usar flexbox*/
-    /*display: flex;*/
-    /*alinear el texto de forma vertical*/
-    /*align-items: center;*/
-    /*alinear el texto de forma vertical en los contenedores*/
-    /*justify-content: center;*/
-    /*Todo el contenido centrado al ocupar más de 2 lineas*/
-    /*text-align: center;*/
-    /*Decoracion del texto(linea de enlace)*/
-    /*text-decoration: none;*/
-    /*Colr*/
-    /*color: var(--colorGlobal);*/
-    /*Transición de tiempo para todas las propiedades*/
-    /*transition: .2s ease all;*/
-    /*Texto con negritas fuerte*/
-    /*font-weight: 600;*/
-    /*}*/
-
-    /*Efecto sombreado(hover) al pasar el cursor en el nav*/
-    /*.nav_menu a:hover {
-            background: #72a9fb;*/
-    /*font-size: 20px;*/
-    /*}*/
-
 
     .nav_menu .indicador {
         /*ancho se cambio el valor ya que se debe calcular el tamaño del boton por
@@ -150,21 +49,14 @@
         */
         width: 0px;
         /*altura*/
-        height: 7px;
+        height: 5px; /*SE CAMBIO ESTA PROP*/
         /*color*/
         background: var(--colorGlobal);
         /*Posicionamiento*/
         position: absolute;
         /*Posicionar el la parte de abajo del nav*/
         bottom: 0;
-        /*Va a tener trnsisciones de tiempo para todas las propiedades*/
-        /*Va a tener una animación*/
         transition: .2s ease-out all;
-        /*para demostrar mientras va aumentando va ir cambiando*/
-        /*el indicador va a ir de izquierda a derecha va a aparecer por eso es negativo*/
-        /*transform: translate(-500px);*/
-        /*Para ocultar el indicador en caso de que quede fuera y no se tenga seleccionado (dependiendo el disp será el error)*/
-        /* overflow: hidden;*/
     }
 
 /*Apartado de animaciones de nav*/
@@ -173,15 +65,12 @@
     justify-content: center;
     text-align: center;
     /*altura*/
-    height: 80px;
-    /*margin-top: 20px;*/
+    height: 65px;
 }
 
     .menu-p-inicio li {
-        /*margin-right: 70px;*/
         /*Para que todos tengan el mismo tamaño o espacio*/
         flex: 1;
-        /*transition: transform 0.2s ease-in-out;*/
     }
 
     .menu-p-inicio a {
@@ -200,7 +89,8 @@
 
             .menu-p-inicio a span:first-child {
                 display: inline-block;
-                padding: 20px;
+                padding: 15px 15px;
+                /*SE CAMBIO ESTA PROP*/
             }
 
             .menu-p-inicio a span:last-child {
@@ -222,15 +112,11 @@
 
     .menu-p-inicio a:hover span:first-child {
         transform: translateY(100%);
-        /*background: black;*/
-        /*color: black;*/
     }
 
     .menu-p-inicio a:hover span:last-child,
     .menu-p-inicio[data-animation] a:hover span:last-child {
         transform: none;
-        /*background: black;*/
-        /*color: black;*/
     }
 
     /* ANIMATIONS
@@ -244,13 +130,10 @@
     }
 
 .elemento {
-    /*width: 50px;*/
-    /*height: 50px;*/
     bottom: 170px;
     right: 40px;
-    /*margin: 0 auto;*/
     position: absolute;
-    font-size: 1em;
+    font-size: 0.9em;
     opacity: 0.8;
 }
 
@@ -262,7 +145,7 @@
     animation: arrow 1.5s ease-in-out infinite;
 }
 
-    .flecha:hover  {
+    .flecha:hover {
         animation: arrow 1.5s ease-out infinite !important;
         color: #ffffff;
     }
@@ -279,165 +162,4 @@
     100% {
         transform: translate(0px, 50px);
     }
-}
-
-/*#region Media Querys */
-/*
-@media screen and (min-height: 601px) {
-    .menu-p-inicio a span:last-child {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: translateY(-100%);
-    }
-}*/
-
-/*PARA EQUIPOS CON ANCHO DE 600px para abajo*/
-/*Ayudan a mostrar las animaciones según el tamaño de la pantalla si es menor o mayor*/
-/*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9)*/
-@media screen and (max-width: 600px) {
-    /*@media only screen and (min-height: 761px) and (min-height: 1000px) {*/
-    /**/
-    /*Contenedor de imagen*/
-    /*.contenedor-imagen {
-        position: relative;
-        display: block;*/
-    /*min-height: 100vh;*/
-    /*}*/
-    .contenedor-imagen img {
-        /*Para mostrar mi pantalla de inicio en toda la pantalla del navegador
-        que ocupe el 100% (v*h viewpor hight alto del dispositivo)
-        SE CAMBIA PERO SE UTILIZARA UNA FUNCION calc(100vh - 80 px);*/
-        /*Sin este deja un espacio abajo*/
-        /*height: calc(100vh - 90px);*/
-        /*height: 85vh;*/
-        /*Para que la imagen se adapte a la pantalla y no muestre su tam real*/
-        max-width: 100%;
-    }
-    /*Texto que se muestra sobre la imagen*/
-    .contenedor-imagen .contenido-imagen {
-        position: absolute;
-        top: 50%;
-        padding-left: 1rem;
-        transform: translate(-0%, -50%);
-    }
-
-    .contenido-imagen .titulo {
-        padding-right: 10px;
-        /*font-size: 40px;*/
-        font-size: 2.5em;
-        font-weight: normal;
-        /*NO SE USA 👇*/
-        /*margin-bottom: 20px;*/
-    }
-
-    dev {
-        /*font-size: 50px;*/
-        font-size: 3.125em;
-    }
-
-    .msj {
-        /*font-size: 50px;*/
-        font-size: 1em;
-    }
-
-    #big-a {
-        /*font-size: 10px;*/
-        font-size: 0.625em;
-        font-weight: 600;
-    }
-
-    .nav_menu a {
-        /*font-size: 12px;*/
-        font-size: 0.75em;
-        /*NO SE USA 👇*/
-        /*padding: 5px;*/
-    }
-
-    .nav_menu .indicador {
-        /*ancho se cambio el valor ya que se debe calcular el tamaño del boton por
-            medio de JS aqui en css a traves de los media querys.
-        */
-        width: 0px;
-        /*altura*/
-        height: 7px;
-        /*color*/
-        background: var(--colorGlobal);
-        /*Posicionamiento*/
-        position: absolute;
-        /*Posicionar el la parte de abajo del nav*/
-        bottom: 0;
-        /*Va a tener trnsisciones de tiempo para todas las propiedades*/
-        /*Va a tener una animación*/
-        transition: .2s ease-out all;
-        /*para demostrar mientras va aumentando va ir cambiando*/
-        /*el indicador va a ir de izquierda a derecha va a aparecer por eso es negativo*/
-        /*transform: translate(-500px);*/
-        /*Para ocultar el indicador en caso de que quede fuera y no se tenga seleccionado (dependiendo el disp será el error)*/
-        /* overflow: hidden;*/
-    }
-    /*Efecto sombreado(hover) al pasar el cursor en el nav*/
-    /*.nav_menu a:hover {
-            background: var(--colorGlobal);*/
-    /*NO SE USA 👇*/
-    /*font-size: 20px;*/
-    /*}*/
-    /*    .menu-p-inicio svg {
-        font-size: 10px;
-    }
-*/
-
-    .menu-p-inicio svg {
-        width: 30px;
-        height: 30px;
-    }
-    /*    .tooltip-inicio .tooltip-content {
-        visibility: hidden;
-        display: inline-block;
-        padding: 10px;
-        background-color: #333;
-        color: #fff;
-        position: absolute;
-        z-index: 1;
-        margin-top: 20px
-    }
-
-    .tooltip-inicio:hover .tooltip-content {
-        visibility: visible;
-    }*/
-    /*        .tooltip .tooltip-content {
-            visibility: hidden;
-            display: inline-block;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-            position: absolute;
-            z-index: 1;
-            margin-top: 20px
-        }
-
-    .tooltip:hover .tooltip-content {
-        visibility: visible;
-    }*/
-    /*
-    .menu-p-inicio a span:last-child {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: translateY(-100%);
-    }*/
-    /*
-    .menu-p-inicio .inicio-visible {
-        visibility: hidden;
-    }*/
 }

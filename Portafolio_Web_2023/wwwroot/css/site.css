@@ -1,7 +1,4 @@
-﻿/*element {
-    background-image: url(img/person-paisaje.jpg);
-}*/
-
+﻿
 /*Color celeste(#0EA5E9) global*/
 :root {
     --colorGlobal: #0d6efd;
@@ -9,9 +6,9 @@
 }
 
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 html {
@@ -19,31 +16,15 @@ html {
     scroll-behavior: smooth;
     /*Formato del texto del contenido*/
     font-family: 'Inter', sans-serif;
-    /* height: 3500px; */
-    /*position: absolute;*/
-    /*min-height: 100%;*/
 }
 
 body {
-    /*font-family: 'Roboto', sans-serif;*/
-    /*Espacio entre el contenido y el footer*/
-    /*SE CAMBIO ESTA PROPIEDAD ESTABA A 100 POR ESO QUEDABA UN ESPACIO EN BLANCO 
-    ABAJO DE MI FOOTER*/
-    /*margin-bottom: 20px;*/
-    /*Color de fondo de toda la página*/
     background: #F5F5F5;
 }
 
 /*Tamaño y fuente para todo el contenido dentro del header(nav y texto de escritura automatica)*/
 header {
-    font-family: 'Quicksand', sans-serif;
-    /*font-size: 70px;*/
-    /*font-size: 4.375em;*/
-    /*font-weight: 900;*/
-    /*font-family: 'Francois One', sans-serif;*/
-    /*font-family: 'Josefin Slab', serif;*/
-    /*font-family: 'Montserrat', sans-serif;*/
-    /*font-family: 'Satisfy', cursive;*/
+    font-family: 'Quicksand', sans-serif;    
 }
 
 /*Botón flotante*/
@@ -52,82 +33,15 @@ header {
     /*bottom: 22px;*/
     bottom: 60px;
     right: 35px;
-    width: 64px;
-    height: 64px;
-    
+    width: 74px;
+    height: 74px;    
     color: #0d6efd;
-    /*background-color: #0d6efd;*/
     opacity: 0.3;
     animation: ease-in 2s;
+    z-index: 1000;
 }
 
     .btn-inicio-float:hover {
         opacity: 1;
         /*fill: #fff;*/
     }
-
-
-/*Para pantallas grandes*/
-/*@media (min-width: 721px) {
-}*/
-
-
-/* En pantallas pequeñas */
-/*@media screen and (max-width: 720px) {*/
-/*    Ocultar el botón regresar al inicio
-    .btn-inicio-float {
-        visibility: hidden;
-    }*/
-/*}*/
-
-
-/*NO SE USA*/
-/*.imagen-index {
-    background-image: url('~/img/person-paisaje.jpg');
-}*/
-/*header {*/
-/*background-image: image('~/img/person-paisaje.jpg');*/
-/*background-image: url('~/img/person-paisaje.jpg');*/
-/*color: #FFFFFF;*/
-/*}*/
-
-
-/*Todos los enlaces "a" no van a tener una linea abajo o algún otro tipo*/
-/*a {
-    text-decoration: none;
-}
-*/
-/*NO SE USA*/
-/*body {
-    background-image: url(img/person-paisaje.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    color: #f2f2f2;
-}*/
-
-/*.imagen img{
-    background-attachment: fixed;*/
-/*background-size: 100% 100%;*/
-/*}*/
-
-
-
-
-
-
-
-
-/*NO SE USA 👇*/
-/*@media screen and (max-width: 300px) {
-    .nav_menu a {
-        font-size: 8px;
-        padding: 1px;
-    }
-    .seccion p {
-        font-size: 10px;
-    }
-}*/
-/*#endregion */
-
-

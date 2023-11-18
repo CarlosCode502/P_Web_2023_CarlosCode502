@@ -1,19 +1,28 @@
 ﻿@model PortafolioIndexViewModel
-
 @{
     ViewData["Title"] = "Inicio";
 }
-            <div class="secciones">
-                <div class="seccion" id="Proyectos_recientes">
 
+            <!--INICIO SECCIONES-->
+            <div class="secciones">
+
+                <!--INICIO SECCIÓN PROYECTOS RECIENTES-->
+                <div class="seccion" id="Proyectos_recientes">
                     <partial name="PartialViews\_ProyectosRecientes_PV.cshtml" model="Model.Proyectos" />
                 </div>
+                <!--FIN SECCIÓN PROYECTOS RECIENTES-->
 
+                <!--INICIO SECCIÓN TECNOLOGÍAS / HABILIDADES-->
                 <div class="seccion" id="Habilidades">
                     <partial name="PartialViews\_Habilidades_PV.cshtml" />
                 </div>
+                <!--FIN SECCIÓN TECNOLOGÍAS / HABILIDADES-->
 
+                <!--INICIO SECCIÓN PERFIL-->
                 <div class="seccion" id="Perfil">
                     <partial name="PartialViews\_Perfil_PV.cshtml" />
                 </div>
+                <!--FIN SECCIÓN PERFIL-->
+
             </div>
+            <!--FIN SECCIONES-->

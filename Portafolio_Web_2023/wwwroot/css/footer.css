@@ -6,8 +6,6 @@
     line-height: 30px;
     /*Contenido centrado*/
     text-align: center;
-    /*Color de fondo*/
-    /*background-color: #191919;*/
 }
 
     .footer hr {
@@ -25,11 +23,6 @@
         margin-bottom: 20px;
     }
 
-/*.footer .texto-gris {*/
-/*Color gris al texto*/
-/*color: grey;
-    }*/
-
 .tiutlo-contacto {
     color: var(--colorGlobal);
     padding-bottom: 20px;
@@ -41,22 +34,8 @@
     margin: 20px;
     /*PARA CENTRAR LOS ICONOS (no precisamente)*/
     display: inline-block;
-    /*text-align: center;*/
-    /*Alto y acho de iconos*/
     width: 64px;
     height: 64px;
-    /*NO SE USA 👇*/
-    /*//#*/
-    /*display: flex;*/
-    /*padding: 0px 0px 0px 0px;*/
-    /*margin-right: 50px;*/
-    /*fill: currentColor;*/
-    /*position: relative;*/
-    /*color: #000;   */
-    /*width ="64" height="64"*/
-    /*display: contents;*/
-    /*width: 200px;*/
-    /*margin-right: 50px;*/
 }
 
 .img-center svg {
@@ -65,26 +44,7 @@
     /*alinear el texto de forma vertical en los contenedores*/
     justify-content: center;
     /*Transición de tiempo para todas las propiedades*/
-    transition: .1s ease-in-out;
-    /*NO SE USA 👇*/
-    /*padding: 0;*/
-    /*   margin-bottom: 5rem;*/
-    /*//#*/
-    /*CON FLEXBOX*/
-    /*Para que todos tengan el mismo tamaño*/
-    /*flex: 1;*/
-    /*alto*/
-    /*height: 100%;*/
-    /*Para que el texto se ponga en mayúscula*/
-    /*text-transform: uppercase;*/
-    /*alinear el texto de forma vertical*/
-    /*align-items: center;*/
-    /*Todo el contenido centrado al ocupar más de 2 lineas*/
-    /*text-align: center;*/
-    /*Colr*/
-    /*color: #000;*/
-    /*Texto con negritas fuerte*/
-    /*font-weight: 500;*/
+    transition: .1s ease-in-out; 
 }
 
 /*Color azul para linkedin*/
@@ -126,99 +86,4 @@
     height: 75px;
     fill: #5C2D91;
 }
-
 /*#endregion */
-
-
-
-/*#region Media Querys */
-/*Ayudan a mostrar las animaciones según el tamaño de la pantalla si es menor o mayor*/
-/*SE REDUJO EL DE 7 A 640 (AHORA SI LO ADMITE EL S9 max-width: 500px)*/
-@media only screen and (max-height: 760px) {
-    .footer {
-        /*Espacio entre el "Contactame" y el último secction*/
-        padding-top: 4rem;
-        /*Espacion entre el texto y las img de contacto*/
-        /*line-height: 30px;*/
-        /*Contenido centrado*/
-        /*text-align: center;*/
-        /*Color de fondo*/
-        /*background-color: #191919;*/
-    }
-
-        /*.footer hr {
-            color: var(--colorGlobal);
-        }*/
-
-        /*.footer .text-copy {*/
-            /*Separa la linea de los iconos de contacto*/
-            /*margin-block-start: 30px;*/
-            /*Color de texto*/
-            /*color: #423e3e;*/
-            /*Efecto remarcado al texto*/
-            /*text-shadow: 0 1px grey, 0 1px grey;*/
-            /*Espacio entre del footer*/
-            /*margin-bottom: 20px;
-        }*/
-
-    /*.footer .texto-gris {*/
-    /*Color gris al texto*/
-    /*color: grey;
-    }*/
-
-    .tiutlo-contacto {
-        color: var(--colorGlobal);
-        padding-bottom: 20px;
-    }
-
-
-    .img-linkedin, .img-correo, .img-ubicacion, .img-whatsapp, .img-github {
-        /*Espacios entre cada icono */
-        margin: 20px;
-        /*Alto y acho de iconos*/
-        width: 52px;
-        height: 52px;
-    }
-
-        /*Color azul para linkedin*/
-        .img-linkedin svg:hover {
-            /*height: 100%;*/
-            width: 64px;
-            height: 64px;
-            fill: #22A7F2;
-        }
-
-        /*Color rojo para gmail*/
-        .img-correo svg:hover {
-            /*height: 100%;*/
-            width: 64px;
-            height: 64px;
-            /*fill: #ea0101;*/
-        }
-
-        /*Color verde naranja para ubicación*/
-        .img-ubicacion svg:hover {
-            /*height: 100%;*/
-            width: 64px;
-            height: 64px;
-            /*fill: #ff6a00;*/
-        }
-
-        /*Color verde para whatsapp*/
-        .img-whatsapp svg:hover {
-            /*height: 100%;*/
-            width: 64px;
-            height: 64px;
-            /*fill: #0DC143;*/
-        }
-
-        /*Color morado para github*/
-        .img-github svg:hover {
-            /*height: 100%;*/
-            width: 64px;
-            height: 64px;
-            /*fill: #5C2D91;*/
-        }
-
-    /*#endregion */
-}

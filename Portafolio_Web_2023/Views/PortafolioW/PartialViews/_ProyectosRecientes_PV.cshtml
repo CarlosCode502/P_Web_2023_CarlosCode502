@@ -1,23 +1,17 @@
 ﻿@*   <!--//V#55 Pasando datos a una vista parcial--> *@
 @model IEnumerable<ProyectoViewModel>
-@*
-Al momento de tener declarado el modelo en la vista y luego declarar la vista parcial es suficiente
-para poder acceder a los datos, sin embargo esto no es del todo correcto ya que se sufre el riesgo de
-equivocacion al momento de acceder a las propiedades del modelo, debido a que este pasa de ser
-fuertemente tipado(muestra error si se ecribe mal) a ser no tipado o de un tipo de dato accesible pero
-se corre el riesgo de un fallo(de tipo "Dynamic").
-
-AQUI ES DONDE SE USA EL modelo "IEnumerable<ProyectoViewModel>?" ya que este ya contiene un modelo al que es posible
-acceder solo con "Model"
-<!--//V#54 Listado de Proyectos--> *@
 @if (Model is not null)
 {
-<div class="card h-100">
+
+
+<!--MIS ÚLTIMOS PROYECTOS-->
+                    <div class="card h-100">                        
                         <div class="contenido-card-recientes">
                             <div class="texto-secciones">
                                 <h1>Mis trabajos recientes</h1>
                                 <p>Aquí se muestrán algunos de mís trabajos más recientes.</p>
                             </div>
+
                             <div class="overflow-scroll_r">                        
                                 <partial name="PartialViews\_TodosMisProyectos_PV" model="Model" />
                             </div>
@@ -25,6 +19,7 @@ acceder solo con "Model"
                             <div class="card-footer-primary">
                                 <ul class="menu">
                                     <li>
+                                        <!--BOTÓN VER TODOS LOS PROYECTOS-->
                                         <a class="btn-secciones btn-pdd-recientes" asp-area="" asp-controller="PortafolioW" asp-action="Proyectos">
                                             Ver todos los proyectos
                                             <span class="border border-top"></span>

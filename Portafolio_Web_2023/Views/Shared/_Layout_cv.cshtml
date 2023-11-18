@@ -7,84 +7,47 @@
     ignorada en computadoras de escritorio. *@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]Portafolio Web 2023</title>
-    @* Bootstrap *@
-    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-append-version="true" /> *@
-    @* CSS *@
+
     <link rel="stylesheet" href="~/css/cv.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/botones-desing.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/mediaquerys.css" asp-append-version="true" />
+    @* <link rel="stylesheet" href="~/css/mediaquerys.css" asp-append-version="true" /> *@
     <link rel="stylesheet" href="~/css/footer.css" asp-append-version="true" />
-    <!--//V#52 Instalando íconos de Boostrap-->
-    <!--Lo encontramos en la pag de boostrap en el apartado de descargas-->
-    @* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> *@
+    <link rel="stylesheet" href="~/css/media-movil-small.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/media-movil-md.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/media-tablet.css" asp-append-version="true">
+
 </head>
 <body>
     <header>
-        @* <input type="checkbox" id="cerrar"/>
-        <label for="cerrar" id="btn-cerrar">X</label>
-        <div class="modal">
-        <div class="contenido-modal">
-        <h1><strong>Atención:</strong></h1>
-        <p>Mi CV se esta mostrando como representación a un documento, toda la estructura esta hecha a través de html y css.</p>
-        <p>Si desea descargar mi CV en pdf puede hacer clic en el botón flotante al fondo.</p>
-        <div class="btn-aceptar">
-        <button type="button">Aceptar</button>
-        </div>
-        </div>
-        </div> *@
-
+       
         @* Creando alerta *@
         <nav class="barra-nav top-nav">
             @* A este div va a apuntar mi funcion js para cerrar el elemento automáticamente *@
-            <div class="alert">
+            <div class="alert-cv">
                 @* Se usa un texto o simbolo html para crear la X que es: &times *@
                 <span class="closebtn" onclick="this.parentElement.style.display='none';" title="Cerrar alerta">&times;</span>
                 Se esta mostrando una vista HTML de mi cv, si desea puede descargarlo o en su lugar uno con diseño hecho en Canva, haciendo click en el botón <strong>Descargar CV</strong>.
             </div>
-            @* <div class="contenedor-nav">
-            <a class="texto-nav" asp-area="" asp-controller="PortafolioW" asp-action="Index">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="bi bi-arrow-left d-inline-block align-text-top" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
-            </svg>
-            Regresar al Inicio
-            </a>
-            </div> *@
-
+          
             <div class="cont-nav">
-                @* <div class="regresar"> *@
-                @* <a class="img-nav" asp-area="" asp-controller="PortafolioW" asp-action="Index"> *@
-                @* Se utiliza un evento JS de OnClick para regresar a la página y posición anterior *@
-                <a class="img-nav" onclick="history.back()">
+
+                <!--Botón para regresar en pantallas grandes-->
+                @* Se utiliza un evento JS de OnClick para regresar a la página y estado anterior *@
+                <a class="img-nav" asp-area="" asp-controller="PortafolioW" asp-action="Index">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="bi bi-arrow-left d-inline-block align-text-top" viewBox="0 0 16 16">
                         <title>Regresar</title>
                         <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
                     </svg>
-                    @* Regresar al Inicio *@
                 </a>
+                <a class="texto-nav" title="Regresar al Inicio" asp-area="" asp-controller="PortafolioW" asp-action="Index">Regresar al Inicio</a>
 
-                @* <a class="texto-nav" asp-area="" asp-controller="PortafolioW" asp-action="Index">Regresar al Inicio</a> *@
-                <a class="texto-nav" onclick="history.back()">Regresar</a>
-                @* </div> *@
+                <!--Botón para descargar en pantallas grandes-->
                 <a class="boton-descargar" href="#ventanaModal">Descargar CV</a>
-
-                @* <a class="boton-descargar" href="#ventanaModal">Descargar CV</a>
-
-                <div id="ventanaModal" class="modal">
-                <div id="ventana">
-                @*                         <a href="#" style='text-decoration:none;'>
-                X
-                </a>
-                <span href="#ventana" onclick="this.parentElement.style.display='none';">&times;</span>
-                <h2>Ventana</h2>
-                <p>Detalle de las opciones</p>
-                </div>
-                </div> *@
             </div>
 
-            <div class="btn-regresar-min">
-                @* <a class="cont-regresar" asp-area="" asp-controller="PortafolioW" asp-action="Index"> *@
-                    @* Se utiliza un evento JS de OnClick para regresar a la página y posición anterior *@
-                <a class="cont-regresar" onclick="history.back()">
+            <!--Botón para regresar en pantallas pequeñas-->
+            <div class="btn-regresar-min">                
+                <a class="cont-regresar" asp-area="" asp-controller="PortafolioW" asp-action="Index">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="bi bi-arrow-left d-inline-block align-text-top" viewBox="0 0 16 16">
                         @* <title>Regresar al Inicio</title> *@
                         <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" fill="#0d6efd" />
@@ -93,34 +56,12 @@
                 </a>
             </div>
 
+            <!--Botón para descargar en pantallas pequeñas-->
             <div class="btn-descargar-cv">
-                <a title="" class="btn-a" href="#ventanaModal">Descargar CV</a>
+                <a class="btn-a" href="#ventanaModal">Descargar CV</a>
             </div>
-        </nav>
+        </nav>      
 
-        @* <div id="ventanaModal" class="modal">
-            <div class="ventana">
-                <a class="closebtn" href="#" style='text-decoration:none;'>
-                    &times;
-                </a>
-                <p class="texto-modal">Elija el tipo de archivo que desea descargar</p>
-
-                <select name="cars" id="cars">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
-                </select>
-
-                <br><br>
-                <input type="submit" value="Submit">
-            </div>
-        </div> *@
-
-        @* C:\Users\admin\source\repos\Portafolio_Web_2023\Portafolio_Web_2023\Portafolio_Web_2023\Views\PortafolioW\PartialViews\_DropDownArchivos_PV.cshtml *@
-        @* <partial name="PartialViews/_DropDownArchivos_PV.cshtml" /> *@
-        @* C:\Users\admin\source\repos\Portafolio_Web_2023\Portafolio_Web_2023\Portafolio_Web_2023\Views\PortafolioW\PartialViews\_DropDownArchivos_PV.cshtml *@
-        
     </header>
     @*     <div class="superior"> *@
     <div class="container">

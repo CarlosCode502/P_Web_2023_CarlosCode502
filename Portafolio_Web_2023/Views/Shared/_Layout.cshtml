@@ -2,17 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    @*  ¿Cómo podemos impedir que los navegadores móviles escalen nuestros sitios y los miniaturicen? La solución
-    es una nueva etiqueta meta cuyo name es “viewport”, que solo es aplicada por dispositivos móviles y es
-    ignorada en computadoras de escritorio. *@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    @* <meta name="viewport" content="width=device-width, initial-scale=1.0" /> *@
     <title>@ViewData["Title - "]Portafolio Web 2023</title>
 
+    <!--Fuentes de Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
 
+    <!--Hojas de estilos CSS-->
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/escritura.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/pag-Inicio.css" asp-append-version="true" />
@@ -20,172 +18,76 @@
     <link rel="stylesheet" href="~/css/botones-desing.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/recientes.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/habilidades-cards.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/sobre_mi.css" asp-append-version="true">
-    <link rel="stylesheet" href="~/css/mediaquerys.css" asp-append-version="true">
     <link rel="stylesheet" href="~/css/footer.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/media-movil-small.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/media-movil-md.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/media-tablet.css" asp-append-version="true">
 
-    @* <!--//V#52 Instalando íconos de Boostrap-->
-    <!--Lo encontramos en la pag de boostrap en el apartado de descargas--> *@
+    <!--Bostrap para iconos-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    @* LA RAZON POR LA QUE ESTE SCRIPT ESTA HASTA ARRIBA ES PORQUE PRESENTABA PROBLEMAS AL MOMENTO DE CARGAR Y RECARGAR
-    YA QUE DURANTE UNAS MILESIMAS DE SEGUNDO SE VEHIA EL TEXTO, Y SE SOLUCIONO DE ESTA FORMA (otra dentro del header)*@
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js" asp-append-version="true"></script>
+
+    <!--Iconos de Font Awesome-->
     <script src="https://kit.fontawesome.com/082c2a7b48.js" crossorigin="anonymous" asp-append-version="true"></script>
 
+    @* En este lugar no presenta problemas al cargar (tampoco dentro de header) *@
+    <!--Agregando la librería Typed.js de Matt Boldt -> https://github.com/mattboldt -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js" asp-append-version="true"></script>
 </head>
 <body>
     <header>
-        @* <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-        <div class="container-fluid">
-        <a class="navbar-brand" asp-area="" asp-controller="PortafolioW" asp-action="Index">Portafolio_Web_2023</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-        <ul class="navbar-nav flex-grow-1">
-        <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="" asp-controller="PortafolioW" asp-action="Index">Inicio</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="" asp-controller="PortafolioW" asp-action="Privacy">Privacy</a>
-        </li>
-        </ul>
-        </div>
-        </div>
-        </nav> *@
 
-        @* <div class="hero" id="Inicio">
-        <h1>MENÚ SLIDER</h1>
-        <p>HTML • CSS • Javascript</p>
-        </div> *@
-        @* <div class="contenedor-texto"> *@
-        @*    <!-- Forma 1: (20.00)
-        Esta forma es muy útil y funcional, pero tiene el defecto de que al momento de indexarlo en los buscadores
-        el texto aparecerá en blanco o no aparecera y este es un error -->
-        <!-- <h2 class="titulo">Mi nombre es:<br/><span class="typed-name"></span></h2> -->
-        <!-- <p>Desarrollador de software, encantado de poder ayudarte a hacer realidad tu proyecto.</p> -->
-        <!-- <p><b>Tengo habilidades en:</b><br/><span class="typed"></span></p> -->
-        <!-- Forma 2: (22.00) -->
-        <!-- Esta forma ayudará a evitar el error y ahora los buscadores podrán indexar el contenido  -->
-        <!-- <h1>Mi nombre es:</h1> --> *@
-        @*  @{
-        string presionar = "typed-name";
-        } *@
-        @* Imagen de <a href="https://pixabay.com/es/users/soykhaler-6351521/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3613567">Diego Ortiz</a> en <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3613567">Pixabay</a> *@
+        <!--SECCIÓN INICIO -->
+        <!--Imagen de <a href="https://pixabay.com/es/users/soykhaler-6351521/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3613567">Diego Ortiz</a> en <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3613567">Pixabay</a>-->
         <div class="contenedor-imagen" id="Inicio">
-            @*  <span class="bloque-img"> *@
-            @* <img src="http://pixabay.com/es/photos/persona-mirando-paisaje-personas-3613567/" /> *@
+            <!--<img src="http://pixabay.com/es/photos/persona-mirando-paisaje-personas-3613567/" />-->
             <img src="~/img/person-paisaje.jpg" />
-            @* </span> *@
             <div class="contenido-imagen">
-                @* <div class="bloque"></div> *@
                 @* Mi cursor *@
                 <h2 class="titulo">
                     <span class="typed-name"></span>
                 </h2>
-
                 @* Array de cadenas que se van a mostrar como escritura de máquina. *@
                 <div class="titulo" id="cadenas-texto">
-                    @*    <p>Console.WriteLine("<br /><i class="name">HolaMundo</i>").</p>
-                    <p>Console.WriteLine("<br /><i class="name">HelloWorld</i>").</p> *@
-                    @* <p>Mi nombre es:<br /><i class="name">Carlos Enrique</i></p>
-                    <p>Mi nombre es:<br /><i class="name">Herrera López.</i></p> *@
                     <p><i class="name">¡Hola Mundo!</i></p>
                     <p>Mi nombre es:<br /><i class="name">Carlos Herrera.</i></p>
-                    <p>Soy:<br /><i class="name dev">Desarrollador Junior .Net</i></p>
+                    <p>Soy:<br /><i class="name dev">Desarrollador .Net Junior</i></p>
                     <p><i class="msj">¡LISTO PARA HACER REALIDAD TU PROYECTO!</i>^10000</p>@*^4000 Representa una pausa al finalizar de escibir los strings*@
-                    @*    <!-- <p><i class="name">Herrera López.</i></p> -->
-                    <!-- <p>Mi nombre es: <br><i class="mascota">CadHerrera</i></p> -->
-                    <!-- <p><b>Tengo habilidades en:</b><br/><span class="typed"></span></p> --> *@
                 </div>
             </div>
         </div>
 
+        <!--BOTÓN FLOTANTE VOLVER AL INICIO-->
         <div class="btn-inicio-float" id="btnIni" hidden>
             <a href="#Inicio" title="Volver al Inicio">
+                
+                <!--Icono obtenido de Bootstrap Icons-->
                 <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
                     <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" fill="#0d6efd" />
                 </svg>
+
             </a>
         </div>
 
+        <!--BOTÓN FLOTANTE DESLIZAR -->
         <div class="elemento">
             @* <div class="">DESLIZAR</div> *@
             <a title="Deslizar hacia abajo" href="#Proyectos_recientes">
+                @* <i class="fa fa-angle-down fa-2x flecha animatedColor" aria-hidden="true"></i> *@
+
                 @* Con FontAwesome *@
                 @* <i class="fa-solid fa-angles-down fa-2x flecha animatedColor" aria-hidden="true"><span class="text-deslizar"> DESLIZAR</span></i> *@
                 <!-- Font Awesome Free 6.4.2 by fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                <svg class="flecha animatedColor" xmlns="http://www.w3.org/2000/svg" height="6em" viewBox="0 0 448 512" aria-hidden="true">
+                <svg class="flecha animatedColor" xmlns="http://www.w3.org/2000/svg" height="6em" viewBox="0 0 448 512" aria-hidden="true" >
                     <title>Deslizar hacia abajo</title>
                     <path d="M246.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 402.7 361.4 265.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-160 160zm160-352l-160 160c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 210.7 361.4 73.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3z" fill="#0d6efd" />
                 </svg>
-                @* <span class="text-deslizar animatedColor flecha"> DESLIZAR</span> *@
-
-                @* Con Bootstrap *@
-                @* <i class="bi bi-chevron-double-down flecha animatedColor" aria-hidden="true"><span class="text-deslizar"> DESLIZAR</span></i>></i> *@
-                @* <img class="flecha animatedColor" src="~/img/angles-down-solid.svg" alt="img-deslizar.svg" /> *@
             </a>
         </div>
 
     </header>
 
-    @*<ul class="menu">
-    <li>
-    <a id="click-inicio" href="#Inicio"">
-    <span>Inicio</span>
-    <span>
-    <i class="fas fa-address-card" aria-hidden="true"></i>
-    </span>
-    </a>
-    </li>
-    <li>
-    <a href="#Perfil">
-    <span>Perfil</span>
-    <span>
-    <i class="fas fa-tasks" aria-hidden="true"></i>
-    </span>
-    </a>
-    </li>
-    <li>
-    <a id="big-a" href="#Habilidades">
-    <span>Tecnologías</span>
-    <span>
-    <i class="fas fa-users" aria-hidden="true"></i>
-    </span>
-    </a>
-    </li>
-    <li>
-    <a id="big-a" href="#Proyectos_recientes">
-    <span>Proyectos</span>
-    <span>
-    <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
-    </span>
-    </a>
-    </li>
-    <li>
-    <a href="#Contacto">
-    <span>Contacto</span>
-    <span>
-    <i class="fas fa-envelope-open-text" aria-hidden="true"></i>
-    </span>
-    </a>
-    </li>
-    </ul>
-    *@
-
-
-    @* AQUI ESTABA EL NAV *@
-
+    <!--SECCIÓN BARRA DE NAVEGACIÓN (NAV - TEXTO - SVG) -->
     <nav class="nav_menu" id="nav_menu_id">
-        @* <a id="click-inicio" href="#Inicio">Inicio</a>
-        <a href="#Perfil">Perfil</a>
-        <a id="big-a" href="#Habilidades">Tecnologías</a>
-        <a id="big-a" href="#Proyectos_recientes">Proyectos</a>
-        <a href="#Contacto">Contacto</a> *@
-        @* <button type="button" class="btn btn-primary">Contactar</button> *@
-        @* Opción extra para ir al footer desde el nav *@
-        @*           <a href="#4">Fin</a> *@
         <ul class="menu-p-inicio">
             <li title="Inicio">
                 @* <span class="tooltip-content">Inicio</span> *@
@@ -249,25 +151,25 @@
                 </a>
             </li>
         </ul>
-        @* Span vacio que usaremos para indicar que opción del menú que se selecciono *@
+        <!--INDICADOR DE SECCIONES (bloque bajo el NAV)-->
         <span class="indicador" id="indicador_id"></span>
     </nav>
 
+    <!--CONTENEDOR DE SECCIONES-->
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    @* <footer class="border-top footer text-muted">
-    <div class="container">
-    &copy; 2023 - Portafolio_Web_2023 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-    </div>
-    </footer> *@
-
+    <!--SECCIÓN PIE DE PÁGINA-->
     <footer class="footer" id="Contacto">
+
         <h1 class="tiutlo-contacto">Contacto:</h1>
+
+        <!--IMAGENES SVG OBTENIDAS DE Bootstrap Icons-->
         <div class="img-center">
+
             <div class="img-linkedin">
                 <a href="https://www.linkedin.com/in/ca02" rel="noopener noreferrer" target="_blank" class="w-100 h-100 flex main-center cross-center" title="Linkedin">
                     <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -292,7 +194,7 @@
                 </a>
             </div>
             <div class="img-whatsapp">
-                <a href="https://wa.me/41144448775486" rel="noopener noreferrer" target="_blank" class="w-100 h-100 flex main-center cross-center" title="WhatsApp">
+                <a href="https://wa.me/41487786" rel="noopener noreferrer" target="_blank" class="w-100 h-100 flex main-center cross-center" title="WhatsApp">
                     <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-whatsapp" viewBox="0 0 16 16">
                         <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
                     </svg>
@@ -305,20 +207,14 @@
                     </svg>
                 </a>
             </div>
+
         </div>
-        @* <div class="footer-content"> *@
+        <!--SECCIÓN COPYRIGHT-->
         <div class="text-copy"><hr /><br />&copy; Copyright - <a class="text-copy" href="#Perfil">Carlos Herrera</a>  - 2023</div>
-        @* <a href="/terminos" class="texto-gris"> Términos y condiciones de servicio </a>
-        <a href="/politicas" class="texto-gris"> - Política de privacidad </a> *@
-        @*  </div> *@
     </footer>
 
-
-
-
+    <!--Archivos JavaScript (Scripts)-->
     <script src="~/js/Typed.js" asp-append-version="true"></script>
-    @*<script src="~/js/OnClick.js" asp-append-version="true"></script> *@
-    @* <script src="~/js/LoadScripts.js" asp-append-version="true"></script> *@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

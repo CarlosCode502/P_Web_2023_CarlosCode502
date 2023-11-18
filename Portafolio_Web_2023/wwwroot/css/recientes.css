@@ -4,13 +4,6 @@
     --colorGlobalR: #0d6efd;
 }
 
-/*Importante para hacer el scroll más dinámico*/
-/**,
-*::before,
-*::after {
-    box-sizing: border-box;
-}*/
-
 .row-cols-1 > * {
     flex: 0 0 auto;
     width: 100%;
@@ -20,8 +13,6 @@
 .col {
     flex: 1 0 0%;
     float: left;
-    /*width: 25%;*/
-    /*padding: 40px 40px 40px 0px;*/
     padding: 20px
 }
 
@@ -43,25 +34,10 @@
         clear: both;
     }
 
-/*.titulo-recientes {*/
-    /*font-size: 20px;*/
-/*}*/
-/*
-.subtitulo-recientes {
-    font-size: 20px;
-}*/
-
-
-
 /* Diseñe las cartas de contador */
 .card-proyecto-hijo {
-    /* Agrega sombras para crear el efecto de "tarjeta". */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    /*padding-top: 15px;*/
-    /*text-align: center;*/
-    /*background-color: #f1f1f1;*/
-    /*position: relative;*/
     display: flex;
     flex-direction: column;
     min-width: 0;
@@ -84,17 +60,12 @@
 /*Imagen de la tarjeta*/
 .card-img-top {
     width: 100%;
-    /*    border-top-left-radius: calc(.25rem - 1px);
-    border-top-right-radius: calc(.25rem - 1px);*/
-    padding: 5px;
-    border-bottom: none;
+    border-bottom: 1px solid black;
 }
 
 /*Cuerpo o contenido de la tarjeta*/
 .card-body {
     flex: 1 1 auto;
-    /*padding: 1rem 1rem;*/
-    /*font-size: 40px;*/
 }
 
 /*Título de la tarjeta*/
@@ -107,6 +78,7 @@
 .card-text {
     font-size: 1em;
     padding: 15px;
+    text-align: justify;
 }
 
 .card-footer {
@@ -124,12 +96,7 @@
 
 .btn {
     display: inline-block;
-    /*font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: center;*/
     text-decoration: none;
-    /*vertical-align: middle;*/
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -142,81 +109,26 @@
     border-left-color: transparent;
     padding: .375rem .75rem;
     font-size: 1em;
-    border-radius: .25rem;
+    border-radius: 0.50rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    opacity: 1;
 }
+
+    /*Cambiar opacidad al pasar el cursor por este */
+    .btn:hover {
+        opacity: 0.5;
+    }
 
 .btn-primary {
     color: #fff;
-    background-color: var(--colorGlobalR);
+    background-color: #837d7d;
     border-color: inherit;
+    
 }
-
-
-
 
 @media (min-width: 811px) {
-    .row-cols-md-3 > * {
+    .row-cols-md-2-pdesing > * {
         flex: 0 0 auto;
         width: 33.3333333333%;
     }
-
-    /*    .overflow-scroll {
-        max-height: 768px;
-        overflow-y: scroll;
-    }*/
 }
-
-
-/* Columnas responsivas: diseño de una columna (vertical) en pantallas pequeñas */
-@media screen and (max-width: 810px) {
-    /*Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas*/
-    .row {
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-
-    .row-cols-md-3 > * {
-        flex: 0 0 auto;
-        width: 33.3333333333%;
-    }
-
-    .col {
-        width: 100%;
-        display: block;
-        margin-bottom: 50px;
-        padding: 0px;
-    }
-/*
-    .titulo-recientes {
-        font-size: 30px;
-    }
-
-    .subtitulo-recientes {
-        font-size: 15px;
-    }*/
-
-    /*Se aplica a todo el contenido que contenga la clase scroll*/
-    .overflow-scroll_r {
-        /*position: relative;*/
-        padding: 0px 8px 0px 8px;
-        margin: 0px 8px 0px 0;
-        max-height: 420px;
-        overflow-y: scroll;
-        /*max-height: 700px;
-        overflow-y: scroll;*/
-    }
-}
-/*.card-proyecto-hijo {*/
-/* Agrega sombras para crear el efecto de "tarjeta". */
-/*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-}*/
-/* Al pasar el mouse, agrega una sombra más profunda. */
-/*.card-proyecto-hijo:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    }*/
-/* Agregue algo de relleno dentro del contenedor de la tarjeta. */
-/*.card-body {
-    padding: 2px 16px;
-}*/

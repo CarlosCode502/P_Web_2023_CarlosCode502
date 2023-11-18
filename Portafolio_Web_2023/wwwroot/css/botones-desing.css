@@ -13,7 +13,6 @@
     margin-top: 20px;
 }
 
-
 /*Diseño de los botones ver todos los proyectos y cv los (a)*/
 .btn-secciones {
     position: relative;
@@ -26,27 +25,19 @@
     border-radius: 6px;
     /*Tamaño y contorno de texto*/
     font-size: 17px;
-    font-weight: 600
+    font-weight: 600;
+    opacity: 1;
 }
 
 /*Padding personalizado para btn perfil*/
 .btn-pdd-perfil {
-    padding: 20px 78px 20px 78px;
+    padding: 20px 87px 20px 87px;
 }
 
 /*Padding personalizado para btn recientes*/
 .btn-pdd-recientes {
     padding: 20px;
 }
-/*.menu a {
-    position: relative;
-    display: block;
-    padding: 20px;
-}*/
-/*a {*/
-/*color: black;*/
-
-/*}*/
 
 /*Para ocultar la viñeta*/
 ul {
@@ -57,10 +48,7 @@ ul {
 .menu .border {
     position: absolute;
     left: 0;
-    /*background: currentColor;*/
-    /*color: red;*/
     border: 2px solid black;
-    /*border-radius: .75rem;*/
     border-radius: 6px;
 }
 

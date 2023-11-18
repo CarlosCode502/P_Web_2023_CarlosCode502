@@ -6,60 +6,26 @@
     --colorGlobal: #0d6efd;
 }
 
-* {
-    /*box-sizing: border-box;*/
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    /*Margén del boton regresar.*/
-    /*margin-bottom: 20px;*/
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0px 20px 20px 20px;
     background: var(--blancoTP);
+    /*background:  #eaecee;*/
 }
 
-/*.nav.menu {
-    width: 48px;
-    height: 48px;
-}*/
-
-/*Barra de navegación proyectos*/
-/*.nav_menu {
-    padding: 10px 0 10px 0;
-    background-color: #c0ddf6;
-    display: flex;
-    position: sticky;
-    top: 0;*/
-/*overflow: hidden;*/
-/*}*/
 
 .navbar {
     background: var(--colorGlobal);
     box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
-    height: 80px;
+    height: 60px;
 }
-
-/*.navbar:hover {
-    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
-}*/
 
 /*Color para la imagen y texto del nav*/
 .navbar-brand {
-    font-weight: 500;
+    font-weight: 600;
     fill: var(--blancoTP);
     color: var(--blancoTP);
-    /*padding-left: 60px;*/
-    /*text-decoration: none;*/
-    cursor: pointer;
-    /*-webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;*/
-    /*Se usaba para centrar el texto del nav solo con css*/
-    /*display: inline-block;
-    vertical-align: top;*/
+    cursor: default;
 }
 
     .navbar-brand:hover {
@@ -67,153 +33,26 @@ body {
         fill: var(--negroTP);
         color: var(--negroTP);
     }
-
+/*Espacio entre el nav y el titulo (T M proyectos)*/
 .contenido-proyectos {
-    padding-top: 40px;
+    padding-top: 36px;
+    font-size: 1.10em;
 }
-/*header .a{
-    margin-left: 20px;
-}
-*/
-/*NUEVO*/
-/*.title {
-    
-    display: inline-block;
-    vertical-align: top;
-}*/
+
 /* On mouse-over, add a deeper shadow */
 .card-proyecto-hijo:hover {
-    /*Borde solido a las tarjetas*/
-    /* border: 3px solid #0d6efd;*/
-    /*Borde sombra gris a las tarjetas*/
     box-shadow: 0 8px 16px 2px rgb(0, 0, 0);
-    /*Borde neón celeste a las tarjetas*/
-    /*box-shadow: 0px 8px 32px 5px #0d6efd;*/
 }
 
 .card-body {
     flex: 1 1 auto;
     padding: 1rem 1rem;
+    /*font-size: 1.10em;*/
+    font-weight: normal;
 }
 
-/*.card-text:last-child {
-    margin-bottom: 0;
-}*/
-
-/*.h5{
-
+.card-text {
+    text-align: justify;
+    /*font-size: 1.10em;*/
+    font-weight: normal;
 }
-
-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-*/
-
-
-/*RECIENTE*/
-/*Flotar cuatro columnas una al lado de la otra*/
-/*.column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-}*/
-
-/* Eliminar márgenes izquierdo y derecho adicionales debido al relleno en las columnas */
-/*.row {
-    margin: 0 -5px;
-}*/
-
-/* Limpiar flotadores después de las columnas. */
-/*.row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }*/
-
-/*  Diseñe las cartas del contenedor */
-/*.card-proyectos-hijo {*/
-/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/ /* this adds the "card" effect */
-/*padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;*/
-/*}*/
-
-/* Columnas responsivas: diseño de una columna (vertical) en pantallas pequeñas */
-/*@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
-}*/
-
-
-
-/*ANTERIOR*/
-/* Float four columns side by side */
-/*.column {
-    float: left;
-    width: 300px;
-    padding: 10px;
-
-}*/
-
-/* Remove extra left and right margins, due to padding in columns */
-/*.row {
-    margin: 0 -5px;
-}*/
-
-/* Clear floats after the columns */
-/*.row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }*/
-
-/* Style the counter cards */
-/*.card-proyecto-hijo {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/ /* this adds the "card" effect */
-/*padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-}*/
-
-
-/*.contenido-proyectos{
-    color:red;
-}*/
-
-/*.card-proyecto-hijo {*/
-/* Add shadows to create the "card" effect */
-/*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px;*/ /* 5px rounded corners */
-/*}*/
-
-/* On mouse-over, add a deeper shadow */
-/*.card-proyecto-hijo:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    }*/
-
-
-/* Add some padding inside the card container */
-/*.card-contenido {
-    padding: 2px 16px;
-}*/
-
-/* Add rounded corners to the top left and the top right corner of the image */
-/*.card-contenido .img {
-    border-radius: 5px 5px 0 0;
-}*/
-
-
-
-/* Responsive columns - one column layout (vertical) on small screens */
-/*@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
-}*/

@@ -1,18 +1,6 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-
-@* @model Portafolio_Web_2023.Models.ArchivosViewModel *@
-@* @model IEnumerable<ArchivosViewModel> *@
+﻿
 @model Portafolio_Web_2023.Models.CVs_VM_Resources.CVs_Portafolio_ViewModel
-@*
-@{
-    Layout = null;
-}
- *@
 
-@* @if (Model is not null)
-{ *@
 <div id="ventanaModal" class="modal">
     <div class="ventana">
         @* Se le aplica el mismo diseño que al btn cerrar de la alerta *@
@@ -22,99 +10,21 @@
 
         <p class="titulo-modal">Archivos disponibles:</p>
 
-        @* Se crea el formulario para mostrar el drop y se relaciona el modelo para poder utilizarlo
-        junto con el html helper asp-items
-        Este formulario se lanzara en el método httppost *@
-        <form asp-controller="PortafolioW" asp-action="cv" method="post">
-            @*                 @if (Model.CV_Seleccionado == "-1")
-            {
+        <form asp-controller="PortafolioW" asp-action="cv" method="post">      
             <div class="dropdown">
-            @* <label class="form-label">Select cv</label>
-
-
-            <select class="form-select" asp-items="Model.cvs_selectListItems" asp-for="CV_Seleccionado">
-            <option value="-1"><p class="opc-default">Elija el archivo que desea descargar:</p> </option>
-            </select>
-
-            </div>
-            <div>
-            <button class="btn-aceptar" disabled="disabled">Aceptar</button>
-            </div>
-
-            }
-            else
-            { *@            
-
-            <div class="dropdown">
-                @* <label class="form-label">Select cv</label>                 *@
-                @* Esta etiqueta Html helper obtiene y muestra los elementos del drop, además permite obtener el e
-                elemento que se leccionado a traves de HHelper asp-for="CV_Seleccionado" *@
-
                 @* LISTA CV DESDE EL SERVIDOR *@
                 <select class="form-select" asp-items="Model.cvs_selectListItems" asp-for="CV_Seleccionado">
                     <option>Elija el archivo que desea descargar:</option>
                 </select>
-@* 
-                @while (Model.CV_Seleccionado == null)
-                {
-                    <button class="btn-aceptar" disabled>Aceptar</button>
-                } *@
 
-                @* LISTA CV DESDE EL CLIENTE *@
-                @*                 <select class="form-select" asp-items="@(new SelectList(Model.cvs_selectListItems, Model.cvs_selectListItems., "Nombre"))" asp-for="CV_Seleccionado">
-                <option>Elija el archivo que desea descargar:</option>
-                </select><br /><br /> *@
-                @* <select class="form-select" asp-items="Model.cvs_selectListItems" asp-for="CV_Seleccionado">
-                <option>Elija el archivo que desea descargar:</option>
-                </select> *@
             </div>
             <div class="botones">
+                @* PARA VOLVER LUEGO DE HACER CLICK *@
+                @* <button class="btn-aceptar" onclick="history.back()">Aceptar</button> *@
                 <button class="btn-aceptar">Aceptar</button>
                 <a class="btn-cancelar" href="#">Cancelar</a>
             </div>
-
         </form>
-
-        @*         <div class="card-footer-primary">
-        <ul class="menu">
-        <li>
-        <a class="btn-secciones btn-pdd-perfil">
-        Aceptar
-        <span class="border border-top"></span>
-        <span class="border border-right"></span>
-        <span class="border border-bottom"></span>
-        <span class="border border-left"></span>
-        </a>
-        </li>
-        </ul>
-        </div>  *@
-
-
-
-        @*  <label class="form-label">Elija el documento que desea descargar</label>
-        <select class="form-select" asp-items="Model.">
-
-        </select>
-
-
-        @*         <select name="cars" id="cars">
-        <option value="-1">>---- Elija una opción ----<</option>
-        @foreach (var item in Model)
-        {
-        <option value="@item.Name">@item.Name</option>
-
-        }
-        </select> *@
-        @*
-        <select name="cars" id="cars">
-        <option value="@Model.Id">@Model.Name</option>
-        <option value="saab">Saab</option>
-        <option value="opel">Opel</option>
-        <option value="audi">Audi</option>
-        </select>
-        *@
-        @* <br><br>
-        <input type="submit" value="Submit"> *@
     </div>
 </div>
 
