@@ -141,7 +141,6 @@ namespace Portafolio_Web_2023.Controllers
                     await servicioEmailSendGrid.Enviar(contactoViewModel);
                     return RedirectToAction("Gracias");
                 }
-
             }
             catch (Exception ex)
             {
