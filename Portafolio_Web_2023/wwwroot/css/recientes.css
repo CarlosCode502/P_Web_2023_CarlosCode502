@@ -116,14 +116,14 @@
 
     /*Cambiar opacidad al pasar el cursor por este */
     .btn:hover {
-        opacity: 0.5;
+        /*opacity: 0.5;*/
+        background-color: var(--colorGlobalR);
     }
 
 .btn-primary {
     color: #fff;
-    background-color: #837d7d;
+    background-color: #808080;
     border-color: inherit;
-    
 }
 
 @media (min-width: 811px) {
