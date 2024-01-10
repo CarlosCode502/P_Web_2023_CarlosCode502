@@ -200,15 +200,15 @@ h1 {
     --color_a: #e74c3c; /*Alto*/
 }
 
-.jquery:hover {
+/*.jquery:hover {*/
     /*Accedemos a la animación*/
-    animation: color-me-in 2s infinite;
+    /*animation: color-me-in 2s infinite;*/
     /*Variables locales*/
     /*Colores java*/
-    --color_b: #7fb3d5; /*Bajo*/
-    --color_m: #5499c7; /*Medio*/
-    --color_a: #2980b9; /*Alto*/
-}
+    /*--color_b: #7fb3d5;*/ /*Bajo*/
+    /*--color_m: #5499c7;*/ /*Medio*/
+    /*--color_a: #2980b9;*/ /*Alto*/
+/*}*/
 
 .pdd-sql {
     margin-left: 38px;
@@ -296,15 +296,15 @@ h1 {
     --color_a: #4D3B71; /*Alto*/
 }
 
-.php:hover {
+/*.php:hover {*/
     /*Accedemos a la animación*/
-    animation: color-me-in 2s infinite;
+    /*animation: color-me-in 2s infinite;*/
     /*Variables locales*/
     /*Colores php*/
-    --color_b: #85929e; /*Bajo*/
-    --color_m: #5d6d7e; /*Medio*/
-    --color_a: #34495e; /*Alto*/
-}
+    /*--color_b: #85929e;*/ /*Bajo*/
+    /*--color_m: #5d6d7e;*/ /*Medio*/
+    /*--color_a: #34495e;*/ /*Alto*/
+/*}*/
 
 /*Animación para todas las tarjetas solo se iran 
     reemplazando las variables según el hover*/
