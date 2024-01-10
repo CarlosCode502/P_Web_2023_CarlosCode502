@@ -9,6 +9,14 @@ namespace Portafolio_Web_2023.Services
             return new List<ProyectoViewModel>() {
                 new ProyectoViewModel
                 {
+                    Titulo = "Sistema de Ventas",
+                    Descripcion = "Desarrollado como API Rest usando .Net con C# para el backend, Angular para el frontend con base de datos en SQL Server utilizando Mapper.",
+                    Link = "https://github.com/CarlosCode502/AppSistemaVenta_Ang_Net.git",
+                        ImagenURL = "/img/Sistema de Venta.JPG"
+                },
+
+                new ProyectoViewModel
+                {
                     Titulo = "Portafolio Web",
                     Descripcion = "Este es mi portafolio en donde muestro los proyectos en los que he trabajado en las distintas tecnologías.",
                     Link = "https://github.com/CarlosCode502/P_Web_2023_CarlosCode502.git",
