@@ -165,10 +165,26 @@ h1 {
     --color_a: #8e44ad; /*Alto*/
 }
 
-/*Se aplico un padding-top ya que no se centraba la imagen*/
-/*.pdd-net {
-    padding-top: 35px;
-}*/
+.angular:hover {
+    /*Accedemos a la animación*/
+    animation: color-me-in 2s infinite;
+    /*Variables locales*/
+    /*Colores angu*/
+    --color_b: #E85575; /*Bajo*/
+    --color_m: #DD0031; /*Medio*/
+    --color_a: #C3002F; /*Alto*/
+}
+
+.typescript:hover {
+    /*Accedemos a la animación*/
+    animation: color-me-in 2s infinite;
+    /*Variables locales*/
+    /*Colores type*/
+    --color_b: #55A6DD; /*Bajo*/
+    --color_m: #007ACC; /*Medio*/
+    --color_a: #2E61AC; /*Alto*/
+}
+
 
 .net:hover {
     /*Accedemos a la animación*/
@@ -199,16 +215,6 @@ h1 {
     --color_m: #ec7063; /*Medio*/
     --color_a: #e74c3c; /*Alto*/
 }
-
-/*.jquery:hover {*/
-    /*Accedemos a la animación*/
-    /*animation: color-me-in 2s infinite;*/
-    /*Variables locales*/
-    /*Colores java*/
-    /*--color_b: #7fb3d5;*/ /*Bajo*/
-    /*--color_m: #5499c7;*/ /*Medio*/
-    /*--color_a: #2980b9;*/ /*Alto*/
-/*}*/
 
 .pdd-sql {
     margin-left: 38px;
@@ -256,16 +262,6 @@ h1 {
     --color_a: #cb4335; /*Alto*/
 }
 
-.devops:hover {
-    /*Accedemos a la animación*/
-    animation: color-me-in 2s infinite;
-    /*Variables locales*/
-    /*Colores api*/
-    --color_b: #a9cce3; /*Bajo*/
-    --color_m: #7fb3d5; /*Medio*/
-    --color_a: #2980b9; /*Alto*/
-}
-
 .sendgrid:hover {
     /*Accedemos a la animación*/
     animation: color-me-in 2s infinite;
@@ -274,6 +270,26 @@ h1 {
     --color_b: #99E1F4; /*Bajo*/
     --color_m: #009DD9; /*Medio*/
     --color_a: #1A82E2; /*Alto*/
+}
+
+.api:hover {
+    /*Accedemos a la animación*/
+    animation: color-me-in 2s infinite;
+    /*Variables locales*/
+    /*Colores api*/
+    --color_b: #D4E9F9; /*Bajo*/
+    --color_m: #E1EFFF; /*Medio*/
+    --color_a: #72B8CE; /*Alto*/
+}
+
+.swagger:hover {
+    /*Accedemos a la animación*/
+    animation: color-me-in 2s infinite;
+    /*Variables locales*/
+    /*Colores swagger*/
+    --color_b: #859955; /*Bajo*/
+    --color_m: #6D9A00; /*Medio*/
+    --color_a: #486600; /*Alto*/
 }
 
 .vscode:hover {
@@ -296,15 +312,25 @@ h1 {
     --color_a: #4D3B71; /*Alto*/
 }
 
-/*.php:hover {*/
+.cloudflare:hover {
     /*Accedemos a la animación*/
-    /*animation: color-me-in 2s infinite;*/
+    animation: color-me-in 2s infinite;
     /*Variables locales*/
-    /*Colores php*/
-    /*--color_b: #85929e;*/ /*Bajo*/
-    /*--color_m: #5d6d7e;*/ /*Medio*/
-    /*--color_a: #34495e;*/ /*Alto*/
-/*}*/
+    /*Colores cloudflare*/
+    --color_b: #FBC97F; /*Bajo*/
+    --color_m: #FAAE40; /*Medio*/
+    --color_a: #F38020; /*Alto*/
+}
+
+.xampp:hover {
+    /*Accedemos a la animación*/
+    animation: color-me-in 2s infinite;
+    /*Variables locales*/
+    /*Colores xampp*/
+    --color_b: #FBC67C; /*Bajo*/
+    --color_m: #FB9A49; /*Medio*/
+    --color_a: #FB7A24; /*Alto*/
+}
 
 /*Animación para todas las tarjetas solo se iran 
     reemplazando las variables según el hover*/
