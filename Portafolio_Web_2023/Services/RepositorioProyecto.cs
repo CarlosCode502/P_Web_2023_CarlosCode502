@@ -17,6 +17,14 @@ namespace Portafolio_Web_2023.Services
 
                 new ProyectoViewModel
                 {
+                    Titulo = "Manejador de presupuestos",
+                    Descripcion = "Permite manejar las distintas cuentas que poseemos como: gastos, ingresos, etc. Desarrollado en .Net con C# y SQL (Usando Mapper y Procedimientos Almacenados).",
+                    Link = "https://github.com/CarlosCode502/ManejadorDePresupuestos_MVC.git",
+                        ImagenURL = "/img/Manejo de presupuestos.JPG"
+                },
+
+                new ProyectoViewModel
+                {
                     Titulo = "Portafolio Web",
                     Descripcion = "Este es mi portafolio en donde muestro los proyectos en los que he trabajado en las distintas tecnologías.",
                     Link = "https://github.com/CarlosCode502/P_Web_2023_CarlosCode502.git",
